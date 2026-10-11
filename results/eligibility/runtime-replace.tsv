@@ -1,0 +1,27 @@
+id	pin	params	insmod_rc	enabled	transition	replace	module_sha256
+B1:6.12.51:samples/livepatch/livepatch-callbacks-demo.c	6.12.51		0	1	0	0	7ab0c4b1ad73711f70f714888d843e13f4d195055b40ae68661ff3afb2363995
+B1:6.12.51:samples/livepatch/livepatch-sample.c	6.12.51		0	1	0	0	9076e665512f31f0b25a12d653fbc0c12c9f331f145edc145e617045c4946bf6
+B1:6.12.51:samples/livepatch/livepatch-shadow-fix1.c	6.12.51		0	1	0	0	7e7d402fdd8cb0383ebcff84a8b9bc78f199cae93eea88b786c589aed3ee80c7
+B1:6.12.51:samples/livepatch/livepatch-shadow-fix2.c	6.12.51		0	1	0	0	507e3acb2c13095ad94c81e5b8070d1c0c4590bac593d2a1fd34f5d9c3fc1277
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_atomic_replace.c	6.12.51		0	1	0	0	d9662342222bac8a263494e9d71d57f3a158ce0f186929bc3df42127da005289
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_atomic_replace.c#replace=1	6.12.51	replace=1	0	1	0	1	d9662342222bac8a263494e9d71d57f3a158ce0f186929bc3df42127da005289
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo.c	6.12.51		0	1	0	0	526676b906175e6005da58b5f9ee22a86d1a472ebf866c04f52201ef93ab4ffa
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c	6.12.51		0	1	0	0	686cefce10b108679c8e928119d054d0ddd948eb9d10d38cbb1d15bb6c4d7054
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_livepatch.c	6.12.51		0	1	0	0	49b01e20ec078ae35fb633f94b99f953828b85183cb62eb4fc79b34b7f7629d2
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state.c	6.12.51		0	1	0	1	a95bfd22aa9973c571c133c4384394be8aa86e5394b0381dcb670d6158a5925c
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state2.c	6.12.51		0	1	0	1	e571aa2f7d0a99b9081613277c1546a36b88b1f8c23a6aaea335debbf5c92c89
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state3.c	6.12.51		0	1	0	1	56ebb0c9c2b4927f0348f0607c1a26139994f1958de78de4293ece92f2681e52
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_syscall.c	6.12.51		0	1	0	0	78b32cf592986c71f44d00dc7121de5869d3429cd72cbf3b4e8c8de8c0bc363e
+B1:6.19:samples/livepatch/livepatch-callbacks-demo.c	6.19		0	1	0	0	cfef382d2c67cb3d3ae1a79d3cf6633a953992f68d32beaafa27baf2deeb14cc
+B1:6.19:samples/livepatch/livepatch-sample.c	6.19		0	1	0	0	e6dd042ad57bcad04a1e97ab7383c1d4d2c84b165711782f122e777de0e053fd
+B1:6.19:samples/livepatch/livepatch-shadow-fix1.c	6.19		0	1	0	0	9af9c739dc294e2a4f01287a14d70cbf65cf3e58846164f9b5b14e1f48ed4497
+B1:6.19:samples/livepatch/livepatch-shadow-fix2.c	6.19		0	1	0	0	dd67c32f18644171a212068d9b9e4036bf30b3447d5c6786d4843312b753b4e2
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_atomic_replace.c	6.19		0	1	0	0	960f4e0043483e670ef2d33a284d4697e91b55b27d9f20f70d65a854d0f22c5a
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_atomic_replace.c#replace=1	6.19	replace=1	0	1	0	1	960f4e0043483e670ef2d33a284d4697e91b55b27d9f20f70d65a854d0f22c5a
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo.c	6.19		0	1	0	0	62afdb0f7d5183b16aa06204ad3d42132afbfbcbf58c1f4c10652b0cc4b87478
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c	6.19		0	1	0	0	7233dcc0791430388ab0257402af1c3619067d4018e726c943ce7d2eca00184d
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_livepatch.c	6.19		0	1	0	0	d46668ff2a5fa0a200b66d5b3a0fea635cc42dabe078174238d17b3d62c2edf6
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state.c	6.19		0	1	0	1	94491596de3f95e5ac50903b0b5b7871a6d8a512249a74ca3e0d4c2235ca8655
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state2.c	6.19		0	1	0	1	1b63cb1c28aee3ceb6ea7132ece673dcb48028cd6abec9b822e0e4514e291248
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state3.c	6.19		0	1	0	1	bf422c7bd0d82094d92b1cc67bd324619a560bbfebac3c7ee618a3d3deb3d89c
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_syscall.c	6.19		0	1	0	0	4e010b644f67140247232f56048ec0877218f637cea5b2b48e41d30171997929

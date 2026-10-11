@@ -1,0 +1,329 @@
+{
+ "parents": {
+  "LOADED_ENABLED": 120,
+  "TIMEOUT": 3
+ },
+ "sets": {
+  "fixtures": {
+   "addend": {
+    "mutants": 633,
+    "not_livepatch": 126,
+    "livepatch": 507,
+    "outcomes": {
+     "LOAD_FAIL": 31,
+     "LOADED_ENABLED": 417,
+     "CRASH": 58,
+     "TIMEOUT": 1
+    },
+    "loader_detected": 90,
+    "loader_detected_rate": 0.1775,
+    "loader_detected_ci95": [
+     0.1467,
+     0.2132
+    ],
+    "accepted_silently": 417,
+    "paired_with_oracle": 507,
+    "oracle_only": 404,
+    "loader_only": 0,
+    "both": 90,
+    "neither": 13,
+    "mcnemar_exact_p": 4.840739893561648e-122
+   },
+   "constant": {
+    "mutants": 411,
+    "not_livepatch": 51,
+    "livepatch": 360,
+    "outcomes": {
+     "CRASH": 27,
+     "LOADED_ENABLED": 316,
+     "LOAD_FAIL": 15,
+     "TIMEOUT": 2
+    },
+    "loader_detected": 44,
+    "loader_detected_rate": 0.1222,
+    "loader_detected_ci95": [
+     0.0923,
+     0.1601
+    ],
+    "accepted_silently": 316,
+    "paired_with_oracle": 360,
+    "oracle_only": 0,
+    "loader_only": 44,
+    "both": 0,
+    "neither": 316,
+    "mcnemar_exact_p": 1.1368683772161603e-13
+   },
+   "dropcall": {
+    "mutants": 628,
+    "not_livepatch": 134,
+    "livepatch": 494,
+    "outcomes": {
+     "LOADED_ENABLED": 431,
+     "LOAD_FAIL": 45,
+     "CRASH": 15,
+     "TIMEOUT": 3
+    },
+    "loader_detected": 63,
+    "loader_detected_rate": 0.1275,
+    "loader_detected_ci95": [
+     0.101,
+     0.1598
+    ],
+    "accepted_silently": 431,
+    "paired_with_oracle": 494,
+    "oracle_only": 431,
+    "loader_only": 0,
+    "both": 63,
+    "neither": 0,
+    "mcnemar_exact_p": 3.606632272572553e-130
+   },
+   "redirect": {
+    "mutants": 568,
+    "not_livepatch": 65,
+    "livepatch": 503,
+    "outcomes": {
+     "LOAD_FAIL": 40,
+     "CRASH": 153,
+     "NOT_ENABLED": 48,
+     "LOADED_ENABLED": 258,
+     "TIMEOUT": 4
+    },
+    "loader_detected": 245,
+    "loader_detected_rate": 0.4871,
+    "loader_detected_ci95": [
+     0.4437,
+     0.5307
+    ],
+    "accepted_silently": 258,
+    "paired_with_oracle": 503,
+    "oracle_only": 258,
+    "loader_only": 0,
+    "both": 245,
+    "neither": 0,
+    "mcnemar_exact_p": 4.3180842775472223e-78
+   },
+   "swap": {
+    "mutants": 583,
+    "not_livepatch": 88,
+    "livepatch": 495,
+    "outcomes": {
+     "CRASH": 97,
+     "LOADED_ENABLED": 336,
+     "LOAD_FAIL": 49,
+     "NOT_ENABLED": 6,
+     "TIMEOUT": 7
+    },
+    "loader_detected": 159,
+    "loader_detected_rate": 0.3212,
+    "loader_detected_ci95": [
+     0.2816,
+     0.3636
+    ],
+    "accepted_silently": 336,
+    "paired_with_oracle": 495,
+    "oracle_only": 336,
+    "loader_only": 0,
+    "both": 159,
+    "neither": 0,
+    "mcnemar_exact_p": 1.4287342391028437e-101
+   },
+   "sympos": {
+    "mutants": 6,
+    "not_livepatch": 0,
+    "livepatch": 6,
+    "outcomes": {
+     "LOADED_ENABLED": 6
+    },
+    "loader_detected": 0,
+    "loader_detected_rate": 0.0,
+    "loader_detected_ci95": [
+     0,
+     0.3903
+    ],
+    "accepted_silently": 6,
+    "paired_with_oracle": 6,
+    "oracle_only": 6,
+    "loader_only": 0,
+    "both": 0,
+    "neither": 0,
+    "mcnemar_exact_p": 0.03125
+   },
+   "_all": {
+    "livepatch": 2365,
+    "loader_detected": 601,
+    "loader_detected_rate": 0.2541,
+    "loader_detected_ci95": [
+     0.237,
+     0.2721
+    ],
+    "oracle_only": 1435,
+    "loader_only": 44
+   }
+  },
+  "s12": {
+   "addend": {
+    "mutants": 741,
+    "not_livepatch": 0,
+    "livepatch": 741,
+    "outcomes": {
+     "LOADED_ENABLED": 733,
+     "CRASH": 7,
+     "TIMEOUT": 1
+    },
+    "loader_detected": 8,
+    "loader_detected_rate": 0.0108,
+    "loader_detected_ci95": [
+     0.0055,
+     0.0212
+    ],
+    "accepted_silently": 733,
+    "paired_with_oracle": 741,
+    "oracle_only": 730,
+    "loader_only": 0,
+    "both": 8,
+    "neither": 3,
+    "mcnemar_exact_p": 3.541058984203562e-220
+   },
+   "constant": {
+    "mutants": 1081,
+    "not_livepatch": 0,
+    "livepatch": 1081,
+    "outcomes": {
+     "LOADED_ENABLED": 1072,
+     "CRASH": 8,
+     "NOT_ENABLED": 1
+    },
+    "loader_detected": 9,
+    "loader_detected_rate": 0.0083,
+    "loader_detected_ci95": [
+     0.0044,
+     0.0157
+    ],
+    "accepted_silently": 1072,
+    "paired_with_oracle": 1081,
+    "oracle_only": 0,
+    "loader_only": 9,
+    "both": 0,
+    "neither": 1072,
+    "mcnemar_exact_p": 0.00390625
+   },
+   "dropcall": {
+    "mutants": 1105,
+    "not_livepatch": 0,
+    "livepatch": 1105,
+    "outcomes": {
+     "LOADED_ENABLED": 1026,
+     "LOAD_FAIL": 74,
+     "CRASH": 5
+    },
+    "loader_detected": 79,
+    "loader_detected_rate": 0.0715,
+    "loader_detected_ci95": [
+     0.0577,
+     0.0882
+    ],
+    "accepted_silently": 1026,
+    "paired_with_oracle": 1105,
+    "oracle_only": 1026,
+    "loader_only": 0,
+    "both": 79,
+    "neither": 0,
+    "mcnemar_exact_p": 2.781342323134e-309
+   },
+   "redirect": {
+    "mutants": 1187,
+    "not_livepatch": 0,
+    "livepatch": 1187,
+    "outcomes": {
+     "LOAD_FAIL": 158,
+     "LOADED_ENABLED": 662,
+     "CRASH": 309,
+     "NOT_ENABLED": 57,
+     "TIMEOUT": 1
+    },
+    "loader_detected": 525,
+    "loader_detected_rate": 0.4423,
+    "loader_detected_ci95": [
+     0.4143,
+     0.4707
+    ],
+    "accepted_silently": 662,
+    "paired_with_oracle": 1187,
+    "oracle_only": 661,
+    "loader_only": 0,
+    "both": 525,
+    "neither": 1,
+    "mcnemar_exact_p": 2.0902722826084166e-199
+   },
+   "swap": {
+    "mutants": 1088,
+    "not_livepatch": 0,
+    "livepatch": 1088,
+    "outcomes": {
+     "LOADED_ENABLED": 972,
+     "LOAD_FAIL": 93,
+     "CRASH": 20,
+     "TIMEOUT": 3
+    },
+    "loader_detected": 116,
+    "loader_detected_rate": 0.1066,
+    "loader_detected_ci95": [
+     0.0896,
+     0.1264
+    ],
+    "accepted_silently": 972,
+    "paired_with_oracle": 1088,
+    "oracle_only": 972,
+    "loader_only": 0,
+    "both": 116,
+    "neither": 0,
+    "mcnemar_exact_p": 5.010420900022432e-293
+   },
+   "sympos": {
+    "mutants": 29,
+    "not_livepatch": 0,
+    "livepatch": 29,
+    "outcomes": {
+     "LOADED_ENABLED": 29
+    },
+    "loader_detected": 0,
+    "loader_detected_rate": 0.0,
+    "loader_detected_ci95": [
+     0,
+     0.117
+    ],
+    "accepted_silently": 29,
+    "paired_with_oracle": 29,
+    "oracle_only": 29,
+    "loader_only": 0,
+    "both": 0,
+    "neither": 0,
+    "mcnemar_exact_p": 3.725290298461914e-09
+   },
+   "_all": {
+    "livepatch": 5231,
+    "loader_detected": 737,
+    "loader_detected_rate": 0.1409,
+    "loader_detected_ci95": [
+     0.1317,
+     0.1506
+    ],
+    "oracle_only": 3418,
+    "loader_only": 9
+   }
+  }
+ },
+ "excluded_parent_not_accepted": {
+  "addend": 30,
+  "constant": 30,
+  "dropcall": 30,
+  "redirect": 30,
+  "swap": 30,
+  "sympos": 3
+ },
+ "bad_parents": [
+  "6.1/CVE-2026-64435",
+  "6.12/CVE-2026-64435",
+  "6.6/CVE-2026-64435"
+ ]
+}

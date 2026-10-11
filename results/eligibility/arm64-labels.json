@@ -1,0 +1,161 @@
+{
+ "rows": [
+  {
+   "id": "B4:6.17-aws-arm64:samples/livepatch/livepatch-callbacks-demo.c",
+   "source": "samples/livepatch/livepatch-callbacks-demo.c",
+   "SHADOW": 0,
+   "CALLBACKS": 1,
+   "REPLACE": 0,
+   "STATES": 0,
+   "conditional": "",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:samples/livepatch/livepatch-sample.c",
+   "source": "samples/livepatch/livepatch-sample.c",
+   "SHADOW": 0,
+   "CALLBACKS": 0,
+   "REPLACE": 0,
+   "STATES": 0,
+   "conditional": "",
+   "class": "PASSES_PRE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:samples/livepatch/livepatch-shadow-fix1.c",
+   "source": "samples/livepatch/livepatch-shadow-fix1.c",
+   "SHADOW": 1,
+   "CALLBACKS": 0,
+   "REPLACE": 0,
+   "STATES": 0,
+   "conditional": "",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:samples/livepatch/livepatch-shadow-fix2.c",
+   "source": "samples/livepatch/livepatch-shadow-fix2.c",
+   "SHADOW": 1,
+   "CALLBACKS": 0,
+   "REPLACE": 0,
+   "STATES": 0,
+   "conditional": "",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_atomic_replace.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_atomic_replace.c",
+   "SHADOW": 0,
+   "CALLBACKS": 0,
+   "REPLACE": 1,
+   "STATES": 0,
+   "conditional": "param:replace",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo.c",
+   "SHADOW": 0,
+   "CALLBACKS": 1,
+   "REPLACE": 0,
+   "STATES": 0,
+   "conditional": "",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c",
+   "SHADOW": 0,
+   "CALLBACKS": 1,
+   "REPLACE": 1,
+   "STATES": 0,
+   "conditional": "param:replace",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_livepatch.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_livepatch.c",
+   "SHADOW": 0,
+   "CALLBACKS": 0,
+   "REPLACE": 0,
+   "STATES": 0,
+   "conditional": "",
+   "class": "PASSES_PRE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_state.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_state.c",
+   "SHADOW": 0,
+   "CALLBACKS": 1,
+   "REPLACE": 1,
+   "STATES": 1,
+   "conditional": "",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_state2.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_state2.c",
+   "SHADOW": 0,
+   "CALLBACKS": 1,
+   "REPLACE": 1,
+   "STATES": 1,
+   "conditional": "",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_state3.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_state3.c",
+   "SHADOW": 0,
+   "CALLBACKS": 1,
+   "REPLACE": 1,
+   "STATES": 1,
+   "conditional": "",
+   "class": "OUT_OF_SCOPE"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_syscall.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_syscall.c",
+   "SHADOW": 0,
+   "CALLBACKS": 0,
+   "REPLACE": 0,
+   "STATES": 0,
+   "conditional": "",
+   "class": "PASSES_PRE"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "B4:6.17-aws-arm64:samples/livepatch/livepatch-callbacks-busymod.c",
+   "source": "samples/livepatch/livepatch-callbacks-busymod.c",
+   "excluded": "target module (no klp_enable_patch, no MODULE_INFO(livepatch))"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:samples/livepatch/livepatch-callbacks-mod.c",
+   "source": "samples/livepatch/livepatch-callbacks-mod.c",
+   "excluded": "target module (no klp_enable_patch, no MODULE_INFO(livepatch))"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:samples/livepatch/livepatch-shadow-mod.c",
+   "source": "samples/livepatch/livepatch-shadow-mod.c",
+   "excluded": "target module (no klp_enable_patch, no MODULE_INFO(livepatch))"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_busy.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_busy.c",
+   "excluded": "target module (no klp_enable_patch, no MODULE_INFO(livepatch))"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_mod.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_mod.c",
+   "excluded": "target module (no klp_enable_patch, no MODULE_INFO(livepatch))"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_kprobe.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_kprobe.c",
+   "excluded": "target module (no klp_enable_patch, no MODULE_INFO(livepatch))"
+  },
+  {
+   "id": "B4:6.17-aws-arm64:tools/testing/selftests/livepatch/test_modules/test_klp_shadow_vars.c",
+   "source": "tools/testing/selftests/livepatch/test_modules/test_klp_shadow_vars.c",
+   "excluded": "target module (no klp_enable_patch, no MODULE_INFO(livepatch))"
+  }
+ ]
+}

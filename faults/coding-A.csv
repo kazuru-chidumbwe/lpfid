@@ -1,0 +1,207 @@
+commit,defect,symptom,class,arch,evidence
+9e388c2,yes,build-fail,other,ppc64le,ld: final link failed: bad value
+035562b,no,,,any,lookup falls through to a slow search; no failure
+6571f2a,yes,build-fail,scope,any,incorrectly pull in the entire __bug_table; modpost errors
+b3b28df,yes,build-fail,data,any,incorrectly correlate unrelated UBSAN metadata; the build aborts
+f392b59,yes,enable-crash,data,loongarch,"absolute addresses become invalid, causing kernel panics"
+c955ec2,yes,enable-crash,data,loongarch,references to external globals trigger kernel panics
+50ebd49,yes,build-fail,other,any,build error on non-LoongArch architectures
+df75656,yes,unclear,binding,any,dynamic debug unique id with LLVM not compared
+2c1a7c0,yes,build-fail,other,any,fix building of photon live patch
+96d6f1b,yes,build-fail,other,ppc64le,kpatch-build fails ... unexpected instruction
+8f29263,yes,unclear,data,arm64,fixes the data-read-mostly unit test on aarch64
+4c9cf03,yes,build-fail,other,any,Fedora download source code fail
+0f0294a,yes,unclear,binding,any,"STB_LOCAL is a bind attribute, not a type attribute"
+9ea87f8,yes,build-fail,other,any,kpatch-build fails ... final link failed
+9d1ddec,yes,enable-crash,binding,s390,kernel attempts to execute an invalid pointer after the module is unloaded
+c608faf,yes,silent,binding,any,sympos ... readelf -s order differs from kallsyms order
+2523367,yes,build-fail,other,any,missing include for musl
+846db25,yes,unclear,data,any,hardcoded prefix size; padding can vary
+c799fde,no,,,any,shellcheck complaints
+828b557,no,,,any,cleanup complains: permission denied
+77d9346,yes,unclear,other,any,unusable <NULL> + <src version> version string pair
+711ee6d,yes,build-fail,other,any,readelf: vmlinux: Error: No such file
+63cc79c,yes,build-fail,other,any,bad array subscript syntax errors
+671fe2c,yes,build-fail,other,any,missed parameter of verify_patch_files
+fb22714,yes,unclear,other,any,undefined behavior in list_foreach_entry
+629b5ac,yes,load-fail,other,any,linked patch module would report the wrong version
+042cde0,no,,,any,make check shellcheck
+87ad967,no,,,s390,initializer spacing
+901445a,yes,unclear,binding,any,__UNIQUE_ID() symbols not properly correlated
+fe45029,yes,unclear,binding,any,KBUILD_MODNAME for OOT modules
+07433e9,yes,build-fail,other,any,resulting in build errors
+a1171b1,yes,build-fail,other,any,missing section symbol: erroring out
+c6d0b54,yes,unclear,binding,any,symtab parsing with newer readelf
+52863da,yes,unclear,other,s390,fails the unit tests on an s390 host
+f0e3da3,yes,unclear,data,any,string extraction is broken for non-section symbols
+79f45d1,no,,,any,happened to work by accident; no failure described
+c2e73c2,no,,,any,no failure described
+a6920b9,no,,,s390,preparation for s390
+4d8c810,yes,unclear,binding,any,locals_match() checks the wrong symbol's type
+9ee9f7a,no,,,any,missing allocation checks; no failure described
+89a871f,yes,build-fail,other,any,oot-module builds
+ef0ce97,yes,build-fail,other,ppc64le,segmentation fault
+81f9ca4,yes,unclear,data,any,relocation check misses referenced symbols not at the section start
+fa5a95c,no,,,any,error message text
+f9d2ec1,yes,unclear,other,any,kernel_is_rhel() is broken for z-stream kernels
+1b5a17f,yes,unclear,scope,any,expects .cold functions to be suffixed by an id
+4cc2f06,yes,build-fail,other,any,Failed to parse base BTF
+e25450f,yes,build-fail,other,any,pahole segfaults and fails the build
+aea2cb9,yes,unclear,scope,any,__dyndbg section inclusion after rename
+fde1a75,yes,build-fail,other,ppc64le,build failure with GCC 10
+c1caee1,yes,unclear,scope,any,ignored functions missing the ftrace hook not discarded
+4e0db55,yes,build-fail,other,any,Module.symvers format changed
+37e950a,no,,,any,-Wconversion warnings
+ea9e708,no,,,any,-Wconversion warnings
+f67c2eb,no,,,any,-Wconversion warnings
+5f68db2,no,,,any,-Wconversion warnings
+f5f5479,yes,silent,data,x86_64,ZERO_PAGE(0) returns a wrong value in any function touched by the patch
+19baa5b,yes,unclear,scope,any,debug section inclusion order
+2499eb2,yes,build-fail,other,ppc64le,unsupported reference to special section on a real world patch
+aabdf9c,yes,build-fail,other,any,throwing off find_parent_obj()
+2975775,yes,build-fail,eligibility,any,dynamic debug static keys rejected
+5665d06,no,,,any,comment
+79728dd,no,,,any,covscan checks; no failure described
+f0d071d,no,,,any,covscan check; no failure described
+e8f7f2d,yes,enable-crash,data,ppc64le,panic: Unable to handle kernel paging request
+7b367a4,yes,unclear,other,any,dynamic debug variable name changed
+bb444c2,yes,unclear,eligibility,ppc64le,changes referring to *_fixup sections are unsupported
+09a5686,no,,,ppc64le,new special section support
+a2fb871,yes,unclear,data,ppc64le,wrong size of __lwsync_fixup group
+f8213c8,yes,unclear,binding,ppc64le,inaccurate lookup table getting constructed
+23c232d,yes,build-fail,other,any,Segmentation fault
+3bfc857,yes,unclear,other,any,unexpected elf classes
+b6e19c7,yes,unclear,other,any,conditions not updated for changed section names
+7513db3,no,,,any,memory leak
+08a353b,no,,,any,memory leak
+8e3ffbc,no,,,any,memory leak
+206db25,no,,,any,memory leak
+3998784,yes,build-fail,other,any,kpatch-build failed with a NULL pointer dereference
+f7cfe25,yes,unclear,binding,any,checking a wrong field for SECTION
+0215587,no,,,ppc64le,could run longer than needed
+932e037,yes,build-fail,other,any,makes kpatch-build work on Ubuntu 18.04
+0655ca5,no,,,any,clean_cache deletes the wrong file
+4d1ee7f,yes,unclear,other,any,RHEL-ALT version detection
+865a9e2,no,,,any,shellcheck warnings
+fda7c87,yes,unclear,other,any,none of the special structs detected
+8927b57,yes,build-fail,other,any,unreconcilable difference
+a424179,no,,,ppc64le,install error
+1638c64,no,,,any,sign-compare warnings
+e2e7d2c,yes,unclear,other,any,utsrelease.h not updated correctly
+4591c07,yes,build-fail,other,any,error on any negative addend
+ff8b251,yes,unclear,binding,ppc64le,static local variable correlation basically broken
+b811940,yes,unclear,binding,any,discarded symbol handling
+2991e62,yes,build-fail,other,ppc64le,compile error with GCC 7
+5782a97,yes,load-fail,other,any,module built with a wrong vermagic
+7b4efd1,yes,silent,data,ppc64le,addend for switch labels incorrect; call executed TOC setup code
+757bc71,no,,,any,debug modes
+7770c18,yes,load-fail,other,any,checks for undefined references never fail
+f0518ef,yes,unclear,data,ppc64le,bundling assumption no longer accurate; adjust the addend
+862327d,no,,,any,indentation
+b6ba60f,no,,,any,clean rule
+c2dc383,yes,unclear,data,x86_64,memcpy past the end of the section
+c0105ea,no,,,any,module prefix
+ec98604,yes,build-fail,other,any,ERROR: no changed objects found
+3578e9a,yes,build-fail,other,any,dies with can't find special struct alt_instr size
+9a123ec,no,,,any,error message text
+9d6e1ef,no,,,any,style
+2b39f7d,yes,unclear,other,any,.eh_frame sections not treated as debug sections
+f2b205b,no,,,any,typo
+3b2c372,no,,,any,marks an option unsupported; no failure described
+b0f5ded,no,,,any,comments
+a3108de,yes,build-fail,other,any,null dereference
+d3d8a60,no,,,any,debug output
+8f237b1,yes,build-fail,other,any,makes possible to build patches for debug kernels
+1fc364e,yes,build-fail,other,x86_64,confuses create-diff-object
+5f5fd13,yes,build-fail,other,any,tree-wide rebuild
+1330b4a,yes,build-fail,other,any,link will fail
+13d6101,yes,unclear,data,x86_64,relas might point to the wrong fixup entry
+6b03bc8,yes,unclear,other,any,WARN*_ONCE detection on newer kernels
+f4686ee,yes,build-fail,other,any,CONFIG_DEBUG_KERNEL needed to retrieve SPECIAL_VARS
+6a76da9,yes,build-fail,other,any,fails if Module.symvers is not found
+02d3c19,yes,unclear,binding,any,uncorrelation logic is incomplete
+707435e,no,,,any,revert; no failure described
+7b48c4c,no,,,any,revert; no failure described
+5737028,yes,build-fail,other,any,binary patches cannot be built
+9143e88,yes,build-fail,other,any,two parent matches
+9fedd0d,yes,build-fail,other,any,gcc version string format
+b8bc7c2,no,,,any,directory leak
+ad65817,yes,build-fail,other,any,can't find special struct size
+2722978,yes,unclear,other,any,typo .rela.kpatch.patches
+0f55624,yes,silent,scope,any,this change of data should be found and report error; we won't find this change
+5875032,yes,build-fail,other,any,kpatch-build was failing on centos7
+6b446cb,yes,unclear,data,any,potential overflow for rela type
+a41ce8d,no,,,any,memory leak
+1831030,yes,build-fail,other,any,source package not downloaded
+fca1891,no,,,any,review comment
+ea819a1,yes,unclear,other,any,WARN detection misses outliers
+128bc9f,no,,,any,review comments
+027e2b3,no,,,any,review comment
+c705c76,no,,,any,refactor
+2a29d87,no,,,any,review comment
+12e77ba,no,,,any,usage formatting
+a209408,no,,,any,review fixes
+18d9e4d,yes,unclear,other,any,overwriting a user specified path
+33cd945,yes,build-fail,other,x86_64,can't find jump instruction in .fixup section
+d254d3d,no,,,any,review comment
+0da57e8,yes,unclear,binding,any,mangled function strcmp matches the wrong function
+db91697,yes,build-fail,other,any,seg fault in the test suite
+3d9a140,no,,,any,no failure described
+02fcfa5,no,,,any,rename
+f466a60,yes,unclear,other,any,use-after-free
+7dfad2f,yes,unclear,data,any,corrupting the dynrelas rela section
+7b4ee86,yes,build-fail,other,any,cp: cannot stat
+e1e694d,no,,,any,review fixups
+191e389,yes,unclear,other,any,bad Module.symvers path
+5321b21,no,,,any,review comments
+bdb44e7,no,,,any,logging
+4fefa66,yes,build-fail,other,any,seg fault
+5893a28,yes,build-fail,other,any,gcc version check on ubuntu
+d4e4d14,no,,,any,review comments
+d341e32,yes,unclear,other,any,SUBLEVEL in the Makefile
+537f68b,yes,unclear,scope,any,symbol's entire bundle not included
+d947201,no,,,any,verbosity
+36c98e3,no,,,any,review comment
+3e4aa95,no,,,any,review comment
+eccc3eb,no,,,any,debug option
+2e14094,yes,unclear,other,any,getopt typo for --target
+9d016ad,no,,,any,review comments
+34cc258,yes,load-fail,binding,any,patch module will fail to load due to the reference to an undefined symbol
+32b452a,no,,,any,new debuginfo support
+e0416a3,yes,load-fail,binding,any,kpatch load fails: unable to find module vmlinux_3
+566ee5f,yes,unclear,binding,any,falsely matched
+e782399,no,,,any,debug option
+6be51b0,no,,,any,review comments
+401680a,yes,enable-crash,eligibility,any,panic in jump_label_del_module()
+00e9dc3,yes,unclear,data,x86_64,addend relative to the next instruction
+698cc1c,no,,,x86_64,new special section support
+b1131bf,yes,unclear,binding,any,symbol table entry refers to a local section index
+e89f6fa,yes,unclear,other,any,missing in getopt arguments
+a5d986e,no,,,any,review fixups
+46a7a0b,no,,,any,redundant check
+2022ed1,yes,build-fail,other,any,weird ld errors
+170c8b1,no,,,any,review comments
+b49bfac,yes,unclear,binding,any,symbols still referencing their old non-included section
+2b92531,yes,unclear,other,any,list corruption
+e1177e3,no,,,any,review comments
+207c237,no,,,any,review comments
+20c7882,no,,,any,debug message
+e444b2c,yes,unclear,data,x86_64,offset field of .rela.smp_locks not updated
+f3f39c0,yes,unclear,eligibility,any,activeness safety check when unpatching checks the wrong function
+47d4109,no,,,any,review comments
+7cfcce1,no,,,any,new bug table support
+cfd1ce3,no,,,any,logfile
+6626db1,no,,,any,debug message
+2b4afa4,no,,,any,debug option
+026362f,yes,unclear,other,any,conditional in find_section_by_index()
+d4363e0,yes,build-fail,other,any,SCRIPTDIR not set under bash -x
+840a1b3,no,,,any,debug symbols
+e8fb5b1,no,,,any,comment
+6550dd7,no,,,any,debug option
+159214a,no,,,any,printf formats
+693426b,no,,,any,warnings
+f6efd53,no,,,any,refactor
+5352d8b,no,,,any,build caching
+052f2d8,yes,build-fail,other,any,patch kmod build fails: can't find kpatch.h
+d8cdaa7,yes,build-fail,other,any,strip: command not found
+f4791d0,no,,,any,error message

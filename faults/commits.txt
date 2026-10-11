@@ -1,0 +1,1891 @@
+=== 9e388c2
+9e388c2 2026-09-08
+create-diff-object: include __ftr_alt_* when regenerating __ftr_fixup
+When a changed ppc64le function is referenced by a kept __ftr_fixup
+group, create-diff-object must also include the corresponding
+__ftr_alt_* section data.  kpatch_regenerate_special_section() currently
+only sets rela->sym->include = 1, which does not migrate STT_SECTION
+companions and leaves UND relocs in .rela__ftr_fixup:
+  ld: final link failed: bad value
+Call kpatch_include_symbol() instead, matching the similar
+.altinstr_replacement fix in 13b00146715c ("kpatch-build: ensure that
+.altinstr_replacement section is included").
+Also exempt __ftr_fixup -> __ftr_alt_* relocations from the out-of-range
+relocation check.  Those addends are linker inputs for fixup-entry
+offsets, not pointers into the alt section.
+Closes: 1522 ("ppc64le __ftr_fixup / __ftr_alt_97 sections causing bad final link")
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+=== 035562b
+035562b 2026-08-19
+kpatch-build: fix find_parent_obj KVM shortcut for all arches
+The find_parent_obj() shortcut for virt/kvm files hardcoded arch/x86/kvm,
+which only worked when targeting x86. On other architectures the parent
+object lookup for KVM files would fail, falling through to a deep (and
+slow) search.
+Instead of adding per-arch if blocks, consolidate the TARGET_ARCH ->
+kernel source arch mapping into the existing helper, renaming it to
+kernel_src_arch() and extending it to cover all kpatch-supported
+architectures (x86, arm64, powerpc, s390, loongarch). The shortcut then
+simplifies to:
+  find_parent_obj_in_dir "$file" "arch/$(kernel_src_arch "$TARGET_ARCH")/kvm"
+This also fixes a latent issue in the old helper, which only mapped
+aarch64 -> arm64 and passed x86_64/ppc64le/s390x/loongarch64 through
+unchanged (kernel "make ARCH=" expects the source arch name).
+Fixes: #1519
+ 1 file changed, 16 insertions(+), 10 deletions(-)
+=== 6571f2a
+6571f2a 2026-02-11
+create-diff-object: handle .rela__bug_table to avoid pulling in entire __bug_table
+When building shadow-pid.patch on a debug kernel, it generates
+__bug_table, which contains an array of struct bug_entries.
+create-diff-object identifies that .text.kernel_clone has changed and it
+includes .rela.text.kernel_clone rela section. Then later, it includes
+all symbols (in kpatch_include_symbols()) associated with it, which ends
+up including __bug_table and its rela section .rela__bug_table. Then,
+all the function symbols associated with .rela__bug_table is included
+irrespective of whether it's section is included or not.
+The problem occurs since WARN() has been converted to a static call,
+which passes a reference to its bug table entry (in __bug_table) to the
+static call. That direct reference from a function to a special section
+is new, and that's causing create-diff-object to incorrectly pull in the
+entire __bug_table. (As mentioned by Josh)
+It leads to the following modpost errors with
+shadow-pid.patch:
+kernel/fork.o: changed function: kernel_clone
+ 1 file changed, 73 insertions(+), 1 deletion(-)
+=== b3b28df
+b3b28df 2025-11-17
+create-diff-object: fix Clang UBSAN diff failure by ignoring unnamed data
+This fixes a diff failure when generating livepatches for objects
+compiled with Clang and UBSAN (Undefined Behavior Sanitizer).
+When UBSAN is enabled, Clang heavily utilizes `.data..L__unnamed_XX`
+sections to store type descriptors and source location metadata.
+kpatch-build currently fails to handle these sections, resulting in
+errors like:
+  fsnotify.o: changed section .data..L__unnamed_1 not selected for inclusion
+  ERROR: fsnotify.o: 1 unsupported section change(s)
+  create-diff-object: unreconcilable difference
+The numeric suffix (e.g., `_1`) in these section names is an unstable
+internal counter. If the patch modifies the code, these indices often
+shift, causing `create-diff-object` to incorrectly correlate unrelated
+UBSAN metadata between the original and patched objects. Since kpatch
+cannot support changes to existing data sections, the build aborts.
+Fix this by treating `.data..L__unnamed_` sections as unstable and
+uncorrelatable.
+ 2 files changed, 23 insertions(+), 1 deletion(-)
+=== f392b59
+f392b59 2026-01-04
+kpatch/LoongArch: fix kernel panic with -fPIC for same-compilation-unit symbol references
+Add architecture-specific -fPIC compiler flag for LoongArch64 to prevent
+kernel panics when applying livepatches containing references to symbols
+defined in the same compilation unit.
+Root cause:
+In the kpatch workflow, when a function is livepatched, it's extracted
+from the original object file and compiled into a separate kernel module.
+When the patched function references symbols defined in the same compilation
+unit (like 'uts_sem' in kernel/sys.c), these references break if not
+compiled as position-independent code.
+On LoongArch64, without -fPIC, references to same-compilation-unit symbols
+use absolute addressing that assumes fixed memory locations. When the
+function is relocated into the livepatch module, these absolute addresses
+become invalid, causing kernel panics.
+Example failure case:
+- SYSCALL_DEFINE1(newuname) references the same-compilation-unit symbol 'uts_sem'
+- When kpatch extracts this function into a module, the reference to
+ 1 file changed, 1 insertion(+)
+=== c955ec2
+c955ec2 2026-01-04
+kpatch/LoongArch: disable direct-extern-access for livepatches to fix kernel panic
+On LoongArch systems, livepatch modules containing references to EXTERNAL
+global variables trigger kernel panics when the core kernel is built with
+-mdirect-extern-access optimization.
+Root cause:
+The -mdirect-extern-access optimization replaces GOT-based external symbol
+access with direct addressing for improved performance. However, this breaks
+the kernel module loading mechanism which relies on GOT entries for proper
+relocation of EXTERNAL symbol references. Direct access to global variables
+from livepatch modules causes invalid memory accesses and kernel panics.
+Solution:
+For LoongArch kpatch builds, conditionally disable direct-extern-access
+by adding:
+- -mno-direct-extern-access for GCC builds
+- -fno-direct-access-external-data for Clang builds
+See also kernel commit 38b10b269d04540aee05c34a059dcf304cfce0a8
+(LoongArch: Tweak CFLAGS for Clang compatibility) which said "This is actually
+ 1 file changed, 32 insertions(+), 2 deletions(-)
+=== 50ebd49
+50ebd49 2026-01-04
+kpatch/LoongArch: fix build error on non-LoongArch architectures
+Added conditional compilation to prevent 'R_LARCH_64' and 'EM_LOONGARCH'
+from being referenced on x86 and other non-LoongArch architectures. This
+ensures the code works across different architectures without errors.
+ 1 file changed, 5 insertions(+)
+=== df75656
+df75656 2025-10-09
+CDO: Handle dynamic debug UNIQUE_ID with LLVM
+With LLVM, dynamic debug unique id looks like:
+    <func_name>.__UNIQUE_ID_ddebug<number>.
+Use __kpatch_unique_id_strcmp to compare them.
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+=== 2c1a7c0
+2c1a7c0 2025-07-03
+Fix building of photon live patch from kernel source RPM
+ 1 file changed, 24 insertions(+), 40 deletions(-)
+=== 96d6f1b
+96d6f1b 2025-09-05
+kpatch-build: fix ppc64le trampoline handling after BPF changes
+Starting from linux commit eec37961a56a (powerpc64/ftrace: Move
+ftrace sequence out of line) the kpatch-build fails
+	Extracting new and modified ELF sections
+	create-diff-object: ERROR: fs/proc/cmdline.o: kpatch_create_ftrace_callsite_sections: 3860: cmdline_proc_show: unexpected instruction in patch section of function
+	fs/proc/cmdline.o: changed function: cmdline_proc_show
+	doing "deep find" for parent object
+	ERROR: invalid ancestor arch/powerpc/tools/vmlinux.arch.o for arch/powerpc/tools/vmlinux.arch.o. Check /root/.kpatch/build.log for more details.
+Moving the ftrace stubs out-of-line modified the prologue on ppc64le
+and it now uses a single nop instead of two.
+Update the nop check in create-diff-object.c accordingly.
+Also add vmlinux.arch.o to the list of objects excluded from
+instrumentation, since it only contains the out-of-line ftrace stubs
+for vmlinux.
+The module loader will create any necessary (livepatch) module
+ftrace stubs, so we don't care about modifications to this file.
+Closes: #1470 ("cs-10: ppc64le builds fail")
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+=== 8f29263
+8f29263 2022-09-07
+create-diff-object: Fix mapping symbol handling on aarch64
+It seems mapping symbols in aarch64 elf has section size of 0.
+So, exclude it in section symbol replacing code just like
+kpatch_correlate_symbols().
+This fixes the data-read-mostly unit test on aarch64.
+ 1 file changed, 3 insertions(+)
+=== 4c9cf03
+4c9cf03 2025-05-27
+Fix the Fedora download source code fail
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 0f0294a
+0f0294a 2025-05-23
+lookup: fix local bind check
+STB_LOCAL is a bind attribute, not a type attribute.
+Just fix it.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 9ea87f8
+9ea87f8 2025-04-09
+create-diff-object: Fix ordering of __patchable_function_entries
+Old linkers don't support mixing ordered and unordered sections. This
+was fixed in binutils, see discussion in [1]. But without this fix,
+kpatch-build fails with an error like:
+| ld.bfd: __patchable_function_entries has both ordered
+| [`__patchable_function_entries' in /builddir/.kpatch/tmp/patch/output.o]
+| and unordered [`__patchable_function_entries' in
+| /builddir/.kpatch/tmp/patch/patch-hook.o] sections
+| ld.bfd: final link failed: bad value
+Fix this by only setting SHF_LINK_ORDER in the output object if the
+patched object also has this flag set.
+ 3 files changed, 25 insertions(+), 15 deletions(-)
+=== 9d1ddec
+9d1ddec 2025-03-07
+create-diff-object: Fix function pointer rela on s390
+Typically, symbols within the same object file can be referenced
+directly for better performance. However, when the patched code stores a
+function pointer (R_390_GOTENT and rela symbol type is STT_FUNC), using
+a dynrela is a safer approach. This ensures that if the function is used
+as a asynchronous callback, the kernel does not attempt to execute an
+invalid pointer after the module is unloaded. Instead, with a dynrela,
+the kernel will invoke the original function, preventing potential
+crashes.
+Test program: Test if the original function ptr address is printed
+during patch load / unload.
+https://github.com/iii-i/linux/commit/0f400db024fb3faaeb2bc39f114ea5805ad8c963
+Patched code (function ptr rela):
+void *patchme(void) { printk(KERN_NOTICE "patched\n"); return patchme; }
+   0:   c0 04 00 00 00 00       jgnop   0 <patchme>
+   6:   eb ef f0 88 00 24       stmg    %r14,%r15,136(%r15)
+   c:   c4 28 00 00 00 00       lgrl    %r2,c <patchme+0xc>
+ 1 file changed, 24 insertions(+), 8 deletions(-)
+=== c608faf
+c608faf 2025-02-24
+Fix sympos for gcc-14
+When building a livepatch, we assume symbols from "readelf -s" is the
+same as the order observed in kallsyms. We calculate sympos of a symbol
+based on this order (readelf -s). However, with gcc-14, "readelf -s"
+may present the symbols in a different order. For example:
+With gcc 13:
+32951: ffff8000802edf20   172 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+33497: ffff8000802fb798   236 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+47034: ffff80008044b250   172 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+51466: ffff8000804be260   236 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+51483: ffff8000804bf6a8   172 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+52287: ffff8000804cb098   172 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+54066: ffff800080518e38   172 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+58217: ffff800080575bb0   172 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+72912: ffff8000806c5dc0   172 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+73719: ffff8000806eccd0   172 FUNC    LOCAL  DEFAULT    2 zero_user_segments.constprop.0
+With gcc 14:
+ 1 file changed, 19 insertions(+), 7 deletions(-)
+=== 2523367
+2523367 2025-01-21
+kpatch-build: add missing include for musl
+ 1 file changed, 1 insertion(+)
+=== 846db25
+846db25 2024-12-11
+use dynamic prefix offset instead of hardcoding
+In commit [1], kpatch added support for function padding,
+and CONFIG_CFI_CLANG, which hardcoded a value of 16 for
+the prefix size.
+In some cases, the padding around __cfi prefixed functions can
+vary. For example, in Photon OS 5.0, the __cfi prefix
+size is modified in a patch for the gcc RAP plugin [2].
+Since we have read the prefix size anyways, we can use it
+instead of hardcoding.
+Ref:
+1. https://github.com/dynup/kpatch/commit/3e54c63b175b68cf48654c119e62bda398d0c018
+2. https://github.com/vmware/photon/blob/5.0/SPECS/linux/secure/gcc-rap-plugin-with-kcfi.patch
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+=== c799fde
+c799fde 2024-10-09
+tree: fix latest shellcheck complaints
+Fix the following:
+  In kpatch/kpatch line 358:
+                                  break
+                                  ^-- SC2317 (info): Command appears to be unreachable. Check usage (or ignore if invoked indirectly).
+  In kpatch-build/kpatch-build line 1424:
+                  "$TOOLSDIR"/create-diff-object $CDO_FLAGS "orig/$i" "patched/$i" "$KOBJFILE_NAME" \
+                                                 ^--------^ SC2086 (info): Double quote to prevent globbing and word splitting.
+  In kpatch-build/kpatch-build line 1494:
+      MAKEVARS[$idx]=${MAKEVARS[$idx]/${KPATCH_CC_PREFIX}/}
+               ^--^ SC2004 (style): $/${} is unnecessary on arithmetic variables.
+  In kpatch-build/kpatch-build line 1510:
+          "$TOOLSDIR"/create-klp-module $extra_flags "$TEMPDIR/patch/tmp.ko" "$TEMPDIR/patch/$MODNAME.ko" 2>&1 | logger 1
+                                        ^----------^ SC2086 (info): Double quote to prevent globbing and word splitting.
+  In test/integration/lib.sh line 119:
+                  tdnf install -y linux-$flavor-debuginfo
+                                        ^-----^ SC2086 (info): Double quote to prevent globbing and word splitting.
+ 3 files changed, 6 insertions(+), 7 deletions(-)
+=== 828b557
+828b557 2024-07-12
+Fix cleanup when kpatch is installed in read-only location
+On NixOS files are installed with mode 444 (read-only). This causes
+directories in $TEMPDIR to be read-only as well, because they are
+created by:
+cp -LR "$DATADIR/patch" "$TEMPDIR" || die
+which preserves the mode of the directory. We could do
+--no-preserve=mode, but this will make people with non-coreutils cp
+unhappy. Instead just chmod the files after copying.
+If this patch is not applied, cleanup complains like this:
+rm: cannot remove '/home/julian/.kpatch/tmp/patch/kpatch.h': Permission denied
+rm: cannot remove '/home/julian/.kpatch/tmp/patch/Makefile': Permission denied
+rm: cannot remove '/home/julian/.kpatch/tmp/patch/kpatch-macros.h': Permission denied
+...
+ 1 file changed, 3 insertions(+)
+=== 77d9346
+77d9346 2024-06-06
+kpatch-build: fix setlocalversion for pre-v6.3 kernels
+Commit 629b5acf3dab ("kpatch-build: Fix setlocalversion issue with 6.3
+kernel") fixed VERMAGIC_STRING between kpatch original/patched kernel
+builds by creating a temporary scripts/setlocalversion script.	This was
+accomplished by saving the output from `make kernelversion` into a
+KERNELVERSION environment variable and running the (original)
+scripts/setlocalversion to gather a "vX.Y" + "<src version>" pair of
+strings.
+Unfortunately pre-v6.3 scripts/setlocalversion does not use the
+KERNELVERSION environment variable, so the same efforts results in an
+unusable "<NULL>" + "<src version>" version string pair.
+Restore the original `scripts/setlocalversion --save-scmversion`
+invocation for source trees that (still) support the --save-scmversion
+option.
+Fixes: 629b5acf3dab ("kpatch-build: Fix setlocalversion issue with 6.3 kernel")
+ 1 file changed, 16 insertions(+), 9 deletions(-)
+=== 711ee6d
+711ee6d 2024-06-06
+kpatch-build: fix USERSRCDIR builds
+Commit 69e71f8dcc6f ("kpatch-build: cleanup kernel file backup/restore")
+consolidated a bunch of kernel-tree copy and restoring.  As part of that
+effort, when kpatch-build is invoked with a -s|--sourcedir USERSRCDIR
+value the vmlinux file is now saved to "$TEMPDIR/kernel-backup/" and not
+simply "$TEMPDIR/".  This results in kpatch-build confusion like:
+  readelf: /home/jolawren/.kpatch/tmp/vmlinux: Error: No such file
+Update the VMLINUX reassignment in this case to point to the new path.
+Fixes: 69e71f8dcc6f ("kpatch-build: cleanup kernel file backup/restore")
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 63cc79c
+63cc79c 2024-06-06
+kpatch-build: fix DISTRO check when specifying USERSRCDIR
+When kpatch-build is invoked with a -s|--sourcedir USERSRCDIR value,
+kpatch-build doesn't source the /etc/os-release file as it can't assume
+that the user-specified kernel source config matches any particular
+distribution.  Subsequent is_supported_{rpm,deb}_distro() function calls
+will result in ugly syntax errors like:
+  kpatch-build: line 697: SUPPORTED_RPM_DISTROS: bad array subscript
+  kpatch-build: line 692: SUPPORTED_DEB_DISTROS: bad array subscript
+Enhance the is_supported_{rpm,deb}_distro() functions to check that a
+non-NULL distribution string argument exists before indexing the
+SUPPORTED_{RPM,DEB}_DISTROS associative arrays.
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== 671fe2c
+671fe2c 2023-08-28
+kpatch-build: fix missed parameter of verify_patch_files
+Verify_patch_files() use `lsdiff` to get patches' path and verify
+they are supported. To be consistent with apply_patches() which
+using `patch -p1`, `lsdiff` should use '--strip=1' paremeter.
+Close: #1357
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== fb22714
+fb22714 2023-08-09
+Fix undefined behavior problem when using list_foreach_entry
+This upstream list.h offsetof implementation rely on undefined behavior implementation. Using __builtin_offsetof to fix this problem.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 629b5ac
+629b5ac 2023-03-13
+kpatch-build: Fix setlocalversion issue with 6.3 kernel
+The kernel has a VERMAGIC_STRING, e.g. "6.2.0".  The module loader uses
+that string to ensure that all loaded modules' version strings match the
+kernel's.
+If the kernel source is in a git tree, and if there are uncommitted
+changes, the version string will have a '+' or "-dirty" appended to it,
+like "6.1.0+" or "6.2.0-dirty".  This dirty tree detection is done by
+the setlocalversion script.
+This affects kpatch-build in a few ways.  When it builds the original
+kernel, in some cases there are uncommitted changes to the makefiles.
+When it builds the patched kernel, there are additional uncommitted
+changes due to the .patch file being applied.
+We want to avoid the VERMAGIC_STRING changing between builds.  Otherwise
+it would cause problems:
+  - object code which uses that string would change unnecessarily,
+    causing a false positive change detected by create-diff-object
+  - the linked patch module would report the wrong version, resulting in
+ 1 file changed, 21 insertions(+), 8 deletions(-)
+=== 042cde0
+042cde0 2022-11-30
+kpatch-build: fix "make check"
+For some reason the github version of 'make check' just started
+complaining about these:
+shellcheck kpatch/kpatch kpatch-build/kpatch-build kpatch-build/kpatch-cc
+In kpatch-build/kpatch-build line 455:
+	while [[ "${filedir#$common/}" = "$filedir" ]]; do
+                            ^-----^ SC2295 (info): Expansions inside ${..} need to be quoted separately, otherwise they match as patterns.
+Did you mean:
+	while [[ "${filedir#"$common"/}" = "$filedir" ]]; do
+In kpatch-build/kpatch-build line 460:
+	result="${result}${filedir#$common/}"
+                                   ^-----^ SC2295 (info): Expansions inside ${..} need to be quoted separately, otherwise they match as patterns.
+Did you mean:
+	result="${result}${filedir#"$common"/}"
+In kpatch-build/kpatch-cc line 26:
+			relobj=${obj##$KPATCH_GCC_SRCDIR/}
+                                      ^----------------^ SC2295 (info): Expansions inside ${..} need to be quoted separately, otherwise they match as patterns.
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+=== 87ad967
+87ad967 2022-11-21
+create-diff-object: fix s390 special_section initializer spacing
+Align the s390 special_section initializers to improve readability and
+for consistency with the rest.
+ 1 file changed, 15 insertions(+), 15 deletions(-)
+=== 901445a
+901445a 2022-11-21
+create-diff-object: fix __UNIQUE_ID() variable correlation
+kpatch_mangled_strcmp() only ignores the digits after the period, but in
+the case of __UNIQUE_ID(), the symbol names have random digits before
+the period due to the use of `__COUNTER__`.  Make sure such symbols are
+properly correlated.
+ 1 file changed, 32 insertions(+)
+=== fe45029
+fe45029 2022-08-05
+kpatch-build: fix KBUILD_MODNAME for OOT modules
+For consistency with what the kernel does (and what we already do for
+in-tree modules), if the file has any dashes ('-'), replace them with
+underscores in the objname (aka KBUILD_MODNAME).
+Fixes #1286.
+ 1 file changed, 1 insertion(+)
+=== 07433e9
+07433e9 2022-07-27
+kpatch-cc: fix stripping of source tree prefix
+To support building out-of-tree kernel modules, the source tree prefix
+is attempted to be stripped from change object file paths to make them
+relative. However, if the path is already relative, the change can
+strip a substring instead, resulting in build errors.
+Ensure just the prefix is stripped instead of any substring.
+Fixes: #1282
+Fixes: 51a8fad34ff3 ("Add support for building out-of-tree modules")
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== a1171b1
+a1171b1 2022-06-06
+create-diff-object: Create missing section symbol
+Recent toolchains only create a section symbol if it's needed, i.e. if
+there's a reference to it.  If there's a missing section symbol in
+kpatch_create_intermediate_sections(), create one instead of erroring
+out.
+Fixes #1272.
+ 2 files changed, 17 insertions(+), 6 deletions(-)
+=== c6d0b54
+c6d0b54 2022-03-29
+lookup: fix symtab parsing
+symtab_read tries to skip '.dynsym' symbol table and only
+read '.symtab' symbol table. Newer readelf from binutils 2.37
+now adds section names (see the diff):
+--- vmlinux.symtab      2022-02-18 02:10:06.691220932 +0100
++++ vmlinux.symtab.new  2022-02-18 01:16:06.161210458 +0100
+Symbol table '.dynsym' contains 1541 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND
+     1: 0000000000100000     0 SECTION LOCAL  DEFAULT    1 .text
+     2: 00000000017a3ac0     4 OBJECT  GLOBAL DEFAULT   19 sclp_console_pages
+Symbol table '.symtab' contains 159980 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+-    41: 0000000001a93600     0 SECTION LOCAL  DEFAULT   41
+-    42: 0000000001a9c678     0 SECTION LOCAL  DEFAULT   42
+...
++    41: 0000000001a93600     0 SECTION LOCAL  DEFAULT   41 .dynsym
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+=== 52863da
+52863da 2022-05-12
+create-diff-object: fix endianness in kpatch_no_sibling_calls_ppc64le()
+Otherwise it fails the unit tests on an s390 host.
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+=== f0e3da3
+f0e3da3 2022-05-11
+create-diff-object: fix string extraction
+The current string extraction is broken for non-section symbols.  Fix
+that.
+ 1 file changed, 15 insertions(+), 11 deletions(-)
+=== 79f45d1
+79f45d1 2022-05-11
+create-diff-object: fix kpatch_replace_sections_syms() for non-text
+It doesn't make sense to disassemble a data section.  That just happened
+to work by accident.  PC-relative offsets only need adjusting when
+associated with an instruction.
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+=== c2e73c2
+c2e73c2 2022-04-06
+create-diff-object: ensure debug sections don't use dynrelas
+Debug sections are intended to refer to the patch module only.  And in
+fact, any debug section references to non-included symbols are stripped
+in kpatch_include_debug_sections().  So there's no need for
+need_dynrela() to even think about it.
+ 1 file changed, 3 insertions(+)
+=== a6920b9
+a6920b9 2022-04-01
+create-diff-object: fix endian issues in insn_is_load_immediate()
+With s390 support coming, we'll soon have to worry about endianness
+issues when doing cross-compiles and cross-arch unit tests.  Make
+insn_is_load_immediate() endian-agnostic.
+ 1 file changed, 13 insertions(+), 9 deletions(-)
+=== 4d8c810
+4d8c810 2022-02-03
+Fix sym->type condition in locals_match()
+Second loop in locals_match() checks table_sym->type instead of
+sym->type.
+Fixes: 7207687 Switch to per-file lookup table pointers.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 9ee9f7a
+9ee9f7a 2022-01-13
+kpatch-build: Add missing allocation failure checks
+In kpatch-build, there are a number of places where a dynamic allocation
+is performed, but the allocation is not checked for a failure. The
+common pattern in kpatch-build is to check whether the returned pointer
+is NULL, and if so, invoke the ERROR() macro to print a message and
+abort the program.
+kpatch_create_mcount_sections(), CORRELATE_ELEMENT(), and
+create_klp_arch_sections() all had dynamic allocations without failure
+checks. This diff adjusts those callsites to properly check for a failed
+allocation, and ERROR() accordingly.
+ 2 files changed, 6 insertions(+)
+=== 89a871f
+89a871f 2021-12-16
+Fix oot-module builds
+KPATCH_BUILD is used in kpatch-module build to specify the kernel
+directory and thus needs to be set to KERNEL_SRCDIR, not BUILDDIR.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== ef0ce97
+ef0ce97 2021-08-22
+create-diff-object: fix use after free in kpatch-check-relocations()
+Building data-read-mostly.patch on rhel-9.0-beta for ppc64le leads to a
+segmentation fault:
+    Program received signal SIGSEGV, Segmentation fault.
+    kpatch_check_relocations (kelf=0x10040490) at create-diff-object.c:2571
+    2571                                    sdata = rela->sym->sec->data;
+    (gdb) bt
+    (gdb) p rela->sym->sec->data
+    Cannot access memory at address 0x160000007e
+Valgrind narrows the problem down to invalid reads through rela->sym in
+kpatch-check-relocations().
+The culprits are kpatch_create_intermediate_sections(), which marks
+symbols referenced by rela sections that are now dynrelas to be
+stripped, and kpatch_strip_unneeded_syms(), which removes and frees
+them.
+The problem with the symbol stripping is that multiple relas may
+reference the same ELF symbol.  If any remaining relocation references a
+ 3 files changed, 15 insertions(+), 7 deletions(-)
+=== 81f9ca4
+81f9ca4 2021-04-13
+create-diff-object: Fix out-of-range relocation check
+Improve the relocation check for the case where the referenced symbol
+isn't at the beginning of the section.
+Note that the check still isn't perfect, as many relocations have a
+negative addend.  But it's still a lot better than nothing.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== fa5a95c
+fa5a95c 2021-04-13
+create-diff-object: Fix out-of-range relocation error message
+Showing sec+addend isn't valid, show sym+addend instead.
+Before:
+  create-diff-object: ERROR: sys.o: kpatch_check_relocations: 2550: out-of-range relocation .rodata.__kpatch_do_sys_uname.str1.1+139 in .rela.text.__kpatch_do_sys_uname
+After:
+  create-diff-object: ERROR: sys.o: kpatch_check_relocations: 2550: out-of-range relocation .LC7+139 in .rela.text.__kpatch_do_sys_uname
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== f9d2ec1
+f9d2ec1 2021-03-18
+kpatch-build: fix kernel_is_rhel() for rhel-8 z-stream kernels
+During review of PR #1163, Josh reported:
+  When trying this out, I think I found that kernel_is_rhel() is broken
+  for z-stream kernels. It expects a "." after the el8, like ".el8.",
+  but [rhel-8] z-stream kernels have the minor version appended to the
+  major version like ".el8_3".
+Tweak the regex pattern in kernel_is_rhel() to account for such z-stream
+kernel versions.  At the same time, add .el9 to the regex in preparation
+of rhel-9.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 1b5a17f
+1b5a17f 2021-03-04
+create-build-diff: support for .cold functions with no id suffix
+create-build-diff expects .cold functions to be suffixed by an id, which
+is not always the case. Drop the trailing '.' when searching for cold
+functions.
+Fixes: #1160
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== 4cc2f06
+4cc2f06 2021-02-26
+kpatch-build: workaround pahole and CONFIG_DEBUG_INFO_BTF_MODULES
+With CONFIG_DEBUG_INFO_BTF_MODULES, the kernel build process adds BTF to
+each in-tree modules. However, this process is broken with kpatch, with
+error message like:
+  Failed to parse base BTF 'vmlinux': -4001
+Unblock build with CONFIG_DEBUG_INFO_BTF_MODULES with similar workaround
+as the one for CONFIG_DEBUG_INFO_BTF.
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+=== e25450f
+e25450f 2021-02-02
+kpatch-build: workaround pahole and CONFIG_DEBUG_INFO_BTF
+kpatch-build requires gcc flags -f[function|data]-sections when building
+original and patched targets.  These flags result in an ELF binary with
+many sections, potentially requiring special extended ELF header
+processing to parse correctly.
+CONFIG_DEBUG_INFO_BTF invokes pahole as part of the kernel build and
+unfortunately pahole cannot iterate through more than 65535 section
+headers.  As result, the pahole program segfaults and fails the build
+like so:
+  ...
+    BTF     .btf.vmlinux.bin.o
+  scripts/link-vmlinux.sh: line 127: 718345 Segmentation fault      (core dumped) LLVM_OBJCOPY=${OBJCOPY} ${PAHOLE} -J ${1}
+  objcopy: --change-section-vma .BTF=0x0000000000000000 never used
+  objcopy: --change-section-lma .BTF=0x0000000000000000 never used
+  objcopy: error: the input file '.btf.vmlinux.bin' is empty
+  Failed to generate BTF for vmlinux
+  Try to disable CONFIG_DEBUG_INFO_BTF
+ 1 file changed, 11 insertions(+)
+=== aea2cb9
+aea2cb9 2020-10-27
+create-diff-object: fix __dyndbg section inclusion
+__verbose has renamed to __dyndbg since Linux 5.9, commit e5ebffe18e5a
+("dyndbg: rename __verbose section to __dyndbg")
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+=== fde1a75
+fde1a75 2020-06-09
+gcc-plugin: Fix build failure with GCC 10
+Building on Fedora 32 with GCC 10.1.1, triggers build failures:
+In file included from gcc-plugins/ppc64le-plugin.c:1:
+gcc-plugins/gcc-common.h:37:10: fatal error: params.h: No such file or directory
+   37 | #include "params.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+In file included from gcc-plugins/ppc64le-plugin.c:1:
+gcc-plugins/gcc-common.h:841:13: error: redefinition of ‘static bool is_a_helper<T>::test(U*) [with U = const gimple; T = const ggoto*]’
+  841 | inline bool is_a_helper<const ggoto *>::test(const_gimple gs)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from gcc-plugins/gcc-common.h:124,
+                 from gcc-plugins/ppc64le-plugin.c:1:
+/usr/lib/gcc/ppc64le-redhat-linux/10/plugin/include/gimple.h:1037:1:
+note: ‘static bool is_a_helper<T>::test(U*) [with U = const gimple; T = const ggoto*]’ previously declared here
+ 1037 | is_a_helper <const ggoto *>::test (const gimple *gs)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1 file changed, 4 insertions(+)
+=== c1caee1
+c1caee1 2020-04-22
+create-diff-object: Ignore kpatch_ignored functions/sections missing ftrace hook
+Some theoretically unchanged functions can have undesired changes if the
+compiler decides to perform inlining in a different way (e.g. because of
+newly added references). In such a case, it can be useful to discard
+changes to functions that don't actually need modification.
+Sadly, this currently doesn't work for functions missing the ftrace hook
+(e.g. notrace code) as presence of the hook is checked before
+identifying elements to ignore.
+Look for functions/sections to ignore earlier.
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+=== 4e0db55
+4e0db55 2020-04-14
+lookup: fix Module.symvers reading for newer kernels
+With Linux commit 5190044c2965 ("modpost: move the namespace field in
+Module.symvers last"), the format of Module.symvers has changed yet
+again.
+Use a completely different approach for figuring out the format.  If a
+column has "vmlinux", assume that's the "Module" column.
+ 1 file changed, 35 insertions(+), 29 deletions(-)
+=== 37e950a
+37e950a 2020-02-11
+create-kpatch-module: Fix -Wconversion warnings
+Fix warnings reported by -Wconversion,-Wno-sign-conversion CFLAGS.
+ 2 files changed, 19 insertions(+), 19 deletions(-)
+=== ea9e708
+ea9e708 2020-02-09
+create-klp-module: Fix -Wconversion warnings
+Fix warnings reported by -Wconversion,-Wno-sign-conversion flags.
+ 1 file changed, 23 insertions(+), 21 deletions(-)
+=== f67c2eb
+f67c2eb 2020-02-11
+kpatch-elf: Fix -Wconversion warnings
+Fix warnings reported by -Wconversion,-Wno-sign-conversion flags.
+ 1 file changed, 16 insertions(+), 13 deletions(-)
+=== 5f68db2
+5f68db2 2020-02-07
+create-diff-object: Fix -Wconversion warnings
+Fix warnings reported by -Wconversion,-Wno-sign-conversion flags.
+ 2 files changed, 37 insertions(+), 35 deletions(-)
+=== f5f5479
+f5f5479 2020-01-17
+create-diff-object: fix relocations used for ZERO_PAGE(0)
+On x86_64, GCC generates the following instruction to compute
+'empty_zero_page - __START_KERNEL_map' (__phys_addr_nodebug(), used in
+the implementation of ZERO_PAGE()):
+    48 ba 00 00 00 00 00 00 00 00   movabs $0x0,%rdx
+          R_X86_64_64  empty_zero_page+0x80000000
+__START_KERNEL_map is 0xffffffff80000000.
+However, the relocation addend becomes wrong in the patch module:
+    48 ba 00 00 00 00 00 00 00 00   movabs $0x0,%rdx
+          R_X86_64_64  empty_zero_page-0x80000000
+Note the sign of the addend.
+As a result, ZERO_PAGE(0) returns a wrong value in any function touched
+by the patch, which may lead to memory corruption and difficult-to-debug
+kernel crashes.
+The cause is that 'struct rela' uses 'int' for the addend, which is not
+enough to store such values. r_addend from Elf64_Rela is int64_t
+(Elf64_Sxword) for that.
+ 3 files changed, 12 insertions(+), 12 deletions(-)
+=== 19baa5b
+19baa5b 2018-03-22
+create-diff-object: process debug sections last
+Process the debug sections only after all the other inclusion logic has
+finished, since it makes decisions based on what else has already been
+included.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 2499eb2
+2499eb2 2019-09-16
+Revert "create-diff-object: Check for *_fixup sections changes"
+We are seeing the following error on a real world patch:
+  unsupported reference to special section __barrier_nospec_fixup
+The kpatch commit bb444c2168d1 ("create-diff-object: Check for *_fixup
+sections changes") created this error because we were trying to be
+future proof.  However, that may have been overly paranoid, as it
+doesn't seem likely that those fixup sections will need relocations
+anytime soon, because the replacement instructions are manually
+generated in code.  And anyway that "future proof" commit breaks the
+present.
+Also we decided at LPC that we are going to remove .klp.arch sections
+anyway, so once that happens we will be fully future-proof anyway.
+This reverts commit bb444c2168d17ba7a67a2329ea7ed6f9b37b45cc.
+Fixes #974.
+ 1 file changed, 9 deletions(-)
+=== aabdf9c
+aabdf9c 2019-09-15
+Fix parent matches for kernels newer than 5.3
+Somewhere starting with 5.3 (probably with 9f69a496f100 "kbuild: split
+out *.mod out of {single,multi}-used-m rules", but that is not
+confirmed) .mod and correcponding .mod.cmd files started showing up
+during module builds throwing off kpatch-build's find_parent_obj() func.
+Filter out any files ending with .mod.cmd as they are definitely not the
+parent.
+ 1 file changed, 14 insertions(+), 6 deletions(-)
+=== 2975775
+2975775 2019-08-15
+create-diff-object: allow dynamic debug static keys
+While static keys (jump labels) are currently broken in livepatch, a
+broken dynamic debug static key is harmless since it just disables
+dynamically enabled debug printks in the patched code.
+Fixes: #1021
+ 2 files changed, 21 insertions(+), 6 deletions(-)
+=== 5665d06
+5665d06 2019-08-15
+create-diff-object: fix kpatch_replace_sections_syms() comment
+The existing comment is wrong.  It confusingly conflates the function's
+offset, which is 8 bytes from the beginning of the section, with the
+function's localentry offset which is 8 bytes from the beginning of the
+function.
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+=== 79728dd
+79728dd 2019-07-31
+kpatch-elf: add a couple mission section checks
+There were 2 insances where return value of find_section_by_name wasn't
+checked before dereference.
+Found by covscan, see issue #984 for full log.
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+=== f0d071d
+f0d071d 2019-07-31
+create-diff-object: check fixupsec in fixup_group_size()
+Make sure fixup section was found before dereferencing it.
+Found by covscan, see issue #984 for full log.
+ 1 file changed, 2 insertions(+)
+=== e8f7f2d
+e8f7f2d 2019-07-23
+create-diff-object/ppc64le: Fix replace_sections_syms() for bundled symbols
+With the following patch:
+diff --git a/net/sunrpc/xprtsock.c b/net/sunrpc/xprtsock.c
+index b60c9c7498dd..39a39ca89230 100644
+--- a/net/sunrpc/xprtsock.c
++++ b/net/sunrpc/xprtsock.c
+@@ -1594,6 +1594,8 @@ static void xs_tcp_state_change(struct sock *sk)
+ 	struct rpc_xprt *xprt;
+ 	struct sock_xprt *transport;
++	asm("nop");
++
+ 	read_lock_bh(&sk->sk_callback_lock);
+ 	if (!(xprt = xprt_from_sock(sk)))
+ 		goto out;
+I saw the following panic on a RHEL8 kernel:
+  Unable to handle kernel paging request for data at address 0xcc0080040
+  Faulting instruction address: 0xc000000000b1515c
+ 1 file changed, 9 insertions(+)
+=== 7b367a4
+7b367a4 2019-07-05
+create-diff-object: Support dynamic debug on newer kernels
+After Linux commit 47cdd64be483 ("dynamic_debug: refactor
+dynamic_pr_debug and friends"), the name of the static local variable
+used for dynamic printks is no longer "descriptor".
+Make the is_special_static() check broader such that it doesn't care
+about the variable name, and just whitelists any variable in the
+__verbose section.
+Fixes #990.
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+=== bb444c2
+bb444c2 2019-06-25
+create-diff-object: Check for *_fixup sections changes
+Currently we do not support changes to functions referring to any of the
+*_fixup sections on ppc64le. This patch introduces check for such
+changes during the patchability check, where we abort building the
+patch module.
+This patch implements the phase 1 fix of 3 phases discussed at
+https://github.com/dynup/kpatch/issues/974:
+"
+Phase 1 fix:
+For kernel versions which don't have livepatch-specific powerpc code
+(currently all kernel versions), kpatch-build needs to assert an error
+if it detects that one of the following sections refers to a patched
+function: __ftr_fixup, __mmu_ftr_fixup, __fw_ftr_fixup.
+"
+ 1 file changed, 9 insertions(+)
+=== 09a5686
+09a5686 2019-06-18
+create-diff-object: Add support for __spec_barrier_fixup
+Add support for __spec_barrier_fixup (barrier nospec fixup) special
+section on ppc64le.
+ 1 file changed, 9 insertions(+)
+=== a2fb871
+a2fb871 2019-06-18
+create-diff-object: Fix lwsync group size
+Fix the size of special group __lwsync_fixup on ppc64le.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== f8213c8
+f8213c8 2019-06-04
+lookup: Fix format string for symtab_read() on PPC64LE
+commit 767d9669bd13 ("kpatch-build: use readelf instead of eu-readelf")
+replaced eu-readelf with readelf for constructing symbol table.  The
+format of symbol table entries differs a little on Power when the symbol
+is a function with binding type LOCAL.  For example, consider:
+23: 0000000000000008    96 FUNC    LOCAL  DEFAULT [<localentry>: 8]    4 cmdline_proc_show
+An extra column preceding index of the symbol denoting symbol value to
+be local entry point offset of the function is printed, with the
+current sscanf format string in lookup::symtab_read the values will
+mismatch ending with in accurate lookup table getting constructed. This
+patch fixes it by introducing an Power specific format string for
+function symbols with bind type LOCAL.
+Fixes: 767d9669 ("kpatch-build: use readelf instead of eu-readelf")
+ 1 file changed, 19 insertions(+), 4 deletions(-)
+=== 23c232d
+23c232d 2019-06-03
+kpatch-elf: fix Segmentation fault when d_type not set properly
+kpatch-elf::create_section_pair would create new rela section, and the
+relasec->data->d_type is not set, which is a random value, and it will
+use in kpatch-elf::kpatch_write_output_elf
+	data->d_type = sec->data->d_type;
+which would cause Segmentation fault in kpatch_write_output_elf::elf_update.
+Program received signal SIGSEGV, Segmentation fault.
+(gdb) bt
+0  0x00007ffff7bcd8d2 in __elf64_updatefile at elf64_updatefile.c
+1  0x00007ffff7bc9bed in write_file at elf_update.c
+2  0x00007ffff7bc9f16 in elf_update at elf_update.c
+3  0x000000000040ca3d in kpatch_write_output_elf at kpatch-elf.c
+4  0x0000000000409a92 in main at create-diff-object.c
+ 1 file changed, 1 insertion(+)
+=== 3bfc857
+3bfc857 2019-05-12
+kpatch-elf: fix the unexpected elf classes
+kpatch-elf::kpatch_write_output_elf will call the gelf_getclass()
+to acquire the output elf's class. But the input parameter kelf->elf
+is NULL, the gelf_getclass(kelf->elf) will return ELFCLASSNONE, not
+the value we expect ELFCLASS32 or ELFCLASS64.
+the gelf_getclass function code:
+int
+gelf_getclass (Elf *elf)
+{
+  return elf == NULL || elf->kind != ELF_K_ELF ? ELFCLASSNONE : elf->class;
+}
+the gelf_newehdr fuction code:
+void *
+gelf_newehdr (Elf *elf, int class)
+{
+  return (class == ELFCLASS32
+          ? (void *) INTUSE(elf32_newehdr) (elf)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== b6e19c7
+b6e19c7 2019-05-09
+create-diff-object: fix the condition for the sections changed
+The create-diff-object.c create intermediate ".kpatch.relocations"
+sections instead of ".kpatch.dynrelas" sections, and add a new
+section ".rela.kpatch.symbols", so we should update the conditions
+in function kpatch_create_intermediate_sections for these changed.
+Fixes: 87643703a757 ("create-diff-object: create .kpatch.relocations and .kpatch.symbols sections")
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+=== 7513db3
+7513db3 2019-04-24
+fix memleak in the create-klp-module.c
+reason: The strdup() function returns a pointer to a new string
+	which is a duplicate of the string s.  Memory for the
+	new string is obtained with malloc, and can be freed
+	with free.
+	here, fix memleak by removing the strdup.
+ 1 file changed, 4 insertions(+), 12 deletions(-)
+=== 08a353b
+08a353b 2019-04-23
+lookup: Fix memleak in symtab_read()
+Fix memory leak in symtab_read(), by removing the duplicate strdup()
+of obj_syms.name.
+ 1 file changed, 1 deletion(-)
+=== 8e3ffbc
+8e3ffbc 2019-04-16
+create-diff-objject: fix memleak of the struct lookup_table
+reason: Firstly, in the function lookup_open use the malloc to
+	allocate some memory, but call the function lookup_close
+	to free the memory.
+	Secondly, table->obj_sym->name, table->exp_sym->name and
+	table->exp_sym->objname used the strdup, so them should
+	free also.
+	Thirdly, adjust the order of make_nodname, if not, it
+	will cause an exception when free(exp_sym->objname) in
+	lookup_close.
+ 2 files changed, 20 insertions(+), 8 deletions(-)
+=== 206db25
+206db25 2019-04-12
+kpatch-build: fix memleak in function kpatch_write_output_elf
+ 1 file changed, 3 insertions(+)
+=== 3998784
+3998784 2019-01-17
+Fix NULL pointer deref in main due to base_locals
+For fun I tried to create a livepatch of upstream patch
+ad211f3e94b314a910d4af03178a0b52a7d1ee0a for my kernel. This
+caused kpatch-build to fail with a NULL pointer derefence because
+base_locals was NULL (returned via kpatch_elf_locals(), which
+can return a NULL pointer). This patch fixes the SIGSEGV
+via a NULL check. The end result is a live patch is created
+and loaded.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== f7cfe25
+f7cfe25 2018-09-12
+symtab_read(): fix SECTION detection in symtab_read
+symtab_read has been checking a wrong field for "SECTION". Switch the
+field from "bind" to "type".
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== 0215587
+0215587 2018-09-11
+kpatch-build: ppc64le - fix a typo in find_special_section_data_ppc64le
+Nothing critical, but find_special_section_data_ppc64le() could run
+longer than needed: the exit condition was not met after all the values
+had been found.
+Fixes: 77f8fd09 "kpatch-build: ppc64le - Add special section support"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 932e037
+932e037 2018-07-25
+kpatch-build: Ubuntu signed/unsigned kernel image package fix
+In Ubuntu 18.04 LTS (but not in 16.04 LTS), the "linux" source package
+no longer builds the "linux-image-*" binary kernel image packages
+directly, but instead, it produces the "linux-image-unsigned-*" binary
+packages, and the "linux-signed" source package then produces the
+(signed) "linux-image-*" binary packages from the unsigned binaries.
+This means that querying the target kernel's linux-image-* package for
+its source package will yield a source package that is just a wrapper,
+and does not actually contain the kernel source code.
+Deal with this by removing the "-signed" substring from the kernel
+source package name if it is present.  This makes kpatch-build work
+on Ubuntu 18.04.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 0655ca5
+0655ca5 2018-07-17
+kpatch-build: fix clean_cache
+Commit d86c1113cc25 ("kpatch-build: less aggressive clean_cache()")
+broke clean_cache().  Instead of expanding the wildcard, it tries to
+delete a file named '*'.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 4d1ee7f
+4d1ee7f 2018-06-20
+kpatch-build: fix RHEL-ALT kernel version detection
+kpatch-build detects RHEL-ALT kernel support by looking for a ".el7a."
+substring in the kernel release string.  Look for that substring in the
+unchanged $ARCHVERSION instead of $KVER, which may not have the
+trailing '.' character that our regex expects.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 865a9e2
+865a9e2 2018-06-16
+kpatch-build: fix shellcheck warnings
+shellcheck 0.4.7 reported the following errors:
+    [  "$1" = "$(echo -e "$1\n$2" | sort -rV | head -n1)" ]
+                            ^-- SC1117: Backslash is literal in "\n". Prefer explicit escaping: "\\n".
+    grepname="$grepname\.o"
+                       ^-- SC1117: Backslash is literal in "\.". Prefer explicit escaping: "\\.".
+    grep "undefined reference" "$LOGFILE" | sed -r "s/^.*\`(.*)'$/\1/" \
+                                                                  ^-- SC1117: Backslash is literal in "\1". Prefer explicit escaping: "\\1".
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+=== fda7c87
+fda7c87 2018-06-15
+kpatch-build: fix find_special_section_data with blank AWK_OPTIONS
+If $AWK_OPTIONS are blank gawk would treat "" as a blank script
+resulting in none of the special struct being detected.
+Fixes: 1330dcc "create-diff-object: add ORC section support"
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+=== 8927b57
+8927b57 2018-05-29
+create-diff-object: ignore .cold.* suffixes in is_bundleable()
+While building a gcc-consprop patch from integration tests gcc8 would place a
+__timekeeping_inject_sleeptime.constprop.18.cold.27 symbol into
+.text.unlikely.__timekeeping_inject_sleeptime.constprop.18 section. Because
+section name doesn't have the '.cold.27' suffix this symbol fails
+is_bundleable() check while still being bundleable and later exits early in
+kpatch_rename_mangled_functions() without renaming the corresponding patched
+function. All of this results in a create-diff-object errror:
+  ERROR: timekeeping.o: symbol changed sections: __timekeeping_inject_sleeptime.constprop.18.cold.27
+  /home/asavkov/dev/kpatch/kpatch-build/create-diff-object: unreconcilable difference
+Fix by ignoring .cold.* name suffix in is_bundleable() for.text.unlikely
+sections.
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+=== a424179
+a424179 2018-04-19
+ppc64le: fix gcc-plugin installation
+Because $PLUGIN variable is a part of $TARGETS we are trying to install
+gcc-plugins twice which is treated as an error by install command:
+/usr/bin/install create-diff-object create-klp-module create-kpatch-module gcc-plugins/ppc64le-plugin.so kpatch-gcc gcc-plugins/ppc64le-plugin.so /usr/local/libexec/kpatch
+/usr/bin/install: will not overwrite just-created '/usr/local/libexec/kpatch/ppc64le-plugin.so' with 'gcc-plugins/ppc64le-plugin.so'
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 1638c64
+1638c64 2018-04-13
+Fix multiple sign-compare warnings
+  - convert section/symbol indexes and rela->offset to unsigned int as I
+    couldn't find any way for them to become negative.
+  - cast a number of rela->addend comparisons to int (assuming an 64bit
+    system this should be enough)
+  - a number of simple for-loop counter conversions to the type it
+    compares against
+ 5 files changed, 16 insertions(+), 15 deletions(-)
+=== e2e7d2c
+e2e7d2c 2018-04-12
+kpatch-build: fix Ubuntu kernel detection on successive retries
+If a patch failed a first time, kpatch-build is using the previous
+cache directory on subsequent builds. The UBUNTU_KERNEL=1 variable is
+not set in this case. Therefore, utsrelease.h is not updated correctly
+and the appropriate structures are not used. Just check if distro is
+Ubuntu and we didn't request our own specific directory.
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+=== 4591c07
+4591c07 2018-04-12
+Fix false-positives in kpatch_check_relocations
+Because of signedness difference kpatch_check_relocations() would trigger
+an error on any negative addend.
+Fix by casting Elf_Data->d_size from size_t to int.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== ff8b251
+ff8b251 2018-04-04
+create-diff-object: fix ppc64le static local variable correlation
+On ppc64le, the static local variable correlation doesn't take into
+account the .toc rela indirection for data references, meaning that it's
+basically broken in many cases.
+Fix it by making the code .toc-aware.
+Fixes #793.
+ 1 file changed, 24 insertions(+), 16 deletions(-)
+=== b811940
+b811940 2018-03-21
+lookup: fix discarded symbol handling for all kernel versions
+Fix discarded symbol handling for all kernel versions.
+Fixes #765.
+ 1 file changed, 16 insertions(+), 10 deletions(-)
+=== 2991e62
+2991e62 2018-03-16
+create-diff-object: Fix PPC64_LOCAL_ENTRY_OFFSET usage
+GCC 7.2.1 complains about the usage of the PPC64_LOCAL_ENTRY_OFFSET
+macro:
+  create-diff-object.c: In function ‘is_gcc6_localentry_bundled_sym’:
+  create-diff-object.c:119:83: error: ‘<<’ in boolean context, did you mean ‘<’ ? [-Werror=int-in-bool-context]
+            (((1 << (((other) & STO_PPC64_LOCAL_MASK) >> STO_PPC64_LOCAL_BIT)) >> 2) << 2)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+  create-diff-object.c:140:10: note: in expansion of macro ‘PPC64_LOCAL_ENTRY_OFFSET’
+    return (PPC64_LOCAL_ENTRY_OFFSET(sym->sym.st_other) &&
+          ^~~~~~~~~~~~~~~~~~~~~~~~
+Fix it by explicitly treating the macro as an integer instead of a bool.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 5782a97
+5782a97 2018-03-13
+Fix resulting module vermagic when source dir is a git tree
+Sometimes git doesn't see that the patches have been reverted, if that
+happens during ./scripts/setlocalversion call the resulting patch module
+is built with a wrong vermagic because the tree is still considered
+dirty.
+Fix by moving git update-index call into remove_patches function so that
+it is called every time the patches are reverted, not only on cleanup.
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+=== 7b4efd1
+7b4efd1 2018-03-06
+create-diff-object: ppc64le - Fix wrong addend value for switch labels
+Commit f0518ef58afc ("create-diff-object: fix ppc64le
+kpatch_replace_sections_syms() bundling assumption"), subtracted
+sym.st_value for all bundled symbols on ppc64le and GCC6+ irrespective
+of function or switch label.
+As a side effect the addend for switch labels were incorrect and call
+to local function executed TOC setup code. Fallback to the original
+behaviour of subtracting sym.st_value only for the dynrela.
+Example of wrong switch label:
+------------------------------
+0000000000000008 <register_netdevice>:
+...
+ 31c:   05 00 85 2b     cmplwi  cr7,r5,5
+ 320:   7c 02 9d 41     bgt     cr7,59c <register_netdevice+0x594>
+ 324:   00 00 e2 3c     addis   r7,r2,0
+                        324: R_PPC64_TOC16_HA   .toc+0x580
+ 328:   64 17 a5 78     rldicr  r5,r5,2,61
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+=== 757bc71
+757bc71 2017-11-16
+kpatch-build: Add additional debug modes
+By specifying -d, --debug multiple times, the following additional
+debug modes can be enabled:
+  -d -d:       Writes everything that is written to the logfile also to
+               stdout.
+  -d -d -d:    Same as '-d -d' plus sets 'xtrace' in kpatch-build.
+  -d -d -d -d: Same as '-d -d -d' plus sets 'xtrace' in kpatch-gcc.
+ 2 files changed, 17 insertions(+), 5 deletions(-)
+=== 7770c18
+7770c18 2017-11-09
+kpatch-build: Fix the logfile checks for 'undefined'
+The current checks never fail, because the first grep in the pipeline
+doesn't write anything to stdout.
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== f0518ef
+f0518ef 2017-11-08
+create-diff-object: fix ppc64le kpatch_replace_sections_syms() bundling assumption
+kpatch_replace_sections_syms() assumes that all bundled symbols start at
+section offset zero.  With ppc64le and GCC 6+, that assumption is no
+longer accurate.  When replacing a rela symbol section with its
+corresponding symbol, adjust the addend as necessary.
+Also, with this fix in place, the workaround in
+create_klp_relasecs_and_syms() can be removed.
+ 2 files changed, 8 insertions(+), 14 deletions(-)
+=== 862327d
+862327d 2017-11-08
+kpatch-build: Fix indentation
+Replace stray spaces with tabs, except in the usage output where tabs
+don't make much sense.
+ 2 files changed, 53 insertions(+), 52 deletions(-)
+=== b6ba60f
+b6ba60f 2017-11-07
+kpatch-build: Fix clean rule (remove insn/*.o)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== c2dc383
+c2dc383 2017-10-13
+create-diff-object: handle missing padding at end of special section
+The paravirt_patch_site struct has 12 bytes of data and 4 bytes of
+padding, for a total of 16 bytes.  However, when laying out the structs
+in the .parainstructions section, the vmlinux script only aligns before
+each struct's data, not after.  So the last entry doesn't have the
+4-byte padding, which breaks kpatch_regenerate_special_section()'s
+assumption of a 16-byte struct, resulting in a memcpy past the end of
+the section.
+Fixes #747.
+ 1 file changed, 13 insertions(+), 7 deletions(-)
+=== c0105ea
+c0105ea 2017-09-20
+kpatch-build: set default module prefix accordingly
+Use kpatch-<modname>.ko or livepatch-<modname>.ko depending on the type
+of module we're building.
+ 2 files changed, 32 insertions(+), 27 deletions(-)
+=== ec98604
+ec98604 2017-09-13
+kpatch: fix kpatch-build matching changed object bug
+When there is a ".." in the source object path, kpatch-gcc can't handle
+it correctly.  kpatch-gcc is called for objects which were recompiled
+and writes the changed objects to "changed_objs". But if the path of the
+input obj is something like:
+  arch/x86/kvm/../../../virt/kvm/.tmp_kvm_main.o
+then it will fall into the "*.*.o" branch of the kpatch-gcc case
+statement and kpatch-build will report "ERROR: no changed objects
+found."
+Use Joe's suggestion to revert d526805619de ("kpatch-gcc: update
+ignorelist to avoid foo/.lib_exports.o files") and instead add a
+"*/.lib_exports.o" pattern.
+Fixes #735.
+[ cleaned up changelog - jpoimboe@redhat.com ]
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+=== 3578e9a
+3578e9a 2017-08-16
+kpatch-build: check DEBUG_KERNEL to guard against missing debug information
+Without this option kpatch-build dies with "ERROR: can't find special
+struct alt_instr size.".
+DEBUG_KERNEL was most likely a typo.
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== 9a123ec
+9a123ec 2017-07-17
+kpatch-build: fix errors messages for missing files/dirs
+If you give kpatch-build a bad argument for the '-s' option, it shows
+the following error:
+  $ kpatch-build/kpatch-build -s foo
+  ERROR: source dir  not found.
+The supplied 'foo' argument isn't printed as intended.
+Also fix some other options which have a similar issue.
+ 1 file changed, 7 insertions(+), 11 deletions(-)
+=== 9d6e1ef
+9d6e1ef 2017-07-13
+fix style
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+=== 2b39f7d
+2b39f7d 2017-05-11
+elf: add .eh_frame* sections to debug section list
+SUSE-based kernels have a DWARF unwinder, so they build with the gcc
+'-fasynchronous-unwind-tables' flag, which adds .eh_frame and
+.eh_frame_hdr sections.  Treat those sections like the other debug
+sections.
+Fixes: #703
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+=== f2b205b
+f2b205b 2017-03-21
+kpatch-build: fix small typo
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 3b2c372
+3b2c372 2017-02-06
+kpatch-build: CONFIG_DEBUG_INFO_SPLIT is unsupported
+The CONFIG_DEBUG_INFO_SPLIT kernel .config option places debug
+information into separate .dwo files.  As no known distribution is
+currently shipping .dwo in their debuginfo packages, leave it as
+unsupported for now.
+ 1 file changed, 3 insertions(+)
+=== b0f5ded
+b0f5ded 2017-01-23
+kpatch-intermediate.h: fix comments
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+=== a3108de
+a3108de 2017-01-23
+kpatch-elf: fix null dereference when sym->sec is NULL
+Make sure sym->sec is not NULL before checking for its rela section
+(sym->sec->rela). This fixes a case where an object may have STT_FUNC
+symbols whose the sections (sym->sec) were not selected for inclusion (or
+are located in another object) and hence these symbols do not have sym->sec
+set. This corner case only recently popped up after reusing kpatch_elf_open()
+on objects that have been outputted by create-diff-object (and these
+objects only contain the necessary sections needed for the patch module).
+This will also automatically exclude livepatch symbols from the check,
+because they do not have sections associated with them (i.e., sym->sec is
+NULL). We do not have to check for fentry calls for klp (SHN_LIVEPATCH)
+symbols, because [1] they do not have sections associated with them, [2]
+they are not the target functions to be patched, and [3] they are
+technically just placeholder symbols for symbol resolution in livepatch.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== d3d8a60
+d3d8a60 2016-12-19
+kpatch-build: reduce the debug firehose
+When passing '-d' to kpatch-build, it prints out some useful information
+and keeps the related files around in ~/.kpatch/tmp.  However, it also
+passes '-d' to create-diff-object, which spits out way too much
+information, drowning out all the other useful messages printed by
+kpatch-build.
+In my experience, the create-diff-object debug info is overkill for
+debugging most issues, so disable it.  The flag can still be used when
+running create-diff-object manually.
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+=== 8f237b1
+8f237b1 2016-12-19
+kpatch-build: make patches for debug kernels too
+GCC with KASAN instrumentation creates section ".rodata" with some static strings (i.e. some of them go to ".rodata.str1.1" for release build).
+This change makes possible to build patch and check if it fixes issue found with KASAN, such as CVE-2016-9555.
+ 1 file changed, 1 insertion(+)
+=== 1fc364e
+1fc364e 2016-12-06
+kpatch-build: fix tree-wide rebuild on RHEL 7
+On RHEL 7 based kernels, copy_user_64.o misuses the .fixup section by
+placing a normal function in it.  That confuses create-diff-object.
+Work around it by just skipping the file altogether, which is fine to do
+because it's an assembly file which should never change anyway.
+Fixes #625.
+ 1 file changed, 6 insertions(+)
+=== 5f5fd13
+5f5fd13 2016-12-05
+kpatch-build: fix tree-wide rebuild
+For newer kernels, some new objects have been added to the 'head-y'
+build target.  These objects aren't directly traceable to vmlinux so
+they have to be added manually.
+Fixes #626.
+ 1 file changed, 2 insertions(+)
+=== 1330b4a
+1330b4a 2016-12-05
+kpatch-build: fix 'undefined reference to kpatch_shadow_*' errors
+When building the patched version of the kernel, vmlinux has to be
+linked with the '--warn-unresolved-symbols' linker flag.  Otherwise the
+link will fail if the patch uses kpatch-specific symbols like
+kpatch_shadow_alloc() and friends.
+As of upstream Linux commit b36fad65d61f ("kbuild: Initialize exported
+variables"), LDFLAGS_vmlinux= no longer works from the command line,
+resulting in '--warn-unresolved-symbols' no longer getting set.
+Instead we can use kpatch-gcc to pass the flag to the linker.
+Fixes #627.
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+=== 13d6101
+13d6101 2016-11-10
+create-diff-object: Update fixup offsets in .rela__ex_table
+When pruning entries from the fixup table, update the offsets in
+.rela__ex_table otherwise the relas might point to the wrong fixup entry
+or even out of the .fixup section.
+Fixes #615.
+ 1 file changed, 40 insertions(+)
+=== 6b03bc8
+6b03bc8 2016-07-13
+create-diff-object: fix WARN*_ONCE detection on newer kernels
+This fixes the detection of WARN_ON_ONCE, WARN_ONCE, and WARN_TAINT_ONCE
+on Linux 4.6 and newer.
+The signature for those macros changed with upstream Linux commit
+dfbf2897d004 ("bug: set warn variable before calling WARN()").
+Fixes #602.
+ 1 file changed, 15 insertions(+), 14 deletions(-)
+=== f4686ee
+f4686ee 2016-05-03
+kpatch-build: Add "CONFIG_DEBUG_KERNEL" kernel config checking
+While the officially supported distributions all have
+CONFIG_DEBUG_KERNEL enabled, this is not true for some other
+distributions.
+This option is necessary when kpatch-build retrieves the
+SPECIAL_VARS using readelf command.
+ 1 file changed, 2 insertions(+)
+=== 6a76da9
+6a76da9 2016-03-15
+kpatch-build: fix building of livepatch-based patches
+kpatch-build currently requires Module.symvers for the Kpatch core
+module unconditionally and fails if it is not found. This does not allow
+using kpatch-build to prepare livepatch-based patches.
+This patch fixes the problem.
+ 1 file changed, 24 insertions(+), 11 deletions(-)
+=== 02d3c19
+02d3c19 2015-11-18
+create-diff-object: static local uncorrelation/correlation fixes
+The uncorrelation logic is incomplete.  For bundled symbols, in addition
+to uncorrelating the sections, it should also uncorrelate the section
+symbols and any rela sections.
+Similarly the correlation logic needs to correlate section symbols.  (It
+already correlates rela sections.)
+ 1 file changed, 11 insertions(+)
+=== 707435e
+707435e 2015-11-18
+Revert "kpatch-build: fix gcc_version_check"
+This reverts commit 9fedd0d283c1adf2f0fb37e01d359dedd43f0ce0.
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+=== 7b48c4c
+7b48c4c 2015-11-18
+Revert "kpatch-build: fix gcc_version_check: both "GNU" and "GCC" are possible"
+This reverts commit 57370286678a368fff7ff53a6a99238e9165fc2c.
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== 5737028
+5737028 2015-11-17
+kpatch-build: fix gcc_version_check: both "GNU" and "GCC" are possible
+This fix is an addition to 9fedd0d283 "kpatch-build: fix
+gcc_version_check".
+On some systems, the GCC version stored in vmlinux may have the
+following format:
+  (GNU) 4.8.3 20140911 (Red Hat 4.8.3-9)
+while GCC returns
+  (GCC) 4.8.3 20140911 (Red Hat 4.8.3-9)
+As a result, binary patches cannot be built, although the compiler is
+the same.
+gcc_version_check() now takes this into account.
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== 9143e88
+9143e88 2015-11-13
+kpatch-build: fix find_parent_obj
+When find kobj, it should use 'cat changed_objs' to get the changed
+objects, in order to process the following object format:
+a/b/c/../../object.o. If using patched dir to get changed object,
+the object will be a/object.o, but it is a/b/c/../../object.o in
+*.cmd file.
+This patch also fix the find_parent_obj that change the format
+'a/b/c/../../object.o' to 'a/object.o' in deep find, otherwise
+it will fail with "two parent matches for *.o".
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+=== 9fedd0d
+9fedd0d 2015-11-13
+kpatch-build: fix gcc_version_check
+gcc version string format may be 'gcc (xxx xxx) x.x.x [xxx]'
+fix gcc_version_check to adapt to it.
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+=== b8bc7c2
+b8bc7c2 2015-11-03
+kpatch-build: fix tempsrc directory leak
+Also rename it to tmphome to more accurately describe its purpose.
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+=== ad65817
+ad65817 2015-11-03
+kpatch-build: fix searching for the sizes of special structures
+readelf -wi may output trailing spaces in the lines with section names
+('alt_instr', etc.). The regexps should take this into account,
+otherwise kpatch-build may fail with error:
+    "can't find special struct size"
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+=== 2722978
+2722978 2015-10-13
+kpatch-build: fix typo s/.rela.kpatch.patches/.rela.kpatch.funcs
+Fix the kpatch_create_dynamic_rela_sections:
+s/.rela.kpatch.patches/.rela.kpatch.funcs
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 0f55624
+0f55624 2015-09-25
+bugfix: correlate the rela sections of bundled static variables
+If a static variable is a pointer, it has rela section.
+Example:
+	static int *p = &a;
+changed to:
+	static int *p = &b;
+so its rela section has changed.
+Then this change of data should be found and report error.
+But if we don't correlate its rela section, we won't
+find this change.
+ 1 file changed, 5 insertions(+)
+=== 5875032
+5875032 2015-05-31
+Fix kpatch-build failure with srpm on centos
+kpatch-build was failing on centos7 with
+    mv: cannot stat '/home/vagrant/rpmbuild/BUILD/kernel-*/linux-3.10.0-229.el7.x86_64': No such file or directory
+in the error log. This was due to the actual directory being named
+linux-3.10.0-229.el7.centos.x86_64. This patch avoids this failure by
+adding a wildcard before the arch.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 6b446cb
+6b446cb 2014-12-31
+create-diff-object: fix a potential overflow for rela type
+rela.type should be unsigned int instead of unsighed char.
+/usr/include/gelf.h:#define GELF_R_TYPE(info)   ELF64_R_TYPE (info)
+/usr/include/elf.h:#define ELF64_R_TYPE(i)      ((i) & 0xffffffff)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== a41ce8d
+a41ce8d 2014-10-17
+Fix memory leak on dest buffer on early return path
+dest is allocated but not freed on an early return path
+where dest is not used
+ 1 file changed, 1 insertion(+)
+=== 1831030
+1831030 2014-10-17
+kpatch-build: fixup source package version construction
+Bash doesn't correctly format the version string which causes the source
+package to not be downloaded correctly.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== fca1891
+fca1891 2014-10-08
+fix review comment
+ 1 file changed, 8 insertions(+), 9 deletions(-)
+=== ea819a1
+ea819a1 2014-10-07
+warn detection fix
+The current WARN detection logic catches the majority of cases, but
+there are still a lot of outliers which it doesn't catch (thanks, gcc).
+I looked at a much larger sample of WARN calls and came up with a more
+generic algorithm.
+ 1 file changed, 26 insertions(+), 20 deletions(-)
+=== 128bc9f
+128bc9f 2014-10-07
+fix review comments
+- rela sections don't have secsyms
+- add some comments
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+=== 027e2b3
+027e2b3 2014-10-07
+fix review comment
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+=== c705c76
+c705c76 2014-10-06
+change special_static_prefix to is_special_static
+We no longer need to return the prefix, so change it to a boolean
+function.
+ 1 file changed, 15 insertions(+), 16 deletions(-)
+=== 2a29d87
+2a29d87 2014-10-06
+fix review comment
+ 1 file changed, 1 insertion(+)
+=== 12e77ba
+12e77ba 2014-10-01
+fix usage formatting
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+=== a209408
+a209408 2014-09-15
+code review fixes
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+=== 18d9e4d
+18d9e4d 2014-09-15
+fix regression in user-specified source RPM
+A recent commit 74316588e is unconditionally setting the SRCRPM path
+overwriting a user specified path.
+Only set SRCRPM if SRCRPM is not already set.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 33cd945
+33cd945 2014-09-14
+new .fixup group size algorithm
+The fixup_group_size() function assumes that all .fixup rela groups end
+with a jmpq instruction.  That assumption turns out to be false when you
+take into account the ____kvm_handle_fault_on_reboot() macro which is
+used by kvm.
+This is a new, more reliable method.  It turns out that each .fixup
+group is referenced by the __ex_table section.  The new algorithm goes
+through the __ex_table relas to figure out the size of each .fixup
+group.
+Also the .fixup section is now processed before __ex_table, because it
+needs to access the original __ex_table relas before the unused ones
+have been stripped.
+Fixes the following error:
+  ERROR: vmx.o: fixup_group_size: 1554: can't find jump instruction in .fixup section
+ 3 files changed, 89 insertions(+), 27 deletions(-)
+=== d254d3d
+d254d3d 2014-09-14
+fix review comments
+Use the wget -P option.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 0da57e8
+0da57e8 2014-09-10
+fix the mangled function strcmp
+Fix the mangled function strcmp so that it compares all of the string
+except for the numbered parts.  foo.isra.35 should match foo.isra.1, but
+not foo.isra.35.part.36.
+Fixes #352.
+ 2 files changed, 48 insertions(+), 22 deletions(-)
+=== db91697
+db91697 2014-09-09
+don't convert section references to syms for debug sections
+This fixes a seg fault in the test suite caused by a debug section
+referencing an un-included unbundled symbol (though its section was
+included).  The symbol was a __warned symbol and the section was
+.data.unlikely.
+For debug sections, there is no need to replace section references with
+symbols because we don't compare debug sections.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+=== 3d9a140
+3d9a140 2014-09-08
+oops, use sym->name, not sym->sec->rela->name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 02fcfa5
+02fcfa5 2014-09-03
+code review fixes
+Rename bundled1 to bundled and bundled2 to basebundled.
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+=== f466a60
+f466a60 2014-08-13
+fix use-after-free error
+Don't use rela after you just freed it!
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 7dfad2f
+7dfad2f 2014-08-13
+fix dynrela corruption in load/unload hooks
+In kpatch_create_dynamic_rela_sections() the dest field is filled in
+with either the function symbol or the section symbol that contains the
+function depending on whether or not the sym field of the base section
+is NULL or not (around line 2153).
+In the case of the hook functions, we strip the FUNC symbol to prevent
+it from being added to the kpatch.funcs section as a patched function.
+However we weren't unbundling the stripped symbol from the section.
+This resulted in the sym field pointing to the null symbol (index 0),
+corrupting the dynrelas rela section.
+Before:
+Relocation section [14] '.rela.kpatch.dynrelas' for section [13] '.kpatch.dynrelas' at offset 0x8b8 contains 6 entries:
+  Offset              Type            Value               Addend Name
+  000000000000000000  X86_64_64       000000000000000000      +9
+  0x0000000000000018  X86_64_64       000000000000000000      +8 .kpatch.strings
+  0x0000000000000020  X86_64_64       000000000000000000      +0 .kpatch.strings
+  0x0000000000000030  X86_64_64       000000000000000000      +9
+ 1 file changed, 1 insertion(+)
+=== 7b4ee86
+7b4ee86 2014-08-12
+kpatch-gcc: fix for .tmp_* objects on RHEL 7
+On RHEL 7 I see the following error when trying to patch meminfo.o:
+    cp: cannot stat ‘/home/user/.kpatch/obj/fs/proc/.tmp_meminfo.o’: No such file or directory
+It turns out that on RHEL 7, a given object foo.o is compiled as
+.tmp_foo.o before then being linked as foo.o.  I have no idea why.  The
+fix is to record .tmp_foo.o as foo.o in the changed_objs file.
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+=== e1e694d
+e1e694d 2014-08-11
+review fixups
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 191e389
+191e389 2014-08-07
+fix bad Module.symvers path
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 5321b21
+5321b21 2014-07-23
+fixup review comments
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== bdb44e7
+bdb44e7 2014-07-18
+fix logging in kpatch_verify_patchability()
+log_normal() already prints the objname; no need to do it again
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+=== 4fefa66
+4fefa66 2014-07-08
+create-diff-object: fix for unincluded sec->secsym
+When running kpatch-build with -d, I was getting a seg fault.  It was
+faulting in kpatch_dump_kelf() when trying to print sec->secsym->name
+for the .smp_locks section.  It turns out that the section was included
+but its section symbol wasn't included, so sec->secsym pointed to freed
+memory.
+ 1 file changed, 3 insertions(+)
+=== 5893a28
+5893a28 2014-07-02
+kpatch-build: fix gcc version check on ubuntu
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== d4e4d14
+d4e4d14 2014-07-01
+fixup review comments
+ 8 files changed, 76 insertions(+), 46 deletions(-)
+=== d341e32
+d341e32 2014-07-01
+kpatch-build: fix SUBLEVEL in the Makefile
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 537f68b
+537f68b 2014-06-26
+create-diff-object: fixup new function handling
+The original logic in the inclusion tree code worked under the
+assumption that it was the only code path marking symbols for inclusion.
+Therefore, if the symbol had been marked as included, it could be safely
+assumed that we also already called kpatch_include_symbol() on it.  With
+the special section handling marking symbols as included, however, this
+assumption is not valid.
+We should call kpatch_include_symbol() regardless of whether or not the
+symbol has already been marked as included or not in order to possible
+include the symbol's entire bundle.
+ 1 file changed, 3 insertions(+), 11 deletions(-)
+=== d947201
+d947201 2014-06-26
+create-diff-object: reduce verbosity in debug mode
+With the inclusion of the debug sections, the debug output is so verbose
+that it becomes less useful.
+This commit reduces the verbosity by skipping rela listings of debug
+sections.
+It includes a new helper function, is_debug_section(), to consolidate
+the logic for detecting debug sections.
+ 1 file changed, 26 insertions(+), 15 deletions(-)
+=== 36c98e3
+36c98e3 2014-06-20
+fix review comment
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+=== 3e4aa95
+3e4aa95 2014-06-19
+fix review comment
+ 1 file changed, 1 insertion(+)
+=== eccc3eb
+eccc3eb 2014-06-19
+kpatch-build: DEBUG for create-diff-object
+Add -d option to create-diff-object when DEBUG is set.  That way for
+weird kpatch-build issues we can just tell people to use the -d flag and
+then provide the build log.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+=== 2e14094
+2e14094 2014-06-18
+kpatch-build: fix getopt typo for --target
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 9d016ad
+9d016ad 2014-06-18
+fix review comments
+ 3 files changed, 9 insertions(+), 8 deletions(-)
+=== 34cc258
+34cc258 2014-06-18
+fix undefined symbols for future loaded modules
+When patching module A, if one of the new function's relas reference a
+symbol in module B, we currently just leave it as a normal rela.  But if
+module B hasn't been loaded yet, the patch module will fail to load due
+to the rela's reference to an undefined symbol.
+The fix is to convert these relas to dynrelas, which can be resolved
+later in the module notifier when A is loaded.
+Also added support for the R_X86_64_NONE relocation type, needed for
+dynrelas which reference __fentry__.
+ 5 files changed, 50 insertions(+), 22 deletions(-)
+=== 32b452a
+32b452a 2014-06-17
+add debuginfo support
+This commit adds basic debuginfo support.  It is "basic" in as much as
+it does not try to parse the DWARF data to figure out which parts
+pertain to the changed code.  It simply includes all .debug_ and
+.rela.debug_ section and strips out any rela entries that reference
+unchanged symbols.  This corrupts the debuginfo for unchanged symbols
+but since they are not going to be included anyway, there should be no
+way to reference that information.
+ 2 files changed, 28 insertions(+), 4 deletions(-)
+=== e0416a3
+e0416a3 2014-06-12
+kpatch-build: ubuntu fix for vmlinux_3 error
+kpatch load fails on Ubuntu with:
+  kpatch: unable to find module 'vmlinux_3'
+The root cause is that the vmlinux file on Ubuntu is named
+vmlinux-3.13.0-24-generic instead of just vmlinux.
+Let's just call it "vmlinux" in the objname field.
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+=== 566ee5f
+566ee5f 2014-06-04
+create-diff-object: .isra fix
+When renaming a foo.isra.1 function, there might also be a foo_bar
+function which would be falsely matched with the current strchr logic.
+Instead of matching the "foo" prefix, match "foo.isra".
+ 1 file changed, 2 insertions(+)
+=== e782399
+e782399 2014-06-04
+kpatch-build: show all bash commands with DEBUG option
+ 1 file changed, 1 insertion(+)
+=== 6be51b0
+6be51b0 2014-06-03
+fix review comments
+ 1 file changed, 14 insertions(+), 16 deletions(-)
+=== 401680a
+401680a 2014-05-30
+create-diff-object: tracepoint & jump label fixes
+The current approach of trying to include the tracepoint-related
+sections doesn't work at all.  The new tracepoints don't show up in
+"perf list".
+And also, with one patch (issue #219) I've seen a panic in
+jump_label_del_module().  I suspect it's because the kernel is confused
+by dynamic relocations' changing of the jump table after it was
+registered with the jump table code.
+I think the best approach for now is to just always exclude these
+sections.  It should be harmless, with the only consequence being that
+tracepoints and jump labels can't be enabled in patched functions (which
+is already the case with the current code anyway).
+Fixes #221.
+ 2 files changed, 32 insertions(+), 9 deletions(-)
+=== 00e9dc3
+00e9dc3 2014-05-30
+create-diff-object: fix section to symbol conversion
+For a rela with type X86_64_PC32, the addend of the needed symbol is
+relative to the address of the instruction _after_ the one which is the
+target of the relocation.
+ 1 file changed, 41 insertions(+), 4 deletions(-)
+=== 698cc1c
+698cc1c 2014-05-23
+create-diff-object: support fixup and related sections
+Add support for the following sections:
+- .fixup
+- __ex_table
+- .altinstructions
+- .altinstr_replacement
+Fixes #187.
+ 2 files changed, 73 insertions(+)
+=== b1131bf
+b1131bf 2014-05-26
+create-diff-object: fix symbol section indexes
+For a local non-included function or object which is needed by an
+included function, its symbol table entry will still refer to a local
+section index.  Instead it should be changed to SHN_UNDEF.
+ 1 file changed, 2 insertions(+)
+=== e89f6fa
+e89f6fa 2014-05-27
+fix vmlinux parameter for kpatch-build
+It was missing in getopt arguments.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== a5d986e
+a5d986e 2014-05-23
+review fixups
+ 2 files changed, 6 insertions(+), 15 deletions(-)
+=== 46a7a0b
+46a7a0b 2014-05-23
+fix symbol migration
+kpatch_migrate_included_symbols() is called from
+kpatch_reorder_symbols() now, not kpatch_migrate_included_elements().
+The difference is the kpatch_reorder_symbols() is operating on the
+output kpatch_elf structure, and thus all symbols are by definition
+included.
+Remove the check and rename the function since it is redundant.
+ 1 file changed, 6 insertions(+), 9 deletions(-)
+=== 2022ed1
+2022ed1 2014-05-23
+create-diff-object: fix symtab sh_info field
+This fixes the weird ld errors we've been seeing lately.
+According to the "ELF-64 Object File Format" spec, the symtab sh_info
+field should contain "Index of first non-local symbol (i.e., number of
+local symbols)".
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+=== 170c8b1
+170c8b1 2014-05-15
+fix review comments
+ 5 files changed, 41 insertions(+), 25 deletions(-)
+=== b49bfac
+b49bfac 2014-05-20
+fix included syms pointing to non-included sections
+Right now, there is a case where a symbol is included but not its
+section.  This is the case when the symbol is a rela dependency of
+another section by the symbol section (the object or function) has not
+changed.  When we migrate the included symbols over to the output kelf
+structure however, these symbols are still referencing their old
+non-included section via their sec fields.  This is a bug.
+This commit adds code to the symbol migration to test whether the
+symbol's section was also included.  If so, it updates the symbol's
+section index.  If not it sets the section index to UNDEF and its sec
+field to NULL.
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+=== 2b92531
+2b92531 2014-05-15
+fix list corruption in special section handlers
+The kpatch_regenerate_* functions use a local list_head to construct the
+new list.  While the local list_head is copied to the sec->relas after
+it is built, the neighboring nodes in the list are not updated, leading
+to list corruption.
+This commit uses list_replace() which updates the neighbor nodes properly.
+Regression introduced by PR #117 5d36dd1.
+Fixes #185.
+ 2 files changed, 19 insertions(+), 3 deletions(-)
+=== e1177e3
+e1177e3 2014-05-15
+fix review comments
+ 5 files changed, 41 insertions(+), 25 deletions(-)
+=== 207c237
+207c237 2014-05-09
+fixup review comments
+ 2 files changed, 14 insertions(+), 14 deletions(-)
+=== 20c7882
+20c7882 2014-05-07
+remove temporary debug message
+ 1 file changed, 1 deletion(-)
+=== e444b2c
+e444b2c 2014-04-25
+fix smp_lock support
+The initial commit had a bug where the offset field of the
+.rela.smp_locks entries was not updated to reflect the correct
+offset in the truncated .smp_locks section.
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+=== f3f39c0
+f3f39c0 2014-04-21
+fix activeness safety check when unpatching
+When unpatching, the activeness safety logic should check for the new
+function on the stack, not the old one.
+Fixes #64.
+ 5 files changed, 28 insertions(+), 5 deletions(-)
+=== 47d4109
+47d4109 2014-04-22
+fixup review comments
+ 1 file changed, 29 insertions(+), 4 deletions(-)
+=== 7cfcce1
+7cfcce1 2014-04-21
+add bug table support
+This commit adds a new function to properly handle the bug table.
+It works by going through .rela__bug_table, after the changed
+function symbols have already been marked, and rewrites the section
+including only the relocations pertaining to bug entries for
+changed functions.
+The __bug_table section itself is not modified resulting in
+"blank" bug entries: ones whose IP and filename pointers will
+not be relocated and, therefore, will be zero.  While a waste
+of space, it simplifies the code not to remove these blank
+entries. They do no harm.
+ 1 file changed, 58 insertions(+)
+=== cfd1ce3
+cfd1ce3 2014-04-21
+kpatch-build: don't delete logfile in debug mode
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 6626db1
+6626db1 2014-04-08
+add debug message when section has changed
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+=== 2b4afa4
+2b4afa4 2014-03-27
+add debug option to kpatch-build
+When debugging kpatch-build failures it can be
+beneficial to have the scratch files in /tmp that
+kpatch-build was operating on.  These are
+removed by default, as they can quickly fill /tmp.
+However, for debugging reasons, the option should
+exist to keep them around.
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+=== 026362f
+026362f 2014-03-27
+fix conditional in find_section_by_index()
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== d4363e0
+d4363e0 2014-03-14
+kpatch-build: fix SCRIPTDIR for bash -x
+More adventures in bash-land.  Running "bash -x kpatch-build foo.patch"
+causes SCRIPTDIR to not get set properly.  This fixes that.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== 840a1b3
+840a1b3 2014-03-13
+compile tools with -g for debug symbols
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== e8fb5b1
+e8fb5b1 2014-03-10
+fixup comment
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== 6550dd7
+6550dd7 2014-03-07
+replace DEBUG compiler define with -d/--debug runtime option
+I'm tired of setting CFLAGS and people shouldn't have to
+recompile to get debug output.  This lays the foundations
+proper option handling and logging levels.
+ 1 file changed, 113 insertions(+), 72 deletions(-)
+=== 159214a
+159214a 2014-03-07
+fixup printf formats with -DDEBUG
+Fix -Wformat warnings for printf formats with -DDEBUG
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+=== 693426b
+693426b 2014-03-05
+enable gcc warnings and fix all warnings
+ 4 files changed, 8 insertions(+), 20 deletions(-)
+=== f6efd53
+f6efd53 2014-03-04
+refactor and fix multiple issues
+- Fixup debug messages
+- Remove dead code
+- No more DEPENDENCY state
+- Reachability test is now the "Inclusion tree" for determining
+  which syms/sections will be included in the output
+- 'reachable' field is now and 'include' and is the sole
+  consideration in including sections/symbols (no more complex
+  conditional checks)
+- Order LOCAL before GLOBAL in the symbol table.  Apparently, after
+  a FILE sym, all LOCAL symbols should precede GLOBAL syms or readelf
+  shows <corrupt>
+- Handle __ksymtab_strings section and __ksymtab_* syms
+ 1 file changed, 199 insertions(+), 248 deletions(-)
+=== 5352d8b
+5352d8b 2014-02-20
+build objects in separate directory to fix caching
+Setting KCFLAGS="-ffunction-sections -fdata-sections" causes make to
+invalidate all the kernel objects, resulting in all the objects getting
+rebuilt on the next pass, thus no build caching.
+To fix that, build the objects in a separate directory (obj) for normal
+builds, and another separate directory (obj2) for the builds with added
+cflags.
+ 1 file changed, 34 insertions(+), 25 deletions(-)
+=== 052f2d8
+052f2d8 2014-02-18
+fix calling of kpatch-build from git dir
+When calling kpatch-build from the git directory, the patch kmod build
+fails because it can't find kpatch.h because the symlink is broken.
+Copy the kpatch.h file (instead of the symlink) to TEMPDIR.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=== d8cdaa7
+d8cdaa7 2014-02-18
+fix STRIPCMD use
+bash gets confused when a command and its args are quoted:
+  /usr/local/libexec/kpatch/kpatch-build: line 131: strip -d --keep-file-symbols: command not found
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+=== f4791d0
+f4791d0 2014-02-18
+kpatch-build: fix logfile error message
+ 1 file changed, 1 insertion(+), 1 deletion(-)

@@ -1,0 +1,80 @@
+{
+ "parents": 78,
+ "parents_accepted": 78,
+ "parents_not_accepted": [],
+ "mutants": 1266,
+ "loader_outcomes": {
+  "LOADED_NOT_LIVEPATCH": 66,
+  "LOAD_FAIL": 69,
+  "CRASH": 347,
+  "NOT_ENABLED": 59,
+  "LOADED_ENABLED": 699,
+  "TIMEOUT": 26
+ },
+ "loader_accepted": 765,
+ "loader_accepted_rate": 0.6043,
+ "loader_accepted_ci95": [
+  0.5771,
+  0.6308
+ ],
+ "loader_detected": 501,
+ "loader_detected_ci95": [
+  0.3692,
+  0.4229
+ ],
+ "oracle_detected": 1266,
+ "oracle_detected_ci95": [
+  0.997,
+  1.0
+ ],
+ "both": 501,
+ "oracle_only": 765,
+ "loader_only": 0,
+ "neither": 0,
+ "mcnemar_exact_p": 1.0305838031355413e-230,
+ "livepatch_modules_only": {
+  "mutants": 1148,
+  "loader_outcomes": {
+   "CRASH": 310,
+   "NOT_ENABLED": 59,
+   "LOADED_ENABLED": 699,
+   "LOAD_FAIL": 54,
+   "TIMEOUT": 26
+  },
+  "loader_accepted": 699,
+  "loader_accepted_ci95": [
+   0.5803,
+   0.6367
+  ],
+  "oracle_detected": 1148,
+  "oracle_only": 699,
+  "loader_only": 0,
+  "mcnemar_exact_p": 7.60436626518064e-211
+ },
+ "accepted_by_pin_kind": {
+  "5.16.10 intree": {
+   "accepted": 47,
+   "rejected": 41
+  },
+  "5.16.10 kpatch": {
+   "accepted": 215,
+   "rejected": 104
+  },
+  "6.1.119 intree": {
+   "accepted": 63,
+   "rejected": 44
+  },
+  "6.1.119 kpatch": {
+   "accepted": 189,
+   "rejected": 114
+  },
+  "6.6.47 intree": {
+   "accepted": 72,
+   "rejected": 52
+  },
+  "6.6.47 kpatch": {
+   "accepted": 179,
+   "rejected": 146
+  }
+ }
+}

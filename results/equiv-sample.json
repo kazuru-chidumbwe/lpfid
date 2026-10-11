@@ -1,0 +1,257 @@
+{
+ "population": 768,
+ "sample": 30,
+ "seed": 20261010,
+ "kinds": {
+  "write": 6,
+  "address": 17,
+  "read": 7
+ },
+ "rows": [
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2025-38465/addend-82.ko",
+   "function": "netlink_attachskb",
+   "target": ".klp.sym.vmlinux.netlink_skb_destructor,1",
+   "insn": "mov qword ptr [rbp + 0x60], 0",
+   "kind": "write",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2026-97450/addend-54.ko",
+   "function": "acpi_ev_install_space_handler",
+   "target": ".klp.sym.vmlinux._acpi_module_name,22",
+   "insn": "mov rdi, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.12__CVE-2026-46046/addend-121.ko",
+   "function": "ext4_xattr_block_set",
+   "target": "",
+   "insn": "mov rcx, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2025-38424/addend-119.ko",
+   "function": "do_exit",
+   "target": ".klp.sym.vmlinux.tasklist_lock,0",
+   "insn": "mov rdi, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.12__CVE-2026-89823/addend-64.ko",
+   "function": "drm_dev_register",
+   "target": ".klp.sym.vmlinux.drm_unplug_srcu,1",
+   "insn": "mov rdi, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2024-47674/addend-142.ko",
+   "function": "remap_pfn_range_internal",
+   "target": "page_offset_base",
+   "insn": "add rbx, qword ptr [rip]",
+   "kind": "read",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2025-38192/addend-61.ko",
+   "function": "bpf_skb_change_proto",
+   "target": ".klp.sym.vmlinux.bpf_skb_net_hdr_push,1",
+   "insn": "call 0x2fd",
+   "kind": "address",
+   "category": "control-flow target"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2026-43503/addend-89.ko",
+   "function": "tcp_write_xmit",
+   "target": ".klp.sym.vmlinux.tcp_event_new_data_sent,1",
+   "insn": "call 0x19d0",
+   "kind": "address",
+   "category": "control-flow target"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2025-38100/addend-102.ko",
+   "function": "task_update_io_bitmap",
+   "target": "pcpu_hot",
+   "insn": "dec dword ptr gs:[rip]",
+   "kind": "write",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2025-38499/addend-64.ko",
+   "function": "clone_private_mount",
+   "target": ".klp.sym.vmlinux.namespace_sem,1",
+   "insn": "mov rdi, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2024-47674/addend-138.ko",
+   "function": "remap_pfn_range_internal",
+   "target": "",
+   "insn": "jmp 0x1b0",
+   "kind": "address",
+   "category": "control-flow target"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.12__CVE-2026-43068/addend-68.ko",
+   "function": "ext4_mb_simple_scan_group",
+   "target": "",
+   "insn": "mov rdi, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2026-64560/addend-56.ko",
+   "function": "posix_cpu_timer_del",
+   "target": "timer_lock_sighand",
+   "insn": "call 0x2e",
+   "kind": "address",
+   "category": "control-flow target"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2026-64465/addend-56.ko",
+   "function": "xhci_free_streams.cold",
+   "target": "xhci_free_streams",
+   "insn": "jmp 0x60",
+   "kind": "address",
+   "category": "control-flow target"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2026-43074/addend-104.ko",
+   "function": "do_epoll_ctl",
+   "target": ".klp.sym.vmlinux.tfile_check_list,1",
+   "insn": "mov qword ptr [rip], rax",
+   "kind": "write",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2026-89541/addend-72.ko",
+   "function": "gss_unwrap_resp_priv",
+   "target": ".klp.sym.vmlinux.__tracepoint_rpcgss_unwrap,0",
+   "insn": "mov rbx, qword ptr [rip]",
+   "kind": "read",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2024-57903/addend-52.ko",
+   "function": "sk_setsockopt",
+   "target": "sysctl_wmem_max",
+   "insn": "movabs dword ptr [0x58b000009], eax",
+   "kind": "write",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.12__CVE-2026-23004/addend-65.ko",
+   "function": "metadata_dst_alloc",
+   "target": "jiffies",
+   "insn": "mov rax, qword ptr [rip]",
+   "kind": "read",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2026-97456/addend-65.ko",
+   "function": "acpi_ps_parse_loop",
+   "target": ".klp.sym.vmlinux._acpi_module_name,76",
+   "insn": "mov rdi, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2024-56709/addend-64.ko",
+   "function": "io_queue_iowq",
+   "target": "pcpu_hot",
+   "insn": "dec dword ptr gs:[rip]",
+   "kind": "write",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2025-38100/addend-110.ko",
+   "function": "copy_thread",
+   "target": ".klp.sym.vmlinux.init_pkru_value,0",
+   "insn": "mov eax, dword ptr [rip]",
+   "kind": "read",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2026-64548/addend-61.ko",
+   "function": "bpf_msg_push_data",
+   "target": "page_offset_base",
+   "insn": "mov rax, qword ptr [rip]",
+   "kind": "read",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.12__CVE-2026-31450/addend-97.ko",
+   "function": "ext4_getblk",
+   "target": ".LC1",
+   "insn": "mov rdx, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2026-64465/addend-60.ko",
+   "function": "xhci_free_streams",
+   "target": "",
+   "insn": "mov rsi, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2026-89983/addend-52.ko",
+   "function": "i2c_del_adapter.part.0",
+   "target": "i2c_bus_type",
+   "insn": "mov rdi, 0",
+   "kind": "address",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2025-38465/addend-69.ko",
+   "function": "netlink_unicast",
+   "target": "nl_table",
+   "insn": "add rbx, qword ptr [rip]",
+   "kind": "read",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2024-53168/addend-90.ko",
+   "function": "xs_tcp_setup_socket",
+   "target": ".klp.sym.vmlinux.xs_error_report,1",
+   "insn": "mov qword ptr [r12 + 0x2b8], 0",
+   "kind": "write",
+   "category": "passed or stored as a pointer"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.6__CVE-2024-56709/addend-69.ko",
+   "function": "io_queue_iowq",
+   "target": ".klp.sym.vmlinux.io_req_normal_work_add,1",
+   "insn": "call 0x199",
+   "kind": "address",
+   "category": "control-flow target"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2026-23255/addend-76.ko",
+   "function": "ptype_seq_next",
+   "target": ".klp.sym.vmlinux.ptype_base,0",
+   "insn": "mov rax, qword ptr [rax]",
+   "kind": "read",
+   "category": "dereferenced"
+  },
+  {
+   "path": "/opt/atlas/s2/mut/s12/6.1__CVE-2025-68264/addend-131.ko",
+   "function": "ext4_da_write_inline_data_begin",
+   "target": ".klp.sym.vmlinux.ext4_read_inline_page,1",
+   "insn": "call 0x3ac",
+   "kind": "address",
+   "category": "control-flow target"
+  }
+ ],
+ "categories": {
+  "passed or stored as a pointer": 12,
+  "dereferenced": 11,
+  "control-flow target": 7
+ }
+}

@@ -1,0 +1,3 @@
+id	pin	params	insmod_rc	enabled	transition	replace	module_sha256
+B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c#replace=1	6.12.51	replace=1	0	1	0	1	686cefce10b108679c8e928119d054d0ddd948eb9d10d38cbb1d15bb6c4d7054
+B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c#replace=1	6.19	replace=1	0	1	0	1	7233dcc0791430388ab0257402af1c3619067d4018e726c943ce7d2eca00184d

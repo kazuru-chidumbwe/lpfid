@@ -1,0 +1,15 @@
+module	params	insmod_rc	enabled	transition	replace
+test_klp_atomic_replace		0	1	0	0
+test_klp_atomic_replace	replace=1	0	1	0	1
+test_klp_callbacks_demo		0	1	0	0
+test_klp_callbacks_demo2		0	1	0	0
+test_klp_callbacks_demo2	replace=1	0	1	0	1
+test_klp_livepatch		0	1	0	0
+test_klp_state		0	1	0	1
+test_klp_state2		0	1	0	1
+test_klp_state3		0	1	0	1
+test_klp_syscall		0	1	0	0
+livepatch-callbacks-demo		0	1	0	0
+livepatch-sample		0	1	0	0
+livepatch-shadow-fix1		0	1	0	0
+livepatch-shadow-fix2		0	1	0	0

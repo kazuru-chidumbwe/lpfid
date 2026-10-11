@@ -1,0 +1,4280 @@
+{
+ "summary": {
+  "s21-v0.9.10-gcc-13-5.15-rind": {
+   "n": 34,
+   "v12": {
+    "CONSISTENT": 33,
+    "DIVERGENT": 1
+   },
+   "v13": {
+    "CONSISTENT": 33,
+    "DIVERGENT": 1
+   },
+   "v13_hook": {
+    "CONSISTENT": 34
+   },
+   "changed_by_hook": [
+    "5.15/CVE-2026-80664: DIVERGENT -> CONSISTENT"
+   ]
+  },
+  "s21-v0.9.10-gcc-13-rind": {
+   "n": 93,
+   "v12": {
+    "CONSISTENT": 92,
+    "DIVERGENT": 1
+   },
+   "v13": {
+    "CONSISTENT": 92,
+    "DIVERGENT": 1
+   },
+   "v13_hook": {
+    "CONSISTENT": 92,
+    "DIVERGENT": 1
+   },
+   "changed_by_hook": []
+  },
+  "s21-v0.9.10-gcc-14-6.12-rind": {
+   "n": 32,
+   "v12": {
+    "CONSISTENT": 32
+   },
+   "v13": {
+    "CONSISTENT": 32
+   },
+   "v13_hook": {
+    "CONSISTENT": 32
+   },
+   "changed_by_hook": []
+  },
+  "s21-v0.9.11-gcc-13-5.15-rind": {
+   "n": 34,
+   "v12": {
+    "CONSISTENT": 33,
+    "DIVERGENT": 1
+   },
+   "v13": {
+    "CONSISTENT": 33,
+    "DIVERGENT": 1
+   },
+   "v13_hook": {
+    "CONSISTENT": 34
+   },
+   "changed_by_hook": [
+    "5.15/CVE-2026-80664: DIVERGENT -> CONSISTENT"
+   ]
+  },
+  "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict": {
+   "n": 81,
+   "v12": {
+    "INCONCLUSIVE_TOOLCHAIN": 81
+   },
+   "v13": {
+    "INCONCLUSIVE_TOOLCHAIN": 81
+   },
+   "v13_hook": {
+    "CONSISTENT": 74,
+    "DIVERGENT": 7
+   },
+   "changed_by_hook": [
+    "6.1/CVE-2024-53173: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2024-56647: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2024-57903: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-21913: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-22063: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-38100: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-38113: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-38192: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-38424: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-38465: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-38701: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-38732: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-39764: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-39795: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-39920: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-68245: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-68264: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2025-71131: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-22979: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-23255: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-23300: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-31450: INCONCLUSIVE_TOOLCHAIN -> DIVERGENT",
+    "6.1/CVE-2026-43139: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-43287: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-43383: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-53239: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-53352: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-64116: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-64174: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-64435: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-64465: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-64560: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-80742: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-89983: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-90049: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-90198: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-92522: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-93268: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.1/CVE-2026-97450: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2024-27022: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2024-47674: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2024-49883: INCONCLUSIVE_TOOLCHAIN -> DIVERGENT",
+    "6.6/CVE-2024-50191: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2024-50195: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2024-53168: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2024-56709: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2024-58078: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2025-37995: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2025-38067: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2025-38100: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2025-38192: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2025-38349: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2025-38465: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2025-38499: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2025-40109: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-23246: INCONCLUSIVE_TOOLCHAIN -> DIVERGENT",
+    "6.6/CVE-2026-23271: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-23398: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-43026: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-43074: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-43503: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-45948: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-46151: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-53126: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-53190: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-53356: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-64326: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-64373: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-64435: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-64548: INCONCLUSIVE_TOOLCHAIN -> DIVERGENT",
+    "6.6/CVE-2026-64554: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-68248: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-89541: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-89547: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-89643: INCONCLUSIVE_TOOLCHAIN -> DIVERGENT",
+    "6.6/CVE-2026-89753: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-89784: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-93268: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-97449: INCONCLUSIVE_TOOLCHAIN -> DIVERGENT",
+    "6.6/CVE-2026-97456: INCONCLUSIVE_TOOLCHAIN -> CONSISTENT",
+    "6.6/CVE-2026-97481: INCONCLUSIVE_TOOLCHAIN -> DIVERGENT"
+   ]
+  },
+  "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version": {
+   "n": 81,
+   "v12": {
+    "CONSISTENT": 74,
+    "DIVERGENT": 7
+   },
+   "v13": {
+    "CONSISTENT": 74,
+    "DIVERGENT": 7
+   },
+   "v13_hook": {
+    "CONSISTENT": 74,
+    "DIVERGENT": 7
+   },
+   "changed_by_hook": []
+  },
+  "s21-v0.9.11-gcc-13-rind": {
+   "n": 123,
+   "v12": {
+    "CONSISTENT": 123
+   },
+   "v13": {
+    "CONSISTENT": 123
+   },
+   "v13_hook": {
+    "CONSISTENT": 123
+   },
+   "changed_by_hook": []
+  },
+  "s21-v0.9.11-gcc-14-6.12-rind": {
+   "n": 33,
+   "v12": {
+    "CONSISTENT": 33
+   },
+   "v13": {
+    "CONSISTENT": 33
+   },
+   "v13_hook": {
+    "CONSISTENT": 33
+   },
+   "changed_by_hook": []
+  },
+  "s21-v0.9.7-gcc-13-5.15-rind": {
+   "n": 33,
+   "v12": {
+    "CONSISTENT": 32,
+    "DIVERGENT": 1
+   },
+   "v13": {
+    "CONSISTENT": 32,
+    "DIVERGENT": 1
+   },
+   "v13_hook": {
+    "CONSISTENT": 33
+   },
+   "changed_by_hook": [
+    "5.15/CVE-2026-80664: DIVERGENT -> CONSISTENT"
+   ]
+  },
+  "s21-v0.9.8-gcc-13-5.15-rind": {
+   "n": 33,
+   "v12": {
+    "CONSISTENT": 32,
+    "DIVERGENT": 1
+   },
+   "v13": {
+    "CONSISTENT": 32,
+    "DIVERGENT": 1
+   },
+   "v13_hook": {
+    "CONSISTENT": 33
+   },
+   "changed_by_hook": [
+    "5.15/CVE-2026-80664: DIVERGENT -> CONSISTENT"
+   ]
+  }
+ },
+ "rows": [
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2022-50327",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2024-56720",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21712",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21909",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21910",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-37785",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-38023",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-38498",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-39782",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40134",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40167",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40360",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-68264",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-31415",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-31424",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43027",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43066",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43211",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-52910",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-52977",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68138",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68202",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68243",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-72067",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74548",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74566",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74658",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80590",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80664",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80906",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-89551",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-90054",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-97456",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-97492",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2024-53173",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2024-56647",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2024-57903",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-21913",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-22063",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-38113",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-38424",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-38701",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-39795",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-39920",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-68245",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-68264",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2025-71131",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-22979",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-23300",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-43139",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-43287",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-53239",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-53352",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-64116",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-64174",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-64465",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-80742",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-89983",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-90049",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-90198",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-92522",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-93268",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.1/CVE-2026-97450",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2024-27022",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2024-47674",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2024-49883",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2024-50191",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2024-50195",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2024-53168",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2024-56709",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2024-58078",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2025-37995",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2025-38499",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2025-40109",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-23246",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-23398",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-43026",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-43074",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-45948",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-46151",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-53126",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-53190",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-64326",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-64373",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-64548",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-64554",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-68248",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-89541",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-89547",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-89643",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-89753",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-89784",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-93268",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-97456",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.6/CVE-2026-97481",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2025-38643",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2025-40363",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2025-68261",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2025-71097",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2025-71118",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2025-71305",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-23101",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-31415",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-31520",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-31781",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-43027",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-43068",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-43099",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-43439",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-43470",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-46015",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-46046",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-46166",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-53184",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-64373",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-68184",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-68255",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-72400",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-80574",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-89536",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-89547",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-89550",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-89603",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-89823",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-98201",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-98230",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-13-rind",
+   "id": "6.12/CVE-2026-98308",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-38643",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-40363",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-68261",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-71097",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-71118",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-71305",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-23101",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-31415",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-31520",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-31781",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43027",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43068",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43099",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43439",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43470",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-46015",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-46046",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-46166",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-53184",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-64373",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-68184",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-68255",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-72400",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-80574",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89536",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89547",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89550",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89603",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89823",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-98201",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-98230",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.10-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-98308",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2022-50327",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2024-56720",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21712",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21909",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21910",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-37785",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-38023",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-38498",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-39782",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40134",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40167",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40360",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-68264",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-31415",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-31424",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43027",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43066",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43211",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-52910",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-52977",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68138",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68202",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68243",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-72067",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74548",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74566",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74658",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80590",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80664",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80906",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-89551",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-90054",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-97456",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-97492",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2024-53173",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2024-56647",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2024-57903",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-21913",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-22063",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-38100",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-38113",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-38192",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-38424",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-38465",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-38701",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-38732",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-39764",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-39795",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-39920",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-68245",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-68264",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2025-71131",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-22979",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-23255",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-23300",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-31450",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-43139",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-43287",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-43383",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-53239",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-53352",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-64116",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-64174",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-64435",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-64465",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-64560",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-80742",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-89983",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-90049",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-90198",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-92522",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-93268",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.1/CVE-2026-97450",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2024-27022",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2024-47674",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2024-49883",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2024-50191",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2024-50195",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2024-53168",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2024-56709",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2024-58078",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2025-37995",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2025-38067",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2025-38100",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2025-38192",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2025-38349",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2025-38465",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2025-38499",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2025-40109",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-23246",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-23271",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-23398",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-43026",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-43074",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-43503",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-45948",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-46151",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-53126",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-53190",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-53356",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-64326",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-64373",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-64435",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-64548",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-64554",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-68248",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-89541",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-89547",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-89643",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-89753",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-89784",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-93268",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-97449",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-97456",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1strict",
+   "id": "6.6/CVE-2026-97481",
+   "v12": "INCONCLUSIVE_TOOLCHAIN",
+   "v13": "INCONCLUSIVE_TOOLCHAIN",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2024-53173",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2024-56647",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2024-57903",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-21913",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-22063",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-38100",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-38113",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-38192",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-38424",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-38465",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-38701",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-38732",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-39764",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-39795",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-39920",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-68245",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-68264",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2025-71131",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-22979",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-23255",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-23300",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-31450",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-43139",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-43287",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-43383",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-53239",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-53352",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-64116",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-64174",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-64435",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-64465",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-64560",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-80742",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-89983",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-90049",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-90198",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-92522",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-93268",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.1/CVE-2026-97450",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2024-27022",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2024-47674",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2024-49883",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2024-50191",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2024-50195",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2024-53168",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2024-56709",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2024-58078",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2025-37995",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2025-38067",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2025-38100",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2025-38192",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2025-38349",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2025-38465",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2025-38499",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2025-40109",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-23246",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-23271",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-23398",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-43026",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-43074",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-43503",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-45948",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-46151",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-53126",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-53190",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-53356",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-64326",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-64373",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-64435",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-64548",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-64554",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-68248",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-89541",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-89547",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-89643",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-89753",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-89784",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-93268",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-97449",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-97456",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-6.1_6.6-rdev-t1version",
+   "id": "6.6/CVE-2026-97481",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "DIVERGENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2024-53173",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2024-56647",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2024-57903",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-21913",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-22063",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-38100",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-38113",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-38192",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-38424",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-38465",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-38701",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-38732",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-39764",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-39795",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-39920",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-68245",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-68264",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2025-71131",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-22979",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-23255",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-23300",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-31450",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-43139",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-43287",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-43383",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-53239",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-53352",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-64116",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-64174",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-64435",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-64465",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-64560",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-80742",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-89983",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-90049",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-90198",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-92522",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-93268",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.1/CVE-2026-97450",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2024-27022",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2024-47674",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2024-49883",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2024-50191",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2024-50195",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2024-53168",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2024-56709",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2024-58078",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2025-37995",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2025-38067",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2025-38100",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2025-38192",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2025-38349",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2025-38465",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2025-38499",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2025-40109",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-23246",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-23271",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-23398",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-43026",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-43074",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-43503",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-45948",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-46151",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-53126",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-53190",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-53356",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-64326",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-64373",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-64435",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-64548",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-64554",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-68248",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-89541",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-89547",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-89643",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-89753",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-89784",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-93268",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-97449",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-97456",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.6/CVE-2026-97481",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2025-38643",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2025-40363",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2025-68261",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2025-68795",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2025-71097",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2025-71118",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2025-71305",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-23004",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-23101",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-23154",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-23255",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-31415",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-31450",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-31520",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-31781",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-43027",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-43068",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-43099",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-43344",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-43439",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-43470",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-46015",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-46046",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-46166",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-53184",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-64373",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-64435",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-64560",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-68184",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-68255",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-72400",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-74550",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-80574",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-89536",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-89547",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-89550",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-89603",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-89823",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-98201",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-98230",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-98308",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-13-rind",
+   "id": "6.12/CVE-2026-98331",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-38643",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-40363",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-68261",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-71097",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-71118",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2025-71305",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-23101",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-31415",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-31520",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-31781",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43027",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43068",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43099",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43439",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-43470",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-46015",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-46046",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-46166",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-53184",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-64373",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-68184",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-68255",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-72400",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-80574",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89536",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89547",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89550",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89603",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-89823",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-98201",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-98230",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-98308",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.11-gcc-14-6.12-rind",
+   "id": "6.12/CVE-2026-98331",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2022-50327",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2024-56720",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21712",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21909",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21910",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-37785",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-38023",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-38498",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-39782",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40134",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40167",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40360",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-68264",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-31424",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43027",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43066",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43211",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-52910",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-52977",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68138",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68202",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68243",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-72067",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74548",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74566",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74658",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80590",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80664",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80906",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-89551",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-90054",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-97456",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.7-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-97492",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2022-50327",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2024-56720",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21712",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21909",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-21910",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-37785",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-38023",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-38498",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-39782",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40134",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40167",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-40360",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2025-68264",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-31424",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43027",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43066",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-43211",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-52910",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-52977",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68138",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68202",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-68243",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-72067",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74548",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74566",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-74658",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80590",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80664",
+   "v12": "DIVERGENT",
+   "v13": "DIVERGENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-80906",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-89551",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-90054",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-97456",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  },
+  {
+   "set": "s21-v0.9.8-gcc-13-5.15-rind",
+   "id": "5.15/CVE-2026-97492",
+   "v12": "CONSISTENT",
+   "v13": "CONSISTENT",
+   "v13_hook": "CONSISTENT"
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "rows": [
+  [
+   "6.12.51:livepatch-callbacks-demo.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.12.51:livepatch-sample.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.12.51:livepatch-shadow-fix1.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.12.51:livepatch-shadow-fix2.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.12.51:test_klp_atomic_replace.c",
+   {
+    "default": "0",
+    "replace=1": "1"
+   },
+   1,
+   1,
+   1
+  ],
+  [
+   "6.12.51:test_klp_callbacks_demo.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.12.51:test_klp_callbacks_demo2.c",
+   {
+    "default": "0",
+    "replace=1": "1"
+   },
+   1,
+   0,
+   1
+  ],
+  [
+   "6.12.51:test_klp_livepatch.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.12.51:test_klp_state.c",
+   {
+    "default": "1"
+   },
+   1,
+   0,
+   1
+  ],
+  [
+   "6.12.51:test_klp_state2.c",
+   {
+    "default": "1"
+   },
+   1,
+   0,
+   1
+  ],
+  [
+   "6.12.51:test_klp_state3.c",
+   {
+    "default": "1"
+   },
+   1,
+   0,
+   1
+  ],
+  [
+   "6.12.51:test_klp_syscall.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.19:livepatch-callbacks-demo.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.19:livepatch-sample.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.19:livepatch-shadow-fix1.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.19:livepatch-shadow-fix2.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.19:test_klp_atomic_replace.c",
+   {
+    "default": "0",
+    "replace=1": "1"
+   },
+   1,
+   1,
+   1
+  ],
+  [
+   "6.19:test_klp_callbacks_demo.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.19:test_klp_callbacks_demo2.c",
+   {
+    "default": "0",
+    "replace=1": "1"
+   },
+   1,
+   0,
+   1
+  ],
+  [
+   "6.19:test_klp_livepatch.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ],
+  [
+   "6.19:test_klp_state.c",
+   {
+    "default": "1"
+   },
+   1,
+   0,
+   1
+  ],
+  [
+   "6.19:test_klp_state2.c",
+   {
+    "default": "1"
+   },
+   1,
+   0,
+   1
+  ],
+  [
+   "6.19:test_klp_state3.c",
+   {
+    "default": "1"
+   },
+   1,
+   0,
+   1
+  ],
+  [
+   "6.19:test_klp_syscall.c",
+   {
+    "default": "0"
+   },
+   0,
+   0,
+   0
+  ]
+ ],
+ "agreement_with_kernel_any_param": {
+  "v1": 16,
+  "v2": 24,
+  "label": 24
+ },
+ "n": 24
+}

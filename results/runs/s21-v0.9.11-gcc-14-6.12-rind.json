@@ -1,0 +1,2354 @@
+{
+ "summary": {
+  "set": "v0.9.11-gcc-14-6.12-rind",
+  "branches": [
+   "6.12"
+  ],
+  "v1.2": {
+   "ran": 33,
+   "scored": 33,
+   "not_scored": [],
+   "overall": {
+    "CONSISTENT": 33
+   },
+   "sequence": {
+    "CONSISTENT": 33
+   },
+   "multiset": {
+    "CONSISTENT": 33
+   },
+   "sympos": {
+    "CONSISTENT": 24,
+    "NOT_APPLICABLE": 9
+   },
+   "overall_by_branch": {
+    "6.12 CONSISTENT": 33
+   },
+   "alarms": []
+  },
+  "jobs": 40,
+  "built": 33,
+  "oracle_sha256": {
+   "v1": "7d79c9d941c2bc7c11750fe5dd6e16e5afddefe6e84c16bd275b46d0667b843c",
+   "v1.1": "5139e049aa6fc4a1ca1c6641595a9fdd802e7e11d6de058d702cbc7d898d0add",
+   "v1.2": "b7731376aac630e0809f643a8d80670ee7d34cdcade323eac8ec5657250e9a3e"
+  },
+  "reference": "R-ind (S22 independent compile, plain make, one section per function)",
+  "same_as_s12": 33,
+  "errors": [],
+  "v1": {
+   "ran": 33,
+   "scored": 33,
+   "not_scored": [],
+   "overall": {
+    "DIVERGENT": 4,
+    "CONSISTENT": 29
+   },
+   "sequence": {
+    "DIVERGENT": 4,
+    "CONSISTENT": 29
+   },
+   "multiset": {
+    "DIVERGENT": 4,
+    "CONSISTENT": 29
+   },
+   "sympos": {
+    "CONSISTENT": 24,
+    "NOT_APPLICABLE": 9
+   },
+   "overall_by_branch": {
+    "6.12 DIVERGENT": 4,
+    "6.12 CONSISTENT": 29
+   },
+   "alarms": [
+    "6.12/CVE-2025-38643 DIVERGENT",
+    "6.12/CVE-2026-43027 DIVERGENT",
+    "6.12/CVE-2026-64373 DIVERGENT",
+    "6.12/CVE-2026-98331 DIVERGENT"
+   ]
+  },
+  "v1.1": {
+   "ran": 33,
+   "scored": 33,
+   "not_scored": [],
+   "overall": {
+    "CONSISTENT": 33
+   },
+   "sequence": {
+    "CONSISTENT": 33
+   },
+   "multiset": {
+    "CONSISTENT": 33
+   },
+   "sympos": {
+    "CONSISTENT": 24,
+    "NOT_APPLICABLE": 9
+   },
+   "overall_by_branch": {
+    "6.12 CONSISTENT": 33
+   },
+   "alarms": []
+  },
+  "changed_v1_to_v11": [
+   "6.12/CVE-2025-38643: DIVERGENT -> CONSISTENT",
+   "6.12/CVE-2026-43027: DIVERGENT -> CONSISTENT",
+   "6.12/CVE-2026-64373: DIVERGENT -> CONSISTENT",
+   "6.12/CVE-2026-98331: DIVERGENT -> CONSISTENT"
+  ],
+  "changed_v11_to_v12": []
+ },
+ "rows": [
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2025-38643",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-38643/build/lp2025_38643.ko",
+   "module_sha256": "28bf8803cd4ef50b81537e44f87738eadcbe67aaed788088f82b0c05123962dd",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-38643",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2025-38643/net/wireless/reg.o"
+   ],
+   "wrong_ref_cve": "CVE-2025-40363",
+   "v1": {
+    "overall": "DIVERGENT",
+    "multiset": "DIVERGENT",
+    "sequence": "DIVERGENT",
+    "sympos": "CONSISTENT",
+    "divergent": [
+     {
+      "function": "regulatory_propagate_dfs_state",
+      "n_mod": 89,
+      "n_ref": 89,
+      "multiset_equal": false,
+      "sequence_equal": false,
+      "only_in_module": [
+       "32S:.LC1",
+       "32S:.LC6",
+       "PC32:__already_done.N-0x1",
+       "PC32:__already_done.N-0x1",
+       "PC32:__already_done.N-0x1",
+       "PC32:__already_done.N-0x1"
+      ],
+      "only_in_reference": [
+       "32S:str:\"net/wireless/core.h\"",
+       "32S:str:\"net/wireless/reg.c\"",
+       "PC32:__already_done.N",
+       "PC32:__already_done.N",
+       "PC32:sec:.data-0x1",
+       "PC32:sec:.data-0x1"
+      ]
+     }
+    ],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "DIVERGENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2025-40363",
+   "set": "main",
+   "type": "T2",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-40363/build/lp2025_40363.ko",
+   "module_sha256": "d5686c5590949b2be7c2d29428ef426981f79217dab2d9a375c214187d064907",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-40363",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2025-40363/net/ipv6/ah6.o"
+   ],
+   "wrong_ref_cve": "CVE-2025-68261",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2025-68261",
+   "set": "main",
+   "type": "T2",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-68261/build/lp2025_68261.ko",
+   "module_sha256": "fb13899b8d6f68e21ad219d04c05d7a570a3a28cd5ee8ecf894299c72c7ccff1",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-68261",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2025-68261/fs/ext4/inline.o"
+   ],
+   "wrong_ref_cve": "CVE-2025-71097",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2025-71097",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-71097/build/lp2025_71097.ko",
+   "module_sha256": "72c79e8055da20d13069ca3713aa00fda163a231a795663032c0a80d91227169",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-71097",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2025-71097/net/ipv4/fib_trie.o"
+   ],
+   "wrong_ref_cve": "CVE-2025-71118",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2025-71118",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-71118/build/lp2025_71118.ko",
+   "module_sha256": "6a0c4ddef4a98c60b4db1646b49c5a31e3d2362e6b988b915e74dd90a7f24225",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-71118",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2025-71118/drivers/acpi/acpica/nswalk.o"
+   ],
+   "wrong_ref_cve": "CVE-2025-71305",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2025-71305",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-71305/build/lp2025_71305.ko",
+   "module_sha256": "bb18e0e80a02ae98e2c6cca9763cfa4e6a084d48314feb4a0942554a1a0abc1a",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2025-71305",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2025-71305/drivers/gpu/drm/display/drm_dp_mst_topology.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-23101",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-23101",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-23101/build/lp2026_23101.ko",
+   "module_sha256": "99a2fe1d5593225a040df368b81c4f089432c4a7cb9c1ca7d92f2e2a5de43458",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-23101",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-23101/drivers/leds/led-class.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-31415",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-31415",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-31415/build/lp2026_31415.ko",
+   "module_sha256": "4a1bd0d524f193ff0d845f185a466b541a48f1bc3a5cb1d1c4736b9f8e4df5db",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-31415",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-31415/net/ipv6/datagram.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-31520",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-31520",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-31520/build/lp2026_31520.ko",
+   "module_sha256": "d1900a36850f68f290ddfbf5c20e425113ea05298d4772b016fed9cf2feb626e",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-31520",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-31520/drivers/hid/hid-apple.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-31781",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-31781",
+   "set": "main",
+   "type": "T3",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-31781/build/lp2026_31781.ko",
+   "module_sha256": "293a5f7dcfc6259d18de90facc23451729d94b15e4ba7e291ecdfb0252721474",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-31781",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-31781/drivers/gpu/drm/drm_ioc32.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-43027",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-43027",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43027/build/lp2026_43027.ko",
+   "module_sha256": "9995a18e90a14ae68bef9e60ab48066ca225c1a3c220cc9293138010aab5270e",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43027",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-43027/net/netfilter/nf_conntrack_helper.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-43068",
+   "v1": {
+    "overall": "DIVERGENT",
+    "multiset": "DIVERGENT",
+    "sequence": "DIVERGENT",
+    "sympos": "CONSISTENT",
+    "divergent": [
+     {
+      "function": "nf_conntrack_helper_unregister",
+      "n_mod": 14,
+      "n_ref": 14,
+      "multiset_equal": false,
+      "sequence_equal": false,
+      "only_in_module": [
+       "PC32:nf_ct_helper_count-0x1"
+      ],
+      "only_in_reference": [
+       "PC32:nf_ct_nat_helpers+0xf"
+      ]
+     }
+    ],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "DIVERGENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-43068",
+   "set": "main",
+   "type": "T2",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43068/build/lp2026_43068.ko",
+   "module_sha256": "aa680c398403a462ac6ded18e6ddf166bbd0f41997a4862da4a1ed71a5fdaa1d",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43068",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-43068/fs/ext4/mballoc.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-43099",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-43099",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43099/build/lp2026_43099.ko",
+   "module_sha256": "ab2132692a8b48e5d608d3b923b5478a9e256ab1aa5f1909f1ccb3739572405a",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43099",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-43099/net/ipv4/icmp.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-43439",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-43439",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43439/build/lp2026_43439.ko",
+   "module_sha256": "954ecb23b62efc1dbe9a60e89c5a6cdbbb155de6d60434db6892e335115fcf55",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43439",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-43439/kernel/cgroup/cgroup.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-43470",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-43470",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43470/build/lp2026_43470.ko",
+   "module_sha256": "39d5d8f464a593086679e30f8e69d9c70b22c1cb480e2816fd00ad902a6c63b9",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-43470",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-43470/fs/nfs/nfs3proc.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-46015",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-46015",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-46015/build/lp2026_46015.ko",
+   "module_sha256": "1d8a609a4780f0a27123ae2128ca740bab829d118d590179b64781726b701150",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-46015",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-46015/net/ipv4/inet_connection_sock.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-46046",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-46046",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-46046/build/lp2026_46046.ko",
+   "module_sha256": "b5f2105697a978a23381cf201029ffdd6d3c212ab390882a9ec242de4b5a2f58",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-46046",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-46046/fs/ext4/xattr.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-46166",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-46166",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-46166/build/lp2026_46166.ko",
+   "module_sha256": "2be790f54e60b386e0841a367e2c5151b73a0fd73ce0942e9e4aeaa214d6f69c",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-46166",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-46166/net/mac80211/util.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-53184",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-53184",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-53184/build/lp2026_53184.ko",
+   "module_sha256": "9b22db8b65d968d113f2404dda92134553efd47cf686210a476c96645471acd9",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-53184",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-53184/net/ipv4/udp.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-64373",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-64373",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-64373/build/lp2026_64373.ko",
+   "module_sha256": "7b4bc9d2c04b48f73dc2cf27446eddb05b0770bcb6c731577cfaaa6e90c2d995",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-64373",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-64373/drivers/cpufreq/cpufreq.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-68184",
+   "v1": {
+    "overall": "DIVERGENT",
+    "multiset": "DIVERGENT",
+    "sequence": "DIVERGENT",
+    "sympos": "CONSISTENT",
+    "divergent": [
+     {
+      "function": "cpufreq_suspend",
+      "n_mod": 36,
+      "n_ref": 36,
+      "multiset_equal": false,
+      "sequence_equal": false,
+      "only_in_module": [
+       "PC32:cpufreq_driver-0x1",
+       "PC32:cpufreq_suspended-0x1",
+       "PC32:cpufreq_suspended-0x1"
+      ],
+      "only_in_reference": [
+       "PC32:sec:.bss-0x1",
+       "PC32:sec:.bss-0x1",
+       "PC32:sec:.bss-0x1"
+      ]
+     }
+    ],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "DIVERGENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-68184",
+   "set": "main",
+   "type": "T2",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-68184/build/lp2026_68184.ko",
+   "module_sha256": "55bb478463951385e330f108d849a267dc99f7a5dac7620236802f09ffd7d3dd",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-68184",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-68184/drivers/cdrom/cdrom.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-68255",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-68255",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-68255/build/lp2026_68255.ko",
+   "module_sha256": "a92ac72af4dd7056bb6fa1fc1013fa9ba8ee5eb33da244977ea956eb035952c7",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-68255",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-68255/drivers/gpu/drm/virtio/virtgpu_vq.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-72400",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-72400",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-72400/build/lp2026_72400.ko",
+   "module_sha256": "97d338d3f763f25faf7f6442179fbfd4e63fd3230b0fdb570ee5a107a6c7c464",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-72400",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-72400/net/ipv6/seg6.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-80574",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-80574",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-80574/build/lp2026_80574.ko",
+   "module_sha256": "bcb4b11f4d43fb45300c4430bab53fcb81c9add7f80d01fe7ce7449206004cd5",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-80574",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-80574/drivers/input/mouse/focaltech.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-89536",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-89536",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89536/build/lp2026_89536.ko",
+   "module_sha256": "72e81ca6de3a9e5d49b85e1f0a973a8f49c345b74680cca9d1e701108158479f",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89536",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-89536/net/sunrpc/xprtsock.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-89547",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-89547",
+   "set": "main",
+   "type": "T3",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89547/build/lp2026_89547.ko",
+   "module_sha256": "4e299a1489507dc05275b9fa92689288a842626a1993a707f5e731b51a8659bf",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89547",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-89547/net/sunrpc/svc.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-89550",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-89550",
+   "set": "main",
+   "type": "T2",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89550/build/lp2026_89550.ko",
+   "module_sha256": "74b5ce719651b43d39aa98b32226e249a2d4a8493089852c041c5cb27f0394ea",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89550",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-89550/net/sunrpc/auth_gss/svcauth_gss.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-89603",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-89603",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89603/build/lp2026_89603.ko",
+   "module_sha256": "d9268e1d02564a6da4a6277447623407695e5e5bf840ab49d0c7ca68ebb2f3b2",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89603",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-89603/kernel/entry/common.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-89823",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-89823",
+   "set": "main",
+   "type": "T3",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89823/build/lp2026_89823.ko",
+   "module_sha256": "f08cafd958c3244818b6daf1f307076b4d4c600fffff706c75e5e4ee32b6d44d",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-89823",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-89823/drivers/gpu/drm/drm_drv.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-98201",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-98201",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-98201/build/lp2026_98201.ko",
+   "module_sha256": "52a9b355bde391769863899148d9505aa38d9af15fcfbe3d61c0f7364b7d244a",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-98201",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-98201/drivers/input/input-compat.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-98230",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "NOT_APPLICABLE",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-98230",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-98230/build/lp2026_98230.ko",
+   "module_sha256": "29828853a02e369e15ede413eb037acfcfe9769d89a63f2ce1e36a58c099cd21",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-98230",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-98230/net/xfrm/xfrm_state.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-98308",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-98308",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-98308/build/lp2026_98308.ko",
+   "module_sha256": "1de0fbb52cd8e62bf9282b9461d874491937c9ea2777baef77ef0131624be09e",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-98308",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-98308/sound/pci/hda/hda_controller.o"
+   ],
+   "wrong_ref_cve": "CVE-2026-98331",
+   "v1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  },
+  {
+   "branch": "6.12",
+   "pin": "6.12.51",
+   "cve": "CVE-2026-98331",
+   "set": "main",
+   "type": "T1",
+   "module": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-98331/build/lp2026_98331.ko",
+   "module_sha256": "13d0ddfba01e984361e7adeb693cb5e65a4085fecea4c865d37d81116bd97e85",
+   "same_as_s12": true,
+   "dir": "/opt/atlas/s12/results/v0.9.11-gcc-14/6.12/CVE-2026-98331",
+   "refs": [
+    "/opt/atlas/s12/refs-independent-gcc-14/6.12/CVE-2026-98331/net/mac80211/iface.o"
+   ],
+   "wrong_ref_cve": "CVE-2025-38643",
+   "v1": {
+    "overall": "DIVERGENT",
+    "multiset": "DIVERGENT",
+    "sequence": "DIVERGENT",
+    "sympos": "CONSISTENT",
+    "divergent": [
+     {
+      "function": "ieee80211_uninit",
+      "n_mod": 19,
+      "n_ref": 19,
+      "multiset_equal": false,
+      "sequence_equal": false,
+      "only_in_module": [
+       "32S:.LC0",
+       "PC32:__already_done.N-0x1",
+       "PC32:__already_done.N-0x1"
+      ],
+      "only_in_reference": [
+       "32S:str:\"net/mac80211/iface.c\"",
+       "PC32:__already_done.N",
+       "PC32:__already_done.N"
+      ]
+     }
+    ],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "DIVERGENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.1": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   },
+   "v1.2": {
+    "overall": "CONSISTENT",
+    "multiset": "CONSISTENT",
+    "sequence": "CONSISTENT",
+    "sympos": "CONSISTENT",
+    "divergent": [],
+    "ctl_wrong": {
+     "verdict": "NO_COMMON_FUNCTIONS",
+     "pass": true
+    },
+    "ctl_noop": {
+     "verdict": "CONSISTENT",
+     "identical_bytes": true,
+     "pass": true
+    },
+    "scored": true
+   }
+  }
+ ]
+}

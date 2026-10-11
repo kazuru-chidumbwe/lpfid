@@ -1,0 +1,3079 @@
+{
+ "summary": {
+  "addend": {
+   "mutants": 16,
+   "loud": 2,
+   "contract_failure": 0,
+   "judged": 14,
+   "behavioural_detected": 0,
+   "behavioural_wilson": [
+    0,
+    21.5
+   ],
+   "oracle_detected": 11,
+   "only_behavioural": 0,
+   "only_oracle": 10
+  },
+  "constant": {
+   "mutants": 16,
+   "loud": 2,
+   "contract_failure": 0,
+   "judged": 14,
+   "behavioural_detected": 0,
+   "behavioural_wilson": [
+    0,
+    21.5
+   ],
+   "oracle_detected": 0,
+   "only_behavioural": 0,
+   "only_oracle": 0
+  },
+  "dropcall": {
+   "mutants": 30,
+   "loud": 2,
+   "contract_failure": 0,
+   "judged": 28,
+   "behavioural_detected": 1,
+   "behavioural_wilson": [
+    0.6,
+    17.7
+   ],
+   "oracle_detected": 26,
+   "only_behavioural": 0,
+   "only_oracle": 23
+  },
+  "redirect": {
+   "mutants": 30,
+   "loud": 14,
+   "contract_failure": 0,
+   "judged": 16,
+   "behavioural_detected": 0,
+   "behavioural_wilson": [
+    0,
+    19.4
+   ],
+   "oracle_detected": 16,
+   "only_behavioural": 0,
+   "only_oracle": 12
+  },
+  "swap": {
+   "mutants": 30,
+   "loud": 8,
+   "contract_failure": 0,
+   "judged": 22,
+   "behavioural_detected": 3,
+   "behavioural_wilson": [
+    4.7,
+    33.3
+   ],
+   "oracle_detected": 25,
+   "only_behavioural": 0,
+   "only_oracle": 17
+  }
+ },
+ "rows": [
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-13",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-16",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-17",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-18",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-19",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-20",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-2",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-3",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-7",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:addend-8",
+   "fix": "CVE-2026-31774",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-26",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-30",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-44",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-48",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-54",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-63",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-64",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-68",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-77",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:dropcall-7",
+   "fix": "CVE-2026-31774",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-0",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-10",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-1",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-3",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-4",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-5",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-6",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-7",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-8",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:redirect-9",
+   "fix": "CVE-2026-31774",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-11",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-37",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-3",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-52",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-57",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-68",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-77",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-80",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-81",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.19/CVE-2026-31774:swap-90",
+   "fix": "CVE-2026-31774",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ],
+    "P2": [
+     "PROBE result=-22",
+     "PROBE result=-22",
+     "PROBE result=-22"
+    ],
+    "P3": [
+     "PROBE result=5",
+     "PROBE result=5",
+     "PROBE result=5"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:addend-52",
+   "fix": "CVE-2024-57903",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:addend-53",
+   "fix": "CVE-2024-57903",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:addend-54",
+   "fix": "CVE-2024-57903",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:addend-55",
+   "fix": "CVE-2024-57903",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:addend-56",
+   "fix": "CVE-2024-57903",
+   "op": "addend",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-101",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-113",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-177",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-179",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-26",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-59",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-60",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-64",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-85",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:constant-88",
+   "fix": "CVE-2024-57903",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-18",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "DETECTED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=14",
+     "PROBE result=-1 errno=14",
+     "PROBE result=-1 errno=14"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-20",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-29",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-32",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-44",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-49",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-59",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-62",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-64",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:dropcall-70",
+   "fix": "CVE-2024-57903",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-12",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-17",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-19",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-1",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-21",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-22",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-25",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-28",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-3",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:redirect-8",
+   "fix": "CVE-2024-57903",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-18",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-19",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "DETECTED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-21",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [],
+    "P2": [],
+    "P3": []
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-26",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "DETECTED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-2147483648 errno=0",
+     "PROBE result=-2147483648 errno=0",
+     "PROBE result=-2147483648 errno=0"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-39",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-41",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-44",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-51",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-60",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.1/CVE-2024-57903:swap-66",
+   "fix": "CVE-2024-57903",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:addend-60",
+   "fix": "CVE-2024-50195",
+   "op": "addend",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:constant-32",
+   "fix": "CVE-2024-50195",
+   "op": "constant",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:constant-33",
+   "fix": "CVE-2024-50195",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:constant-34",
+   "fix": "CVE-2024-50195",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:constant-35",
+   "fix": "CVE-2024-50195",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:constant-36",
+   "fix": "CVE-2024-50195",
+   "op": "constant",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:constant-37",
+   "fix": "CVE-2024-50195",
+   "op": "constant",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-102",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-103",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-104",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-105",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-106",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-92",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-94",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-95",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-96",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:dropcall-98",
+   "fix": "CVE-2024-50195",
+   "op": "dropcall",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-0",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-10",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-1",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-2",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-3",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-4",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-5",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-6",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-7",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:redirect-8",
+   "fix": "CVE-2024-50195",
+   "op": "redirect",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "CONSISTENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-100",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-101",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-102",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-103",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-104",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "DETECTED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0",
+     "PROBE result=0 errno=0"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-105",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [],
+    "P2": [],
+    "P3": []
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-92",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-93",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "LOUD",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-98",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  },
+  {
+   "id": "mut:6.6/CVE-2024-50195:swap-99",
+   "fix": "CVE-2024-50195",
+   "op": "swap",
+   "verdict": "PASSED",
+   "flaky": false,
+   "oracle": "DIVERGENT",
+   "phases": {
+    "P1": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ],
+    "P2": [
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22",
+     "PROBE result=-1 errno=22"
+    ],
+    "P3": [
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95",
+     "PROBE result=-1 errno=95"
+    ]
+   }
+  }
+ ],
+ "flaky": 0
+}

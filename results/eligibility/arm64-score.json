@@ -1,0 +1,507 @@
+{
+ "tally": {
+  "v1": {
+   "SHADOW": {
+    "TP": 2,
+    "FN": 0,
+    "FP": 0,
+    "TN": 10
+   },
+   "CALLBACKS": {
+    "TP": 0,
+    "FN": 6,
+    "FP": 0,
+    "TN": 6
+   },
+   "REPLACE": {
+    "TP": 1,
+    "FN": 4,
+    "FP": 0,
+    "TN": 7
+   },
+   "STATES": {
+    "TP": 3,
+    "FN": 0,
+    "FP": 0,
+    "TN": 9
+   }
+  },
+  "v2": {
+   "SHADOW": {
+    "TP": 2,
+    "FN": 0,
+    "FP": 0,
+    "TN": 10
+   },
+   "CALLBACKS": {
+    "TP": 6,
+    "FN": 0,
+    "FP": 0,
+    "TN": 6
+   },
+   "REPLACE": {
+    "TP": 3,
+    "FN": 0,
+    "FP": 0,
+    "TN": 7
+   },
+   "STATES": {
+    "TP": 3,
+    "FN": 0,
+    "FP": 0,
+    "TN": 9
+   }
+  }
+ },
+ "excluded_from_v2": [
+  "test_klp_atomic_replace: REPLACE via module parameter (code store); v2 code-rule evidence: []",
+  "test_klp_callbacks_demo2: REPLACE via module parameter (code store); v2 code-rule evidence: []"
+ ],
+ "rows": [
+  {
+   "module": "livepatch-callbacks-demo",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 1,
+    "REPLACE": 0,
+    "STATES": 0
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v1_class": "SOUND",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": true,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "OUT_OF_SCOPE",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [],
+    "CALLBACKS": [
+     "objs[0].callbacks.pre_patch",
+     "objs[0].callbacks.post_patch",
+     "objs[0].callbacks.pre_unpatch",
+     "objs[0].callbacks.post_unpatch",
+     "objs[1].callbacks.pre_patch",
+     "objs[1].callbacks.post_patch",
+     "objs[1].callbacks.pre_unpatch",
+     "objs[1].callbacks.post_unpatch",
+     "objs[2].callbacks.pre_patch",
+     "objs[2].callbacks.post_patch",
+     "objs[2].callbacks.pre_unpatch",
+     "objs[2].callbacks.post_unpatch"
+    ],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "livepatch-sample",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 0,
+    "REPLACE": 0,
+    "STATES": 0
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v1_class": "SOUND",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "SOUND",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [],
+    "CALLBACKS": [],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "livepatch-shadow-fix1",
+   "label": {
+    "SHADOW": 1,
+    "CALLBACKS": 0,
+    "REPLACE": 0,
+    "STATES": 0
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": true,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v1_class": "OUT_OF_SCOPE",
+   "v2": {
+    "SHADOW": true,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "OUT_OF_SCOPE",
+   "v2_evidence": {
+    "SHADOW": [
+     "klp_shadow_alloc",
+     "klp_shadow_free",
+     "klp_shadow_free_all",
+     "klp_shadow_get"
+    ],
+    "STATES": [],
+    "CALLBACKS": [],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "livepatch-shadow-fix2",
+   "label": {
+    "SHADOW": 1,
+    "CALLBACKS": 0,
+    "REPLACE": 0,
+    "STATES": 0
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": true,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v1_class": "OUT_OF_SCOPE",
+   "v2": {
+    "SHADOW": true,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "OUT_OF_SCOPE",
+   "v2_evidence": {
+    "SHADOW": [
+     "klp_shadow_free",
+     "klp_shadow_free_all",
+     "klp_shadow_get",
+     "klp_shadow_get_or_alloc"
+    ],
+    "STATES": [],
+    "CALLBACKS": [],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "test_klp_atomic_replace",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 0,
+    "REPLACE": 1,
+    "STATES": 0
+   },
+   "conditional": "param:replace",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": true,
+    "STATES": false
+   },
+   "v1_class": "OUT_OF_SCOPE",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "SOUND",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [],
+    "CALLBACKS": [],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "test_klp_callbacks_demo",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 1,
+    "REPLACE": 0,
+    "STATES": 0
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v1_class": "SOUND",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": true,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "OUT_OF_SCOPE",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [],
+    "CALLBACKS": [
+     "objs[0].callbacks.pre_patch",
+     "objs[0].callbacks.post_patch",
+     "objs[0].callbacks.pre_unpatch",
+     "objs[0].callbacks.post_unpatch",
+     "objs[1].callbacks.pre_patch",
+     "objs[1].callbacks.post_patch",
+     "objs[1].callbacks.pre_unpatch",
+     "objs[1].callbacks.post_unpatch",
+     "objs[2].callbacks.pre_patch",
+     "objs[2].callbacks.post_patch",
+     "objs[2].callbacks.pre_unpatch",
+     "objs[2].callbacks.post_unpatch"
+    ],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "test_klp_callbacks_demo2",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 1,
+    "REPLACE": 1,
+    "STATES": 0
+   },
+   "conditional": "param:replace",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v1_class": "SOUND",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": true,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "OUT_OF_SCOPE",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [],
+    "CALLBACKS": [
+     "objs[0].callbacks.pre_patch",
+     "objs[0].callbacks.post_patch",
+     "objs[0].callbacks.pre_unpatch",
+     "objs[0].callbacks.post_unpatch"
+    ],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "test_klp_livepatch",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 0,
+    "REPLACE": 0,
+    "STATES": 0
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v1_class": "SOUND",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "SOUND",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [],
+    "CALLBACKS": [],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "test_klp_state",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 1,
+    "REPLACE": 1,
+    "STATES": 1
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": true
+   },
+   "v1_class": "OUT_OF_SCOPE",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": true,
+    "REPLACE": true,
+    "STATES": true
+   },
+   "v2_class": "OUT_OF_SCOPE",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [
+     "klp_get_state",
+     "patch.states non-NULL"
+    ],
+    "CALLBACKS": [
+     "objs[0].callbacks.pre_patch",
+     "objs[0].callbacks.post_patch",
+     "objs[0].callbacks.pre_unpatch",
+     "objs[0].callbacks.post_unpatch"
+    ],
+    "REPLACE": [
+     "patch.replace initialised non-zero"
+    ]
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "test_klp_state2",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 1,
+    "REPLACE": 1,
+    "STATES": 1
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": true
+   },
+   "v1_class": "OUT_OF_SCOPE",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": true,
+    "REPLACE": true,
+    "STATES": true
+   },
+   "v2_class": "OUT_OF_SCOPE",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [
+     "klp_get_prev_state",
+     "klp_get_state",
+     "patch.states non-NULL"
+    ],
+    "CALLBACKS": [
+     "objs[0].callbacks.pre_patch",
+     "objs[0].callbacks.post_patch",
+     "objs[0].callbacks.pre_unpatch",
+     "objs[0].callbacks.post_unpatch"
+    ],
+    "REPLACE": [
+     "patch.replace initialised non-zero"
+    ]
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "test_klp_state3",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 1,
+    "REPLACE": 1,
+    "STATES": 1
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": true
+   },
+   "v1_class": "OUT_OF_SCOPE",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": true,
+    "REPLACE": true,
+    "STATES": true
+   },
+   "v2_class": "OUT_OF_SCOPE",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [
+     "klp_get_prev_state",
+     "klp_get_state",
+     "patch.states non-NULL"
+    ],
+    "CALLBACKS": [
+     "objs[0].callbacks.pre_patch",
+     "objs[0].callbacks.post_patch",
+     "objs[0].callbacks.pre_unpatch",
+     "objs[0].callbacks.post_unpatch"
+    ],
+    "REPLACE": [
+     "patch.replace initialised non-zero"
+    ]
+   },
+   "v2_layout": "module DWARF"
+  },
+  {
+   "module": "test_klp_syscall",
+   "label": {
+    "SHADOW": 0,
+    "CALLBACKS": 0,
+    "REPLACE": 0,
+    "STATES": 0
+   },
+   "conditional": "",
+   "v1": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v1_class": "SOUND",
+   "v2": {
+    "SHADOW": false,
+    "CALLBACKS": false,
+    "REPLACE": false,
+    "STATES": false
+   },
+   "v2_class": "SOUND",
+   "v2_evidence": {
+    "SHADOW": [],
+    "STATES": [],
+    "CALLBACKS": [],
+    "REPLACE": []
+   },
+   "v2_layout": "module DWARF"
+  }
+ ]
+}

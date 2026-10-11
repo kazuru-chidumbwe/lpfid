@@ -1,0 +1,336 @@
+{
+ "B1": {
+  "labelled": 24,
+  "v1": {
+   "scanned": 24,
+   "tp": 12,
+   "fn": 6,
+   "fp": 0,
+   "tn": 6,
+   "undetermined": 0,
+   "recall": [
+    12,
+    18,
+    [
+     0.4375,
+     0.8372
+    ]
+   ],
+   "specificity": [
+    6,
+    6,
+    [
+     0.6097,
+     1
+    ]
+   ],
+   "conjuncts": {
+    "SHADOW": {
+     "TN": 20,
+     "TP": 4
+    },
+    "CALLBACKS": {
+     "FN": 12,
+     "TN": 12
+    },
+    "REPLACE": {
+     "TN": 14,
+     "TP": 2,
+     "FN": 8
+    },
+    "STATES": {
+     "TN": 18,
+     "TP": 6
+    }
+   },
+   "disagreements": [
+    "B1:6.12.51:samples/livepatch/livepatch-callbacks-demo.c: label OUT_OF_SCOPE ['CALLBACKS'] scanner SOUND []",
+    "B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo.c: label OUT_OF_SCOPE ['CALLBACKS'] scanner SOUND []",
+    "B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE'] scanner SOUND []",
+    "B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state2.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state3.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1:6.19:samples/livepatch/livepatch-callbacks-demo.c: label OUT_OF_SCOPE ['CALLBACKS'] scanner SOUND []",
+    "B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo.c: label OUT_OF_SCOPE ['CALLBACKS'] scanner SOUND []",
+    "B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE'] scanner SOUND []",
+    "B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state2.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state3.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']"
+   ]
+  },
+  "v2": {
+   "scanned": 24,
+   "tp": 18,
+   "fn": 0,
+   "fp": 0,
+   "tn": 6,
+   "undetermined": 0,
+   "recall": [
+    18,
+    18,
+    [
+     0.8241,
+     1
+    ]
+   ],
+   "specificity": [
+    6,
+    6,
+    [
+     0.6097,
+     1
+    ]
+   ],
+   "conjuncts": {
+    "SHADOW": {
+     "TN": 20,
+     "TP": 4
+    },
+    "CALLBACKS": {
+     "TP": 12,
+     "TN": 12
+    },
+    "REPLACE": {
+     "TN": 14,
+     "TP": 10
+    },
+    "STATES": {
+     "TN": 18,
+     "TP": 6
+    }
+   },
+   "disagreements": []
+  }
+ },
+ "B1s": {
+  "labelled": 24,
+  "v1": {
+   "scanned": 24,
+   "tp": 12,
+   "fn": 6,
+   "fp": 0,
+   "tn": 6,
+   "undetermined": 0,
+   "recall": [
+    12,
+    18,
+    [
+     0.4375,
+     0.8372
+    ]
+   ],
+   "specificity": [
+    6,
+    6,
+    [
+     0.6097,
+     1
+    ]
+   ],
+   "conjuncts": {
+    "SHADOW": {
+     "TN": 20,
+     "TP": 4
+    },
+    "CALLBACKS": {
+     "FN": 12,
+     "TN": 12
+    },
+    "REPLACE": {
+     "TN": 14,
+     "TP": 2,
+     "FN": 8
+    },
+    "STATES": {
+     "TN": 18,
+     "TP": 6
+    }
+   },
+   "disagreements": [
+    "B1s:6.12.51:samples/livepatch/livepatch-callbacks-demo.c: label OUT_OF_SCOPE ['CALLBACKS'] scanner SOUND []",
+    "B1s:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo.c: label OUT_OF_SCOPE ['CALLBACKS'] scanner SOUND []",
+    "B1s:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE'] scanner SOUND []",
+    "B1s:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1s:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state2.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1s:6.12.51:tools/testing/selftests/livepatch/test_modules/test_klp_state3.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1s:6.19:samples/livepatch/livepatch-callbacks-demo.c: label OUT_OF_SCOPE ['CALLBACKS'] scanner SOUND []",
+    "B1s:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo.c: label OUT_OF_SCOPE ['CALLBACKS'] scanner SOUND []",
+    "B1s:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_callbacks_demo2.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE'] scanner SOUND []",
+    "B1s:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1s:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state2.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']",
+    "B1s:6.19:tools/testing/selftests/livepatch/test_modules/test_klp_state3.c: label OUT_OF_SCOPE ['CALLBACKS', 'REPLACE', 'STATES'] scanner OUT_OF_SCOPE ['STATES']"
+   ]
+  },
+  "v2": {
+   "scanned": 24,
+   "tp": 18,
+   "fn": 0,
+   "fp": 0,
+   "tn": 6,
+   "undetermined": 0,
+   "recall": [
+    18,
+    18,
+    [
+     0.8241,
+     1
+    ]
+   ],
+   "specificity": [
+    6,
+    6,
+    [
+     0.6097,
+     1
+    ]
+   ],
+   "conjuncts": {
+    "SHADOW": {
+     "TN": 20,
+     "TP": 4
+    },
+    "CALLBACKS": {
+     "TP": 12,
+     "TN": 12
+    },
+    "REPLACE": {
+     "TN": 14,
+     "TP": 10
+    },
+    "STATES": {
+     "TN": 18,
+     "TP": 6
+    }
+   },
+   "disagreements": []
+  }
+ },
+ "B2": {
+  "labelled": 231,
+  "v1": {
+   "scanned": 191,
+   "tp": 0,
+   "fn": 0,
+   "fp": 0,
+   "tn": 191,
+   "undetermined": 0,
+   "recall": [
+    0,
+    0,
+    null
+   ],
+   "specificity": [
+    191,
+    191,
+    [
+     0.9803,
+     1
+    ]
+   ],
+   "conjuncts": {
+    "SHADOW": {
+     "TN": 191
+    },
+    "CALLBACKS": {
+     "TN": 191
+    },
+    "REPLACE": {
+     "TN": 191
+    },
+    "STATES": {
+     "TN": 191
+    }
+   },
+   "disagreements": []
+  },
+  "v2": {
+   "scanned": 191,
+   "tp": 0,
+   "fn": 0,
+   "fp": 0,
+   "tn": 191,
+   "undetermined": 0,
+   "recall": [
+    0,
+    0,
+    null
+   ],
+   "specificity": [
+    191,
+    191,
+    [
+     0.9803,
+     1
+    ]
+   ],
+   "conjuncts": {
+    "SHADOW": {
+     "TN": 191
+    },
+    "CALLBACKS": {
+     "TN": 191
+    },
+    "REPLACE": {
+     "TN": 191
+    },
+    "STATES": {
+     "TN": 191
+    }
+   },
+   "disagreements": []
+  }
+ },
+ "B3": {
+  "labelled": 10,
+  "v1": {
+   "scanned": 0,
+   "tp": 0,
+   "fn": 0,
+   "fp": 0,
+   "tn": 0,
+   "undetermined": 0,
+   "recall": [
+    0,
+    0,
+    null
+   ],
+   "specificity": [
+    0,
+    0,
+    null
+   ],
+   "conjuncts": {
+    "SHADOW": {},
+    "CALLBACKS": {},
+    "REPLACE": {},
+    "STATES": {}
+   },
+   "disagreements": []
+  },
+  "v2": {
+   "scanned": 0,
+   "tp": 0,
+   "fn": 0,
+   "fp": 0,
+   "tn": 0,
+   "undetermined": 0,
+   "recall": [
+    0,
+    0,
+    null
+   ],
+   "specificity": [
+    0,
+    0,
+    null
+   ],
+   "conjuncts": {
+    "SHADOW": {},
+    "CALLBACKS": {},
+    "REPLACE": {},
+    "STATES": {}
+   },
+   "disagreements": []
+  }
+ }
+}

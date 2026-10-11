@@ -1,0 +1,4253 @@
+{
+ "summary": {
+  "fixes": 123,
+  "supported": 35,
+  "supported_by_branch": {
+   "6.1": 8,
+   "6.12": 16,
+   "6.6": 11
+  },
+  "no_signatures": 45,
+  "control_failures": 46,
+  "module_on_supported": {
+   "ERROR KeyError(11064)": 1,
+   "ERROR KeyError(11248)": 3,
+   "ERROR KeyError(17536)": 1,
+   "ERROR KeyError(17632)": 1,
+   "ERROR KeyError(4016)": 1,
+   "ERROR KeyError(4056)": 1,
+   "ERROR KeyError(4200)": 1,
+   "ERROR KeyError(4208)": 1,
+   "ERROR KeyError(4448)": 1,
+   "ERROR KeyError(4520)": 1,
+   "ERROR KeyError(4744)": 1,
+   "ERROR KeyError(4816)": 1,
+   "ERROR KeyError(4824)": 1,
+   "ERROR KeyError(4936)": 1,
+   "ERROR KeyError(5080)": 1,
+   "ERROR KeyError(5696)": 1,
+   "ERROR KeyError(5704)": 1,
+   "ERROR KeyError(5816)": 1,
+   "ERROR KeyError(5920)": 1,
+   "ERROR KeyError(6656)": 1,
+   "ERROR KeyError(7168)": 1,
+   "ERROR KeyError(8416)": 1,
+   "ERROR KeyError(8888)": 1,
+   "patch": 12,
+   "vuln": 1
+  }
+ },
+ "rows": [
+  {
+   "branch": "6.1",
+   "cve": "CVE-2024-53173",
+   "files": {
+    "fs/nfs/nfs4proc.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "nfs4_open_release"
+      ],
+      "signature_functions": [
+       "nfs4_open_release"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2024-56647",
+   "files": {
+    "net/ipv4/icmp.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "icmp_route_lookup"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2024-57903",
+   "files": {
+    "net/core/sock.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "sk_setsockopt"
+      ],
+      "signature_functions": [
+       "sk_setsockopt"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-21913",
+   "files": {
+    "arch/x86/kernel/amd_nb.o": {
+     "signature": {
+      "stage": "signature",
+      "error": "BdbQuit()",
+      "trace": "Traceback (most recent call last):\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 51, in main\n    funcnames, sigs = signatures(vuln, patch, diff)\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 37, in signatures\n    cp = gen.generate(fn, h.add, \"patch\", h.add_pattern)\n  File \"/opt/atlas/tools/ps3/ps3/simulator.py\", line 494, in generate\n    collect = self.patch_proj.generate(\n  File \"/opt/atlas/tools/ps3/ps3/simulator.py\", line 196, in generate\n    result = self._simulateBB(state, step_one=True)\n  File \"/opt/atlas/tools/ps3/ps3/simulator.py\", line 223, in _simulateBB\n    cond = stmt.simulate(state.env, True)\n  File \"/opt/atlas/tools/ps3/ps3/stmt.py\", line 139, in simulate\n    breakpoint()\n  File \"/home/developer/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/bdb.py\", line 94, in trace_dispatch\n    return self.dispatch_return(frame, arg)\n  File \"/home/developer/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/bdb.py\", line 156, in dispatch_return\n    if self.quitting: raise BdbQuit\nbdb.BdbQuit\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-22063",
+   "files": {
+    "net/ipv6/calipso.o": {
+     "signature": {
+      "error": "mentedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {
+      "redirect-0": null,
+      "redirect-1": null,
+      "redirect-2": null,
+      "redirect-3": null,
+      "redirect-4": null,
+      "redirect-6": null,
+      "redirect-7": null,
+      "redirect-8": null,
+      "redirect-9": null,
+      "redirect-11": null,
+      "swap-18": null,
+      "swap-23": null,
+      "swap-26": null,
+      "swap-30": null,
+      "swap-33": null,
+      "swap-34": null,
+      "swap-37": null,
+      "swap-38": null,
+      "swap-39": null,
+      "swap-41": null,
+      "addend-52": null,
+      "addend-53": null,
+      "addend-54": null,
+      "addend-55": null,
+      "addend-56": null,
+      "addend-57": null,
+      "dropcall-17": null,
+      "dropcall-19": null,
+      "dropcall-24": null,
+      "dropcall-26": null,
+      "dropcall-27": null,
+      "dropcall-28": null,
+      "dropcall-34": null,
+      "dropcall-35": null,
+      "dropcall-37": null,
+      "dropcall-40": null,
+      "constant-27": null,
+      "constant-31": null,
+      "constant-33": null,
+      "constant-34": null,
+      "constant-35": null,
+      "constant-37": null,
+      "constant-38": null,
+      "constant-41": null,
+      "constant-42": null,
+      "constant-43": null
+     },
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-38100",
+   "files": {
+    "arch/x86/kernel/ioport.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "io_bitmap_share",
+       "io_bitmap_exit",
+       "SYSCALL_DEFINE1"
+      ],
+      "signature_functions": [
+       "io_bitmap_exit"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    },
+    "arch/x86/kernel/process.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "copy_thread",
+       "native_tss_update_io_bitmap"
+      ],
+      "signature_functions": [
+       "copy_thread",
+       "native_tss_update_io_bitmap"
+      ]
+     },
+     "error": null,
+     "control_vuln": "ERROR BdbQuit()",
+     "control_patch": "ERROR BdbQuit()",
+     "module": "ERROR BdbQuit()",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-38113",
+   "files": {
+    "drivers/acpi/cppc_acpi.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "cppc_allow_fast_switch"
+      ],
+      "signature_functions": [
+       "cppc_allow_fast_switch"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-38192",
+   "files": {
+    "net/core/filter.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "bpf_skb_proto_4_to_6",
+       "bpf_skb_proto_6_to_4",
+       "bpf_skb_net_grow"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-38424",
+   "files": {
+    "kernel/events/core.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "perf_sample_ustack_size",
+       "perf_callchain"
+      ],
+      "signature_functions": [
+       "perf_callchain"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-6": "patch",
+      "redirect-11": "patch",
+      "redirect-17": "patch",
+      "redirect-20": "patch",
+      "redirect-28": "patch",
+      "redirect-44": "patch",
+      "redirect-45": "patch",
+      "redirect-54": "patch",
+      "redirect-58": "patch",
+      "redirect-63": "patch",
+      "swap-29": "patch",
+      "swap-30": "patch",
+      "swap-36": "patch",
+      "swap-47": "patch",
+      "swap-62": "patch",
+      "swap-73": "patch",
+      "swap-81": "patch",
+      "swap-84": "patch",
+      "swap-94": "patch",
+      "swap-98": "patch",
+      "addend-62": "patch",
+      "addend-71": "patch",
+      "addend-72": "patch",
+      "addend-75": "patch",
+      "addend-88": "patch",
+      "addend-101": "patch",
+      "addend-102": "patch",
+      "addend-105": "patch",
+      "addend-119": "patch",
+      "addend-121": "patch",
+      "dropcall-20": "patch",
+      "dropcall-23": "patch",
+      "dropcall-31": "patch",
+      "dropcall-37": "patch",
+      "dropcall-42": "patch",
+      "dropcall-47": "patch",
+      "dropcall-59": "patch",
+      "dropcall-76": "patch",
+      "dropcall-85": "patch",
+      "dropcall-86": "patch",
+      "constant-58": "patch",
+      "constant-68": "patch",
+      "constant-69": "patch",
+      "constant-82": "patch",
+      "constant-89": "patch",
+      "constant-103": "patch",
+      "constant-112": "patch",
+      "constant-124": "patch",
+      "constant-152": "patch",
+      "constant-159": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    },
+    "kernel/exit.o": {
+     "signature": {
+      "stage": "signature",
+      "error": "ValueError(\"invalid literal for int() with base 16: 'Address'\")",
+      "trace": "Traceback (most recent call last):\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 51, in main\n    funcnames, sigs = signatures(vuln, patch, diff)\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 21, in signatures\n    dbg = DebugParser2.from_binary(vuln, patch, funcnames)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 160, in from_binary\n    return cls(DebugParser.from_binary(vuln_binary_path, funcnames), DebugParser.from_binary(patch_binary_path, funcnames))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 134, in from_binary\n    return cls(debug_infos, binary_path)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 21, in __init__\n    self.parse_result.update(self._debug_parse(debug_info))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 45, in _debug_parse\n    addr.append(int(tokens[0], 16))\nValueError: invalid literal for int() with base 16: 'Address'\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {
+      "redirect-6": null,
+      "redirect-11": null,
+      "redirect-17": null,
+      "redirect-20": null,
+      "redirect-28": null,
+      "redirect-44": null,
+      "redirect-45": null,
+      "redirect-54": null,
+      "redirect-58": null,
+      "redirect-63": null,
+      "swap-29": null,
+      "swap-30": null,
+      "swap-36": null,
+      "swap-47": null,
+      "swap-62": null,
+      "swap-73": null,
+      "swap-81": null,
+      "swap-84": null,
+      "swap-94": null,
+      "swap-98": null,
+      "addend-62": null,
+      "addend-71": null,
+      "addend-72": null,
+      "addend-75": null,
+      "addend-88": null,
+      "addend-101": null,
+      "addend-102": null,
+      "addend-105": null,
+      "addend-119": null,
+      "addend-121": null,
+      "dropcall-20": null,
+      "dropcall-23": null,
+      "dropcall-31": null,
+      "dropcall-37": null,
+      "dropcall-42": null,
+      "dropcall-47": null,
+      "dropcall-59": null,
+      "dropcall-76": null,
+      "dropcall-85": null,
+      "dropcall-86": null,
+      "constant-58": null,
+      "constant-68": null,
+      "constant-69": null,
+      "constant-82": null,
+      "constant-89": null,
+      "constant-103": null,
+      "constant-112": null,
+      "constant-124": null,
+      "constant-152": null,
+      "constant-159": null
+     },
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-38465",
+   "files": {
+    "net/netlink/af_netlink.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "netlink_skb_set_owner_r",
+       "netlink_alloc_large_skb",
+       "netlink_unicast_kernel",
+       "EXPORT_SYMBOL_GPL",
+       "netlink_dump"
+      ],
+      "signature_functions": [
+       "netlink_skb_set_owner_r",
+       "netlink_dump"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-5": "patch",
+      "redirect-9": "patch",
+      "redirect-17": "patch",
+      "redirect-23": "patch",
+      "redirect-27": "patch",
+      "redirect-29": "patch",
+      "redirect-34": "patch",
+      "redirect-35": "patch",
+      "swap-27": "patch",
+      "swap-28": "patch",
+      "swap-44": "patch",
+      "swap-51": "patch",
+      "swap-58": "patch",
+      "swap-64": "patch",
+      "swap-87": "patch",
+      "swap-88": "patch",
+      "swap-90": "patch",
+      "swap-93": "patch",
+      "addend-53": "patch",
+      "addend-55": "patch",
+      "addend-63": "patch",
+      "addend-65": "patch",
+      "addend-66": "patch",
+      "addend-68": "patch",
+      "addend-70": "patch",
+      "addend-74": "patch",
+      "addend-76": "patch",
+      "addend-78": "patch",
+      "dropcall-25": "patch",
+      "dropcall-26": "patch",
+      "dropcall-35": "patch",
+      "dropcall-36": "patch",
+      "dropcall-42": "patch",
+      "dropcall-50": "patch",
+      "dropcall-62": "patch",
+      "dropcall-73": "patch",
+      "dropcall-87": "patch",
+      "dropcall-93": "patch",
+      "constant-38": "patch",
+      "constant-52": "patch",
+      "constant-55": "patch",
+      "constant-62": "patch",
+      "constant-72": "patch",
+      "constant-80": "patch",
+      "constant-104": "patch",
+      "constant-117": "patch",
+      "constant-138": "patch",
+      "constant-139": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-38701",
+   "files": {
+    "fs/ext4/inline.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_create_inline_data",
+       "ext4_update_inline_data"
+      ],
+      "signature_functions": [
+       "ext4_create_inline_data",
+       "ext4_update_inline_data"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-38732",
+   "files": {
+    "net/ipv4/netfilter/nf_reject_ipv4.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "nf_send_reset",
+       "nf_send_unreach"
+      ],
+      "signature_functions": [
+       "nf_send_reset",
+       "nf_send_unreach"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-3": "patch",
+      "redirect-14": "patch",
+      "redirect-19": "patch",
+      "redirect-21": "patch",
+      "redirect-22": "patch",
+      "redirect-23": "patch",
+      "redirect-28": "patch",
+      "redirect-31": "patch",
+      "swap-21": "patch",
+      "swap-24": "patch",
+      "swap-27": "patch",
+      "swap-35": "patch",
+      "swap-38": "patch",
+      "swap-41": "patch",
+      "swap-44": "patch",
+      "swap-51": "patch",
+      "swap-54": "patch",
+      "swap-60": "patch",
+      "addend-52": "patch",
+      "addend-53": "patch",
+      "addend-54": "patch",
+      "addend-55": "patch",
+      "dropcall-17": "patch",
+      "dropcall-18": "patch",
+      "dropcall-23": "patch",
+      "dropcall-24": "patch",
+      "dropcall-32": "patch",
+      "dropcall-41": "patch",
+      "dropcall-43": "patch",
+      "dropcall-44": "patch",
+      "dropcall-46": "patch",
+      "dropcall-47": "patch",
+      "constant-25": "patch",
+      "constant-31": "patch",
+      "constant-45": "patch",
+      "constant-50": "patch",
+      "constant-58": "patch",
+      "constant-61": "patch",
+      "constant-67": "patch",
+      "constant-79": "patch",
+      "constant-84": "patch",
+      "constant-95": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    },
+    "net/ipv6/netfilter/nf_reject_ipv6.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "nf_send_reset6",
+       "nf_send_unreach6"
+      ],
+      "signature_functions": [
+       "nf_send_reset6",
+       "nf_send_unreach6"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-3": "patch",
+      "redirect-14": "patch",
+      "redirect-19": "patch",
+      "redirect-21": "patch",
+      "redirect-22": "patch",
+      "redirect-23": "patch",
+      "redirect-28": "patch",
+      "redirect-31": "patch",
+      "swap-21": "patch",
+      "swap-24": "patch",
+      "swap-27": "patch",
+      "swap-35": "patch",
+      "swap-38": "patch",
+      "swap-41": "patch",
+      "swap-44": "patch",
+      "swap-51": "patch",
+      "swap-54": "patch",
+      "swap-60": "patch",
+      "addend-52": "patch",
+      "addend-53": "patch",
+      "addend-54": "patch",
+      "addend-55": "patch",
+      "dropcall-17": "patch",
+      "dropcall-18": "patch",
+      "dropcall-23": "patch",
+      "dropcall-24": "patch",
+      "dropcall-32": "patch",
+      "dropcall-41": "patch",
+      "dropcall-43": "patch",
+      "dropcall-44": "patch",
+      "dropcall-46": "patch",
+      "dropcall-47": "patch",
+      "constant-25": "patch",
+      "constant-31": "patch",
+      "constant-45": "patch",
+      "constant-50": "patch",
+      "constant-58": "patch",
+      "constant-61": "patch",
+      "constant-67": "patch",
+      "constant-79": "patch",
+      "constant-84": "patch",
+      "constant-95": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-39764",
+   "files": {
+    "net/netfilter/nf_conntrack_netlink.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ctnetlink_dump_exp_ct",
+       "ctnetlink_get_expect"
+      ],
+      "signature_functions": [
+       "ctnetlink_get_expect"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-39795",
+   "files": {
+    "block/blk-settings.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "blk_stack_limits"
+      ],
+      "signature_functions": [
+       "blk_stack_limits"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-0": "patch",
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-3": "patch",
+      "redirect-4": "patch",
+      "redirect-5": "patch",
+      "redirect-6": "patch",
+      "redirect-7": "patch",
+      "redirect-8": "patch",
+      "swap-18": "patch",
+      "swap-19": "patch",
+      "swap-20": "patch",
+      "swap-21": "vuln",
+      "swap-22": "vuln",
+      "dropcall-17": "vuln",
+      "dropcall-18": "patch",
+      "dropcall-19": "patch",
+      "dropcall-20": "patch",
+      "dropcall-21": "patch",
+      "constant-26": "patch",
+      "constant-28": "patch",
+      "constant-31": "vuln",
+      "constant-32": "patch",
+      "constant-33": "patch",
+      "constant-34": "patch",
+      "constant-37": "patch",
+      "constant-40": "patch",
+      "constant-42": "patch",
+      "constant-45": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-39920",
+   "files": {
+    "drivers/pcmcia/rsrc_nonstatic.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "do_validate_mem"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-68245",
+   "files": {
+    "net/core/netpoll.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__netpoll_cleanup"
+      ],
+      "signature_functions": [
+       "__netpoll_cleanup"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-68264",
+   "files": {
+    "fs/ext4/inline.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_prepare_inline_data"
+      ],
+      "signature_functions": [
+       "ext4_prepare_inline_data"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2025-71131",
+   "files": {
+    "crypto/seqiv.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "seqiv_aead_encrypt"
+      ],
+      "signature_functions": [
+       "seqiv_aead_encrypt"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-0": "patch",
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-3": "patch",
+      "redirect-6": "patch",
+      "redirect-8": "patch",
+      "redirect-9": "patch",
+      "redirect-10": "patch",
+      "redirect-12": "patch",
+      "redirect-13": "patch",
+      "swap-18": "patch",
+      "swap-19": "patch",
+      "swap-20": "patch",
+      "swap-21": "patch",
+      "swap-22": "patch",
+      "swap-23": "patch",
+      "swap-24": "patch",
+      "swap-25": "patch",
+      "addend-52": "patch",
+      "dropcall-17": "vuln",
+      "dropcall-18": "patch",
+      "dropcall-19": "patch",
+      "dropcall-20": "patch",
+      "dropcall-21": "patch",
+      "dropcall-22": "patch",
+      "dropcall-23": "patch",
+      "dropcall-24": "patch",
+      "constant-25": "patch",
+      "constant-27": "patch",
+      "constant-29": "patch",
+      "constant-30": "patch",
+      "constant-32": "patch",
+      "constant-36": "patch",
+      "constant-38": "patch",
+      "constant-39": "patch",
+      "constant-42": "patch",
+      "constant-43": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-22979",
+   "files": {
+    "net/core/skbuff.o": {
+     "signature": {
+      "stage": "signature",
+      "error": "ValueError(\"invalid literal for int() with base 16: 'Address'\")",
+      "trace": "Traceback (most recent call last):\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 51, in main\n    funcnames, sigs = signatures(vuln, patch, diff)\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 21, in signatures\n    dbg = DebugParser2.from_binary(vuln, patch, funcnames)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 160, in from_binary\n    return cls(DebugParser.from_binary(vuln_binary_path, funcnames), DebugParser.from_binary(patch_binary_path, funcnames))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 134, in from_binary\n    return cls(debug_infos, binary_path)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 21, in __init__\n    self.parse_result.update(self._debug_parse(debug_info))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 45, in _debug_parse\n    addr.append(int(tokens[0], 16))\nValueError: invalid literal for int() with base 16: 'Address'\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-23255",
+   "files": {
+    "net/core/net-procfs.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ptype_get_idx",
+       "ptype_seq_start",
+       "ptype_seq_next",
+       "ptype_seq_stop",
+       "dev_proc_net_init"
+      ],
+      "signature_functions": [
+       "ptype_seq_next"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-3": "patch",
+      "redirect-4": "patch",
+      "redirect-5": "patch",
+      "redirect-6": "patch",
+      "redirect-7": "patch",
+      "redirect-8": "patch",
+      "redirect-10": "patch",
+      "redirect-11": "patch",
+      "swap-18": "patch",
+      "swap-19": "patch",
+      "swap-21": "patch",
+      "swap-22": "patch",
+      "swap-25": "patch",
+      "swap-27": "patch",
+      "swap-28": "patch",
+      "swap-30": "patch",
+      "swap-31": "patch",
+      "swap-32": "patch",
+      "addend-58": "patch",
+      "addend-61": "patch",
+      "addend-62": "patch",
+      "addend-64": "patch",
+      "addend-67": "patch",
+      "addend-72": "patch",
+      "addend-74": "patch",
+      "addend-76": "patch",
+      "addend-77": "patch",
+      "addend-80": "patch",
+      "sympos-0": "patch",
+      "dropcall-17": "patch",
+      "dropcall-18": "patch",
+      "dropcall-19": "patch",
+      "dropcall-20": "patch",
+      "dropcall-21": "patch",
+      "dropcall-22": "patch",
+      "dropcall-25": "patch",
+      "dropcall-29": "patch",
+      "dropcall-30": "patch",
+      "dropcall-31": "vuln",
+      "constant-29": "patch",
+      "constant-32": "patch",
+      "constant-33": "patch",
+      "constant-35": "patch",
+      "constant-36": "patch",
+      "constant-38": "patch",
+      "constant-41": "patch",
+      "constant-49": "patch",
+      "constant-50": "patch",
+      "constant-53": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-23300",
+   "files": {
+    "net/ipv6/route.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "fib6_nh_init"
+      ],
+      "signature_functions": [
+       "fib6_nh_init"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-31450",
+   "files": {
+    "fs/ext4/fast_commit.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_fc_submit_inode_data_all",
+       "ext4_fc_wait_inode_data_all"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "fs/ext4/inode.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_inode_csum_set",
+       "ext4_begin_ordered_truncate",
+       "ext4_inode_attach_jinode"
+      ],
+      "signature_functions": [
+       "ext4_inode_attach_jinode"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-43139",
+   "files": {
+    "net/ipv6/xfrm6_policy.o": {
+     "signature": {
+      "error": "mentedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\nCRITICAL [simulator.py:296] NotImplementedError Ijk_Ret\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {
+      "redirect-0": null,
+      "redirect-1": null,
+      "redirect-2": null,
+      "redirect-3": null,
+      "redirect-4": null,
+      "redirect-5": null,
+      "redirect-6": null,
+      "redirect-7": null,
+      "redirect-8": null,
+      "swap-18": null,
+      "swap-19": null,
+      "swap-20": null,
+      "swap-21": null,
+      "addend-52": null,
+      "dropcall-17": null,
+      "dropcall-18": null,
+      "dropcall-19": null,
+      "dropcall-20": null,
+      "constant-25": null
+     },
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-43287",
+   "files": {
+    "drivers/gpu/drm/drm_property.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "drm_property_create_blob"
+      ],
+      "signature_functions": [
+       "drm_property_create_blob"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-43383",
+   "files": {
+    "net/ipv4/tcp.o": {
+     "signature": {
+      "stage": "signature",
+      "error": "ValueError(\"invalid literal for int() with base 16: 'Address'\")",
+      "trace": "Traceback (most recent call last):\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 51, in main\n    funcnames, sigs = signatures(vuln, patch, diff)\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 21, in signatures\n    dbg = DebugParser2.from_binary(vuln, patch, funcnames)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 160, in from_binary\n    return cls(DebugParser.from_binary(vuln_binary_path, funcnames), DebugParser.from_binary(patch_binary_path, funcnames))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 134, in from_binary\n    return cls(debug_infos, binary_path)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 21, in __init__\n    self.parse_result.update(self._debug_parse(debug_info))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 45, in _debug_parse\n    addr.append(int(tokens[0], 16))\nValueError: invalid literal for int() with base 16: 'Address'\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "net/ipv4/tcp_ipv4.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "tcp_v4_send_reset"
+      ],
+      "signature_functions": [
+       "tcp_v4_send_reset"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    },
+    "net/ipv6/tcp_ipv6.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "tcp_v6_send_reset"
+      ],
+      "signature_functions": [
+       "tcp_v6_send_reset"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-53239",
+   "files": {
+    "net/xfrm/xfrm_policy.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__xfrm_policy_inexact_prune_bin",
+       "xfrm_policy_bysel_ctx"
+      ],
+      "signature_functions": [
+       "xfrm_policy_bysel_ctx"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-53352",
+   "files": {
+    "kernel/signal.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "zap_other_threads"
+      ],
+      "signature_functions": [
+       "zap_other_threads"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-0": "patch",
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-3": "patch",
+      "redirect-4": "patch",
+      "redirect-5": "patch",
+      "redirect-6": "patch",
+      "redirect-7": "patch",
+      "redirect-8": "patch",
+      "redirect-9": "patch",
+      "swap-18": "patch",
+      "swap-19": "patch",
+      "swap-20": "vuln",
+      "swap-21": "patch",
+      "swap-22": "patch",
+      "dropcall-17": "vuln",
+      "dropcall-18": "patch",
+      "dropcall-19": "patch",
+      "dropcall-20": "patch",
+      "dropcall-21": "patch",
+      "constant-25": "patch",
+      "constant-26": "patch",
+      "constant-28": "patch",
+      "constant-29": "patch",
+      "constant-33": "patch",
+      "constant-37": "patch",
+      "constant-38": "patch",
+      "constant-40": "patch",
+      "constant-41": "patch",
+      "constant-42": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-64116",
+   "files": {
+    "net/ipv6/exthdrs.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ipv6_hop_ra"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-64174",
+   "files": {
+    "net/wireless/scan.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "cfg80211_merge_profile"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-64435",
+   "files": {
+    "kernel/audit.o": {
+     "signature": {
+      "stage": "signature",
+      "error": "ValueError(\"invalid literal for int() with base 16: 'Address'\")",
+      "trace": "Traceback (most recent call last):\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 51, in main\n    funcnames, sigs = signatures(vuln, patch, diff)\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 21, in signatures\n    dbg = DebugParser2.from_binary(vuln, patch, funcnames)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 160, in from_binary\n    return cls(DebugParser.from_binary(vuln_binary_path, funcnames), DebugParser.from_binary(patch_binary_path, funcnames))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 134, in from_binary\n    return cls(debug_infos, binary_path)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 21, in __init__\n    self.parse_result.update(self._debug_parse(debug_info))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 45, in _debug_parse\n    addr.append(int(tokens[0], 16))\nValueError: invalid literal for int() with base 16: 'Address'\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-64465",
+   "files": {
+    "drivers/usb/host/xhci.o": {
+     "signature": {
+      "stage": "signature",
+      "error": "ValueError(\"invalid literal for int() with base 16: 'Address'\")",
+      "trace": "Traceback (most recent call last):\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 51, in main\n    funcnames, sigs = signatures(vuln, patch, diff)\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 21, in signatures\n    dbg = DebugParser2.from_binary(vuln, patch, funcnames)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 160, in from_binary\n    return cls(DebugParser.from_binary(vuln_binary_path, funcnames), DebugParser.from_binary(patch_binary_path, funcnames))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 134, in from_binary\n    return cls(debug_infos, binary_path)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 21, in __init__\n    self.parse_result.update(self._debug_parse(debug_info))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 45, in _debug_parse\n    addr.append(int(tokens[0], 16))\nValueError: invalid literal for int() with base 16: 'Address'\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-64560",
+   "files": {
+    "kernel/exit.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__exit_signal"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "kernel/signal.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__lock_task_sighand"
+      ],
+      "signature_functions": [
+       "__lock_task_sighand"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR AssertionError()",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    },
+    "kernel/time/posix-cpu-timers.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "disarm_timer",
+       "posix_cpu_timer_del",
+       "posix_cpu_timer_set",
+       "posix_cpu_timer_rearm"
+      ],
+      "signature_functions": [
+       "posix_cpu_timer_del",
+       "posix_cpu_timer_set",
+       "posix_cpu_timer_rearm"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-80742",
+   "files": {
+    "net/packet/af_packet.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "tpacket_fill_skb"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-89983",
+   "files": {
+    "drivers/i2c/i2c-core-base.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "i2c_del_adapter"
+      ],
+      "signature_functions": [
+       "i2c_del_adapter"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR AssertionError()",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-90049",
+   "files": {
+    "net/core/skbuff.o": {
+     "signature": {
+      "stage": "signature",
+      "error": "ValueError(\"invalid literal for int() with base 16: 'Address'\")",
+      "trace": "Traceback (most recent call last):\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 51, in main\n    funcnames, sigs = signatures(vuln, patch, diff)\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 21, in signatures\n    dbg = DebugParser2.from_binary(vuln, patch, funcnames)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 160, in from_binary\n    return cls(DebugParser.from_binary(vuln_binary_path, funcnames), DebugParser.from_binary(patch_binary_path, funcnames))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 134, in from_binary\n    return cls(debug_infos, binary_path)\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 21, in __init__\n    self.parse_result.update(self._debug_parse(debug_info))\n  File \"/opt/atlas/tools/ps3/ps3/debug_parser.py\", line 45, in _debug_parse\n    addr.append(int(tokens[0], 16))\nValueError: invalid literal for int() with base 16: 'Address'\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-90198",
+   "files": {
+    "sound/core/init.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "EXPORT_SYMBOL_GPL",
+       "snd_card_do_free"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-92522",
+   "files": {
+    "drivers/acpi/processor_core.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "acpi_get_cpuid",
+       "parse_madt_ioapic_entry",
+       "parse_mat_ioapic_entry"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-93268",
+   "files": {
+    "fs/ext4/inode.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_try_to_expand_extra_isize"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.1",
+   "cve": "CVE-2026-97450",
+   "files": {
+    "drivers/acpi/acpica/evhandler.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "acpi_ev_has_default_handler",
+       "acpi_ev_find_region_handler"
+      ],
+      "signature_functions": [
+       "acpi_ev_has_default_handler",
+       "acpi_ev_find_region_handler"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-0": "patch",
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-5": "patch",
+      "redirect-7": "patch",
+      "redirect-8": "patch",
+      "redirect-9": "patch",
+      "redirect-10": "patch",
+      "redirect-11": "patch",
+      "redirect-13": "patch",
+      "swap-20": "patch",
+      "swap-21": "patch",
+      "swap-23": "patch",
+      "swap-25": "patch",
+      "swap-28": "patch",
+      "swap-33": "patch",
+      "swap-34": "patch",
+      "swap-37": "patch",
+      "addend-54": "patch",
+      "addend-55": "patch",
+      "addend-56": "patch",
+      "addend-60": "patch",
+      "addend-61": "patch",
+      "addend-62": "patch",
+      "addend-63": "patch",
+      "addend-66": "patch",
+      "addend-68": "patch",
+      "addend-69": "patch",
+      "dropcall-17": "patch",
+      "dropcall-18": "vuln",
+      "dropcall-19": "vuln",
+      "dropcall-20": "patch",
+      "dropcall-21": "patch",
+      "dropcall-22": "patch",
+      "dropcall-24": "patch",
+      "dropcall-27": "patch",
+      "dropcall-29": "patch",
+      "dropcall-31": "patch",
+      "constant-26": "patch",
+      "constant-32": "vuln",
+      "constant-33": "patch",
+      "constant-36": "patch",
+      "constant-47": "patch",
+      "constant-54": "patch",
+      "constant-58": "patch",
+      "constant-59": "patch",
+      "constant-66": "patch",
+      "constant-67": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2025-38643",
+   "files": {
+    "net/wireless/reg.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "cfg80211_check_and_end_cac"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2025-40363",
+   "files": {
+    "net/ipv6/ah6.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ah6_output_done",
+       "ah6_output"
+      ],
+      "signature_functions": [
+       "ah6_output_done",
+       "ah6_output"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5816)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2025-68261",
+   "files": {
+    "fs/ext4/inline.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_destroy_inline_data_nolock"
+      ],
+      "signature_functions": [
+       "ext4_destroy_inline_data_nolock"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2025-68795",
+   "files": {
+    "net/ethtool/ioctl.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ethtool_get_strings",
+       "ethtool_get_stats",
+       "ethtool_get_phy_stats_phydev",
+       "ethtool_get_phy_stats_ethtool",
+       "ethtool_get_phy_stats"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2025-71097",
+   "files": {
+    "net/ipv4/fib_trie.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "fib_table_flush"
+      ],
+      "signature_functions": [
+       "fib_table_flush"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR KeyError(5608)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2025-71118",
+   "files": {
+    "drivers/acpi/acpica/nswalk.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "acpi_ns_walk_namespace"
+      ],
+      "signature_functions": [
+       "acpi_ns_walk_namespace"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5000)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2025-71305",
+   "files": {
+    "drivers/gpu/drm/display/drm_dp_mst_topology.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "drm_dp_atomic_release_time_slots"
+      ],
+      "signature_functions": [
+       "drm_dp_atomic_release_time_slots"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(11064)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-23004",
+   "files": {
+    "net/core/dst.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "dst_init"
+      ],
+      "signature_functions": [
+       "dst_init"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR KeyError(9640)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    },
+    "net/ipv4/route.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "rt_add_uncached_list"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "net/ipv6/route.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "rt6_uncached_list_add"
+      ],
+      "signature_functions": [
+       "rt6_uncached_list_add"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(9640)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-23101",
+   "files": {
+    "drivers/leds/led-class.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "led_classdev_register_ext"
+      ],
+      "signature_functions": [
+       "led_classdev_register_ext"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR KeyError(5432)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-23154",
+   "files": {
+    "net/core/filter.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "bpf_skb_proto_4_to_6",
+       "bpf_skb_proto_6_to_4"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "net/ipv4/tcp_offload.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "tcp4_gso_segment"
+      ],
+      "signature_functions": [
+       "tcp4_gso_segment"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(11248)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    },
+    "net/ipv4/udp_offload.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__udp_gso_segment"
+      ],
+      "signature_functions": [
+       "__udp_gso_segment"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(11248)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    },
+    "net/ipv6/tcpv6_offload.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "tcp6_gso_segment"
+      ],
+      "signature_functions": [
+       "tcp6_gso_segment"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(11248)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-23255",
+   "files": {
+    "net/core/net-procfs.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ptype_get_idx",
+       "ptype_seq_start",
+       "ptype_seq_next",
+       "ptype_seq_stop",
+       "dev_proc_net_init"
+      ],
+      "signature_functions": [
+       "ptype_seq_next"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(6656)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-31415",
+   "files": {
+    "net/ipv6/datagram.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ip6_datagram_send_ctl"
+      ],
+      "signature_functions": [
+       "ip6_datagram_send_ctl"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5920)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-31450",
+   "files": {
+    "fs/ext4/fast_commit.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_fc_submit_inode_data_all",
+       "ext4_fc_wait_inode_data_all"
+      ],
+      "signature_functions": [
+       "ext4_fc_submit_inode_data_all"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR AssertionError()",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    },
+    "fs/ext4/inode.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_inode_csum_set",
+       "ext4_begin_ordered_truncate",
+       "ext4_inode_attach_jinode"
+      ],
+      "signature_functions": [
+       "ext4_inode_attach_jinode"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-31520",
+   "files": {
+    "drivers/hid/hid-apple.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "apple_report_fixup"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-31781",
+   "files": {
+    "drivers/gpu/drm/drm_ioc32.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "drm_compat_ioctl"
+      ],
+      "signature_functions": [
+       "drm_compat_ioctl"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4640)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-43027",
+   "files": {
+    "net/netfilter/nf_conntrack_helper.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "nf_conntrack_helper_unregister"
+      ],
+      "signature_functions": [
+       "nf_conntrack_helper_unregister"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4056)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-43068",
+   "files": {
+    "fs/ext4/mballoc.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_mb_find_by_goal"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-43099",
+   "files": {
+    "net/ipv4/icmp.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "icmp_build_probe"
+      ],
+      "signature_functions": [
+       "icmp_build_probe"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5656)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-43344",
+   "files": {
+    "arch/x86/events/intel/uncore.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "uncore_die_to_segment"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "arch/x86/events/intel/uncore_snbep.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "snbep_pci2phy_map_init",
+       "spr_update_device_location"
+      ],
+      "signature_functions": [
+       "snbep_pci2phy_map_init",
+       "spr_update_device_location"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(8888)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-43439",
+   "files": {
+    "kernel/cgroup/cgroup.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "cgroup_migrate_add_task"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-43470",
+   "files": {
+    "fs/nfs/nfs3proc.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "nfs3_proc_create"
+      ],
+      "signature_functions": [
+       "nfs3_proc_create"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5032)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-46015",
+   "files": {
+    "net/ipv4/inet_connection_sock.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "inet_csk_listen_stop"
+      ],
+      "signature_functions": [
+       "inet_csk_listen_stop"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-46046",
+   "files": {
+    "fs/ext4/xattr.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_xattr_inode_dec_ref_all"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-46166",
+   "files": {
+    "net/mac80211/util.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ieee80211_dfs_radar_detected_work"
+      ],
+      "signature_functions": [
+       "ieee80211_dfs_radar_detected_work"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4744)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-53184",
+   "files": {
+    "net/ipv4/udp.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-64373",
+   "files": {
+    "drivers/cpufreq/cpufreq.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "cpufreq_suspend"
+      ],
+      "signature_functions": [
+       "cpufreq_suspend"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR KeyError(6096)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-64435",
+   "files": {
+    "kernel/audit.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "audit_receive_msg",
+       "audit_receive",
+       "audit_log_start"
+      ],
+      "signature_functions": [
+       "audit_receive_msg",
+       "audit_receive"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(17536)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-64560",
+   "files": {
+    "kernel/exit.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__exit_signal"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "kernel/signal.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__lock_task_sighand"
+      ],
+      "signature_functions": [
+       "__lock_task_sighand"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR KeyError(13520)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    },
+    "kernel/time/posix-cpu-timers.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "disarm_timer",
+       "posix_cpu_timer_del",
+       "posix_cpu_timer_set",
+       "posix_cpu_timer_rearm"
+      ],
+      "signature_functions": [
+       "posix_cpu_timer_del",
+       "posix_cpu_timer_set",
+       "posix_cpu_timer_rearm"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(13520)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-68184",
+   "files": {
+    "drivers/cdrom/cdrom.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "mmc_ioctl_cdrom_volume"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-68255",
+   "files": {
+    "drivers/gpu/drm/virtio/virtgpu_vq.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "virtio_get_edid_block"
+      ],
+      "signature_functions": [
+       "virtio_get_edid_block"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4136)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-72400",
+   "files": {
+    "net/ipv6/seg6.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "seg6_validate_srh"
+      ],
+      "signature_functions": [
+       "seg6_validate_srh"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4816)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-74550",
+   "files": {
+    "net/ipv4/route.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ip_rt_send_redirect"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "net/ipv6/ip6_output.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ip6_forward"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "net/ipv6/ndisc.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ndisc_send_redirect"
+      ],
+      "signature_functions": [
+       "ndisc_send_redirect"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(13408)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-80574",
+   "files": {
+    "drivers/input/mouse/focaltech.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "focaltech_process_rel_packet"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-89536",
+   "files": {
+    "net/sunrpc/xprtsock.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "xs_tls_handshake_sync"
+      ],
+      "signature_functions": [
+       "xs_tls_handshake_sync"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4936)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-89547",
+   "files": {
+    "net/sunrpc/svc.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__svc_init_bc",
+       "__svc_create",
+       "svc_destroy"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-89550",
+   "files": {
+    "net/sunrpc/auth_gss/svcauth_gss.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "svcauth_gss_unwrap_priv"
+      ],
+      "signature_functions": [
+       "svcauth_gss_unwrap_priv"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-1": "patch",
+      "redirect-2": "patch",
+      "redirect-3": "patch",
+      "redirect-4": "patch",
+      "redirect-5": "patch",
+      "redirect-9": "patch",
+      "redirect-10": "patch",
+      "redirect-11": "patch",
+      "redirect-13": "patch",
+      "redirect-15": "patch",
+      "swap-91": "patch",
+      "swap-94": "patch",
+      "swap-97": "vuln",
+      "swap-98": "vuln",
+      "swap-99": "vuln",
+      "swap-102": "patch",
+      "swap-105": "patch",
+      "swap-111": "patch",
+      "swap-113": "patch",
+      "swap-121": "patch",
+      "addend-61": "patch",
+      "addend-64": "patch",
+      "addend-65": "patch",
+      "addend-66": "patch",
+      "addend-67": "patch",
+      "addend-68": "patch",
+      "addend-69": "patch",
+      "addend-70": "patch",
+      "addend-71": "patch",
+      "addend-72": "patch",
+      "dropcall-92": "vuln",
+      "dropcall-93": "patch",
+      "dropcall-95": "patch",
+      "dropcall-97": "patch",
+      "dropcall-102": "patch",
+      "dropcall-108": "patch",
+      "dropcall-112": "patch",
+      "dropcall-113": "patch",
+      "dropcall-117": "patch",
+      "dropcall-121": "patch",
+      "constant-32": "patch",
+      "constant-33": "patch",
+      "constant-34": "patch",
+      "constant-35": "patch",
+      "constant-36": "patch",
+      "constant-37": "patch",
+      "constant-38": "patch",
+      "constant-39": "patch",
+      "constant-40": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-89603",
+   "files": {
+    "kernel/entry/common.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "syscall_trace_enter"
+      ],
+      "signature_functions": [
+       "syscall_trace_enter"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4448)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-89823",
+   "files": {
+    "drivers/gpu/drm/drm_drv.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "drm_dev_exit",
+       "EXPORT_SYMBOL",
+       "drm_dev_register"
+      ],
+      "signature_functions": [
+       "drm_dev_register"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5704)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-98201",
+   "files": {
+    "drivers/input/input-compat.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "input_ff_effect_from_user"
+      ],
+      "signature_functions": [
+       "input_ff_effect_from_user"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4016)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-98230",
+   "files": {
+    "net/xfrm/xfrm_state.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__xfrm_state_delete"
+      ],
+      "signature_functions": [
+       "__xfrm_state_delete"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4824)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-98308",
+   "files": {
+    "sound/pci/hda/hda_controller.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "azx_pcm_open"
+      ],
+      "signature_functions": [
+       "azx_pcm_open"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.12",
+   "cve": "CVE-2026-98331",
+   "files": {
+    "net/mac80211/iface.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ieee80211_teardown_sdata"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2024-27022",
+   "files": {
+    "kernel/fork.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "dup_mmap"
+      ],
+      "signature_functions": [
+       "dup_mmap"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2024-47674",
+   "files": {
+    "mm/memory.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "remap_p4d_range",
+       "remap_pfn_range_notrack"
+      ],
+      "signature_functions": [
+       "remap_pfn_range_notrack"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(8416)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2024-49883",
+   "files": {
+    "fs/ext4/extents.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2024-50191",
+   "files": {
+    "fs/ext4/super.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_handle_error"
+      ],
+      "signature_functions": [
+       "ext4_handle_error"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2024-50195",
+   "files": {
+    "kernel/time/posix-clock.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "pc_clock_settime"
+      ],
+      "signature_functions": [
+       "pc_clock_settime"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4200)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2024-53168",
+   "files": {
+    "net/sunrpc/svcsock.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "svc_create_socket"
+      ],
+      "signature_functions": [
+       "svc_create_socket"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    },
+    "net/sunrpc/xprtsock.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "xs_create_sock"
+      ],
+      "signature_functions": [
+       "xs_create_sock"
+      ]
+     },
+     "error": null,
+     "control_vuln": "ERROR AssertionError()",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2024-56709",
+   "files": {
+    "io_uring/io_uring.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "io_queue_iowq"
+      ],
+      "signature_functions": [
+       "io_queue_iowq"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-0": "patch",
+      "redirect-1": "patch",
+      "redirect-3": "patch",
+      "redirect-4": "patch",
+      "redirect-6": "patch",
+      "redirect-7": "patch",
+      "redirect-8": "patch",
+      "redirect-9": "patch",
+      "redirect-10": "patch",
+      "redirect-12": "patch",
+      "swap-91": "patch",
+      "swap-92": "patch",
+      "swap-93": "patch",
+      "swap-98": "patch",
+      "swap-99": "patch",
+      "swap-101": "patch",
+      "swap-102": "patch",
+      "swap-106": "patch",
+      "swap-107": "patch",
+      "swap-110": "patch",
+      "addend-60": "patch",
+      "addend-61": "patch",
+      "addend-62": "patch",
+      "addend-64": "patch",
+      "addend-65": "patch",
+      "addend-66": "patch",
+      "addend-67": "patch",
+      "addend-68": "patch",
+      "addend-69": "patch",
+      "addend-70": "patch",
+      "dropcall-93": "patch",
+      "dropcall-94": "patch",
+      "dropcall-99": "patch",
+      "dropcall-100": "patch",
+      "dropcall-101": "patch",
+      "dropcall-102": "patch",
+      "dropcall-104": "patch",
+      "dropcall-111": "patch",
+      "dropcall-113": "patch",
+      "dropcall-114": "patch",
+      "constant-32": "patch",
+      "constant-33": "patch",
+      "constant-34": "patch",
+      "constant-35": "vuln",
+      "constant-36": "patch",
+      "constant-37": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2024-58078",
+   "files": {
+    "drivers/char/misc.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "DEFINE_MUTEX",
+       "misc_register"
+      ],
+      "signature_functions": [
+       "misc_register"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5080)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2025-37995",
+   "files": {
+    "kernel/params.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2025-38067",
+   "files": {
+    "kernel/rseq.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "rseq_reset_rseq_cpu_node_id",
+       "rseq_get_rseq_cs",
+       "rseq_need_restart",
+       "clear_rseq_cs",
+       "rseq_ip_fixup",
+       "SYSCALL_DEFINE4"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2025-38100",
+   "files": {
+    "arch/x86/kernel/ioport.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "io_bitmap_share",
+       "io_bitmap_exit",
+       "SYSCALL_DEFINE1"
+      ],
+      "signature_functions": [
+       "io_bitmap_exit"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    },
+    "arch/x86/kernel/process.o": {
+     "signature": {
+      "stage": "signature",
+      "error": "BdbQuit()",
+      "trace": "Traceback (most recent call last):\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 51, in main\n    funcnames, sigs = signatures(vuln, patch, diff)\n  File \"/opt/atlas/tools/ps3/ps3/ps3_one.py\", line 29, in signatures\n    c = gen.generate(fn, h.add, \"patch\", h.add_pattern)\n  File \"/opt/atlas/tools/ps3/ps3/simulator.py\", line 494, in generate\n    collect = self.patch_proj.generate(\n  File \"/opt/atlas/tools/ps3/ps3/simulator.py\", line 196, in generate\n    result = self._simulateBB(state, step_one=True)\n  File \"/opt/atlas/tools/ps3/ps3/simulator.py\", line 235, in _simulateBB\n    cond = stmt.simulate(state.env)\n  File \"/opt/atlas/tools/ps3/ps3/stmt.py\", line 139, in simulate\n    breakpoint()\n  File \"/home/developer/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/bdb.py\", line 94, in trace_dispatch\n    return self.dispatch_return(frame, arg)\n  File \"/home/developer/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/bdb.py\", line 156, in dispatch_return\n    if self.quitting: raise BdbQuit\nbdb.BdbQuit\n"
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2025-38192",
+   "files": {
+    "net/core/filter.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "bpf_skb_proto_4_to_6",
+       "bpf_skb_proto_6_to_4",
+       "bpf_skb_net_grow",
+       "bpf_skb_net_shrink"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2025-38349",
+   "files": {
+    "fs/eventpoll.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__ep_remove",
+       "ep_clear_and_put"
+      ],
+      "signature_functions": [
+       "__ep_remove",
+       "ep_clear_and_put"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "vuln",
+     "extra": {
+      "redirect-2": "vuln",
+      "redirect-4": "vuln",
+      "redirect-5": "vuln",
+      "redirect-6": "vuln",
+      "redirect-7": "vuln",
+      "redirect-11": "vuln",
+      "redirect-17": "vuln",
+      "redirect-22": "vuln",
+      "redirect-25": "vuln",
+      "redirect-33": "vuln",
+      "swap-131": "vuln",
+      "swap-161": "vuln",
+      "swap-174": "vuln",
+      "swap-217": "vuln",
+      "swap-239": "vuln",
+      "swap-257": "vuln",
+      "swap-258": "vuln",
+      "swap-291": "vuln",
+      "swap-306": "vuln",
+      "swap-384": "vuln",
+      "addend-61": "vuln",
+      "addend-66": "vuln",
+      "addend-67": "vuln",
+      "addend-77": "vuln",
+      "addend-86": "vuln",
+      "addend-89": "vuln",
+      "addend-96": "vuln",
+      "addend-100": "vuln",
+      "addend-101": "vuln",
+      "addend-121": "vuln",
+      "sympos-0": "vuln",
+      "dropcall-120": "vuln",
+      "dropcall-128": "vuln",
+      "dropcall-138": "vuln",
+      "dropcall-144": "vuln",
+      "dropcall-149": "vuln",
+      "dropcall-238": "vuln",
+      "dropcall-239": "vuln",
+      "dropcall-273": "vuln",
+      "dropcall-383": "vuln",
+      "dropcall-409": "vuln",
+      "constant-37": "vuln",
+      "constant-39": "vuln",
+      "constant-55": "vuln",
+      "constant-57": "vuln",
+      "constant-64": "vuln",
+      "constant-80": "vuln",
+      "constant-82": "vuln",
+      "constant-89": "vuln",
+      "constant-91": "vuln",
+      "constant-121": "vuln"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2025-38465",
+   "files": {
+    "net/netlink/af_netlink.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "netlink_skb_set_owner_r",
+       "netlink_alloc_large_skb",
+       "netlink_unicast_kernel",
+       "EXPORT_SYMBOL_GPL",
+       "netlink_dump"
+      ],
+      "signature_functions": [
+       "netlink_skb_set_owner_r",
+       "netlink_dump"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2025-38499",
+   "files": {
+    "fs/namespace.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "clone_private_mount"
+      ],
+      "signature_functions": [
+       "clone_private_mount"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4976)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2025-40109",
+   "files": {
+    "crypto/rng.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "crypto_register_rng"
+      ],
+      "signature_functions": [
+       "crypto_register_rng"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4520)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-23246",
+   "files": {
+    "net/mac80211/mlme.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ieee80211_ml_reconfiguration"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-23271",
+   "files": {
+    "kernel/events/core.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "perf_event_overflow",
+       "perf_swevent_event",
+       "perf_tp_event",
+       "perf_bp_event",
+       "perf_swevent_hrtimer"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-23398",
+   "files": {
+    "net/ipv4/icmp.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-43026",
+   "files": {
+    "net/netfilter/nf_conntrack_netlink.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ctnetlink_alloc_expect"
+      ],
+      "signature_functions": [
+       "ctnetlink_alloc_expect"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-43074",
+   "files": {
+    "fs/eventpoll.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ep_free"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-43503",
+   "files": {
+    "net/core/gro.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "net/core/skbuff.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__pskb_copy_fclone"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "net/ipv4/tcp_output.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "tcp_clone_payload"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "net/ipv4/udp_offload.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "skb_gro_receive_list"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-45948",
+   "files": {
+    "fs/ext4/extents.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-46151",
+   "files": {
+    "drivers/usb/class/usblp.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "usblp_cache_device_id_string"
+      ],
+      "signature_functions": [
+       "usblp_cache_device_id_string"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4848)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-53126",
+   "files": {
+    "block/blk-cgroup.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "blkcg_maybe_throttle_current"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-53190",
+   "files": {
+    "drivers/gpu/drm/virtio/virtgpu_submit.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "virtio_gpu_dma_fence_wait"
+      ],
+      "signature_functions": [
+       "virtio_gpu_dma_fence_wait"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(4208)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-53356",
+   "files": {
+    "drivers/gpu/drm/i915/gem/i915_gem_phys.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "i915_gem_object_get_pages_phys",
+       "i915_gem_object_put_pages_phys",
+       "i915_gem_object_pwrite_phys"
+      ],
+      "signature_functions": [
+       "i915_gem_object_put_pages_phys"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR AssertionError()",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-64326",
+   "files": {
+    "block/bdev.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "bdev_mark_dead"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-64373",
+   "files": {
+    "drivers/cpufreq/cpufreq.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "cpufreq_suspend"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-64435",
+   "files": {
+    "kernel/audit.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "audit_receive_msg",
+       "audit_receive",
+       "audit_log_start"
+      ],
+      "signature_functions": [
+       "audit_receive_msg",
+       "audit_receive"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(17632)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-64548",
+   "files": {
+    "net/core/filter.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "BPF_CALL_4"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-64554",
+   "files": {
+    "net/ipv6/netfilter.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "br_ip6_fragment"
+      ],
+      "signature_functions": [
+       "br_ip6_fragment"
+      ]
+     },
+     "error": null,
+     "control_vuln": "patch",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5392)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-68248",
+   "files": {
+    "drivers/gpu/drm/i915/i915_active.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "active_instance"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-89541",
+   "files": {
+    "net/sunrpc/auth_gss/auth_gss.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "gss_unwrap_resp_priv"
+      ],
+      "signature_functions": [
+       "gss_unwrap_resp_priv"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "patch",
+     "extra": {
+      "redirect-0": "patch",
+      "redirect-1": "patch",
+      "redirect-3": "patch",
+      "redirect-6": "patch",
+      "redirect-8": "patch",
+      "redirect-10": "patch",
+      "redirect-11": "patch",
+      "redirect-13": "patch",
+      "redirect-14": "patch",
+      "redirect-15": "patch",
+      "swap-94": "patch",
+      "swap-99": "patch",
+      "swap-100": "patch",
+      "swap-101": "patch",
+      "swap-102": "vuln",
+      "swap-103": "vuln",
+      "swap-106": "patch",
+      "swap-109": "patch",
+      "swap-119": "patch",
+      "swap-121": "patch",
+      "addend-60": "patch",
+      "addend-61": "patch",
+      "addend-62": "patch",
+      "addend-64": "patch",
+      "addend-65": "patch",
+      "addend-66": "patch",
+      "addend-68": "patch",
+      "addend-70": "patch",
+      "addend-72": "patch",
+      "addend-73": "patch",
+      "dropcall-94": "patch",
+      "dropcall-95": "patch",
+      "dropcall-98": "patch",
+      "dropcall-101": "patch",
+      "dropcall-104": "patch",
+      "dropcall-106": "patch",
+      "dropcall-114": "patch",
+      "dropcall-116": "patch",
+      "dropcall-121": "patch",
+      "dropcall-123": "patch",
+      "constant-32": "patch",
+      "constant-33": "patch",
+      "constant-34": "patch",
+      "constant-35": "patch",
+      "constant-36": "patch",
+      "constant-37": "patch",
+      "constant-38": "patch"
+     },
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-89547",
+   "files": {
+    "net/sunrpc/svc.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "__svc_init_bc",
+       "__svc_create",
+       "svc_destroy"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-89643",
+   "files": {
+    "kernel/auditfilter.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "audit_add_rule",
+       "audit_del_rule",
+       "audit_rule_change"
+      ],
+      "signature_functions": [
+       "audit_del_rule",
+       "audit_rule_change"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR KeyError(6784)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-89753",
+   "files": {
+    "mm/vmscan.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "shrink_lruvec"
+      ],
+      "signature_functions": [
+       "shrink_lruvec"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "vuln",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-89784",
+   "files": {
+    "net/sunrpc/rpcb_clnt.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "rpcb_register_inet4",
+       "rpcb_register_inet6"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-93268",
+   "files": {
+    "fs/ext4/inode.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "ext4_try_to_expand_extra_isize"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-97449",
+   "files": {
+    "drivers/acpi/acpica/nsxfname.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "acpi_install_method"
+      ],
+      "signature_functions": [
+       "acpi_install_method"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(15696)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    },
+    "drivers/acpi/acpica/psargs.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "acpi_ps_get_next_arg"
+      ],
+      "signature_functions": []
+     },
+     "error": null,
+     "control_vuln": null,
+     "control_patch": null,
+     "module": null,
+     "extra": {},
+     "has_signatures": false,
+     "controls_pass": false
+    },
+    "drivers/acpi/acpica/psloop.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "acpi_ps_parse_loop"
+      ],
+      "signature_functions": [
+       "acpi_ps_parse_loop"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "vuln",
+     "module": "ERROR KeyError(15696)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": false
+    },
+    "drivers/acpi/acpica/psparse.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "acpi_ps_next_parse_state"
+      ],
+      "signature_functions": [
+       "acpi_ps_next_parse_state"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(15696)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": false
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-97456",
+   "files": {
+    "drivers/acpi/acpica/psloop.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "acpi_ps_parse_loop"
+      ],
+      "signature_functions": [
+       "acpi_ps_parse_loop"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(7168)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  },
+  {
+   "branch": "6.6",
+   "cve": "CVE-2026-97481",
+   "files": {
+    "drivers/tty/serial/8250/8250_port.o": {
+     "signature": {
+      "stage": "signature",
+      "functions": [
+       "serial8250_handle_irq"
+      ],
+      "signature_functions": [
+       "serial8250_handle_irq"
+      ]
+     },
+     "error": null,
+     "control_vuln": "vuln",
+     "control_patch": "patch",
+     "module": "ERROR KeyError(5696)",
+     "extra": {},
+     "has_signatures": true,
+     "controls_pass": true
+    }
+   },
+   "supported": true
+  }
+ ]
+}

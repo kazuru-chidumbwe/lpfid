@@ -1,0 +1,3100 @@
+{
+ "summary": {
+  "runs": 308,
+  "by_outcome": {
+   "LOADED_ENABLED": 307,
+   "LOAD_FAIL": 1
+  },
+  "by_pin_outcome": {
+   "5.15.173 LOADED_ENABLED": 134,
+   "6.1.119 LOADED_ENABLED": 29,
+   "6.12.51 LOADED_ENABLED": 32,
+   "6.12.51-gcc14 LOADED_ENABLED": 65,
+   "6.19 LOADED_ENABLED": 15,
+   "6.19 LOAD_FAIL": 1,
+   "6.6.47 LOADED_ENABLED": 32
+  }
+ },
+ "rows": [
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2025-71295",
+   "pin": "6.19",
+   "module_sha256": "4ff4236e38cd81bd56789233b1ddcab896089b9c575863670ead18f5f8b5536a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.252637] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-23296",
+   "pin": "6.19",
+   "module_sha256": "a4145724eea6d68f14124369f400c5e8bb6edc7f1456444668f753745ec1efa0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.267331] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-23331",
+   "pin": "6.19",
+   "module_sha256": "b47428e0679003cf21e3ad4345ebf5528a4fd7e9adc81ca730b421f96fcecc43",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.240594] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-23367",
+   "pin": "6.19",
+   "module_sha256": "0598bcb3c3d5e5bb22b4ee42b138da5d13ae37f558078fa9c9c632a15eb9aa0c",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.259952] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-23429",
+   "pin": "6.19",
+   "module_sha256": "bd614830864fa35358f664cd16d2b381d38e2d499a3bc37e9410b678d319e177",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.292204] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-23457",
+   "pin": "6.19",
+   "module_sha256": "c6a52f2726a506394815f00681190043877f2a17655fbfde4b0cd136598d481b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.259572] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-23467",
+   "pin": "6.19",
+   "module_sha256": "b8d5452dfd75e40312d4fce9b2a3361e5ba95b9d73579c585fafcba5ecd58ab8",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.231477] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31415",
+   "pin": "6.19",
+   "module_sha256": "cf5000b970e661aa9c3ea4b5d267b5e0f594cc75b79fd6d4b3c51debde0e8ef2",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.234179] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31428",
+   "pin": "6.19",
+   "module_sha256": "8ca24e447d924874dd150066631ff18c1c6c43cef01c82462a7550738d94bb7e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.247959] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31447",
+   "pin": "6.19",
+   "module_sha256": "4aafee5ad1ef3fd12769b26a53123d292027d04895f267b53192f0cf516a1af6",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.287399] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31449",
+   "pin": "6.19",
+   "module_sha256": "8238d4ad5bc4c6d42019beb4ac2b095054c9bc78761b71cf26990aee852e1b98",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.261540] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31451",
+   "pin": "6.19",
+   "module_sha256": "b08cd8961ef38bcc576d8065ad6b3b4071e0e5d945443409af2c03469a46798d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.252340] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31521",
+   "pin": "6.19",
+   "module_sha256": "d28c381f4b6ecdb9712eb832bbc7661ee270cea22baa2e61ab4aaaae29ba180e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.250685] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31525",
+   "pin": "6.19",
+   "module_sha256": "adad22cfac8e7094603581c8b41700f934824c6f0c2e0cce664fa0bd462b6244",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.244758] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31554",
+   "pin": "6.19",
+   "module_sha256": "f4af79db3cc223b83d149a92ebf884b7d12472a44550242507012286a71f3947",
+   "outcome": "LOAD_FAIL",
+   "insmod_rc": "22",
+   "enabled": "",
+   "transition": "",
+   "reason": "[    1.247424] PM:   Magic number: 14:330:291;[    1.407542] livepatch: failed to find location for function '__do_sys_futex_requeue';[    1.407936] livepatch: failed to patch object 'vmlinux';"
+  },
+  {
+   "id": "sweep/klp-gcc-13/6.19/CVE-2026-31555",
+   "pin": "6.19",
+   "module_sha256": "52681d9d9f98444411315cc446506312798aa93b5d18fbafcdbbf9006eb22744",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.245554] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2022-50327",
+   "pin": "5.15.173",
+   "module_sha256": "b6b80afe4045501cbf84caec5739072c7d0301bebac2db93d2d8f1c86e3a40b0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.033772] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2024-56720",
+   "pin": "5.15.173",
+   "module_sha256": "de559789f6bd50d2976fa1f5dda6f616bc4c5030edf8bc3dcac1fc1f66b842bd",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.061393] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-21712",
+   "pin": "5.15.173",
+   "module_sha256": "1ebd6f4369408304f01e5a3282ebdeadf4a27d52a247d4448becc6027c067972",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013861] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-21909",
+   "pin": "5.15.173",
+   "module_sha256": "586596188d4986d51eb7876a8e6962054358c7220a5ade4fa1b02486e73450c2",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007646] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-21910",
+   "pin": "5.15.173",
+   "module_sha256": "1a9c1c62932ddb910ce1edfb56efff26a685756dce0570b07484e01887c08f41",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.009052] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-37785",
+   "pin": "5.15.173",
+   "module_sha256": "b2da783a583ab05f100e7835ea7a372f2d1a4e627767d74fbfd8f95dc88d0f4f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.024416] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-38023",
+   "pin": "5.15.173",
+   "module_sha256": "4cc2aa8d772cc284ee6e5008905c55f4e561fbe687415fe8f094adbfe5665c4b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014337] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-38498",
+   "pin": "5.15.173",
+   "module_sha256": "8ba309887f60d11b2bb093627f9881c51b130421f935248cbe710d196d62f4ef",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.010127] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-39782",
+   "pin": "5.15.173",
+   "module_sha256": "dc799b77518054e8381704c21c106cabde50a43be3c6515ced9ff51722a848b5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013498] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-40134",
+   "pin": "5.15.173",
+   "module_sha256": "aa344d71fa9877f084a6a129e77b5751548388ac567e554a9c704e324c1d7cc5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.024794] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-40167",
+   "pin": "5.15.173",
+   "module_sha256": "79e734e25553c5df03915a88bfc25e92adc2fbf961b68dd5aac482d7607c57f7",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.017949] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-40360",
+   "pin": "5.15.173",
+   "module_sha256": "61ff81a271a5c7928a3622d176c157980872e2470c9504e33ed92c49865367d1",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012640] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2025-68264",
+   "pin": "5.15.173",
+   "module_sha256": "dbe577e1506cb57f30e58c44dfe6cda38bcbd0e11e42d78055e07475bd6a4ddf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007000] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-31415",
+   "pin": "5.15.173",
+   "module_sha256": "6d3a39ac59f25fc3395f41fb90b8222a47a5192e419ddaddc57b8ba18a78b41d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008816] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-31424",
+   "pin": "5.15.173",
+   "module_sha256": "18e72c300ecc36505c23946cc2fe70aa97b62586c5e7194c70e6248fa6c497cc",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004211] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-43027",
+   "pin": "5.15.173",
+   "module_sha256": "89cb760f1a8ddd4fbb95e657943424b01b43d11252721dc552a4f18b15f66247",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011230] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-43066",
+   "pin": "5.15.173",
+   "module_sha256": "f5f82414458fb462acf03f318e5a37da512396501417ce1057eeb2e87c71c1b1",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.009272] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-43211",
+   "pin": "5.15.173",
+   "module_sha256": "d527c698d6c24b36a8fb7acc8da516fbe7569f6f54a952dd3e5e3fcfc985e346",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.022316] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-52910",
+   "pin": "5.15.173",
+   "module_sha256": "9abce21c76211b9303b993b76781d70e9a2b2a094141761e756023cc096b7e42",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007580] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-52977",
+   "pin": "5.15.173",
+   "module_sha256": "eeb257b18ac248feec527e4938570fc73cfa579d7ee2e0add63458e74689de40",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008836] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-68138",
+   "pin": "5.15.173",
+   "module_sha256": "0f2ad2d3dd87fcf6466bbfe17a15970eef1a1b4de35eb9ac9a8d0d7a585c021f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.010440] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-68202",
+   "pin": "5.15.173",
+   "module_sha256": "66e797d7e27cb7537720ec069d6a1373d37670bf7e808fa0523abbb12fbcc1f8",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004068] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-68243",
+   "pin": "5.15.173",
+   "module_sha256": "27d0597d0795a1e265fd1fe0607776835568d37bbcfdfc53f187fc31a11cfb10",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011150] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-72067",
+   "pin": "5.15.173",
+   "module_sha256": "e125f08cdb0a4dbc1d7a06461bfae8c051b37263d418cbf3e514dd1b8e7a49f0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.020086] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-74548",
+   "pin": "5.15.173",
+   "module_sha256": "be4a63abe9b570d180eb618f8cfed2e4587622d91c4e4ac2235bb29a6a7600cb",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014444] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-74566",
+   "pin": "5.15.173",
+   "module_sha256": "7aeadded8bcc251f85538db65dc279ff75fb4e8248da9258b60b1f304a2dcdf4",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007698] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-74658",
+   "pin": "5.15.173",
+   "module_sha256": "f7539e27f45c538ef933483da951c4b743157e42fe69f381bdbe4849991a40da",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.023815] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-80590",
+   "pin": "5.15.173",
+   "module_sha256": "89fb99cb63315d828c9512e657ee4dd7ac92ce96125b2121b47573a164975ca3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.019025] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-80664",
+   "pin": "5.15.173",
+   "module_sha256": "b6e5031a767665e169cf3be9e1bd9d6278c8e94d92e5df9f6c2bb1e0b31d247a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008838] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-80906",
+   "pin": "5.15.173",
+   "module_sha256": "4ab5f96d416ae7f6157de76ef1f93b05c1a0e39099b7f5cebab77b76db32988b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012566] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-89551",
+   "pin": "5.15.173",
+   "module_sha256": "1b93a7cdc05a61818675fda43f8d79044176037de3415990c1d999ecb64d196a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008663] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-90054",
+   "pin": "5.15.173",
+   "module_sha256": "c6f49aa9d799cfb3030ec2ade4d0efb071732414c7f305d8bbd328d59849444d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014829] PM:   Magic number: 14:330:291;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-97456",
+   "pin": "5.15.173",
+   "module_sha256": "cf75f66ceda39e5f6e443585a1f15ed8238f517646b4bd6a098f6bdca51e3d39",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012662] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/5.15/CVE-2026-97492",
+   "pin": "5.15.173",
+   "module_sha256": "bd2b21a01528a2fc4e6764eaa22ada93e90d3fcc565103259207941bb6ae1911",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007742] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2025-38643",
+   "pin": "6.12.51",
+   "module_sha256": "80d407650fa5d6dfc8343660c396674b32d6eff62bcd6148514bfe308a377fbf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.177903] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2025-40363",
+   "pin": "6.12.51",
+   "module_sha256": "95af52b833bc5853e7a9c05eb839d7cf89fca1a9932d4ff27f34fc6f90f77cd3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.180562] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2025-68261",
+   "pin": "6.12.51",
+   "module_sha256": "f85dcf65501ecc5e44878601f2c7380dc2efa11d5fb1ba69041643c28f90df83",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.145987] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2025-71097",
+   "pin": "6.12.51",
+   "module_sha256": "b2a6956fa335602a23dd0e1ad17d80c7800925ee08fc8b89580923b5b515a9c3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.144431] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2025-71118",
+   "pin": "6.12.51",
+   "module_sha256": "28ec7a9193f4a877fee846e46f2e5381866272fa2b9d60134e737300e5df7d20",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.145995] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2025-71305",
+   "pin": "6.12.51",
+   "module_sha256": "f09e2f75c352933ffdca3e547bfbd9f35db41ea7488cce8466f74637e4e557a4",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.148189] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-23101",
+   "pin": "6.12.51",
+   "module_sha256": "fc050dd46110151d3f8fd7be1b2405a538d03c7a127bf0b023385d9a014f0858",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.175338] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-31415",
+   "pin": "6.12.51",
+   "module_sha256": "e5db5932de865328d29da1dadfa55f0592d2e80ee63e775236bca7eca0db33e2",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.155060] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-31520",
+   "pin": "6.12.51",
+   "module_sha256": "16761794d9b24836c41455921c656f7b2b94336919ea1f5520440284b97b282e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.156349] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-31781",
+   "pin": "6.12.51",
+   "module_sha256": "20c43ebb649c481e2fec1960047ddf9698d9b89f1ebe75367882a9e9ced417b9",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.173841] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-43027",
+   "pin": "6.12.51",
+   "module_sha256": "e36723607bc180fc8abeb5cc8808b08b34f9b38c7d563ee5d680f64e9813b043",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.153222] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-43068",
+   "pin": "6.12.51",
+   "module_sha256": "9209f42906c01166489498066d95271022df9979792d3bde53e71e43b3450c5b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.172338] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-43099",
+   "pin": "6.12.51",
+   "module_sha256": "3f7135756f809093ecc5ef5852c04e28e0e39a24affb6726d07f3b5c80510f27",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.144654] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-43439",
+   "pin": "6.12.51",
+   "module_sha256": "98f80fdf72b03635d318fbff5a031b9398991266d0b6a2c09adfb0cec8d902e4",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.154129] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-43470",
+   "pin": "6.12.51",
+   "module_sha256": "41b38203dca3e1495754c2776aa8c81937d6877f3f494602b2e215a5c00ec8c0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.161805] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-46015",
+   "pin": "6.12.51",
+   "module_sha256": "b2bb72a48cf35532c3893a88bb1d9eb58dffaf08587291238dedb0e8e004c79b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.160655] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-46046",
+   "pin": "6.12.51",
+   "module_sha256": "5febc38a9e4382128da993c21074bd286d7620174fc96b6810b10fd18689ffe4",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.171697] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-46166",
+   "pin": "6.12.51",
+   "module_sha256": "b22f4bd59bac10141ea50ebf9e8e9d73e3c4a7e1029e3ce40abf15ef488c48d7",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.180304] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-53184",
+   "pin": "6.12.51",
+   "module_sha256": "13a8e51bf872eda801da0887f285737e29756ea9aecc7d8e91bacbc06a494c44",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.188207] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-64373",
+   "pin": "6.12.51",
+   "module_sha256": "a3f545f17015d89b013a98614add6f50349e32acc41bb0ad5690751758d1d984",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.148401] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-68184",
+   "pin": "6.12.51",
+   "module_sha256": "509d0cc8101314b803d4db16a688b5b242de7df33b69fe43570e0a44891d289a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.170575] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-68255",
+   "pin": "6.12.51",
+   "module_sha256": "f777d7e17729106b751dec05318a8e63dea76530b47e5d423e8a89b6803a995d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.180680] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-72400",
+   "pin": "6.12.51",
+   "module_sha256": "456f8996e5b5021e58e917db2ee3a9a09d67148342e5d3808ec57b7f59b9a015",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.151910] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-80574",
+   "pin": "6.12.51",
+   "module_sha256": "83d7a85b91e5f86fe8a978c919d9ec3469e6f324a0604c1cbb4947592f05009e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.153210] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-89536",
+   "pin": "6.12.51",
+   "module_sha256": "314f44c34173ff87c45e13d6d9b08e114ecc04156b6c70ce4c59c61c2d3db26f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.178957] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-89547",
+   "pin": "6.12.51",
+   "module_sha256": "07fdca5f7b6729f93cba8f28fa88aacd1e6936814cc95485e1b8a571bee22c34",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.148300] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-89550",
+   "pin": "6.12.51",
+   "module_sha256": "fcf0f3ee6e879bd10db59eebadd101e83fda9f35d339bb008bf98253c5ac2f32",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.151669] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-89603",
+   "pin": "6.12.51",
+   "module_sha256": "d8569cfff2ae685c6a31d0193c70d349382ceaa2b1c136da4f9e7998df42cf33",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.181602] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-89823",
+   "pin": "6.12.51",
+   "module_sha256": "6aad4ae5d216c8599b7318fa01326e6afff35e6e3420bced2409ab859e4e50bc",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.142894] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-98201",
+   "pin": "6.12.51",
+   "module_sha256": "05a3d881db67a883708abfe240774a5f50894098eaeb9a0a193259cd581bf665",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.148898] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-98230",
+   "pin": "6.12.51",
+   "module_sha256": "b52ddc86c85e9ac76f361ed354b60435e8378e47fe7ac7fb21137f8a7a85e02d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.158750] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.12/CVE-2026-98308",
+   "pin": "6.12.51",
+   "module_sha256": "ca8e84092a61bf9ced1aacaf6e52827327d6102c2abc469f0d1f9c22b1fff396",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.153084] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2024-53173",
+   "pin": "6.1.119",
+   "module_sha256": "0fe19c97c193dcd33b9b37c6e3ef501e550e0bd3841d36b8001afbb0c578d059",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.637303] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2024-56647",
+   "pin": "6.1.119",
+   "module_sha256": "7484c4cf81178ea3997ed1eca081e4f44399a38773c3df713308712420ebb290",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.637323] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2024-57903",
+   "pin": "6.1.119",
+   "module_sha256": "e85a23f8b398c8d8008207a6e55460c03a63c880ff7041622801c36e10eee014",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.638735] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-21913",
+   "pin": "6.1.119",
+   "module_sha256": "cb80c0568f8defd763c678067a3ca395111b7a9302483c1faa535bb2856f273c",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.644616] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-22063",
+   "pin": "6.1.119",
+   "module_sha256": "c4d83371851d65955d45360c0bdb0641107a12005c66a38a7aa6a5de1ab210e8",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.638161] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-38113",
+   "pin": "6.1.119",
+   "module_sha256": "2951f1daaf34e609137870755830ff8940b13f2f7ffbd336679a8f83373bde32",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.636111] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-38424",
+   "pin": "6.1.119",
+   "module_sha256": "d1d2ad965cd1ff54f74d3b83c3365fde81a08124cbc7a01e418c22d028e31ca3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.640647] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-38701",
+   "pin": "6.1.119",
+   "module_sha256": "59c1efa64d8224c0f2c7b5e546703a2a186248d519af356e302213921570e8fb",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.645133] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-39795",
+   "pin": "6.1.119",
+   "module_sha256": "6f150656109be487f67987ef189466d9c7c393f010fb55647e069d23e4115d5b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.640145] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-39920",
+   "pin": "6.1.119",
+   "module_sha256": "b08f490166011e7acd0ad7f27cc9abb0b80db29f4253542e82b19052352dadfe",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.639582] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-68245",
+   "pin": "6.1.119",
+   "module_sha256": "f17eea16c37de4aa44de22d295ccec22b8caafbea2ea9c593ec4322e0830e908",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.649021] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-68264",
+   "pin": "6.1.119",
+   "module_sha256": "ebffa742bb959fd02372836b2f46ebfd8d19d62756e3c1585943080c222feb03",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.638470] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2025-71131",
+   "pin": "6.1.119",
+   "module_sha256": "55abff7f6d81c2be2b48f91ce9450ddc8d03cf489d6cedfa573b12ee9b5ff66f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.642505] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-22979",
+   "pin": "6.1.119",
+   "module_sha256": "af02353be0e4a6a54b868199851a39853873db1dd407e139d1e768e6f36af5d6",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.648636] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-23300",
+   "pin": "6.1.119",
+   "module_sha256": "ee860e2627f8b45c15ecb3df4bb2a45da3312befb6a4aaf0d898dc1fea870677",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.640401] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-43139",
+   "pin": "6.1.119",
+   "module_sha256": "2e03e0a59a29dc78b72272866ddd5ecb036b534dbf31a7cc94027da02ea1c01d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.642530] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-43287",
+   "pin": "6.1.119",
+   "module_sha256": "3326bab093bbca4bc8a45b605c31d94e46a113e19c69fc7ec0b948ab2ffaa259",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.647523] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-53239",
+   "pin": "6.1.119",
+   "module_sha256": "6416a13274a9f438bcaa96486146460452390bea932a1153450d35dde3daffd8",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.639206] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-53352",
+   "pin": "6.1.119",
+   "module_sha256": "8430b33bac0ada8ad92d11063ac690d11e44a38fbc656ca211f17bd14badcca8",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.641502] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-64116",
+   "pin": "6.1.119",
+   "module_sha256": "eb8ac7bead378ef3e9e10e13aa2c957b7dcef5616bebd806d3104d097769b30d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.640682] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-64174",
+   "pin": "6.1.119",
+   "module_sha256": "2200ab6b1c2ebf61f4e92bde0c71ae04eba04d363aafa86516148cbbef545f8d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.642190] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-64465",
+   "pin": "6.1.119",
+   "module_sha256": "05a4699bcf59df1fed8ed726a765a62057f3769c8c2320c5f1fe2a1ac4317ec3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.638198] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-80742",
+   "pin": "6.1.119",
+   "module_sha256": "d0992b74de59e29880330d0fb0fa4997159ececc0d5848f34ab9d441d3fe0045",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.646317] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-89983",
+   "pin": "6.1.119",
+   "module_sha256": "ab23dd3502f0e4b2781e802077220741cd056e7ec2a0bb1935210a588a732cc9",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.645549] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-90049",
+   "pin": "6.1.119",
+   "module_sha256": "42378ada35f129ea8857db5857630285742eb5c2c37cbb9d0e384a0498dd4d95",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.637970] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-90198",
+   "pin": "6.1.119",
+   "module_sha256": "cdfd47eef7cfa28d9804efcea0f4130706633871ee56c252752c60161a14d4be",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.641891] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-92522",
+   "pin": "6.1.119",
+   "module_sha256": "dd62d1673be27e1e5d5d9f0c0426addc417044f13f0bb80c009360eb6578b2f1",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.640554] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-93268",
+   "pin": "6.1.119",
+   "module_sha256": "7c039d4daed1dc57a94ffd58110ba697d6cb9d2005bf25147bbe0ca552ed618e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.641082] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.1/CVE-2026-97450",
+   "pin": "6.1.119",
+   "module_sha256": "183abd0aa48a588e41dcb8491374bf9c7d73e81b75667073916006889ed62c30",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    0.635748] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2024-27022",
+   "pin": "6.6.47",
+   "module_sha256": "532a3ff042d8f62dd5716586121751ca2e837df23476e7cb0e712a38d700dbd7",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.056413] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2024-47674",
+   "pin": "6.6.47",
+   "module_sha256": "f9b5f5c39659c692b2ae751f4cf46e9e80529ef985165a2f816eb32acb00b88b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.041399] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2024-49883",
+   "pin": "6.6.47",
+   "module_sha256": "f709e4a57cf25e2c73d15d68a0bf9ccbcf749410fb63a0e47774eabd8403357e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.047856] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2024-50191",
+   "pin": "6.6.47",
+   "module_sha256": "69c82b23968934a385e4fb303bedf2f88c211f65ae71bf25fb81161a6316aabf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.045196] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2024-50195",
+   "pin": "6.6.47",
+   "module_sha256": "29b61ffb7bfc68913a6ff30fc158912f0b2e954e0758e29e48c72da72061dd85",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.055420] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2024-53168",
+   "pin": "6.6.47",
+   "module_sha256": "b8d4bc9a11c8d91c40976eea5e63ecdd325add3ad76271ab01a3073055705e16",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.037219] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2024-56709",
+   "pin": "6.6.47",
+   "module_sha256": "213afdc7a78eba705d5420dc0c00ad25458b426d4e4205d4623e43a5637bc639",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.048668] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2024-58078",
+   "pin": "6.6.47",
+   "module_sha256": "13bad21643ea977058a8ed235674ccb5e163cdedc4565812346da72c1c791d37",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.040189] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2025-37995",
+   "pin": "6.6.47",
+   "module_sha256": "0ff254e16a36deb978be87f597eeedad6a5b3ae189ef163f59d9054cbf3549c6",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.041870] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2025-38499",
+   "pin": "6.6.47",
+   "module_sha256": "1b3f6972b960bd0353d7e98d5e1e41667b3cb22885fb05b251d11ec31c787f60",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.033897] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2025-40109",
+   "pin": "6.6.47",
+   "module_sha256": "a1db669902f64e71f459eed9d3d3a419544ea5b32557740f0affe9a570ab6f88",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.037549] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-23246",
+   "pin": "6.6.47",
+   "module_sha256": "7a8f722b9f09b941c2d031e3b1a3e9564d93975583833ac8526908d2cd2e010c",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.049449] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-23398",
+   "pin": "6.6.47",
+   "module_sha256": "767d6da87dac250395cc035d813cbd3674184857c2bbc834f38fb96ed98c6863",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.057002] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-43026",
+   "pin": "6.6.47",
+   "module_sha256": "60b37b4390f011267844701391e546343e5999915cdf7b9f75b5afe3c3f239de",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.049584] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-43074",
+   "pin": "6.6.47",
+   "module_sha256": "26bcb769a1202a33de7bb7a4cdac6e3a50e6eb1e9cc9ff54faa418e1b152e5cf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.055600] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-45948",
+   "pin": "6.6.47",
+   "module_sha256": "7bdfba70a7c269f8a74011298e1b28252ef900c84007b300097fbcb426a45cad",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.069369] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-46151",
+   "pin": "6.6.47",
+   "module_sha256": "b41a5d69f6c2cf564ddaaa064efec02a495fce357406a8d24c119d0af8ce202f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.041026] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-53126",
+   "pin": "6.6.47",
+   "module_sha256": "7c15b02ce8c83be957ae8daae1736d5b06b04cc681509d98c6e4dbc1edc7e7d7",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.057387] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-53190",
+   "pin": "6.6.47",
+   "module_sha256": "c3040c42353322a8eb1e9bbd1f1ff451f7cb04facc213263a8eb729b0b657bfc",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.043489] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-64326",
+   "pin": "6.6.47",
+   "module_sha256": "275d8d29e7114a552709b1d8a8db8c3c97fcc563c7f9f5ad438889bc7dc64937",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.052890] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-64373",
+   "pin": "6.6.47",
+   "module_sha256": "e335e9cbd577b69ed7f4456ec79d0d3bec20ab708572a5aa5edfc7e49e31c40e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.046487] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-64548",
+   "pin": "6.6.47",
+   "module_sha256": "d123f14aac0ed241a9f34ef3524d77ed8adf924d62d3ead84c25f24a01418401",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.052758] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-64554",
+   "pin": "6.6.47",
+   "module_sha256": "6f63b5bde65f7a68ea56615ec369f9c2ee67b0864b844f1a4752ff3191d3be6a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.045913] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-68248",
+   "pin": "6.6.47",
+   "module_sha256": "3e438191fc1053a2b8c4393e8537bf74673d5db7f212e3a9b37bb7a5bb314a8c",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.046155] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-89541",
+   "pin": "6.6.47",
+   "module_sha256": "764670eb8abd76de7083cde1502b063d162bd2da154677d74b5d25efc82b0dce",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.058579] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-89547",
+   "pin": "6.6.47",
+   "module_sha256": "05b7d5ac257919a6b6ada887372c375fea9f50742d5a00d94e66edba1c08c18d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.069462] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-89643",
+   "pin": "6.6.47",
+   "module_sha256": "044707349a9dbb672a625adcb84f229ef8e8706b6f84ad58a4a9d405681a94ac",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.044649] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-89753",
+   "pin": "6.6.47",
+   "module_sha256": "f54d5a1eacfc6bdf35739f6a11fbaa4b9c2c0ba66311057c30eb002be8a15d21",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.045046] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-89784",
+   "pin": "6.6.47",
+   "module_sha256": "71ef445c4b9f90a34d117b6d30a8a7b00d89d54c15b1c4dcd01e274cf24bb12a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.037421] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-93268",
+   "pin": "6.6.47",
+   "module_sha256": "cd5b39f4e04e9a4ff95344a0d7b1de415fd14dd799fb98dee315a885be22a483",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.052354] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-97456",
+   "pin": "6.6.47",
+   "module_sha256": "85583ec0b84fc2dc0b409f4663f2bfee3e7bc3a34e097f1a6b2de203fb897cfc",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.039261] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-13/6.6/CVE-2026-97481",
+   "pin": "6.6.47",
+   "module_sha256": "675e984f3342b9f6e26a1cf3e202c5567754bc78d52091ee6b9713ee157e0d91",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.047046] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2025-38643",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "10afce619dbaece2c15fceb69f77c05728419fc94ae4c176bfdd89732130499c",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.159068] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2025-40363",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "d5686c5590949b2be7c2d29428ef426981f79217dab2d9a375c214187d064907",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.170549] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2025-68261",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "fb13899b8d6f68e21ad219d04c05d7a570a3a28cd5ee8ecf894299c72c7ccff1",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.159431] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2025-71097",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "e1fdb38df3dfc0dd7bfb1c9e09baea9e28d6a513d3af8e2e1b960396cf594a36",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.169781] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2025-71118",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "3851ff90dc64d0768c2640d8bf97ba70e960088bbbb20c61a48583b843d73713",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.200251] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2025-71305",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "5deae00d6d00fa1ecd5be0a30bc159abba15e580b5828339bacd0f51c1d894c0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.165805] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-23101",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "99a2fe1d5593225a040df368b81c4f089432c4a7cb9c1ca7d92f2e2a5de43458",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.158235] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-31415",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "e1a0a927df9e2b4a3c126f7a6b1cb62071a9ae1fb8429a6b3a43ef8596f1a8c5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.168822] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-31520",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "d1900a36850f68f290ddfbf5c20e425113ea05298d4772b016fed9cf2feb626e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.215496] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-31781",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "08a425de51e2b15af07431c87309584043849fd03a745a3eebd06769048d66f3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.166143] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-43027",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "cd729e4db34fb67bab2c3999d8d4451fcd6535fcd09a4251fc5b764a9c1edc5e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.169529] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-43068",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "f76797b32d77aefe43363216392c036f2ba0875967a555bc29e08c1a874956ec",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.179565] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-43099",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "c3f833c6ccfae444c281c3c122ab365a6aaf39c7a8a02fc75cd763cd1f46e750",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.164144] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-43439",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "8fc5396d219d3016e5bfa4cc008560cb32e99d370c13f78697acda52ff7ac615",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.172597] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-43470",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "051447015367784d85284a22f0df3ef4055eb3b0e2cc82d5df6221b874dd908a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.168914] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-46015",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "75ff91c18b79b01ad8bd5c981454f83ca5fbfef976ad767d1ea8cf5f346ea4a4",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.164662] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-46046",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "06efabcf59c3181239703ac8f7572dcefafd467953dba30a8bdd73d833f0ae97",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.171827] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-46166",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "af7a61692ebb8efd2c6e78257410884a0da42eb55cf83ef40a6dff1403c82b2e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.192285] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-53184",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "b94581b2ed2500db3b6ec8b14864e07672d26c04f3961513dc4fdcd1cbb993bf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.184531] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-64373",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "7b4bc9d2c04b48f73dc2cf27446eddb05b0770bcb6c731577cfaaa6e90c2d995",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.163235] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-68184",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "17fd6017fbcc5b755d80f2b7dcd5834a4175afae5e10a8a0aa6cb2098a14a2b0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.178253] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-68255",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "87d3d5c7506194dec3bfab2b3c2868a63f54ab9a13407415b93c98d2e18f1957",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.203245] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-72400",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "e26f046e73b0fc1be31cbb6c101cd9e682e01f0e63a6029a5818af686abfe649",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.172998] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-80574",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "74682120793004f0517fa2b2443312c45fa0363bd70d964b07c2acbe991deb37",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.187953] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-89536",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "ce0a8d406068569bc177ef9bd877289face649a93210aa4c1aac707a7bc8077d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.165325] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-89547",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "4e299a1489507dc05275b9fa92689288a842626a1993a707f5e731b51a8659bf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.167287] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-89550",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "8d5352d017ad1fcdf0d5acc7ab29c5f9ed5f776d45b8a26ae409fad9f088390d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.163544] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-89603",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "70a1bbf5fb1f51c1a28b4dce052b2588ff7d0fdee45c8e690c35e62ae3627a5d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.212961] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-89823",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "cbbcdfc7e0dab785b81d2c7dae4bebab5fc9554f10f78bcdb93d93ac8380b010",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.187798] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-98201",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "d014e7520d708aa181ab504665713611d69744d76836e4dbe50e4276335061cf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.177357] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-98230",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "b2d6b6afe85f1ace66631c1fc96631dd6b85506d93056b6d3c61716f07d92de5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.193086] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.10-gcc-14/6.12/CVE-2026-98308",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "1de0fbb52cd8e62bf9282b9461d874491937c9ea2777baef77ef0131624be09e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.186935] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2022-50327",
+   "pin": "5.15.173",
+   "module_sha256": "b6b80afe4045501cbf84caec5739072c7d0301bebac2db93d2d8f1c86e3a40b0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.016624] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2024-56720",
+   "pin": "5.15.173",
+   "module_sha256": "de559789f6bd50d2976fa1f5dda6f616bc4c5030edf8bc3dcac1fc1f66b842bd",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.022460] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-21712",
+   "pin": "5.15.173",
+   "module_sha256": "baf0d7aa1cd16ee242ec01621514edf156a862f5e44a7d174b5dc5c70343f4f6",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.029304] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-21909",
+   "pin": "5.15.173",
+   "module_sha256": "e78c09cdbcf774eb546f9c6d5ef5d6e96d223fa4d4fa210da569721f5240aa57",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007182] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-21910",
+   "pin": "5.15.173",
+   "module_sha256": "b61b7420a8d46109b36ab4c7c380535b7a132f2312c8f6427346b9f49a7f8ec9",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012294] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-37785",
+   "pin": "5.15.173",
+   "module_sha256": "d5408d885f56ca8678cb0d02e238ca12e191bb855a76547d313de711de3ac8f0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011532] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-38023",
+   "pin": "5.15.173",
+   "module_sha256": "89b1645e19c1b3d1a358811336761a40520daee09a1d2df9aad9ccb15194a052",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.010141] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-38498",
+   "pin": "5.15.173",
+   "module_sha256": "cc1e27e7ac945dcf2efcc0b253346bc30160c6675551831a5c4f67bb1ec661af",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013010] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-39782",
+   "pin": "5.15.173",
+   "module_sha256": "dc799b77518054e8381704c21c106cabde50a43be3c6515ced9ff51722a848b5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011851] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-40134",
+   "pin": "5.15.173",
+   "module_sha256": "aa344d71fa9877f084a6a129e77b5751548388ac567e554a9c704e324c1d7cc5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014530] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-40167",
+   "pin": "5.15.173",
+   "module_sha256": "3d777d9bc92726e6c32b045a4adedca1495f9dd1864cc4fd9a97ade93a35c171",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.016822] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-40360",
+   "pin": "5.15.173",
+   "module_sha256": "63d1aa199c83d493fcbc3b0480ab3b60ff647272e44688be11f18d6012e61412",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008160] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2025-68264",
+   "pin": "5.15.173",
+   "module_sha256": "dbe577e1506cb57f30e58c44dfe6cda38bcbd0e11e42d78055e07475bd6a4ddf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.005039] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-31415",
+   "pin": "5.15.173",
+   "module_sha256": "33b9d5dee5eaf0f09ede6007105434de49c483f562ea1bfdf80f6163a8ae466a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006953] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-31424",
+   "pin": "5.15.173",
+   "module_sha256": "c698538df5c1508d120c6efbb1ee7269746ef6d2ee3dd897fb7cea1713e9490b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006710] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-43027",
+   "pin": "5.15.173",
+   "module_sha256": "dacea2ae178f1be0e13a9bb8de20a7195ddd7ad4c4dc0abcde4e2d3f878d1ae3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.005170] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-43066",
+   "pin": "5.15.173",
+   "module_sha256": "33bf446c9b0a2ff851e45f1804341908d3abf52a0f583859e56b810c7df722dc",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012321] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-43211",
+   "pin": "5.15.173",
+   "module_sha256": "189570322b6c9b6c8b8894d3ba96cb90e67910e8e3eda6ad2ded73660058b418",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.016011] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-52910",
+   "pin": "5.15.173",
+   "module_sha256": "5e1bb187acf0ae03bae25c022f1c3313cac2d62c363c3478120635df82c1698b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013101] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-52977",
+   "pin": "5.15.173",
+   "module_sha256": "a71b678242b2979f6db2d6051b6afbb7f624dba3e8f9bf403daa7e7d2ae980d0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013516] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-68138",
+   "pin": "5.15.173",
+   "module_sha256": "0f2ad2d3dd87fcf6466bbfe17a15970eef1a1b4de35eb9ac9a8d0d7a585c021f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014034] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-68202",
+   "pin": "5.15.173",
+   "module_sha256": "66e797d7e27cb7537720ec069d6a1373d37670bf7e808fa0523abbb12fbcc1f8",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008017] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-68243",
+   "pin": "5.15.173",
+   "module_sha256": "49f254f7b7b6003eb0505340a47953fceac7f232ac7362921a64fc604d9e7adf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012445] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-72067",
+   "pin": "5.15.173",
+   "module_sha256": "e125f08cdb0a4dbc1d7a06461bfae8c051b37263d418cbf3e514dd1b8e7a49f0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011393] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-74548",
+   "pin": "5.15.173",
+   "module_sha256": "be4a63abe9b570d180eb618f8cfed2e4587622d91c4e4ac2235bb29a6a7600cb",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004439] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-74566",
+   "pin": "5.15.173",
+   "module_sha256": "038ca28da0bbc3dc3dd60c532b4b649b306a9d1ae001ae9c8510ebe16f318ab3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007952] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-74658",
+   "pin": "5.15.173",
+   "module_sha256": "b12a2762785a3741618b2e8a8301104ad82c1e0fe06151a07cb54255cb06cfca",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006748] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-80590",
+   "pin": "5.15.173",
+   "module_sha256": "c576af9482cf4019c5ffe75ba11df70f596f4f1152a53c0d3ea04a1b843bd4dc",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014484] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-80664",
+   "pin": "5.15.173",
+   "module_sha256": "4a151b4ad1b1048ad5ad4fc12922e64d77284e250d91fbad180dd796f5eaa27b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011365] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-80906",
+   "pin": "5.15.173",
+   "module_sha256": "7b2a68bacee6257477673e9a1d1a9af9239d306d881214f66e8f8e00772a7f3e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014214] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-89551",
+   "pin": "5.15.173",
+   "module_sha256": "f73ac21f6f978cf9985c0ce8fc2158eae550802ab462b6e1dc0e7091323924ec",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013588] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-90054",
+   "pin": "5.15.173",
+   "module_sha256": "7c65287543908b4dff347fac5ea9273bec98a6c0fce586342571e47debe57d1c",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008070] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-97456",
+   "pin": "5.15.173",
+   "module_sha256": "944d226fba85f068e7d3952546a5ef370a19197356eb2b70672220c7c9abb619",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012817] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-13/5.15/CVE-2026-97492",
+   "pin": "5.15.173",
+   "module_sha256": "d67fbd7ff7c22b7b8908753c901584b225d39a6d079e35621de5db37695630b6",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.005254] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2025-38643",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "28bf8803cd4ef50b81537e44f87738eadcbe67aaed788088f82b0c05123962dd",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.191838] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2025-40363",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "d5686c5590949b2be7c2d29428ef426981f79217dab2d9a375c214187d064907",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.173803] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2025-68261",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "fb13899b8d6f68e21ad219d04c05d7a570a3a28cd5ee8ecf894299c72c7ccff1",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.161716] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2025-71097",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "72c79e8055da20d13069ca3713aa00fda163a231a795663032c0a80d91227169",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.210106] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2025-71118",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "6a0c4ddef4a98c60b4db1646b49c5a31e3d2362e6b988b915e74dd90a7f24225",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.183455] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2025-71305",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "bb18e0e80a02ae98e2c6cca9763cfa4e6a084d48314feb4a0942554a1a0abc1a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.198110] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-23101",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "99a2fe1d5593225a040df368b81c4f089432c4a7cb9c1ca7d92f2e2a5de43458",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.162076] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-31415",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "4a1bd0d524f193ff0d845f185a466b541a48f1bc3a5cb1d1c4736b9f8e4df5db",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.199850] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-31520",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "d1900a36850f68f290ddfbf5c20e425113ea05298d4772b016fed9cf2feb626e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.194944] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-31781",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "293a5f7dcfc6259d18de90facc23451729d94b15e4ba7e291ecdfb0252721474",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.161601] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-43027",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "9995a18e90a14ae68bef9e60ab48066ca225c1a3c220cc9293138010aab5270e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.162504] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-43068",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "aa680c398403a462ac6ded18e6ddf166bbd0f41997a4862da4a1ed71a5fdaa1d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.199797] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-43099",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "ab2132692a8b48e5d608d3b923b5478a9e256ab1aa5f1909f1ccb3739572405a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.164887] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-43439",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "954ecb23b62efc1dbe9a60e89c5a6cdbbb155de6d60434db6892e335115fcf55",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.192744] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-43470",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "39d5d8f464a593086679e30f8e69d9c70b22c1cb480e2816fd00ad902a6c63b9",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.157246] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-46015",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "1d8a609a4780f0a27123ae2128ca740bab829d118d590179b64781726b701150",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.171239] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-46046",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "b5f2105697a978a23381cf201029ffdd6d3c212ab390882a9ec242de4b5a2f58",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.169654] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-46166",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "2be790f54e60b386e0841a367e2c5151b73a0fd73ce0942e9e4aeaa214d6f69c",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.187124] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-53184",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "9b22db8b65d968d113f2404dda92134553efd47cf686210a476c96645471acd9",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.193539] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-64373",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "7b4bc9d2c04b48f73dc2cf27446eddb05b0770bcb6c731577cfaaa6e90c2d995",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.187172] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-68184",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "55bb478463951385e330f108d849a267dc99f7a5dac7620236802f09ffd7d3dd",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.165872] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-68255",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "a92ac72af4dd7056bb6fa1fc1013fa9ba8ee5eb33da244977ea956eb035952c7",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.170089] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-72400",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "97d338d3f763f25faf7f6442179fbfd4e63fd3230b0fdb570ee5a107a6c7c464",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.163194] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-80574",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "bcb4b11f4d43fb45300c4430bab53fcb81c9add7f80d01fe7ce7449206004cd5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.171556] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-89536",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "72e81ca6de3a9e5d49b85e1f0a973a8f49c345b74680cca9d1e701108158479f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.174554] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-89547",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "4e299a1489507dc05275b9fa92689288a842626a1993a707f5e731b51a8659bf",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.195841] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-89550",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "74b5ce719651b43d39aa98b32226e249a2d4a8493089852c041c5cb27f0394ea",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.202880] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-89603",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "d9268e1d02564a6da4a6277447623407695e5e5bf840ab49d0c7ca68ebb2f3b2",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.191745] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-89823",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "f08cafd958c3244818b6daf1f307076b4d4c600fffff706c75e5e4ee32b6d44d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.178382] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-98201",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "52a9b355bde391769863899148d9505aa38d9af15fcfbe3d61c0f7364b7d244a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.172189] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-98230",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "29828853a02e369e15ede413eb037acfcfe9769d89a63f2ce1e36a58c099cd21",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.197681] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-98308",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "1de0fbb52cd8e62bf9282b9461d874491937c9ea2777baef77ef0131624be09e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.204740] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.11-gcc-14/6.12/CVE-2026-98331",
+   "pin": "6.12.51-gcc14",
+   "module_sha256": "13d0ddfba01e984361e7adeb693cb5e65a4085fecea4c865d37d81116bd97e85",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.189395] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2022-50327",
+   "pin": "5.15.173",
+   "module_sha256": "b6b80afe4045501cbf84caec5739072c7d0301bebac2db93d2d8f1c86e3a40b0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.031114] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2024-56720",
+   "pin": "5.15.173",
+   "module_sha256": "de559789f6bd50d2976fa1f5dda6f616bc4c5030edf8bc3dcac1fc1f66b842bd",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.023588] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-21712",
+   "pin": "5.15.173",
+   "module_sha256": "2e2c04f26099226e77b09329c5aab62d7bcff92fd70abb06dd78086c8078e1d1",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.018225] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-21909",
+   "pin": "5.15.173",
+   "module_sha256": "e78c09cdbcf774eb546f9c6d5ef5d6e96d223fa4d4fa210da569721f5240aa57",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011382] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-21910",
+   "pin": "5.15.173",
+   "module_sha256": "1a9c1c62932ddb910ce1edfb56efff26a685756dce0570b07484e01887c08f41",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.018852] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-37785",
+   "pin": "5.15.173",
+   "module_sha256": "b2da783a583ab05f100e7835ea7a372f2d1a4e627767d74fbfd8f95dc88d0f4f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006332] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-38023",
+   "pin": "5.15.173",
+   "module_sha256": "f444929675a61c9c21d001bf7bdfd794dc8f72d441bce4a8de179f0cc3d8b422",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007030] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-38498",
+   "pin": "5.15.173",
+   "module_sha256": "8ba309887f60d11b2bb093627f9881c51b130421f935248cbe710d196d62f4ef",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011121] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-39782",
+   "pin": "5.15.173",
+   "module_sha256": "2e3daf77027ea38c3fa3db6f596b1ea12b4227a2ecc0ffc1cf6a6123337da2b2",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.018011] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-40134",
+   "pin": "5.15.173",
+   "module_sha256": "75512aa81c0888fc9abdce06d0e2b6c7923e52ec24312e920f22904d10289b0b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.017822] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-40167",
+   "pin": "5.15.173",
+   "module_sha256": "a41252564356fab59e17ad1ebcd6c3c07703014993d4f4491543c57d8895a62e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007393] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-40360",
+   "pin": "5.15.173",
+   "module_sha256": "61ff81a271a5c7928a3622d176c157980872e2470c9504e33ed92c49865367d1",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008286] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2025-68264",
+   "pin": "5.15.173",
+   "module_sha256": "1e06ffe5cf1eaeb3c5430556a66f8ef4b850e51e6a0506416536976f12acd1d5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.005086] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-31424",
+   "pin": "5.15.173",
+   "module_sha256": "c698538df5c1508d120c6efbb1ee7269746ef6d2ee3dd897fb7cea1713e9490b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.017690] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-43027",
+   "pin": "5.15.173",
+   "module_sha256": "89cb760f1a8ddd4fbb95e657943424b01b43d11252721dc552a4f18b15f66247",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012894] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-43066",
+   "pin": "5.15.173",
+   "module_sha256": "9d54dc2178262c4b2b5fbe21885f58a0e8d3963f3f13e85dd8f8d268c877d934",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007578] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-43211",
+   "pin": "5.15.173",
+   "module_sha256": "d527c698d6c24b36a8fb7acc8da516fbe7569f6f54a952dd3e5e3fcfc985e346",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004915] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-52910",
+   "pin": "5.15.173",
+   "module_sha256": "5e1bb187acf0ae03bae25c022f1c3313cac2d62c363c3478120635df82c1698b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006422] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-52977",
+   "pin": "5.15.173",
+   "module_sha256": "62640ae5bb215ce07df50265ac6cadc8df748d8786ce97d845f5ea7f41f20d8f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011879] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-68138",
+   "pin": "5.15.173",
+   "module_sha256": "2f79f60cf07a6a7b77fca2f5f6fc4b00d4c13b673bfcfeabcb091f880a8b364a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.009341] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-68202",
+   "pin": "5.15.173",
+   "module_sha256": "66e797d7e27cb7537720ec069d6a1373d37670bf7e808fa0523abbb12fbcc1f8",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013362] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-68243",
+   "pin": "5.15.173",
+   "module_sha256": "efd505f1f142641508894e63de531e8e8813c12e33738e4c91ba6aab1e664fd7",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.017755] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-72067",
+   "pin": "5.15.173",
+   "module_sha256": "9f4f6b9cbded51e702be162f9a56513da3b195e5461da2d72d44dd45061be846",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013612] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-74548",
+   "pin": "5.15.173",
+   "module_sha256": "be4a63abe9b570d180eb618f8cfed2e4587622d91c4e4ac2235bb29a6a7600cb",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013838] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-74566",
+   "pin": "5.15.173",
+   "module_sha256": "7aeadded8bcc251f85538db65dc279ff75fb4e8248da9258b60b1f304a2dcdf4",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007514] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-74658",
+   "pin": "5.15.173",
+   "module_sha256": "f7539e27f45c538ef933483da951c4b743157e42fe69f381bdbe4849991a40da",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.003180] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-80590",
+   "pin": "5.15.173",
+   "module_sha256": "89fb99cb63315d828c9512e657ee4dd7ac92ce96125b2121b47573a164975ca3",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.017021] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-80664",
+   "pin": "5.15.173",
+   "module_sha256": "7981a9b6376497a7d5cc01478d7fbbabcaed6d1bae939168e02ac5ca7205a0dc",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007641] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-80906",
+   "pin": "5.15.173",
+   "module_sha256": "7b2a68bacee6257477673e9a1d1a9af9239d306d881214f66e8f8e00772a7f3e",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008387] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-89551",
+   "pin": "5.15.173",
+   "module_sha256": "f73ac21f6f978cf9985c0ce8fc2158eae550802ab462b6e1dc0e7091323924ec",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.022069] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-90054",
+   "pin": "5.15.173",
+   "module_sha256": "c6f49aa9d799cfb3030ec2ade4d0efb071732414c7f305d8bbd328d59849444d",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.005771] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-97456",
+   "pin": "5.15.173",
+   "module_sha256": "944d226fba85f068e7d3952546a5ef370a19197356eb2b70672220c7c9abb619",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004882] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.7-gcc-13/5.15/CVE-2026-97492",
+   "pin": "5.15.173",
+   "module_sha256": "09069edc5bff1e4d18a9fbc8c23adc80054066170684b44139afb9becf2afdd5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006669] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2022-50327",
+   "pin": "5.15.173",
+   "module_sha256": "b6b80afe4045501cbf84caec5739072c7d0301bebac2db93d2d8f1c86e3a40b0",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.010495] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2024-56720",
+   "pin": "5.15.173",
+   "module_sha256": "de559789f6bd50d2976fa1f5dda6f616bc4c5030edf8bc3dcac1fc1f66b842bd",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004715] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-21712",
+   "pin": "5.15.173",
+   "module_sha256": "3e22b45d39ab1cbb96227f30422b675e20504fbc187658bd46a5aa724626d217",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012830] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-21909",
+   "pin": "5.15.173",
+   "module_sha256": "586596188d4986d51eb7876a8e6962054358c7220a5ade4fa1b02486e73450c2",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.009457] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-21910",
+   "pin": "5.15.173",
+   "module_sha256": "1a9c1c62932ddb910ce1edfb56efff26a685756dce0570b07484e01887c08f41",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.013838] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-37785",
+   "pin": "5.15.173",
+   "module_sha256": "b621d9c2d2d3aaa21b453852823b984b60b373bc0a78109aefe7b9eeb3955ec4",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011998] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-38023",
+   "pin": "5.15.173",
+   "module_sha256": "444ab16dfb866649e024a28f860fdbc152fa2a59720e2423ea049a94346df16a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004588] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-38498",
+   "pin": "5.15.173",
+   "module_sha256": "f16bb750272d0fb5e1a91f24c8912d376d1e31fd9fb980ae045cc95bcebf6758",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006820] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-39782",
+   "pin": "5.15.173",
+   "module_sha256": "ac64bccbd95c70fadc033b5f906700d9deb0c4acb1505642b649bc52918735f1",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006053] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-40134",
+   "pin": "5.15.173",
+   "module_sha256": "75512aa81c0888fc9abdce06d0e2b6c7923e52ec24312e920f22904d10289b0b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007208] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-40167",
+   "pin": "5.15.173",
+   "module_sha256": "79e734e25553c5df03915a88bfc25e92adc2fbf961b68dd5aac482d7607c57f7",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007798] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-40360",
+   "pin": "5.15.173",
+   "module_sha256": "005ceb7519c1f8613989ce17bdf71da193e9851f9d452f96292909f398166f98",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.005700] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2025-68264",
+   "pin": "5.15.173",
+   "module_sha256": "1e06ffe5cf1eaeb3c5430556a66f8ef4b850e51e6a0506416536976f12acd1d5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008971] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-31424",
+   "pin": "5.15.173",
+   "module_sha256": "c698538df5c1508d120c6efbb1ee7269746ef6d2ee3dd897fb7cea1713e9490b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014150] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-43027",
+   "pin": "5.15.173",
+   "module_sha256": "65423643b8291389e11c2fc84a84190bfc8e62953d1c2713ed53d9030c8fd597",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014722] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-43066",
+   "pin": "5.15.173",
+   "module_sha256": "9d54dc2178262c4b2b5fbe21885f58a0e8d3963f3f13e85dd8f8d268c877d934",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008618] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-43211",
+   "pin": "5.15.173",
+   "module_sha256": "189570322b6c9b6c8b8894d3ba96cb90e67910e8e3eda6ad2ded73660058b418",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007816] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-52910",
+   "pin": "5.15.173",
+   "module_sha256": "088215e6858f175499f8cde869ffed0d7115dca88f2ec7c9fe4ef994797cb933",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004865] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-52977",
+   "pin": "5.15.173",
+   "module_sha256": "a6e24d020a1017ded040fc6f5f0e55d2c07e00b32079677ffa3072a741c3f8c5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.008996] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-68138",
+   "pin": "5.15.173",
+   "module_sha256": "2f79f60cf07a6a7b77fca2f5f6fc4b00d4c13b673bfcfeabcb091f880a8b364a",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.004250] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-68202",
+   "pin": "5.15.173",
+   "module_sha256": "f014a4bb5cbe56c7845ea4f04b28745a926f3b8a6734bffbb12bda84112c56c8",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011462] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-68243",
+   "pin": "5.15.173",
+   "module_sha256": "efd505f1f142641508894e63de531e8e8813c12e33738e4c91ba6aab1e664fd7",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.018131] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-72067",
+   "pin": "5.15.173",
+   "module_sha256": "9f4f6b9cbded51e702be162f9a56513da3b195e5461da2d72d44dd45061be846",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.021728] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-74548",
+   "pin": "5.15.173",
+   "module_sha256": "c45143fce081121f359b7b9af0ab063f0f5e13f428dd6a4f623232aa17bf7d5f",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.021056] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-74566",
+   "pin": "5.15.173",
+   "module_sha256": "06116f378a3cf6ed03b2a5e8782f2b8207070ebf282d650834ecd6529187b452",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.034071] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-74658",
+   "pin": "5.15.173",
+   "module_sha256": "898d98ea79bee1eb1881ac3d738d72c428fac884fce656d3206df018b7b53a87",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007213] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-80590",
+   "pin": "5.15.173",
+   "module_sha256": "6edb4b9874a76c32b65d71d754eca3e126f8008d589dfd5c199a8cec8e160109",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.006919] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-80664",
+   "pin": "5.15.173",
+   "module_sha256": "4a151b4ad1b1048ad5ad4fc12922e64d77284e250d91fbad180dd796f5eaa27b",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.011261] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-80906",
+   "pin": "5.15.173",
+   "module_sha256": "e3f07814a7813f5a36ad68ad69d8511e29ff1d0b2b51c2a7a494d9f8fcbf9197",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014900] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-89551",
+   "pin": "5.15.173",
+   "module_sha256": "e3f8d54eeb0e0daed873b85f45cb9f21009651878f507d4c89630132c765f597",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.012275] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-90054",
+   "pin": "5.15.173",
+   "module_sha256": "bd125ea9558ee6e8504861e9b0e3df2c9137cb6495086cf05c7419ca426fec03",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.039441] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-97456",
+   "pin": "5.15.173",
+   "module_sha256": "7a99ff815b1a05cc91b3e9e7dcf8f1211b38afc1cd21af63700a076e86276cff",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.014142] PM:   Magic number: 14:880:341;"
+  },
+  {
+   "id": "sweep/v0.9.8-gcc-13/5.15/CVE-2026-97492",
+   "pin": "5.15.173",
+   "module_sha256": "09069edc5bff1e4d18a9fbc8c23adc80054066170684b44139afb9becf2afdd5",
+   "outcome": "LOADED_ENABLED",
+   "insmod_rc": "0",
+   "enabled": "1",
+   "transition": "0",
+   "reason": "[    1.007709] PM:   Magic number: 14:880:341;"
+  }
+ ]
+}
