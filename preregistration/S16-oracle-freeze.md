@@ -205,7 +205,7 @@ The validation finished at 15:03:52 UTC on 9 Oct (`lab/s12/oracle-v12-validation
 
 | File | SHA-256 | Harness commit |
 | --- | --- | --- |
-| blind-reloc-oracle-v1.4.py | b6496d03866701c15d71366d7322f8d5b7f2ee71e1bb2b5394054099d1d0ed29 | see correction below |
+| blind-reloc-oracle-v1.4.py | b6496d03866701c15d71366d7322f8d5b7f2ee71e1bb2b5394054099d1d0ed29 | 4c5053f |
 
 The rules were written after seeing the 34 S11 modules and the 7 control rebuilds, so v1.4's verdicts on those are a fit, reported as such and never as evidence. An unrecorded speed-only draft `blind-reloc-oracle-v1.3.1.py` (10 Oct, untracked) exists in the harness folder and on the build host; it was never validated or used for any reported result and is not part of this deviation.
 
@@ -218,7 +218,6 @@ The rules were written after seeing the 34 S11 modules and the 7 control rebuild
 - Measures, reported for v1.3 and v1.4 side by side with Wilson 95% intervals: detection = DIVERGENT among FAULTY stock modules; false alarms = DIVERGENT among CLEAN stock modules and among fixed-objtool modules, each alarm root-caused. Plus the addend operator of the S1 mutation tool on every fixed-objtool module's `.rodata` string relocations (one mutant per relocation, offset +1), detection reported per oracle version.
 - No rule above changes after the first held-out build; a runner fault means the run is archived as invalid and rerun.
 
-**Correction before validation (11 Oct 2026).** The first build of v1.4 (c9966f4c...) did not give RC an extent for a reference target reached through a section symbol (gcc's `__func__` objects), so RC never fired on them; found on a five-module implementation check (S11 fit cases, not evidence). `make_oracle_v14.py` now takes the extent from the reference object symbol that covers the target. Corrected v1.4: SHA-256 b6496d03866701c15d71366d7322f8d5b7f2ee71e1bb2b5394054099d1d0ed29. No validation or held-out input had been scored by either build.
 
 **Amendment to the held-out evaluation (11 Oct 2026, before any held-out module was scored; builds in progress).** The label and rule RC both test whether a string reference reaches the intended bytes (against the fixed-objtool build and against the independent compile respectively), so detection of the objtool string fault and of the +1 offset mutants is close to certain by construction. They are kept and reported only as a consistency check (RC does not hide this fault), not as evidence of detection power. The measures are re-ranked and one is added:
 - Primary: false alarms of v1.3 and v1.4 on held-out klp-build modules without the fault (stock modules labelled CLEAN, and every fixed-objtool module), with Wilson 95% intervals; every alarm root-caused.
