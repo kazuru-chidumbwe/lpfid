@@ -8,6 +8,7 @@ authors:
     orcid: "https://orcid.org/0009-0002-4099-1059"
     email: kazuruuni@gmail.com
 license: MIT
+repository-code: "https://github.com/kazuru-chidumbwe/lpfid"
 abstract: >-
   Blind reference-differential binding oracle for Linux livepatch modules (four frozen versions), the
   fault operators that edit built modules, the selection and build scripts for a corpus of 150 CVE fixes

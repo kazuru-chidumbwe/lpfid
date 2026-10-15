@@ -1,0 +1,47 @@
+== fetch kernel-livepatch-6.18.20-20.229 ==
+== extract shipped .ko from binary rpm ==
+shipped ko: 6
+== install livepatch src.rpm: Source0 tar (patches) + Source1 kernel src.rpm ==
+kernel srpm: /root/rpmbuild/SOURCES/kernel6.18-6.18.20-20.229.amzn2023.src.rpm ; patches: 8
+== install kernel6.18-debuginfo 6.18.20-20.229.amzn2023 ==
+  kernel6.18-debuginfo-common-x86_64-1:6.18.20-20.229.amzn2023.x86_64           
+
+Complete!
+  vmlinux OK: /usr/lib/debug/lib/modules/6.18.20-20.229.amzn2023.x86_64/vmlinux
+== install kernel build deps (dnf builddep 6.18.20-20.229.amzn2023) ==
+  zlib-devel-1.2.11-33.amzn2023.0.6.x86_64                                      
+
+Complete!
+== match kernel build gcc ==
+  kernel gcc token: 11.5.0-5
+  installing gcc-11.5.0-5.amzn2023.0.5
+gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+  gcc matched
+patched kpatch-build spec fallback
+== kpatch-build [1/8] CVE-2026-31431 ==
+  built OK
+== kpatch-build [2/8] CVE-2026-46316 ==
+  kpatch rc=1 (tail:)
+Reading special section data
+Building original source
+Building patched source
+ERROR: no changed objects found. Check /work/kernel-livepatch-6.18.20-20.229/kcache/build.log for more details.
+== kpatch-build [3/8] CVE-2026-46317 ==
+  kpatch rc=1 (tail:)
+Reading special section data
+Building original source
+Building patched source
+ERROR: no changed objects found. Check /work/kernel-livepatch-6.18.20-20.229/kcache/build.log for more details.
+== kpatch-build [4/8] cifs-spnego-6.18 ==
+  built OK
+== kpatch-build [5/8] copyfail-v2-6.18 ==
+  built OK
+== kpatch-build [6/8] fragnesia-6.18 ==
+  built OK
+== kpatch-build [7/8] gro-frag ==
+  built OK
+== kpatch-build [8/8] pintheft-6.18 ==
+  built OK
+DONE kernel-livepatch-6.18.20-20.229 shippedko=6 builtko=6 ref=0
+
+---STDERR---

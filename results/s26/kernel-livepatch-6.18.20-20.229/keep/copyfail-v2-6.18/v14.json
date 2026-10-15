@@ -1,0 +1,149 @@
+{
+ "overall_verdict": "DIVERGENT",
+ "sympos_verdict": "NOT_CHECKED",
+ "sympos_findings": [],
+ "sympos_checked": 0,
+ "module_compilers": [
+  "GCC: (GNU) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+ ],
+ "reference_compilers": [
+  "GCC: (GNU) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+ ],
+ "multiset_verdict": "DIVERGENT",
+ "sequence_verdict": "DIVERGENT",
+ "module": "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ko/livepatch-copyfail-v2-6-18.ko",
+ "references": [
+  "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o",
+  "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp4.o",
+  "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/ip6_output.o",
+  "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/ip_output.o"
+ ],
+ "functions_compared": 12,
+ "oracle_version": "1.4",
+ "rc_pairs": 0,
+ "dup_pairings": [
+  {
+   "function": "__pfx_cleanup_module",
+   "candidates": [
+    "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o",
+    "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp4.o"
+   ],
+   "chosen": "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o"
+  },
+  {
+   "function": "__pfx_init_module",
+   "candidates": [
+    "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o",
+    "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp4.o"
+   ],
+   "chosen": "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o"
+  },
+  {
+   "function": "cleanup_module",
+   "candidates": [
+    "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o",
+    "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp4.o"
+   ],
+   "chosen": "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o"
+  },
+  {
+   "function": "init_module",
+   "candidates": [
+    "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o",
+    "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp4.o"
+   ],
+   "chosen": "/home/test/s26/work/kernel-livepatch-6.18.20-20.229/ref/copyfail-v2-6.18/esp6.o"
+  }
+ ],
+ "n4_active": true,
+ "n4_fallbacks": 0,
+ "functions_in_module_not_in_reference": [
+  "__pfx_add_callbacks_to_patch_objects",
+  "__pfx_patch_exit",
+  "__pfx_patch_find_object_by_name",
+  "__pfx_patch_free_livepatch",
+  "__pfx_patch_free_scaffold",
+  "__pfx_patch_init",
+  "add_callbacks_to_patch_objects",
+  "patch_exit",
+  "patch_find_object_by_name",
+  "patch_free_livepatch",
+  "patch_free_scaffold",
+  "patch_init"
+ ],
+ "divergent_functions": [
+  {
+   "function": "cleanup_module",
+   "n_mod": 2,
+   "n_ref": 7,
+   "multiset_equal": false,
+   "sequence_equal": false,
+   "only_in_module": [
+    "PC32:lpatch",
+    "PC32:patch_free_livepatch"
+   ],
+   "only_in_reference": [
+    "32S:__func__.N",
+    "32S:esp6_protocol",
+    "32S:esp6_type",
+    "32S:str:\"\u00016IPv6: %s: can't remove protocol\n\"",
+    "PLT32:_printk",
+    "PLT32:xfrm6_protocol_deregister",
+    "PLT32:xfrm_unregister_type"
+   ]
+  },
+  {
+   "function": "init_module",
+   "n_mod": 30,
+   "n_ref": 16,
+   "multiset_equal": false,
+   "sequence_equal": false,
+   "only_in_module": [
+    "32S:__kpatch_funcs",
+    "32S:__kpatch_funcs_end",
+    "32S:__kpatch_funcs_end",
+    "32S:__this_module",
+    "32S:patch_objects",
+    "32S:patch_objects",
+    "PC32:add_callbacks_to_patch_objects",
+    "PC32:kmalloc_caches+0x28",
+    "PC32:kmalloc_caches+0x40",
+    "PC32:lpatch",
+    "PC32:lpatch",
+    "PC32:lpatch",
+    "PC32:lpatch",
+    "PC32:lpatch",
+    "PC32:patch_find_object_by_name",
+    "PC32:patch_free_livepatch",
+    "PC32:patch_free_livepatch",
+    "PC32:patch_free_scaffold",
+    "PC32:patch_free_scaffold",
+    "PC32:patch_objects",
+    "PC32:patch_objects_nr",
+    "PLT32:__kmalloc_cache_noprof",
+    "PLT32:__kmalloc_cache_noprof",
+    "PLT32:__kmalloc_noprof",
+    "PLT32:__kmalloc_noprof",
+    "PLT32:__list_add_valid_or_report",
+    "PLT32:kfree",
+    "PLT32:klp_enable_patch"
+   ],
+   "only_in_reference": [
+    "32S:__func__.N",
+    "32S:__func__.N",
+    "32S:esp6_protocol",
+    "32S:esp6_type",
+    "32S:esp6_type",
+    "32S:str:\"\u00016IPv6: %s: can't add protocol\n\"",
+    "32S:str:\"\u00016IPv6: %s: can't add xfrm type\n\"",
+    "PLT32:__x86_return_thunk",
+    "PLT32:__x86_return_thunk",
+    "PLT32:_printk",
+    "PLT32:_printk",
+    "PLT32:xfrm6_protocol_register",
+    "PLT32:xfrm_register_type",
+    "PLT32:xfrm_unregister_type"
+   ]
+  }
+ ]
+}

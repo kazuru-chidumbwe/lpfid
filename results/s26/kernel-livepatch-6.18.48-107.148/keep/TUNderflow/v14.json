@@ -1,0 +1,120 @@
+{
+ "overall_verdict": "DIVERGENT",
+ "sympos_verdict": "NOT_CHECKED",
+ "sympos_findings": [],
+ "sympos_checked": 0,
+ "module_compilers": [
+  "GCC: (GNU) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+ ],
+ "reference_compilers": [
+  "GCC: (GNU) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+ ],
+ "multiset_verdict": "DIVERGENT",
+ "sequence_verdict": "DIVERGENT",
+ "module": "/home/test/s26/work/kernel-livepatch-6.18.48-107.148/ko/livepatch-TUNderflow.ko",
+ "references": [
+  "/home/test/s26/work/kernel-livepatch-6.18.48-107.148/ref/TUNderflow/tun.o"
+ ],
+ "functions_compared": 8,
+ "oracle_version": "1.4",
+ "rc_pairs": 0,
+ "dup_pairings": [],
+ "n4_active": true,
+ "n4_fallbacks": 0,
+ "functions_in_module_not_in_reference": [
+  "__pfx_add_callbacks_to_patch_objects",
+  "__pfx_patch_exit",
+  "__pfx_patch_find_object_by_name",
+  "__pfx_patch_free_livepatch",
+  "__pfx_patch_free_scaffold",
+  "__pfx_patch_init",
+  "add_callbacks_to_patch_objects",
+  "patch_exit",
+  "patch_find_object_by_name",
+  "patch_free_livepatch",
+  "patch_free_scaffold",
+  "patch_init"
+ ],
+ "divergent_functions": [
+  {
+   "function": "cleanup_module",
+   "n_mod": 2,
+   "n_ref": 6,
+   "multiset_equal": false,
+   "sequence_equal": false,
+   "only_in_module": [
+    "PC32:lpatch",
+    "PC32:patch_free_livepatch"
+   ],
+   "only_in_reference": [
+    "32S:tun_link_ops",
+    "32S:tun_miscdev",
+    "32S:tun_notifier_block",
+    "PLT32:misc_deregister",
+    "PLT32:rtnl_link_unregister",
+    "PLT32:unregister_netdevice_notifier"
+   ]
+  },
+  {
+   "function": "init_module",
+   "n_mod": 30,
+   "n_ref": 24,
+   "multiset_equal": false,
+   "sequence_equal": false,
+   "only_in_module": [
+    "32S:__kpatch_funcs",
+    "32S:__kpatch_funcs_end",
+    "32S:__kpatch_funcs_end",
+    "32S:__this_module",
+    "32S:patch_objects",
+    "32S:patch_objects",
+    "PC32:add_callbacks_to_patch_objects",
+    "PC32:kmalloc_caches+0x28",
+    "PC32:kmalloc_caches+0x40",
+    "PC32:lpatch",
+    "PC32:lpatch",
+    "PC32:lpatch",
+    "PC32:lpatch",
+    "PC32:lpatch",
+    "PC32:patch_find_object_by_name",
+    "PC32:patch_free_livepatch",
+    "PC32:patch_free_livepatch",
+    "PC32:patch_free_scaffold",
+    "PC32:patch_free_scaffold",
+    "PC32:patch_objects",
+    "PC32:patch_objects_nr",
+    "PLT32:__kmalloc_cache_noprof",
+    "PLT32:__kmalloc_cache_noprof",
+    "PLT32:__kmalloc_noprof",
+    "PLT32:__kmalloc_noprof",
+    "PLT32:__list_add_valid_or_report",
+    "PLT32:kfree",
+    "PLT32:klp_enable_patch"
+   ],
+   "only_in_reference": [
+    "32S:str:\"\u00013tun: Can't register link_ops\n\"",
+    "32S:str:\"\u00013tun: Can't register misc device %d\n\"",
+    "32S:str:\"\u00013tun: Can't register netdevice notifier\n\"",
+    "32S:str:\"\u00016tun: %s, %s\n\"",
+    "32S:str:\"1.6\"",
+    "32S:str:\"Universal TUN/TAP device driver\"",
+    "32S:tun_link_ops",
+    "32S:tun_link_ops",
+    "32S:tun_miscdev",
+    "32S:tun_miscdev",
+    "32S:tun_notifier_block",
+    "PLT32:__x86_return_thunk",
+    "PLT32:__x86_return_thunk",
+    "PLT32:_printk",
+    "PLT32:_printk",
+    "PLT32:_printk",
+    "PLT32:_printk",
+    "PLT32:misc_deregister",
+    "PLT32:misc_register",
+    "PLT32:register_netdevice_notifier",
+    "PLT32:rtnl_link_register",
+    "PLT32:rtnl_link_unregister"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "pkg": "kernel-livepatch-6.12.29-33.102",
+ "status": "SCORED",
+ "ko": 3,
+ "ref": 3,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2025-38037.ko",
+   "patch": "CVE-2025-38037",
+   "ref_n": 1,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2025-38208.ko",
+   "patch": "CVE-2025-38208",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2025-38248.ko",
+   "patch": "CVE-2025-38248",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 1357
+}

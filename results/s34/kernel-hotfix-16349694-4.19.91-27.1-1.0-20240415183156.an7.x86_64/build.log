@@ -1,0 +1,15 @@
+checking file block/blk-iocost.c
+patching file block/blk-iocost.c
+  DESCEND  objtool
+  CALL    scripts/checksyscalls.sh
+  CC      block/blk-iocost.o
+
++ mkdir -p /a7/work
++ mountpoint -q /a7/work
++ cd /work/kernels/4.19.91-27.1/tree/linux-4.19.91-27.1.an7
++ patch -p1 --dry-run
++ patch -p1
++ chroot /a7 bash -lc 'cd /work/kernels/4.19.91-27.1/tree/linux-4.19.91-27.1.an7 && make -j$(nproc) KCFLAGS="-ffunction-sections -fdata-sections" block/blk-iocost.o'
+
+-- reverse --
+patching file block/blk-iocost.c

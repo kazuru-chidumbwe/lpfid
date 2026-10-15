@@ -1,0 +1,42 @@
+{
+ "pkg": "kernel-livepatch-6.1.94-99.176",
+ "status": "SCORED",
+ "ko": 3,
+ "ref": 3,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2024-41087-0001.ko",
+   "patch": "CVE-2024-41087.0001",
+   "ref_n": 1,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2024-41091-CVE-2024-41090-0001.ko",
+   "patch": null,
+   "ref_n": 0,
+   "v1.3": "NO_REF",
+   "v1.4": "NO_REF",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2024-41091-CVE-2024-41090-0002.ko",
+   "patch": null,
+   "ref_n": 0,
+   "v1.3": "NO_REF",
+   "v1.4": "NO_REF",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 1053
+}

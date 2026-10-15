@@ -1,0 +1,75 @@
+{
+ "pkg": "kernel-livepatch-6.1.164-196.303",
+ "status": "SCORED",
+ "ko": 6,
+ "ref": 10,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2026-31431.ko",
+   "patch": "CVE-2026-31431",
+   "ref_n": 3,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-cifs-spnego-6-1.ko",
+   "patch": "cifs-spnego-6.1",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-copyfail-v2-6-1.ko",
+   "patch": "copyfail-v2-6.1",
+   "ref_n": 3,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-fragnesia-6-1.ko",
+   "patch": "fragnesia-6.1",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-gro-frag.ko",
+   "patch": "gro-frag",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-pintheft-6-1.ko",
+   "patch": "pintheft-6.1",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 1858
+}

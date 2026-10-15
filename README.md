@@ -19,8 +19,8 @@ A livepatch module can load, report itself enabled and finish its transition whi
 | `generators/` | The kpatch-build and klp-build comparison, including the analysis of the objtool string fault in klp-build on Linux 6.19 and its run-time demonstration |
 | `presence/` | The patch presence test runs |
 | `faults/` | The codebook and coding of kpatch's defect history |
-| `results/` | Every result file the paper reports |
-| `preregistration/` | The plans, each committed before the runs it governs, with every dated deviation |
+| `results/` | Every result file the paper reports. `results/s26` is the Amazon Linux 2023 draw: the verdict for every module, and the shipped module and reference objects retained for each divergence. `results/s34` is the OpenAnolis 7.7 census: every module, its reference objects and its verdicts |
+| `preregistration/` | The plans, each committed before the runs it governs, with every dated deviation. `S26-shipped-amazon.md` and `S34-shipped-anolis.md` are the shipped-module plans |
 
 `MANIFEST.sha256` lists the SHA-256 of every file.
 
@@ -35,6 +35,10 @@ python3 oracle/blind-reloc-oracle-v1.3.py MODULE.ko REF.o [REF.o ...] --vmlinux 
 ```
 
 It prints a JSON report and exits 0 when the module is consistent with the references, 1 when it diverges.
+
+## Availability
+
+The modules, reference objects, injected faults, pre-registrations and result files that support the paper are in this repository. The version of record will be archived on Zenodo [TBD: Zenodo DOI].
 
 ## Licence
 

@@ -1,0 +1,64 @@
+{
+ "pkg": "kernel-livepatch-6.1.19-30.43",
+ "status": "SCORED",
+ "ko": 5,
+ "ref": 9,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2022-48425.ko",
+   "patch": "CVE-2022-48425",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2023-1611.ko",
+   "patch": "CVE-2023-1611",
+   "ref_n": 2,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2023-2124.ko",
+   "patch": "CVE-2023-2124",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2023-28466.ko",
+   "patch": "CVE-2023-28466",
+   "ref_n": 1,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2023-32233.ko",
+   "patch": "CVE-2023-32233",
+   "ref_n": 4,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 1411
+}

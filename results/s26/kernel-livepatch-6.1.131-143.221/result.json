@@ -1,0 +1,31 @@
+{
+ "pkg": "kernel-livepatch-6.1.131-143.221",
+ "status": "SCORED",
+ "ko": 2,
+ "ref": 2,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2025-21927.ko",
+   "patch": "CVE-2025-21927",
+   "ref_n": 1,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2025-37785.ko",
+   "patch": "CVE-2025-37785",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 969
+}

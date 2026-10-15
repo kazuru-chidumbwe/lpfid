@@ -1,0 +1,25 @@
+== fetch kernel-livepatch-6.12.20-23.97 ==
+== extract shipped .ko from binary rpm ==
+shipped ko: 1
+== install livepatch src.rpm: Source0 tar (patches) + Source1 kernel src.rpm ==
+kernel srpm: /root/rpmbuild/SOURCES/kernel6.12-6.12.20-23.97.amzn2023.src.rpm ; patches: 1
+== install kernel6.12-debuginfo 6.12.20-23.97.amzn2023 ==
+  kernel6.12-debuginfo-common-x86_64-6.12.20-23.97.amzn2023.x86_64              
+
+Complete!
+  vmlinux OK: /usr/lib/debug/lib/modules/6.12.20-23.97.amzn2023.x86_64/vmlinux
+== install kernel build deps (dnf builddep 6.12.20-23.97.amzn2023) ==
+  zlib-devel-1.2.11-33.amzn2023.0.6.x86_64                                      
+
+Complete!
+== match kernel build gcc ==
+  kernel gcc token: 11.5.0-5
+  installing gcc-11.5.0-5.amzn2023.0.5
+gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+  gcc matched
+patched kpatch-build spec fallback
+== kpatch-build [1/1] CVE-2025-37785 ==
+  built OK
+DONE kernel-livepatch-6.12.20-23.97 shippedko=1 builtko=1 ref=0
+
+---STDERR---

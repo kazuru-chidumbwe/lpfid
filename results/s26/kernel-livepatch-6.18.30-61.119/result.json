@@ -1,0 +1,53 @@
+{
+ "pkg": "kernel-livepatch-6.18.30-61.119",
+ "status": "SCORED",
+ "ko": 4,
+ "ref": 5,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2026-64600.ko",
+   "patch": "CVE-2026-64600",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2026-74580.ko",
+   "patch": "CVE-2026-74580",
+   "ref_n": 1,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-OVSwrap.ko",
+   "patch": "OVSwrap",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-fraggap.ko",
+   "patch": "fraggap",
+   "ref_n": 2,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 2484
+}

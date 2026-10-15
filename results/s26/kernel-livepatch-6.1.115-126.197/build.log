@@ -1,0 +1,56 @@
+== fetch kernel-livepatch-6.1.115-126.197 ==
+== extract shipped .ko from binary rpm ==
+shipped ko: 11
+== install livepatch src.rpm: Source0 tar (patches) + Source1 kernel src.rpm ==
+kernel srpm: /root/rpmbuild/SOURCES/kernel-6.1.115-126.197.amzn2023.src.rpm ; patches: 13
+== install kernel-debuginfo 6.1.115-126.197.amzn2023 ==
+  kernel-debuginfo-common-x86_64-6.1.115-126.197.amzn2023.x86_64                
+
+Complete!
+  vmlinux OK: /usr/lib/debug/lib/modules/6.1.115-126.197.amzn2023.x86_64/vmlinux
+== install kernel build deps (dnf builddep 6.1.115-126.197.amzn2023) ==
+  zlib-devel-1.2.11-33.amzn2023.0.6.x86_64                                      
+
+Complete!
+== match kernel build gcc ==
+  kernel gcc token: 11.4.1-2
+  installing gcc-11.4.1-2.amzn2023.0.2
+gcc (GCC) 11.4.1 20230605 (Red Hat 11.4.1-2)
+  gcc matched
+== kpatch-build [1/13] CVE-2024-36899.0001 ==
+  kpatch rc=1 (tail:)
+Reading special section data
+Building original source
+Building patched source
+ERROR: no changed objects found. Check /work/kernel-livepatch-6.1.115-126.197/kcache/build.log for more details.
+== kpatch-build [2/13] CVE-2024-49960.0001 ==
+  built OK
+== kpatch-build [3/13] CVE-2024-49996.0001 ==
+  built OK
+== kpatch-build [4/13] CVE-2024-50036.0001 ==
+  built OK
+== kpatch-build [5/13] CVE-2024-50055.0001 ==
+  built OK
+== kpatch-build [6/13] CVE-2024-50121.0001 ==
+  built OK
+== kpatch-build [7/13] CVE-2024-50242.0001 ==
+  built OK
+== kpatch-build [8/13] CVE-2024-50246.0001 ==
+  built OK
+== kpatch-build [9/13] CVE-2024-50247.0001 ==
+  built OK
+== kpatch-build [10/13] CVE-2024-50257.0001 ==
+  built OK
+== kpatch-build [11/13] CVE-2024-50262.0001 ==
+  built OK
+== kpatch-build [12/13] CVE-2024-53206.0001 ==
+  built OK
+== kpatch-build [13/13] CVE-2024-56642.0001 ==
+  kpatch rc=1 (tail:)
+Reading special section data
+Building original source
+Building patched source
+ERROR: no changed objects found. Check /work/kernel-livepatch-6.1.115-126.197/kcache/build.log for more details.
+DONE kernel-livepatch-6.1.115-126.197 shippedko=11 builtko=11 ref=0
+
+---STDERR---

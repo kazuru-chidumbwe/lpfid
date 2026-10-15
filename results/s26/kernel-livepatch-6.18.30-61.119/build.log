@@ -1,0 +1,43 @@
+== fetch kernel-livepatch-6.18.30-61.119 ==
+== extract shipped .ko from binary rpm ==
+shipped ko: 4
+== install livepatch src.rpm: Source0 tar (patches) + Source1 kernel src.rpm ==
+kernel srpm: /root/rpmbuild/SOURCES/kernel6.18-6.18.30-61.119.amzn2023.src.rpm ; patches: 6
+== install kernel6.18-debuginfo 6.18.30-61.119.amzn2023 ==
+  kernel6.18-debuginfo-common-x86_64-1:6.18.30-61.119.amzn2023.x86_64           
+
+Complete!
+  vmlinux OK: /usr/lib/debug/lib/modules/6.18.30-61.119.amzn2023.x86_64/vmlinux
+== install kernel build deps (dnf builddep 6.18.30-61.119.amzn2023) ==
+  zlib-devel-1.2.11-33.amzn2023.0.6.x86_64                                      
+
+Complete!
+== match kernel build gcc ==
+  kernel gcc token: 11.5.0-5
+  installing gcc-11.5.0-5.amzn2023.0.5
+gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+  gcc matched
+patched kpatch-build spec fallback
+== kpatch-build [1/6] CVE-2026-46316 ==
+  kpatch rc=1 (tail:)
+Reading special section data
+Building original source
+Building patched source
+ERROR: no changed objects found. Check /work/kernel-livepatch-6.18.30-61.119/kcache/build.log for more details.
+== kpatch-build [2/6] CVE-2026-46317 ==
+  kpatch rc=1 (tail:)
+Reading special section data
+Building original source
+Building patched source
+ERROR: no changed objects found. Check /work/kernel-livepatch-6.18.30-61.119/kcache/build.log for more details.
+== kpatch-build [3/6] CVE-2026-64600 ==
+  built OK
+== kpatch-build [4/6] CVE-2026-74580 ==
+  built OK
+== kpatch-build [5/6] OVSwrap ==
+  built OK
+== kpatch-build [6/6] fraggap ==
+  built OK
+DONE kernel-livepatch-6.18.30-61.119 shippedko=4 builtko=4 ref=0
+
+---STDERR---

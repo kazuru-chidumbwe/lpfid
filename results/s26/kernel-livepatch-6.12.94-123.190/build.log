@@ -1,0 +1,39 @@
+== fetch kernel-livepatch-6.12.94-123.190 ==
+== extract shipped .ko from binary rpm ==
+shipped ko: 8
+== install livepatch src.rpm: Source0 tar (patches) + Source1 kernel src.rpm ==
+kernel srpm: /root/rpmbuild/SOURCES/kernel6.12-6.12.94-123.190.amzn2023.src.rpm ; patches: 8
+== install kernel6.12-debuginfo 6.12.94-123.190.amzn2023 ==
+  kernel6.12-debuginfo-common-x86_64-1:6.12.94-123.190.amzn2023.x86_64          
+
+Complete!
+  vmlinux OK: /usr/lib/debug/lib/modules/6.12.94-123.190.amzn2023.x86_64/vmlinux
+== install kernel build deps (dnf builddep 6.12.94-123.190.amzn2023) ==
+  zlib-devel-1.2.11-33.amzn2023.0.6.x86_64                                      
+
+Complete!
+== match kernel build gcc ==
+  kernel gcc token: 11.5.0-5
+  installing gcc-11.5.0-5.amzn2023.0.5
+gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+  gcc matched
+patched kpatch-build spec fallback
+== kpatch-build [1/8] CVE-2026-64600 ==
+  built OK
+== kpatch-build [2/8] CVE-2026-74580 ==
+  built OK
+== kpatch-build [3/8] CVE-2026-80521 ==
+  built OK
+== kpatch-build [4/8] DiagSpill ==
+  built OK
+== kpatch-build [5/8] DirtyAH6 ==
+  built OK
+== kpatch-build [6/8] OVSwrap ==
+  built OK
+== kpatch-build [7/8] PPPoEject ==
+  built OK
+== kpatch-build [8/8] TUNderflow ==
+  built OK
+DONE kernel-livepatch-6.12.94-123.190 shippedko=8 builtko=8 ref=0
+
+---STDERR---

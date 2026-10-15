@@ -1,0 +1,32 @@
+== fetch kernel-livepatch-6.1.19-30.43 ==
+== extract shipped .ko from binary rpm ==
+shipped ko: 5
+== install livepatch src.rpm: Source0 tar (patches) + Source1 kernel src.rpm ==
+kernel srpm: /root/rpmbuild/SOURCES/kernel-6.1.19-30.43.amzn2023.src.rpm ; patches: 5
+== install kernel-debuginfo 6.1.19-30.43.amzn2023 ==
+  kernel-debuginfo-common-x86_64-6.1.19-30.43.amzn2023.x86_64                   
+
+Complete!
+  vmlinux OK: /usr/lib/debug/lib/modules/6.1.19-30.43.amzn2023.x86_64/vmlinux
+== install kernel build deps (dnf builddep 6.1.19-30.43.amzn2023) ==
+  zlib-devel-1.2.11-33.amzn2023.0.6.x86_64                                      
+
+Complete!
+== match kernel build gcc ==
+  kernel gcc token: 11.3.1-4
+  installing gcc-11.3.1-4.amzn2023.0.3
+gcc (GCC) 11.3.1 20221121 (Red Hat 11.3.1-4)
+  gcc matched
+== kpatch-build [1/5] CVE-2022-48425 ==
+  built OK
+== kpatch-build [2/5] CVE-2023-1611 ==
+  built OK
+== kpatch-build [3/5] CVE-2023-2124 ==
+  built OK
+== kpatch-build [4/5] CVE-2023-28466 ==
+  built OK
+== kpatch-build [5/5] CVE-2023-32233 ==
+  built OK
+DONE kernel-livepatch-6.1.19-30.43 shippedko=5 builtko=5 ref=0
+
+---STDERR---

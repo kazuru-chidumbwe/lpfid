@@ -1,0 +1,42 @@
+{
+ "pkg": "kernel-livepatch-6.1.127-135.201",
+ "status": "SCORED",
+ "ko": 3,
+ "ref": 3,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2025-21703.ko",
+   "patch": "CVE-2025-21703",
+   "ref_n": 1,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2025-21753.ko",
+   "patch": "CVE-2025-21753",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2025-21796.ko",
+   "patch": "CVE-2025-21796",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 1097
+}

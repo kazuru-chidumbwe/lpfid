@@ -1,0 +1,72 @@
+== fetch kernel-livepatch-6.1.112-124.190 ==
+== extract shipped .ko from binary rpm ==
+shipped ko: 22
+== install livepatch src.rpm: Source0 tar (patches) + Source1 kernel src.rpm ==
+kernel srpm: /root/rpmbuild/SOURCES/kernel-6.1.112-124.190.amzn2023.src.rpm ; patches: 23
+== install kernel-debuginfo 6.1.112-124.190.amzn2023 ==
+  kernel-debuginfo-common-x86_64-6.1.112-124.190.amzn2023.x86_64                
+
+Complete!
+  vmlinux OK: /usr/lib/debug/lib/modules/6.1.112-124.190.amzn2023.x86_64/vmlinux
+== install kernel build deps (dnf builddep 6.1.112-124.190.amzn2023) ==
+  zlib-devel-1.2.11-33.amzn2023.0.6.x86_64                                      
+
+Complete!
+== match kernel build gcc ==
+  kernel gcc token: 11.4.1-2
+  installing gcc-11.4.1-2.amzn2023.0.2
+gcc (GCC) 11.4.1 20230605 (Red Hat 11.4.1-2)
+  gcc matched
+== kpatch-build [1/23] CVE-2024-36899.0001 ==
+  kpatch rc=1 (tail:)
+Reading special section data
+Building original source
+Building patched source
+ERROR: no changed objects found. Check /work/kernel-livepatch-6.1.112-124.190/kcache/build.log for more details.
+== kpatch-build [2/23] CVE-2024-47701.0001 ==
+  built OK
+== kpatch-build [3/23] CVE-2024-47742.0001 ==
+  built OK
+== kpatch-build [4/23] CVE-2024-49854.0001 ==
+  built OK
+== kpatch-build [5/23] CVE-2024-49855.0001 ==
+  built OK
+== kpatch-build [6/23] CVE-2024-49860.0001 ==
+  built OK
+== kpatch-build [7/23] CVE-2024-49936.0001 ==
+  built OK
+== kpatch-build [8/23] CVE-2024-49960.0001 ==
+  built OK
+== kpatch-build [9/23] CVE-2024-49983.0001 ==
+  built OK
+== kpatch-build [10/23] CVE-2024-49996.0001 ==
+  built OK
+== kpatch-build [11/23] CVE-2024-50055.0001 ==
+  built OK
+== kpatch-build [12/23] CVE-2024-50083.0001 ==
+  built OK
+== kpatch-build [13/23] CVE-2024-50088.0001 ==
+  built OK
+== kpatch-build [14/23] CVE-2024-50121.0001 ==
+  built OK
+== kpatch-build [15/23] CVE-2024-50143.0001 ==
+  built OK
+== kpatch-build [16/23] CVE-2024-50151.0001 ==
+  built OK
+== kpatch-build [17/23] CVE-2024-50155.0001 ==
+  built OK
+== kpatch-build [18/23] CVE-2024-50186.0001 ==
+  built OK
+== kpatch-build [19/23] CVE-2024-50242.0001 ==
+  built OK
+== kpatch-build [20/23] CVE-2024-50246.0001 ==
+  built OK
+== kpatch-build [21/23] CVE-2024-50247.0001 ==
+  built OK
+== kpatch-build [22/23] CVE-2024-50257.0001 ==
+  built OK
+== kpatch-build [23/23] CVE-2024-50262.0001 ==
+  built OK
+DONE kernel-livepatch-6.1.112-124.190 shippedko=22 builtko=22 ref=22
+
+---STDERR---

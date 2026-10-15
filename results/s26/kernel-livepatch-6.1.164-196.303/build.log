@@ -1,0 +1,34 @@
+== fetch kernel-livepatch-6.1.164-196.303 ==
+== extract shipped .ko from binary rpm ==
+shipped ko: 6
+== install livepatch src.rpm: Source0 tar (patches) + Source1 kernel src.rpm ==
+kernel srpm: /root/rpmbuild/SOURCES/kernel-6.1.164-196.303.amzn2023.src.rpm ; patches: 6
+== install kernel-debuginfo 6.1.164-196.303.amzn2023 ==
+  kernel-debuginfo-common-x86_64-1:6.1.164-196.303.amzn2023.x86_64              
+
+Complete!
+  vmlinux OK: /usr/lib/debug/lib/modules/6.1.164-196.303.amzn2023.x86_64/vmlinux
+== install kernel build deps (dnf builddep 6.1.164-196.303.amzn2023) ==
+  zlib-devel-1.2.11-33.amzn2023.0.6.x86_64                                      
+
+Complete!
+== match kernel build gcc ==
+  kernel gcc token: 11.5.0-5
+  installing gcc-11.5.0-5.amzn2023.0.5
+gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+  gcc matched
+== kpatch-build [1/6] CVE-2026-31431 ==
+  built OK
+== kpatch-build [2/6] cifs-spnego-6.1 ==
+  built OK
+== kpatch-build [3/6] copyfail-v2-6.1 ==
+  built OK
+== kpatch-build [4/6] fragnesia-6.1 ==
+  built OK
+== kpatch-build [5/6] gro-frag ==
+  built OK
+== kpatch-build [6/6] pintheft-6.1 ==
+  built OK
+DONE kernel-livepatch-6.1.164-196.303 shippedko=6 builtko=6 ref=0
+
+---STDERR---

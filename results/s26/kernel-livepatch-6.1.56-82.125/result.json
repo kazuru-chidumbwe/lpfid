@@ -1,0 +1,42 @@
+{
+ "pkg": "kernel-livepatch-6.1.56-82.125",
+ "status": "SCORED",
+ "ko": 3,
+ "ref": 3,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2023-5090.ko",
+   "patch": "CVE-2023-5090",
+   "ref_n": 1,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  },
+  {
+   "ko": "livepatch-CVE-2023-5717.ko",
+   "patch": "CVE-2023-5717",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "OUT_OF_SCOPE",
+   "is_replace": false,
+   "uses_shadow": true,
+   "has_callbacks": true
+  },
+  {
+   "ko": "livepatch-CVE-2023-6111.ko",
+   "patch": "CVE-2023-6111",
+   "ref_n": 1,
+   "v1.3": "DIVERGENT",
+   "v1.4": "DIVERGENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 1102
+}

@@ -1,0 +1,20 @@
+{
+ "pkg": "kernel-livepatch-6.1.186-228.376",
+ "status": "SCORED",
+ "ko": 1,
+ "ref": 1,
+ "modules": [
+  {
+   "ko": "livepatch-CVE-2026-80521.ko",
+   "patch": "CVE-2026-80521",
+   "ref_n": 1,
+   "v1.3": "CONSISTENT",
+   "v1.4": "CONSISTENT",
+   "eligibility": "SOUND",
+   "is_replace": false,
+   "uses_shadow": false,
+   "has_callbacks": false
+  }
+ ],
+ "secs": 968
+}
