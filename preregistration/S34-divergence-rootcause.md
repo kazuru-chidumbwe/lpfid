@@ -37,3 +37,10 @@ All 39 modules contain `patch_exit`, `patch_find_object_by_name`, `patch_free_li
 ## Class
 
 No patched function differs in any instruction other than the `__fentry__` entry. The class is a difference between this reference build and the shipped module's fentry relocation, plus the scaffolding pairing, not a fault in the shipped fix. The pre-registered vendor report was not triggered.
+
+
+## Addendum: gcc-44 rebuild and rule RF (15 Oct 2026)
+
+See `preregistration/S34-DEVIATION-gcc44-RF.md` and `results/s34-gcc44-SUMMARY.json`.
+
+Under release-matched gcc 4.8.5-44.0.1 references and oracle / body-check version 1.5, every patched function on the 38 scored packages is CONSISTENT (26 functions accepted solely by RF). One package failed to rebuild (CVE-2023-0461 on 4.19.91-26.6) and stays a BUILD_FAIL. The 17 residual package-scope DIVERGENT verdicts are CVE-2023-35788 `init_module` / `cleanup_module` scaffolding only.

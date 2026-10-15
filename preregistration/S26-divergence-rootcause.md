@@ -61,3 +61,10 @@ module's compiler banner matched its reference. No real fidelity fault in any of
 prereg ethical-slip gate is NOT triggered. The newly-paired `-0002` divergence is Class A scaffolding.
 
 See [[project_s26_shipped_livepatch]], internal/S16-ORACLE-FREEZE (Deviation-4), 07-results.md §7.5.
+
+
+## Addendum: automated patched-function rate (15 Oct 2026)
+
+Classifier `scoring/classify_div.py` drops `init_module` / `cleanup_module` (and `__pfx_` forms) from each DIVERGENT report. Summary: `results/s26-patched-fn-SUMMARY.json`.
+
+Under that scope, **163 of 164** modules are CONSISTENT (106 overall CONSISTENT + 57 scaffolding-only). The sole residual is CVE-2023-5090 on `kernel-livepatch-6.1.56-82.125` (non-string `.rodata`: `direct_access_msrs+0x170` vs `sec:.rodata+0x170`), already Class B above.

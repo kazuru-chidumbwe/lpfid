@@ -228,3 +228,17 @@ The rules were written after seeing the 34 S11 modules and the 7 control rebuild
 - Visible: v1.3 run on the mutant with its own parent module as the only reference, restricted (`--functions`) to the functions the module shares with R-ind, reports DIVERGENT. Same toolchain and layout, so representation cannot cause it.
 - Masked: visible, the parent is CONSISTENT under v1.4 against R-ind, and the mutant is CONSISTENT under v1.4 against R-ind.
 - Pass when no mutant is masked. Reported: per operator, visible mutants on v1.4-CONSISTENT parents and v1.4's detection of them (Wilson 95%), and invisible mutants (outside the compared functions or equivalent at the relocation level).
+
+
+## Deviation 5 (15 Oct 2026): oracle v1.5 and body_check v1.5, rule RF; S34 gcc 4.8.5-44.0.1 rebuild
+
+**Why.** The OpenAnolis census (S34) used gcc 4.8.5-39.0.1 references against modules built with 4.8.5-44.0.1 under `LPFID_T1=version`. After root-causing every DIVERGENT package, 27 of 39 patched functions differed only at the fentry probe (module `PC32:__fentry__` vs reference `R_X86_64_NONE` / five-byte nop). That left the shipped negative as an adjudication and left a release soft spot.
+
+**Change.** Dated deviation `preregistration/S34-DEVIATION-gcc44-RF.md`. Rebuild every S34 reference with gcc 4.8.5-44.0.1. `oracle/blind-reloc-oracle-v1.5.py` is generated from v1.4 by `oracle/make_oracle_v15.py`; v1.4 is not touched. Rule RF accepts only the lone fentry row shape above. `oracle/body_check_v15.py` accepts the matching entry call/nop pair. `LPFID_DISABLE=RF` gives v1.4 / body without RF.
+
+| File | SHA-256 (LF) |
+| --- | --- |
+| blind-reloc-oracle-v1.5.py | e8a402134394c86947950f2a58d8b2c2e2ce179f405e2aa31258752e833b8aa0 |
+| body_check_v15.py | 974cd4d4bf7986ee2ddc9137d716ede2fc00eaa4dab48b928e2a487ce43cebba |
+
+**Non-masking.** `scoring/non_masking_check_rf.py` on the gcc44 census: RF disabled equals v1.4 on every scored package; RF clears only the fentry shape; no over-clear of non-fentry divergences. Final patched-function rate under v1.5: 38 of 38 scored packages CONSISTENT (`results/s34-gcc44-SUMMARY.json`).

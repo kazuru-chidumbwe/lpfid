@@ -1,0 +1,28 @@
+{
+  "modules": 164,
+  "overall": {
+    "CONSISTENT": 106,
+    "DIVERGENT": 58
+  },
+  "patched_fn_CONSISTENT": 163,
+  "scaffold_only_DIVERGENT": 57,
+  "residual_n": 1,
+  "residual": [
+    {
+      "package": "kernel-livepatch-6.1.56-82.125",
+      "patch": "CVE-2023-5090",
+      "ko": "livepatch-CVE-2023-5090.ko",
+      "functions": [
+        "svm_set_x2apic_msr_interception"
+      ],
+      "only_in_module": [
+        "32S:direct_access_msrs+0x170"
+      ],
+      "only_in_reference": [
+        "32S:sec:.rodata+0x170"
+      ],
+      "n_mod": 7,
+      "n_ref": 7
+    }
+  ]
+}
