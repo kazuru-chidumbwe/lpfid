@@ -19,8 +19,8 @@ A livepatch module can load, report itself enabled and finish its transition whi
 | `generators/` | The kpatch-build and klp-build comparison, including the analysis of the objtool string fault in klp-build on Linux 6.19 and its run-time demonstration |
 | `presence/` | The patch presence test runs |
 | `faults/` | The codebook and coding of kpatch's defect history |
-| `results/` | Every result file the paper reports. `results/s26` is the Amazon Linux 2023 draw: the verdict for every module, and the shipped module and reference objects retained for each divergence. `results/s26-patched-fn-SUMMARY.json` is the automated patched-function rate (163/164) with the one-row residual. `results/s34` is the first OpenAnolis census (gcc 39). `results/s34-gcc44-SUMMARY.json` is the release-matched gcc-44 / oracle v1.5 census |
-| `preregistration/` | The plans, each committed before the runs it governs, with every dated deviation. `S26-shipped-amazon.md` and `S34-shipped-anolis.md` are the shipped-module plans. `S34-DEVIATION-gcc44-RF.md` and Deviation 5 in `S16-oracle-freeze.md` record oracle v1.5 (rule RF) |
+| `results/` | Every result file the paper reports. `results/s26` is the Amazon Linux 2023 draw: the verdict for every module, and the shipped module and reference objects retained for each divergence. `results/s26-v16-SUMMARY.json (oracle v1.6: 163/164 CONSISTENT)` is the automated patched-function rate (163/164) with the one-row residual. `results/s34` is the first OpenAnolis census (gcc 39). `results/s34-gcc44-SUMMARY.json` is the release-matched gcc-44 / oracle v1.5 census |
+| `preregistration/` | The plans, each committed before the runs it governs, with every dated deviation. `S26-shipped-amazon.md` and `S34-shipped-anolis.md` are the shipped-module plans. `S34-DEVIATION-gcc44-RF.md` and Deviation 5 in `S16-oracle-freeze.md` record oracle v1.5 (RF) and v1.6 (RS) |
 
 `MANIFEST.sha256` lists the SHA-256 of every file.
 

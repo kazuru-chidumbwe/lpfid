@@ -242,3 +242,14 @@ The rules were written after seeing the 34 S11 modules and the 7 control rebuild
 | body_check_v15.py | 974cd4d4bf7986ee2ddc9137d716ede2fc00eaa4dab48b928e2a487ce43cebba |
 
 **Non-masking.** `scoring/non_masking_check_rf.py` on the gcc44 census: RF disabled equals v1.4 on every scored package; RF clears only the fentry shape; no over-clear of non-fentry divergences. Final patched-function rate under v1.5: 38 of 38 scored packages CONSISTENT (`results/s34-gcc44-SUMMARY.json`).
+
+
+## Deviation 6 (15 Oct 2026): oracle v1.6, rule RS (scaffolding scope)
+
+**Why.** S26 under v1.4 left 57 of 58 DIVERGENT modules as `init_module` / `cleanup_module` scaffolding only. A post-hoc classifier recovered the 163/164 patched-function rate; the shipping claim needed the same scope inside the frozen oracle.
+
+**Change.** `oracle/blind-reloc-oracle-v1.6.py` from v1.5 via `oracle/make_oracle_v16.py`; `oracle/body_check_v16.py`. Rule RS excludes scaffolding names from the fidelity verdict (listed under `scaffolding_divergences`). `LPFID_DISABLE=RS` restores v1.5.
+
+**Non-masking.** `scoring/non_masking_v16.py` PASS: RF+RS off equals v1.4 on S26/S34; RS off equals v1.5; 57 scaffold clears; CVE-2023-5090 stays DIVERGENT; reloc-index mutant vs parent is DIVERGENT.
+
+**S26 under v1.6.** `results/s26-v16-SUMMARY.json`: 163 CONSISTENT / 1 DIVERGENT (CVE-2023-5090 non-string `.rodata`), owned as 1 of 164 unresolved under frozen rules.
