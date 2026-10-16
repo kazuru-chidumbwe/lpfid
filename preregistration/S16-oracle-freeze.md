@@ -253,3 +253,7 @@ The rules were written after seeing the 34 S11 modules and the 7 control rebuild
 **Non-masking.** `scoring/non_masking_v16.py` PASS: RF+RS off equals v1.4 on S26/S34; RS off equals v1.5; 57 scaffold clears; CVE-2023-5090 stays DIVERGENT; reloc-index mutant vs parent is DIVERGENT.
 
 **S26 under v1.6.** `results/s26-v16-SUMMARY.json`: 163 CONSISTENT / 1 DIVERGENT (CVE-2023-5090 non-string `.rodata`), owned as 1 of 164 unresolved under frozen rules.
+
+## Archive
+
+Release `v1.0.0` of this repository is archived on Zenodo as https://doi.org/10.5281/zenodo.23408956 (concept DOI https://doi.org/10.5281/zenodo.23408955).
