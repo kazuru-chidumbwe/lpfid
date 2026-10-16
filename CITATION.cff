@@ -9,12 +9,12 @@ authors:
     email: kazuruuni@gmail.com
 license: MIT
 repository-code: "https://github.com/kazuru-chidumbwe/lpfid"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-10-16"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.23408956
-    description: Zenodo version of record for release v1.0.0
+    value: 10.5281/zenodo.23409014
+    description: Zenodo version of record for release v1.0.1
   - type: doi
     value: 10.5281/zenodo.23408955
     description: Zenodo concept DOI (resolves to the latest version)
@@ -29,4 +29,4 @@ keywords:
   - test oracle
   - mutation analysis
   - Linux kernel
-url: "https://doi.org/10.5281/zenodo.23408956"
+url: "https://doi.org/10.5281/zenodo.23409014"

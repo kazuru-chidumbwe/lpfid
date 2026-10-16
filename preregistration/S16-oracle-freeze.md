@@ -256,4 +256,4 @@ The rules were written after seeing the 34 S11 modules and the 7 control rebuild
 
 ## Archive
 
-Release `v1.0.0` of this repository is archived on Zenodo as https://doi.org/10.5281/zenodo.23408956 (concept DOI https://doi.org/10.5281/zenodo.23408955).
+Release `v1.0.1` of this repository is archived on Zenodo as https://doi.org/10.5281/zenodo.23409014 (concept DOI https://doi.org/10.5281/zenodo.23408955; first deposit `v1.0.0` https://doi.org/10.5281/zenodo.23408956).
