@@ -9,11 +9,16 @@ authors:
     email: kazuruuni@gmail.com
 license: MIT
 repository-code: "https://github.com/kazuru-chidumbwe/lpfid"
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.TBD
+#     description: Zenodo version of record (filled after first GitHub release)
 abstract: >-
-  Blind reference-differential binding oracle for Linux livepatch modules (four frozen versions), the
-  fault operators that edit built modules, the selection and build scripts for a corpus of 150 CVE fixes
-  on stable kernels, the loader, presence-test and generator-comparison runners, and every run record
-  behind the reported results.
+  Blind reference-differential binding oracle for Linux livepatch modules (frozen
+  versions through v1.6, including rules RF and RS), the fault operators that edit
+  built modules, the selection and build scripts for a corpus of 150 CVE fixes on
+  stable kernels, the loader, presence-test and generator-comparison runners, and
+  every run record behind the reported results.
 keywords:
   - livepatch
   - test oracle
