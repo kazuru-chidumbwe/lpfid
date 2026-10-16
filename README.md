@@ -1,6 +1,6 @@
 # LPFid
 
-A livepatch module can load, report itself enabled and finish its transition while the fix it was built from is not actually in effect. LPFid checks for that. It accompanies the paper "Loaded but Not Fixed: Test Oracles for the Fidelity of Linux Livepatch Modules" by Seke Kazuru, and this repository holds the checks, the scripts that built and scored every module, and the run records behind the reported numbers.
+A livepatch module can load, report itself enabled and finish its transition while the fix it was built from is not actually in effect. LPFid checks for that. It accompanies the paper "Loaded but Not Fixed: Test Oracles for the Fidelity of Linux Livepatch Modules" by Kazuru, and this repository holds the checks, the scripts that built and scored every module, and the run records behind the reported numbers.
 
 **Version of record:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23409014.svg)](https://doi.org/10.5281/zenodo.23409014)  
 Release `v1.0.1` → https://doi.org/10.5281/zenodo.23409014 (concept DOI for all versions: https://doi.org/10.5281/zenodo.23408955; first deposit `v1.0.0` → https://doi.org/10.5281/zenodo.23408956).
