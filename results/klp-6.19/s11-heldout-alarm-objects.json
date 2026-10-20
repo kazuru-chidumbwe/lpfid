@@ -1,0 +1,79 @@
+{
+ "note": "Objects cited by the klp-build held-out modules that alarm under oracle v1.4 after linking is accounted for. module cites .rodata by section offset where the independent compile names the object or string. Re-derived from the committed stock modules and independent references with blind-reloc-oracle-v1.4.py.",
+ "oracle_version": "1.4",
+ "modules": [
+  {
+   "cve": "CVE-2026-43442",
+   "label": "CLEAN",
+   "overall_verdict": "DIVERGENT",
+   "reference": [
+    "CVE-2026-43442/io_uring/io_uring.o"
+   ],
+   "divergent_functions": [
+    {
+     "function": "io_submit_sqes",
+     "only_in_module": [
+      "32S:sec:.rodata+0x2a0",
+      "32S:sec:.rodata+0x2a0",
+      "32S:sec:.rodata+0x2a1",
+      "32S:sec:.rodata+0x2b0",
+      "32S:sec:.rodata+0x8c8"
+     ],
+     "only_in_reference": [
+      "32S:io_cold_defs+0x8",
+      "32S:io_issue_defs",
+      "32S:io_issue_defs",
+      "32S:io_issue_defs+0x1",
+      "32S:io_issue_defs+0x10"
+     ]
+    }
+   ]
+  },
+  {
+   "cve": "CVE-2026-43470",
+   "label": "CLEAN",
+   "overall_verdict": "DIVERGENT",
+   "reference": [
+    "CVE-2026-43470/fs/nfs/nfs3proc.o"
+   ],
+   "divergent_functions": [
+    {
+     "function": "nfs3_proc_create",
+     "only_in_module": [
+      "32S:sec:.rodata+0x260"
+     ],
+     "only_in_reference": [
+      "32S:nfs3_procedures+0x180"
+     ]
+    }
+   ]
+  },
+  {
+   "cve": "CVE-2026-23246",
+   "label": "FAULTY",
+   "overall_verdict": "DIVERGENT",
+   "reference": [
+    "CVE-2026-23246/net/mac80211/mlme.o"
+   ],
+   "divergent_functions": [
+    {
+     "function": "ieee80211_rx_mgmt_beacon",
+     "only_in_module": [
+      "32S:sec:.rodata+0x40",
+      "32S:sec:.rodata+0x70",
+      "32S:sec:.rodata+0xa8",
+      "32S:sec:.rodata+0xd8",
+      "PC32:sec:.rodata+0x1fc"
+     ],
+     "only_in_reference": [
+      "32S:str:\"\u00016%s: Failed setting valid/dormant links\n\"",
+      "32S:str:\"\u00016%s: SSID mismatch for AP %pM, disconnect\n\"",
+      "32S:str:\"\u00017%s: Limiting TX power to %d (%d - %d) dBm as advertised by %pM\n\"",
+      "32S:str:\"\u00017%s: Limiting TX power to %d dBm as advertised by %pM\n\"",
+      "PC32:.LC58"
+     ]
+    }
+   ]
+  }
+ ]
+}

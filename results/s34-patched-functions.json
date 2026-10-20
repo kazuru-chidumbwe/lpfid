@@ -1,0 +1,497 @@
+{
+ "aggregate": {
+  "oracle_version": "1.5",
+  "packages_in_results_dir": 39,
+  "build_fail": [
+   "kernel-hotfix-CVE-2023-0461-4.19.91-26.6-1.0-20230327214942.an7.x86_64"
+  ],
+  "scored": 38,
+  "package_consistent": 21,
+  "package_divergent": 17,
+  "patched_function_consistent": 38,
+  "patched_function_divergent": 0,
+  "scaffold_only_divergent_packages": 17,
+  "scaffold_only_cves": [
+   "CVE-2023-35788"
+  ],
+  "rf_pairs_total": 26
+ },
+ "packages": [
+  {
+   "package": "kernel-hotfix-16349694-4.19.91-27.1-1.0-20240415183156.an7.x86_64",
+   "cve": "16349694",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-25.6-1.0-20230327221656.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 0,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-25.7-1.0-20230327165233.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 0,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-25.7-1.0-20230327222254.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 0,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-25.8-1.0-20230327165945.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 0,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-25.8-1.0-20230327222849.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 0,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26-1.0-20230327174446.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26-1.0-20230327223446.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.1-1.0-20230327175204.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.1-1.0-20230327224047.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.2-1.0-20230327175925.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.2-1.0-20230327224827.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.3-1.0-20230327180635.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.3-1.0-20230327225424.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.4-1.0-20230327213618.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.4-1.0-20230327230023.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.5-1.0-20230327214217.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-26.6-1.0-20230327214942.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "BUILD_FAIL",
+   "status": "BUILD_FAIL",
+   "patched_function_verdict": null
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-27-1.0-20230327215657.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-0461-4.19.91-27.1-1.0-20230327220413.an7.x86_64",
+   "cve": "CVE-2023-0461",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35001-4.19.91-24.8-1.0-20230712102133.an7.x86_64",
+   "cve": "CVE-2023-35001",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 1,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35001-4.19.91-25.2-1.0-20230712114033.an7.x86_64",
+   "cve": "CVE-2023-35001",
+   "package_verdict": "CONSISTENT",
+   "functions_compared": 1,
+   "rf_pairs": 0,
+   "divergent_functions": [],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": false
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-24.8-1.0-20230627153618.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-25-1.0-20230627195453.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 0,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-25.2-1.0-20230627170545.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 0,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-25.3-1.0-20230627172607.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 0,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-25.6-1.0-20230627174542.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 0,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-25.7-1.0-20230627182949.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 0,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-25.8-1.0-20230627190947.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 0,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-26-1.0-20230628002403.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-26.1-1.0-20230627201652.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-26.2-1.0-20230627205453.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-26.3-1.0-20230627213152.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-26.4-1.0-20230627220159.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-26.5-1.0-20230627224357.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-26.6-1.0-20230627233359.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-27-1.0-20230628024608.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-27.1-1.0-20230628011503.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  },
+  {
+   "package": "kernel-hotfix-CVE-2023-35788-4.19.91-27.2-1.0-20230628020408.an7.x86_64",
+   "cve": "CVE-2023-35788",
+   "package_verdict": "DIVERGENT",
+   "functions_compared": 3,
+   "rf_pairs": 1,
+   "divergent_functions": [
+    "cleanup_module",
+    "init_module"
+   ],
+   "nonscaffold_divergent": [],
+   "patched_function_verdict": "CONSISTENT",
+   "scaffold_only_divergence": true
+  }
+ ]
+}

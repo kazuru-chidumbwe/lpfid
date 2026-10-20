@@ -1,0 +1,290 @@
+{
+  "modules": {
+    "datanew": {
+      "patched_functions": [
+        "meminfo_proc_show"
+      ],
+      "clean_verdict": "CONSISTENT",
+      "ops": {
+        "redirect": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "swap": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "addend": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "dropcall": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "sympos": {
+          "drawn": 0,
+          "applied": 0,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "constant": {
+          "drawn": 7,
+          "applied": 7,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        }
+      }
+    },
+    "gccstaticlocalvar6": {
+      "patched_functions": [
+        "__nf_ip6_route"
+      ],
+      "clean_verdict": "CONSISTENT",
+      "ops": {
+        "redirect": {
+          "drawn": 3,
+          "applied": 3,
+          "detected": 3,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "swap": {
+          "drawn": 2,
+          "applied": 2,
+          "detected": 2,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "addend": {
+          "drawn": 3,
+          "applied": 3,
+          "detected": 3,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "dropcall": {
+          "drawn": 4,
+          "applied": 4,
+          "detected": 4,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "sympos": {
+          "drawn": 0,
+          "applied": 0,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "constant": {
+          "drawn": 0,
+          "applied": 0,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        }
+      }
+    },
+    "macrocallbacks": {
+      "patched_functions": [
+        "post_patch_callback",
+        "post_unpatch_callback",
+        "pre_patch_callback",
+        "pre_unpatch_callback"
+      ],
+      "clean_verdict": "CONSISTENT",
+      "ops": {
+        "redirect": {
+          "drawn": 1,
+          "applied": 1,
+          "detected": 1,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "swap": {
+          "drawn": 0,
+          "applied": 0,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "addend": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "dropcall": {
+          "drawn": 8,
+          "applied": 8,
+          "detected": 8,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "sympos": {
+          "drawn": 0,
+          "applied": 0,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "constant": {
+          "drawn": 0,
+          "applied": 0,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        }
+      }
+    },
+    "newglobals": {
+      "patched_functions": [
+        "kpatch_print_message",
+        "meminfo_proc_show"
+      ],
+      "clean_verdict": "CONSISTENT",
+      "ops": {
+        "redirect": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "swap": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "addend": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "dropcall": {
+          "drawn": 10,
+          "applied": 10,
+          "detected": 10,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "sympos": {
+          "drawn": 0,
+          "applied": 0,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        },
+        "constant": {
+          "drawn": 7,
+          "applied": 7,
+          "detected": 0,
+          "errors": 0,
+          "apply_fail": 0
+        }
+      }
+    }
+  },
+  "operators": {
+    "redirect": {
+      "detected": 24,
+      "applied": 24,
+      "errors": 0,
+      "apply_fail": 0,
+      "drawn": 24,
+      "rate": 1.0,
+      "wilson95": [
+        0.862,
+        1.0
+      ]
+    },
+    "swap": {
+      "detected": 22,
+      "applied": 22,
+      "errors": 0,
+      "apply_fail": 0,
+      "drawn": 22,
+      "rate": 1.0,
+      "wilson95": [
+        0.8513,
+        1.0
+      ]
+    },
+    "addend": {
+      "detected": 33,
+      "applied": 33,
+      "errors": 0,
+      "apply_fail": 0,
+      "drawn": 33,
+      "rate": 1.0,
+      "wilson95": [
+        0.8957,
+        1.0
+      ]
+    },
+    "dropcall": {
+      "detected": 32,
+      "applied": 32,
+      "errors": 0,
+      "apply_fail": 0,
+      "drawn": 32,
+      "rate": 1.0,
+      "wilson95": [
+        0.8928,
+        1.0
+      ]
+    },
+    "sympos": {
+      "detected": 0,
+      "applied": 0,
+      "errors": 0,
+      "apply_fail": 0,
+      "drawn": 0,
+      "rate": null,
+      "wilson95": null
+    },
+    "constant": {
+      "detected": 0,
+      "applied": 14,
+      "errors": 0,
+      "apply_fail": 0,
+      "drawn": 14,
+      "rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.2153
+      ]
+    }
+  },
+  "false_alarms": {
+    "flagged": 0,
+    "clean": 4,
+    "rate": 0.0,
+    "wilson95": [
+      0.0,
+      0.4899
+    ]
+  },
+  "errors_total": 0,
+  "errors_sample": []
+}

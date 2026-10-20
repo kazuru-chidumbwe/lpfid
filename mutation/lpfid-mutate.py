@@ -38,6 +38,15 @@ KLP_SYM = re.compile(r"^\.klp\.sym\.[^.]+\.[^,]+,(\d+)$")
 KLP_SYM_FULL = re.compile(r"^\.klp\.sym\.(?P<obj>[^.]+)\.(?P<name>[^,]+),(?P<pos>\d+)$")
 NOP5 = bytes([0x0F, 0x1F, 0x44, 0x00, 0x00])
 
+# AArch64 (S37). Call sites are CALL26/JUMP26 (one 32-bit BL/B instruction at the relocation offset, no x86
+# -1 opcode byte). dropcall writes the 4-byte AArch64 NOP 0xd503201f and voids the relocation to NONE.
+A_NONE, A_ABS64, A_ABS32, A_PREL64, A_PREL32 = 256, 257, 258, 260, 261
+A_ADR_HI21, A_ADD_LO12, A_JUMP26, A_CALL26 = 275, 277, 282, 283
+A_LDST_LO12 = {278, 284, 285, 286, 299}
+A_CALL = {A_CALL26, A_JUMP26}
+A_ADDEND = {A_ABS64, A_ABS32, A_PREL64, A_PREL32, A_ADD_LO12} | A_LDST_LO12
+AARCH64_NOP = bytes([0x1F, 0x20, 0x03, 0xD5])  # 0xd503201f, little-endian
+
 
 def oracle_module():
     """The oracle's symbol index (kallsyms order) is reused so operator and oracle agree on positions."""
@@ -52,6 +61,7 @@ class Mod:
         self.path = path
         self.data = bytearray(path.read_bytes())
         self.elf = ELFFile(open(path, "rb"))
+        self.aarch64 = self.elf.header["e_machine"] == "EM_AARCH64"
         self.symtab = self.elf.get_section_by_name(".symtab")
         self.syms = list(self.symtab.iter_symbols())
 
@@ -90,7 +100,8 @@ class Mod:
 def sites(m: Mod, op: str) -> list[dict]:
     out: list[dict] = []
     if op in ("redirect", "swap", "dropcall"):
-        calls = [(s, i, t, r) for s, i, t, r in m.exec_relas() if r["r_info_type"] == R_PLT32]
+        callset = A_CALL if m.aarch64 else {R_PLT32}
+        calls = [(s, i, t, r) for s, i, t, r in m.exec_relas() if r["r_info_type"] in callset]
         if op == "redirect":
             names = []
             for _, _, _, r in calls:
@@ -114,13 +125,21 @@ def sites(m: Mod, op: str) -> list[dict]:
         else:  # dropcall
             for s, i, t, r in calls:
                 tsec = m.elf.get_section(t)
-                pos = tsec["sh_offset"] + r["r_offset"] - 1
-                if r["r_offset"] >= 1 and m.data[pos] == 0xE8:
-                    out.append({"rela": s.name, "i": i, "callee": m.sym_name(r["r_info_sym"]),
-                                "function": m.func_at(t, r["r_offset"]), "insn_file_off": pos})
+                if m.aarch64:
+                    pos = tsec["sh_offset"] + r["r_offset"]          # BL/B is the 32-bit word at the reloc offset
+                    word = int.from_bytes(m.data[pos:pos + 4], "little")
+                    if (word >> 26) & 0x3F in (0x05, 0x25):          # B (000101b) / BL (100101b)
+                        out.append({"rela": s.name, "i": i, "callee": m.sym_name(r["r_info_sym"]),
+                                    "function": m.func_at(t, r["r_offset"]), "insn_file_off": pos})
+                else:
+                    pos = tsec["sh_offset"] + r["r_offset"] - 1      # x86 call rel32 opcode 0xE8
+                    if r["r_offset"] >= 1 and m.data[pos] == 0xE8:
+                        out.append({"rela": s.name, "i": i, "callee": m.sym_name(r["r_info_sym"]),
+                                    "function": m.func_at(t, r["r_offset"]), "insn_file_off": pos})
     elif op == "addend":
+        addset = A_ADDEND if m.aarch64 else (R_PC32, R_32S, R_32, R_64)
         for s, i, t, r in m.exec_relas():
-            if r["r_info_type"] in (R_PC32, R_32S, R_32, R_64):
+            if r["r_info_type"] in addset:
                 out.append({"rela": s.name, "i": i, "type": r["r_info_type"], "target": m.sym_name(r["r_info_sym"]),
                             "function": m.func_at(t, r["r_offset"]), "addend": r["r_addend"]})
     elif op == "sympos":
@@ -158,7 +177,44 @@ def sites(m: Mod, op: str) -> list[dict]:
     return out
 
 
+def constant_sites_arm64(m: Mod) -> list[dict]:
+    """AArch64 body-class operator: an ADD/SUB-immediate instruction (bits[28:24]=10001) whose 4 bytes carry no
+    relocation; the mutant bumps its imm12 field. No relocation changes, so it is the binding checks' blind
+    spot, exactly as on x86-64."""
+    try:
+        import capstone
+    except ImportError:
+        raise SystemExit("constant operator needs python3-capstone")
+    md = capstone.Cs(capstone.CS_ARCH_ARM64, capstone.CS_MODE_ARM)
+    md.detail = True
+    reloc_words: dict[int, set] = {}
+    for _, _, t, r in m.exec_relas():
+        reloc_words.setdefault(t, set()).add(r["r_offset"] & ~3)
+    out = []
+    for s in m.syms:
+        if s["st_info"]["type"] != "STT_FUNC" or not s["st_size"] or not isinstance(s["st_shndx"], int):
+            continue
+        sec = m.elf.get_section(s["st_shndx"])
+        if not (sec["sh_flags"] & SH_FLAGS.SHF_EXECINSTR):
+            continue
+        base = sec["sh_offset"] + s["st_value"]
+        code = bytes(m.data[base: base + s["st_size"]])
+        for ins in md.disasm(code, s["st_value"]):
+            if ins.mnemonic not in ("add", "sub", "adds", "subs"):
+                continue
+            word = int.from_bytes(ins.bytes, "little")
+            if (word >> 24) & 0x1F != 0x11:          # ADD/SUB (immediate) encoding
+                continue
+            if ins.address in reloc_words.get(s["st_shndx"], ()):
+                continue
+            out.append({"function": s.name, "insn": f"{ins.mnemonic} {ins.op_str}",
+                        "file_off": sec["sh_offset"] + ins.address, "imm12": (word >> 10) & 0xFFF})
+    return out
+
+
 def constant_sites(m: Mod) -> list[dict]:
+    if m.aarch64:
+        return constant_sites_arm64(m)
     try:
         import capstone
     except ImportError:
@@ -201,7 +257,18 @@ def constant_sites(m: Mod) -> list[dict]:
 
 def apply(m: Mod, op: str, site: dict) -> None:
     d = m.data
-    if op == "swap":
+    if op == "redirect":
+        # repoint every call relocation binding `src` to `dst` (arch-neutral: rewrite the r_info symbol index)
+        dst_idx = next((k for k, s in enumerate(m.syms) if s.name == site["dst"]), None)
+        if dst_idx is None:
+            raise SystemExit("redirect: dst symbol not found")
+        callset = A_CALL if m.aarch64 else {R_PLT32}
+        for sec, i, t, r in m.exec_relas():
+            if r["r_info_type"] in callset and m.sym_name(r["r_info_sym"]) == site["src"]:
+                o = m.rela_file_off(sec, i)
+                info = struct.unpack_from("<Q", d, o + 8)[0]
+                struct.pack_into("<Q", d, o + 8, (dst_idx << 32) | (info & 0xFFFFFFFF))
+    elif op == "swap":
         sec = m.elf.get_section_by_name(site["rela"])
         oi, oj = m.rela_file_off(sec, site["i"]), m.rela_file_off(sec, site["j"])
         ii = struct.unpack_from("<Q", d, oi + 8)[0]
@@ -215,9 +282,14 @@ def apply(m: Mod, op: str, site: dict) -> None:
     elif op == "dropcall":
         sec = m.elf.get_section_by_name(site["rela"])
         o = m.rela_file_off(sec, site["i"])
-        d[site["insn_file_off"]: site["insn_file_off"] + 5] = NOP5
+        if m.aarch64:
+            d[site["insn_file_off"]: site["insn_file_off"] + 4] = AARCH64_NOP
+            newtype = A_NONE
+        else:
+            d[site["insn_file_off"]: site["insn_file_off"] + 5] = NOP5
+            newtype = R_NONE
         info = struct.unpack_from("<Q", d, o + 8)[0]
-        struct.pack_into("<Q", d, o + 8, (info & ~0xFFFFFFFF) | R_NONE)
+        struct.pack_into("<Q", d, o + 8, (info & ~0xFFFFFFFF) | newtype)
     elif op == "sympos":
         strtab = m.elf.get_section(m.symtab["sh_link"])
         s = m.syms[site["sym_index"]]
@@ -227,11 +299,18 @@ def apply(m: Mod, op: str, site: dict) -> None:
         assert len(site["new_pos"]) == 1 and old[-2:-1] == b","  # single-digit positions only
         d[name_off + len(old) - 1] = ord(site["new_pos"])
     elif op == "constant":
-        o, w = site["file_off"], site["width"]
-        v = int.from_bytes(d[o:o + w], "little", signed=True) + 1
-        lim = 1 << (8 * w - 1)
-        v = v if -lim <= v < lim else -lim
-        d[o:o + w] = v.to_bytes(w, "little", signed=True)
+        if m.aarch64:
+            o = site["file_off"]
+            word = int.from_bytes(d[o:o + 4], "little")
+            new = ((word >> 10) & 0xFFF) + 1 & 0xFFF           # bump imm12, wrap in field
+            word = (word & ~(0xFFF << 10)) | (new << 10)
+            d[o:o + 4] = word.to_bytes(4, "little")
+        else:
+            o, w = site["file_off"], site["width"]
+            v = int.from_bytes(d[o:o + w], "little", signed=True) + 1
+            lim = 1 << (8 * w - 1)
+            v = v if -lim <= v < lim else -lim
+            d[o:o + w] = v.to_bytes(w, "little", signed=True)
     else:
         raise SystemExit(f"apply not implemented for {op} (use perturb-plt32-redirect.py)")
 

@@ -1,0 +1,8 @@
+datanew OK [meminfo_proc_show,]
+gccstaticlocalvar6 OK [__nf_ip6_route,]
+macrocallbacks OK []
+module FAIL create-diff-object: ERROR: net/netlink/af_netlink.o: find_local_syms: 217: couldn't find matching af_netlink.c local symbols in vmlinux symbol table
+newfunction FAIL ERROR: new-function.patch file failed to apply.
+newglobals OK [meminfo_proc_show,]
+shadownewpid FAIL create-diff-object: ERROR: kernel/fork.o: find_local_syms: 217: couldn't find matching fork.c local symbols in vmlinux symbol table
+syscall FAIL create-diff-object: ERROR: kernel/sys.o: find_local_syms: 217: couldn't find matching sys.c local symbols in vmlinux symbol table
