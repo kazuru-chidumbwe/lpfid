@@ -2,8 +2,8 @@
 
 A livepatch module can load, report itself enabled and finish its transition while the fix it was built from is not actually in effect. LPFid checks for that. It accompanies the paper "Loaded but Not Fixed: Test Oracles for the Fidelity of Linux Livepatch Modules" by Kazuru, and this repository holds the checks, the scripts that built and scored every module, and the run records behind the reported numbers.
 
-**Version of record:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23409014.svg)](https://doi.org/10.5281/zenodo.23409014)  
-Release `v1.0.1` → https://doi.org/10.5281/zenodo.23409014 (concept DOI for all versions: https://doi.org/10.5281/zenodo.23408955; first deposit `v1.0.0` → https://doi.org/10.5281/zenodo.23408956).
+**Version of record:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23489868.svg)](https://doi.org/10.5281/zenodo.23489868)  
+Release `v1.0.2` → https://doi.org/10.5281/zenodo.23489868 (concept DOI for all versions: https://doi.org/10.5281/zenodo.23408955; first deposit `v1.0.0` → https://doi.org/10.5281/zenodo.23408956).
 
 ## The checks
 
@@ -53,7 +53,7 @@ It prints a JSON report and exits 0 when the module is consistent with the refer
 
 The modules, reference objects, injected faults, pre-registrations and result files that support the paper are in this repository and archived on Zenodo:
 
-- Version DOI (release `v1.0.1`): https://doi.org/10.5281/zenodo.23409014  
+- Version DOI (release `v1.0.2`): https://doi.org/10.5281/zenodo.23489868  
 - Concept DOI (all versions): https://doi.org/10.5281/zenodo.23408955  
 - First deposit (`v1.0.0`): https://doi.org/10.5281/zenodo.23408956  
 - GitHub: https://github.com/kazuru-chidumbwe/lpfid
