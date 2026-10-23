@@ -1,0 +1,164 @@
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-47701-0001.ko", "tagged": 13, "examples": [["ext4_delete_inline_entry", "__func__.N#f58ee14426c1"], ["ext4_delete_inline_entry", "__func__.N#f58ee14426c1"], ["ext4_delete_inline_entry", "__func__.N#f58ee14426c1"], ["empty_inline_dir", "__func__.N#42a3c1051388"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-47742-0001.ko", "tagged": 2, "examples": [["_request_firmware", "__UNIQUE_ID_ddebug352.N#48c297a49209"], ["_request_firmware.cold", "__func__.N#9a29399f27e0"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-49854-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-49855-0001.ko", "tagged": 12, "examples": [["nbd_xmit_timeout", "__func__.N#b96c340f6d0c"], ["nbd_xmit_timeout", "_rs.N#ecb11ca348c8"], ["nbd_xmit_timeout", "__func__.N#b96c340f6d0c"], ["nbd_xmit_timeout", "_rs.N#ecb11ca348c8"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-49860-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-49936-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-49960-0001.ko", "tagged": 4, "examples": [["__ext4_fill_super", "__already_done.N#cd3a9b1fd7a5"], ["__ext4_fill_super", "__func__.N#6d931488eb43"], ["__ext4_fill_super", "str:\"#clusters per group too big: %lu\""], ["__ext4_fill_super", "str:\"#blocks per group too big: %lu\""]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-49983-0001.ko", "tagged": 6, "examples": [["ext4_ext_replay_update_ex", "__func__.N#3275d2e17b92"], ["ext4_ext_replay_update_ex", "__func__.N#3275d2e17b92"], ["ext4_ext_replay_shrink_inode", "__func__.N#87acbf5fb4d1"], ["ext4_ext_replay_shrink_inode", "__func__.N#87acbf5fb4d1"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-49996-0001.ko", "tagged": 20, "examples": [["parse_reparse_point", "__func__.N#bcd7b01fdaf4"], ["parse_reparse_point", "_rs.N#ecb11ca348c8"], ["parse_reparse_point", "__func__.N#acffc401b0c5"], ["parse_reparse_point", "_rs.N#ecb11ca348c8"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50055-0001.ko", "tagged": 1, "examples": [["bus_register", "__UNIQUE_ID_ddebug215.N#3d091b7d53fb"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50083-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50088-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50121-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50143-0001.ko", "tagged": 2, "examples": [["udf_current_aext", "__func__.N#7b107b34ed82"], ["udf_current_aext", "__UNIQUE_ID_ddebug291.N#874bad05de13"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50151-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50155-0001.ko", "tagged": 2, "examples": [["__nsim_dev_port_add", "__already_done.N#cd3a9b1fd7a5"], ["__nsim_dev_port_add", "__already_done.N#cd3a9b1fd7a5"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50186-0001.ko", "tagged": 3, "examples": [["____sys_sendmsg", "__already_done.N#cd3a9b1fd7a5"], ["____sys_sendmsg", "__already_done.N#cd3a9b1fd7a5"], ["__sock_create", "__already_done.N#cd3a9b1fd7a5"]]}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50242-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50246-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50247-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50257-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.112-124.190/var/lib/kpatch/6.1.112-124.190.amzn2023.x86_64/livepatch-CVE-2024-50262-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-49960-0001.ko", "tagged": 4, "examples": [["__ext4_fill_super", "__already_done.N#cd3a9b1fd7a5"], ["__ext4_fill_super", "__func__.N#6d931488eb43"], ["__ext4_fill_super", "str:\"#clusters per group too big: %lu\""], ["__ext4_fill_super", "str:\"#blocks per group too big: %lu\""]]}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-49996-0001.ko", "tagged": 20, "examples": [["parse_reparse_point", "__func__.N#bcd7b01fdaf4"], ["parse_reparse_point", "_rs.N#ecb11ca348c8"], ["parse_reparse_point", "__func__.N#acffc401b0c5"], ["parse_reparse_point", "_rs.N#ecb11ca348c8"]]}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-50036-0001.ko", "tagged": 4, "examples": [["dst_release", "__already_done.N#cd3a9b1fd7a5"], ["dst_release", "__already_done.N#cd3a9b1fd7a5"], ["dst_release_immediate", "__already_done.N#cd3a9b1fd7a5"], ["dst_release_immediate", "__already_done.N#cd3a9b1fd7a5"]]}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-50055-0001.ko", "tagged": 1, "examples": [["bus_register", "__UNIQUE_ID_ddebug215.N#8ab6a0059168"]]}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-50121-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-50242-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-50246-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-50247-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-50257-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-50262-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.115-126.197/var/lib/kpatch/6.1.115-126.197.amzn2023.x86_64/livepatch-CVE-2024-53206-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.127-135.201/var/lib/kpatch/6.1.127-135.201.amzn2023.x86_64/livepatch-CVE-2025-21703.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.127-135.201/var/lib/kpatch/6.1.127-135.201.amzn2023.x86_64/livepatch-CVE-2025-21753.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.127-135.201/var/lib/kpatch/6.1.127-135.201.amzn2023.x86_64/livepatch-CVE-2025-21796.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.128-136.201/var/lib/kpatch/6.1.128-136.201.amzn2023.x86_64/livepatch-CVE-2025-21703.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.128-136.201/var/lib/kpatch/6.1.128-136.201.amzn2023.x86_64/livepatch-CVE-2025-21753.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.128-136.201/var/lib/kpatch/6.1.128-136.201.amzn2023.x86_64/livepatch-CVE-2025-21796.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.131-143.221/var/lib/kpatch/6.1.131-143.221.amzn2023.x86_64/livepatch-CVE-2025-21927.ko", "tagged": 12, "examples": [["nvme_tcp_recv_pdu.cold", "str:\"request %#x genctr mismatch (got %#x expected %#x)\n\""], ["nvme_tcp_recv_pdu.cold", "str:\"got bad r2t.command_id %#x on queue %d\n\""], ["nvme_tcp_recv_pdu.cold", "str:\"\u00013nvme_tcp: could not locate request for tag %#x\n\""], ["nvme_tcp_recv_pdu.cold", "str:\"got bad cqe.command_id %#x on queue %d\n\""]]}
+{"ko": "./kernel-livepatch-6.1.131-143.221/var/lib/kpatch/6.1.131-143.221.amzn2023.x86_64/livepatch-CVE-2025-37785.ko", "tagged": 5, "examples": [["call_filldir", "__func__.N#a77920170c09"], ["call_filldir", "str:\"%s:%d: inode #%lu: comm %s: called with null fname?!?\""], ["ext4_readdir", "__func__.N#9039e6412c7f"], ["ext4_readdir", "__func__.N#9039e6412c7f"]]}
+{"ko": "./kernel-livepatch-6.1.164-196.303/var/lib/kpatch/6.1.164-196.303.amzn2023.x86_64/livepatch-cifs-spnego-6-1.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.164-196.303/var/lib/kpatch/6.1.164-196.303.amzn2023.x86_64/livepatch-copyfail-v2-6-1.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.164-196.303/var/lib/kpatch/6.1.164-196.303.amzn2023.x86_64/livepatch-CVE-2026-31431.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.164-196.303/var/lib/kpatch/6.1.164-196.303.amzn2023.x86_64/livepatch-fragnesia-6-1.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.164-196.303/var/lib/kpatch/6.1.164-196.303.amzn2023.x86_64/livepatch-gro-frag.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.164-196.303/var/lib/kpatch/6.1.164-196.303.amzn2023.x86_64/livepatch-pintheft-6-1.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.186-228.376/var/lib/kpatch/6.1.186-228.376.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.19-30.43/var/lib/kpatch/6.1.19-30.43.amzn2023.x86_64/livepatch-CVE-2022-48425.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.19-30.43/var/lib/kpatch/6.1.19-30.43.amzn2023.x86_64/livepatch-CVE-2023-1611.ko", "tagged": 1, "examples": [["btrfs_ioctl.cold", "__func__.N#219751344139"]]}
+{"ko": "./kernel-livepatch-6.1.19-30.43/var/lib/kpatch/6.1.19-30.43.amzn2023.x86_64/livepatch-CVE-2023-2124.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.19-30.43/var/lib/kpatch/6.1.19-30.43.amzn2023.x86_64/livepatch-CVE-2023-28466.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.19-30.43/var/lib/kpatch/6.1.19-30.43.amzn2023.x86_64/livepatch-CVE-2023-32233.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.20-23.97/var/lib/kpatch/6.12.20-23.97.amzn2023.x86_64/livepatch-CVE-2025-37785.ko", "tagged": 5, "examples": [["call_filldir", "__func__.N#a77920170c09"], ["call_filldir", "str:\"%s:%d: inode #%lu: comm %s: called with null fname?!?\""], ["ext4_readdir", "__func__.N#9039e6412c7f"], ["ext4_readdir", "__func__.N#9039e6412c7f"]]}
+{"ko": "./kernel-livepatch-6.12.29-33.102/var/lib/kpatch/6.12.29-33.102.amzn2023.x86_64/livepatch-CVE-2025-38037.ko", "tagged": 1, "examples": [["vxlan_cleanup", "__UNIQUE_ID_ddebug1065.N#159c02033bd9"]]}
+{"ko": "./kernel-livepatch-6.12.29-33.102/var/lib/kpatch/6.12.29-33.102.amzn2023.x86_64/livepatch-CVE-2025-38208.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.29-33.102/var/lib/kpatch/6.12.29-33.102.amzn2023.x86_64/livepatch-CVE-2025-38248.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.35-55.103/var/lib/kpatch/6.12.35-55.103.amzn2023.x86_64/livepatch-CVE-2025-38248.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.35-55.103/var/lib/kpatch/6.12.35-55.103.amzn2023.x86_64/livepatch-CVE-2025-38386.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.35-55.103/var/lib/kpatch/6.12.35-55.103.amzn2023.x86_64/livepatch-CVE-2025-39677.ko", "tagged": 2, "examples": [["fq_change", "__func__.N#890d97b2659a"], ["fq_change", "_rs.N#10a7365d6d57"]]}
+{"ko": "./kernel-livepatch-6.12.40-64.114/var/lib/kpatch/6.12.40-64.114.amzn2023.x86_64/livepatch-CVE-2025-39677.ko", "tagged": 2, "examples": [["fq_change", "__func__.N#890d97b2659a"], ["fq_change", "_rs.N#10a7365d6d57"]]}
+{"ko": "./kernel-livepatch-6.12.40-64.114/var/lib/kpatch/6.12.40-64.114.amzn2023.x86_64/livepatch-CVE-2025-39955.ko", "tagged": 2, "examples": [["tcp_conn_request", "descriptor.N#4527d127d856"], ["tcp_conn_request", "descriptor.N#092bf7398fd4"]]}
+{"ko": "./kernel-livepatch-6.12.68-92.122/var/lib/kpatch/6.12.68-92.122.amzn2023.x86_64/livepatch-copyfail-v2-6-12.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.68-92.122/var/lib/kpatch/6.12.68-92.122.amzn2023.x86_64/livepatch-CVE-2026-31431.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.83-111.159/var/lib/kpatch/6.12.83-111.159.amzn2023.x86_64/livepatch-cifs-spnego-6-12.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.83-111.159/var/lib/kpatch/6.12.83-111.159.amzn2023.x86_64/livepatch-copyfail-fraggap.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.83-111.159/var/lib/kpatch/6.12.83-111.159.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.83-111.159/var/lib/kpatch/6.12.83-111.159.amzn2023.x86_64/livepatch-fragnesia-6-12.ko", "tagged": 2, "examples": [["skb_try_coalesce", "__func__.N#4162e2b576a6"], ["__pskb_copy_fclone", "__func__.N#4162e2b576a6"]]}
+{"ko": "./kernel-livepatch-6.12.83-111.159/var/lib/kpatch/6.12.83-111.159.amzn2023.x86_64/livepatch-gro-frag.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.83-111.159/var/lib/kpatch/6.12.83-111.159.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.12.83-111.159/var/lib/kpatch/6.12.83-111.159.amzn2023.x86_64/livepatch-pintheft-6-12.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-DiagSpill.ko", "tagged": 2, "examples": [["sctp_assoc_add_peer", "__func__.N#3c3cf408dcc7"], ["sctp_assoc_add_peer", "__UNIQUE_ID_ddebug939.N#ee763c724313"]]}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-DirtyAH6.ko", "tagged": 1, "examples": [["ipv6_clear_mutable_options", "descriptor.N#c67433cd88c4"]]}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-fraggap.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-PPPoEject.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.92-122.168/var/lib/kpatch/6.12.92-122.168.amzn2023.x86_64/livepatch-TUNderflow.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-DiagSpill.ko", "tagged": 2, "examples": [["sctp_assoc_add_peer", "__func__.N#3c3cf408dcc7"], ["sctp_assoc_add_peer", "__UNIQUE_ID_ddebug937.N#ee763c724313"]]}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-DirtyAH6.ko", "tagged": 1, "examples": [["ipv6_clear_mutable_options", "descriptor.N#c67433cd88c4"]]}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-fraggap.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-PPPoEject.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.174/var/lib/kpatch/6.12.94-123.174.amzn2023.x86_64/livepatch-TUNderflow.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.190/var/lib/kpatch/6.12.94-123.190.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.190/var/lib/kpatch/6.12.94-123.190.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.190/var/lib/kpatch/6.12.94-123.190.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.190/var/lib/kpatch/6.12.94-123.190.amzn2023.x86_64/livepatch-DiagSpill.ko", "tagged": 2, "examples": [["sctp_assoc_add_peer", "__func__.N#3c3cf408dcc7"], ["sctp_assoc_add_peer", "__UNIQUE_ID_ddebug937.N#ee763c724313"]]}
+{"ko": "./kernel-livepatch-6.12.94-123.190/var/lib/kpatch/6.12.94-123.190.amzn2023.x86_64/livepatch-DirtyAH6.ko", "tagged": 1, "examples": [["ipv6_clear_mutable_options", "descriptor.N#c67433cd88c4"]]}
+{"ko": "./kernel-livepatch-6.12.94-123.190/var/lib/kpatch/6.12.94-123.190.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.12.94-123.190/var/lib/kpatch/6.12.94-123.190.amzn2023.x86_64/livepatch-PPPoEject.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.190/var/lib/kpatch/6.12.94-123.190.amzn2023.x86_64/livepatch-TUNderflow.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.192/var/lib/kpatch/6.12.94-123.192.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.192/var/lib/kpatch/6.12.94-123.192.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.192/var/lib/kpatch/6.12.94-123.192.amzn2023.x86_64/livepatch-DiagSpill.ko", "tagged": 2, "examples": [["sctp_assoc_add_peer", "__func__.N#3c3cf408dcc7"], ["sctp_assoc_add_peer", "__UNIQUE_ID_ddebug937.N#ee763c724313"]]}
+{"ko": "./kernel-livepatch-6.12.94-123.192/var/lib/kpatch/6.12.94-123.192.amzn2023.x86_64/livepatch-DirtyAH6.ko", "tagged": 1, "examples": [["ipv6_clear_mutable_options", "descriptor.N#c67433cd88c4"]]}
+{"ko": "./kernel-livepatch-6.12.94-123.192/var/lib/kpatch/6.12.94-123.192.amzn2023.x86_64/livepatch-PPPoEject.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.12.94-123.192/var/lib/kpatch/6.12.94-123.192.amzn2023.x86_64/livepatch-TUNderflow.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.56-82.125/var/lib/kpatch/6.1.56-82.125.amzn2023.x86_64/livepatch-CVE-2023-5090.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.56-82.125/var/lib/kpatch/6.1.56-82.125.amzn2023.x86_64/livepatch-CVE-2023-5717.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.56-82.125/var/lib/kpatch/6.1.56-82.125.amzn2023.x86_64/livepatch-CVE-2023-6111.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.20-20.229/var/lib/kpatch/6.18.20-20.229.amzn2023.x86_64/livepatch-cifs-spnego-6-18.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.20-20.229/var/lib/kpatch/6.18.20-20.229.amzn2023.x86_64/livepatch-copyfail-v2-6-18.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.20-20.229/var/lib/kpatch/6.18.20-20.229.amzn2023.x86_64/livepatch-CVE-2026-31431.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.20-20.229/var/lib/kpatch/6.18.20-20.229.amzn2023.x86_64/livepatch-fragnesia-6-18.ko", "tagged": 2, "examples": [["__pskb_copy_fclone", "__func__.N#4162e2b576a6"], ["skb_try_coalesce", "__func__.N#4162e2b576a6"]]}
+{"ko": "./kernel-livepatch-6.18.20-20.229/var/lib/kpatch/6.18.20-20.229.amzn2023.x86_64/livepatch-gro-frag.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.20-20.229/var/lib/kpatch/6.18.20-20.229.amzn2023.x86_64/livepatch-pintheft-6-18.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.25-52.107/var/lib/kpatch/6.18.25-52.107.amzn2023.x86_64/livepatch-cifs-spnego-6-18.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.25-52.107/var/lib/kpatch/6.18.25-52.107.amzn2023.x86_64/livepatch-copyfail-fraggap.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.25-52.107/var/lib/kpatch/6.18.25-52.107.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.25-52.107/var/lib/kpatch/6.18.25-52.107.amzn2023.x86_64/livepatch-fragnesia-6-18.ko", "tagged": 2, "examples": [["__pskb_copy_fclone", "__func__.N#4162e2b576a6"], ["skb_try_coalesce", "__func__.N#4162e2b576a6"]]}
+{"ko": "./kernel-livepatch-6.18.25-52.107/var/lib/kpatch/6.18.25-52.107.amzn2023.x86_64/livepatch-gro-frag.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.25-52.107/var/lib/kpatch/6.18.25-52.107.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.18.25-52.107/var/lib/kpatch/6.18.25-52.107.amzn2023.x86_64/livepatch-pintheft-6-18.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.30-61.119/var/lib/kpatch/6.18.30-61.119.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.30-61.119/var/lib/kpatch/6.18.30-61.119.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.30-61.119/var/lib/kpatch/6.18.30-61.119.amzn2023.x86_64/livepatch-fraggap.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.30-61.119/var/lib/kpatch/6.18.30-61.119.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.18.33-63.124/var/lib/kpatch/6.18.33-63.124.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.33-63.124/var/lib/kpatch/6.18.33-63.124.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.33-63.124/var/lib/kpatch/6.18.33-63.124.amzn2023.x86_64/livepatch-fraggap.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.33-63.124/var/lib/kpatch/6.18.33-63.124.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.18.35-68.127/var/lib/kpatch/6.18.35-68.127.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.35-68.127/var/lib/kpatch/6.18.35-68.127.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.35-68.127/var/lib/kpatch/6.18.35-68.127.amzn2023.x86_64/livepatch-fraggap.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.35-68.127/var/lib/kpatch/6.18.35-68.127.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-DiagSpill.ko", "tagged": 2, "examples": [["sctp_assoc_add_peer", "__func__.N#3c3cf408dcc7"], ["sctp_assoc_add_peer", "__UNIQUE_ID_ddebug1007.N#ee763c724313"]]}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-DirtyAH6.ko", "tagged": 1, "examples": [["ipv6_clear_mutable_options", "descriptor.N#c67433cd88c4"]]}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-fraggap.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-PPPoEject.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.35-68.129/var/lib/kpatch/6.18.35-68.129.amzn2023.x86_64/livepatch-TUNderflow.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.36-69.138/var/lib/kpatch/6.18.36-69.138.amzn2023.x86_64/livepatch-CVE-2026-64600.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.36-69.138/var/lib/kpatch/6.18.36-69.138.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.36-69.138/var/lib/kpatch/6.18.36-69.138.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.36-69.138/var/lib/kpatch/6.18.36-69.138.amzn2023.x86_64/livepatch-DiagSpill.ko", "tagged": 2, "examples": [["sctp_assoc_add_peer", "__func__.N#3c3cf408dcc7"], ["sctp_assoc_add_peer", "__UNIQUE_ID_ddebug1007.N#ee763c724313"]]}
+{"ko": "./kernel-livepatch-6.18.36-69.138/var/lib/kpatch/6.18.36-69.138.amzn2023.x86_64/livepatch-DirtyAH6.ko", "tagged": 1, "examples": [["ipv6_clear_mutable_options", "descriptor.N#c67433cd88c4"]]}
+{"ko": "./kernel-livepatch-6.18.36-69.138/var/lib/kpatch/6.18.36-69.138.amzn2023.x86_64/livepatch-OVSwrap.ko", "tagged": 1, "examples": [["__ovs_nla_copy_actions", "CSWTCH.N#0111e8217868"]]}
+{"ko": "./kernel-livepatch-6.18.36-69.138/var/lib/kpatch/6.18.36-69.138.amzn2023.x86_64/livepatch-PPPoEject.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.36-69.138/var/lib/kpatch/6.18.36-69.138.amzn2023.x86_64/livepatch-TUNderflow.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.39-79.141/var/lib/kpatch/6.18.39-79.141.amzn2023.x86_64/livepatch-CVE-2026-74580.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.39-79.141/var/lib/kpatch/6.18.39-79.141.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.39-79.141/var/lib/kpatch/6.18.39-79.141.amzn2023.x86_64/livepatch-DiagSpill.ko", "tagged": 2, "examples": [["sctp_assoc_add_peer", "__func__.N#3c3cf408dcc7"], ["sctp_assoc_add_peer", "__UNIQUE_ID_ddebug1007.N#ee763c724313"]]}
+{"ko": "./kernel-livepatch-6.18.39-79.141/var/lib/kpatch/6.18.39-79.141.amzn2023.x86_64/livepatch-DirtyAH6.ko", "tagged": 1, "examples": [["ipv6_clear_mutable_options", "descriptor.N#c67433cd88c4"]]}
+{"ko": "./kernel-livepatch-6.18.39-79.141/var/lib/kpatch/6.18.39-79.141.amzn2023.x86_64/livepatch-PPPoEject.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.39-79.141/var/lib/kpatch/6.18.39-79.141.amzn2023.x86_64/livepatch-TUNderflow.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.48-107.148/var/lib/kpatch/6.18.48-107.148.amzn2023.x86_64/livepatch-CVE-2026-80521.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.48-107.148/var/lib/kpatch/6.18.48-107.148.amzn2023.x86_64/livepatch-DirtyAH6.ko", "tagged": 1, "examples": [["ipv6_clear_mutable_options", "descriptor.N#c67433cd88c4"]]}
+{"ko": "./kernel-livepatch-6.18.48-107.148/var/lib/kpatch/6.18.48-107.148.amzn2023.x86_64/livepatch-TUNderflow.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.8-9.213/var/lib/kpatch/6.18.8-9.213.amzn2023.x86_64/livepatch-copyfail-v2-6-18.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.8-9.213/var/lib/kpatch/6.18.8-9.213.amzn2023.x86_64/livepatch-CVE-2026-31431.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.18.8-9.213/var/lib/kpatch/6.18.8-9.213.amzn2023.x86_64/livepatch-fragnesia-6-18.ko", "tagged": 2, "examples": [["__pskb_copy_fclone", "__func__.N#4162e2b576a6"], ["skb_try_coalesce", "__func__.N#4162e2b576a6"]]}
+{"ko": "./kernel-livepatch-6.18.8-9.213/var/lib/kpatch/6.18.8-9.213.amzn2023.x86_64/livepatch-pintheft-6-18.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.94-99.176/var/lib/kpatch/6.1.94-99.176.amzn2023.x86_64/livepatch-CVE-2024-41087-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.94-99.176/var/lib/kpatch/6.1.94-99.176.amzn2023.x86_64/livepatch-CVE-2024-41091-CVE-2024-41090-0001.ko", "tagged": 0, "examples": []}
+{"ko": "./kernel-livepatch-6.1.94-99.176/var/lib/kpatch/6.1.94-99.176.amzn2023.x86_64/livepatch-CVE-2024-41091-CVE-2024-41090-0002.ko", "tagged": 0, "examples": []}

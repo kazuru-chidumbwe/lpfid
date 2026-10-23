@@ -9,24 +9,22 @@ authors:
     email: kazuruuni@gmail.com
 license: MIT
 repository-code: "https://github.com/kazuru-chidumbwe/lpfid"
-version: "1.0.2"
-date-released: "2026-10-20"
+version: "1.1.0"
+date-released: "2026-10-23"
 identifiers:
-  - type: doi
-    value: 10.5281/zenodo.23489868
-    description: Zenodo version of record for release v1.0.2
   - type: doi
     value: 10.5281/zenodo.23408955
     description: Zenodo concept DOI (resolves to the latest version)
 abstract: >-
-  Blind reference-differential binding oracle for Linux livepatch modules (frozen
-  versions through v1.7 with an AArch64 extension, including rules RF and RS), the fault operators that edit
-  built modules, the selection and build scripts for a corpus of 150 CVE fixes on
-  stable kernels, the loader, presence-test and generator-comparison runners, and
-  every run record behind the reported results.
+  Blind reference-differential binding oracle for Linux livepatch modules.
+  Version v2.0 is the held-out oracle. Earlier frozen versions through v1.8
+  are kept for the scores that used them. The archive also holds the fault
+  operators, the selection and build scripts for a corpus of 150 CVE fixes on
+  stable kernels, the loader, presence-test and generator-comparison runners,
+  and every run record behind the reported results, including the held-out trial.
 keywords:
   - livepatch
   - test oracle
   - mutation analysis
   - Linux kernel
-url: "https://doi.org/10.5281/zenodo.23489868"
+url: "https://doi.org/10.5281/zenodo.23408955"

@@ -1,0 +1,2482 @@
+[
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-0",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-2",
+  "function": "ext4_destroy_inline_data_nolock",
+  "from": "__func__.13",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-4",
+  "function": "ext4_create_inline_data",
+  "from": "__func__.15",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-6",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-8",
+  "function": "ext4_try_to_write_inline_data",
+  "from": "__func__.14",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-0",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-2",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.12",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-4",
+  "function": "ext4_da_write_inline_data_begin",
+  "from": "__func__.10",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-6",
+  "function": "ext4_try_to_write_inline_data",
+  "from": "__func__.17",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-8",
+  "function": "ext4_try_add_inline_entry",
+  "from": "__func__.9",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-0",
+  "function": "ext4_mark_iloc_dirty",
+  "from": "__func__.6",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-2",
+  "function": "ext4_journalled_write_end",
+  "from": "__func__.17",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-4",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-6",
+  "function": "ext4_write_begin",
+  "from": "__func__.24",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-8",
+  "function": "ext4_map_query_blocks.constprop.0",
+  "from": "__func__.27",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-0",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-2",
+  "function": "ext4_expand_extra_isize",
+  "from": "__func__.4",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-4",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-6",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-8",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-38643 sibling-0",
+  "function": "regulatory_propagate_dfs_state",
+  "from": "__already_done.27",
+  "to": "__already_done.1",
+  "indistinguishable": true,
+  "v17": "CONSISTENT",
+  "v18": "CONSISTENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-38643 sibling-2",
+  "function": "regulatory_propagate_dfs_state",
+  "from": "__already_done.1",
+  "to": "__already_done.27",
+  "indistinguishable": true,
+  "v17": "CONSISTENT",
+  "v18": "CONSISTENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-0",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-2",
+  "function": "ext4_da_write_inline_data_begin",
+  "from": "__func__.10",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-4",
+  "function": "ext4_delete_inline_entry",
+  "from": "__func__.3",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-6",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-8",
+  "function": "ext4_destroy_inline_data_nolock",
+  "from": "__func__.12",
+  "to": "__func__.8",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-0",
+  "function": "__ext4_iget",
+  "from": "__func__.10",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-2",
+  "function": "ext4_setattr",
+  "from": "__func__.7",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-4",
+  "function": "ext4_iomap_begin",
+  "from": "__func__.21",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-6",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-8",
+  "function": "ext4_write_begin",
+  "from": "__func__.19",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-0",
+  "function": "ext4_mb_release_inode_pa",
+  "from": "__func__.15",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-2",
+  "function": "ext4_mb_discard_group_preallocations",
+  "from": "__func__.7",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-4",
+  "function": "ext4_mb_mark_context",
+  "from": "__func__.18",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-6",
+  "function": "ext4_mb_free_metadata",
+  "from": "__func__.2",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-8",
+  "function": "ext4_group_add_blocks",
+  "from": "__func__.1",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-0",
+  "function": "ext4_xattr_inode_lookup_create",
+  "from": "__func__.14",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-2",
+  "function": "ext4_xattr_block_set",
+  "from": "__func__.10",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-4",
+  "function": "ext4_xattr_release_block",
+  "from": "__func__.7",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-6",
+  "function": "ext4_xattr_inode_lookup_create",
+  "from": "__func__.14",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-8",
+  "function": "ext4_xattr_ibody_find",
+  "from": "__func__.20",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-0",
+  "function": "ext4_ext_map_blocks",
+  "from": "__func__.17",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-2",
+  "function": "ext4_ext_remove_space",
+  "from": "__func__.26",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-4",
+  "function": "ext4_ext_replay_shrink_inode",
+  "from": "__func__.1",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-6",
+  "function": "ext4_ext_insert_extent",
+  "from": "__func__.33",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-8",
+  "function": "ext4_ext_insert_extent",
+  "from": "__func__.31",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-0",
+  "function": "ext4_quota_on",
+  "from": "__func__.19",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-2",
+  "function": "ext4_nfs_get_inode",
+  "from": "__func__.14",
+  "to": "__func__.25",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-4",
+  "function": "ext4_quota_write",
+  "from": "__func__.13",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-6",
+  "function": "ext4_clear_journal_err",
+  "from": "__func__.22",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-8",
+  "function": "ext4_release_dquot",
+  "from": "__func__.17",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-0",
+  "function": "ext4_clu_mapped",
+  "from": "__func__.3",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-2",
+  "function": "ext4_fallocate",
+  "from": "__func__.9",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-4",
+  "function": "ext4_fallocate",
+  "from": "__func__.12",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-6",
+  "function": "ext4_fallocate",
+  "from": "__func__.8",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-8",
+  "function": "ext4_fallocate",
+  "from": "__func__.12",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-0",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-2",
+  "function": "ext4_expand_extra_isize",
+  "from": "__func__.4",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-4",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-6",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-8",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-1",
+  "function": "empty_inline_dir",
+  "from": "__func__.2",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-3",
+  "function": "empty_inline_dir",
+  "from": "__func__.2",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-5",
+  "function": "ext4_inlinedir_to_tree",
+  "from": "__func__.5",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-7",
+  "function": "ext4_update_inline_data",
+  "from": "__func__.16",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-9",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.12",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-1",
+  "function": "ext4_try_to_write_inline_data",
+  "from": "__func__.14",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-3",
+  "function": "empty_inline_dir",
+  "from": "__func__.2",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-5",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.12",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-7",
+  "function": "ext4_delete_inline_entry",
+  "from": "__func__.3",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-9",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.12",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-1",
+  "function": "ext4_update_disksize_before_punch",
+  "from": "__func__.15",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-3",
+  "function": "ext4_journalled_write_end",
+  "from": "__func__.17",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-5",
+  "function": "__ext4_block_zero_page_range",
+  "from": "__func__.16",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-7",
+  "function": "ext4_setattr",
+  "from": "__func__.7",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-9",
+  "function": "ext4_truncate",
+  "from": "__func__.13",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-1",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-3",
+  "function": "ext4_expand_extra_isize",
+  "from": "__func__.4",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-5",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-7",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-9",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-38643 sibling-1",
+  "function": "regulatory_propagate_dfs_state",
+  "from": "__already_done.27",
+  "to": "__already_done.1",
+  "indistinguishable": true,
+  "v17": "CONSISTENT",
+  "v18": "CONSISTENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-38643 sibling-3",
+  "function": "regulatory_propagate_dfs_state",
+  "from": "__already_done.1",
+  "to": "__already_done.27",
+  "indistinguishable": true,
+  "v17": "CONSISTENT",
+  "v18": "CONSISTENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-1",
+  "function": "ext4_convert_inline_data",
+  "from": "__func__.0",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-3",
+  "function": "ext4_inlinedir_to_tree",
+  "from": "__func__.5",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-5",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.11",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-7",
+  "function": "ext4_try_add_inline_entry",
+  "from": "__func__.9",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-9",
+  "function": "ext4_delete_inline_entry",
+  "from": "__func__.3",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-1",
+  "function": "ext4_punch_hole",
+  "from": "__func__.14",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-3",
+  "function": "ext4_journalled_write_end",
+  "from": "__func__.17",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-5",
+  "function": "ext4_evict_inode",
+  "from": "__func__.33",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-7",
+  "function": "write_end_fn",
+  "from": "__func__.26",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-9",
+  "function": "do_journal_get_write_access",
+  "from": "__func__.27",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-1",
+  "function": "ext4_free_blocks",
+  "from": "__func__.4",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-3",
+  "function": "ext4_mb_discard_group_preallocations",
+  "from": "__func__.7",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-5",
+  "function": "ext4_group_add_blocks",
+  "from": "__func__.1",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-7",
+  "function": "ext4_mb_mark_pa_deleted",
+  "from": "__func__.16",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-9",
+  "function": "ext4_mb_complex_scan_group",
+  "from": "__func__.11",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-1",
+  "function": "ext4_xattr_block_set",
+  "from": "__func__.10",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-3",
+  "function": "ext4_xattr_inode_dec_ref_all",
+  "from": "__func__.6",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-5",
+  "function": "ext4_xattr_inode_lookup_create",
+  "from": "__func__.14",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-7",
+  "function": "ext4_xattr_block_set",
+  "from": "__func__.10",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-9",
+  "function": "ext4_xattr_inode_lookup_create",
+  "from": "__func__.15",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-1",
+  "function": "ext4_ext_insert_extent",
+  "from": "__func__.32",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-3",
+  "function": "ext4_swap_extents",
+  "from": "__func__.4",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-5",
+  "function": "ext4_ext_remove_space",
+  "from": "__func__.26",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-7",
+  "function": "ext4_ext_map_blocks",
+  "from": "__func__.14",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-9",
+  "function": "ext4_ext_insert_extent",
+  "from": "__func__.33",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-1",
+  "function": "ext4_fill_super",
+  "from": "__func__.20",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-3",
+  "function": "ext4_enable_quotas",
+  "from": "__func__.26",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-5",
+  "function": "ext4_write_dquot",
+  "from": "__func__.15",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-7",
+  "function": "ext4_clear_journal_err",
+  "from": "__func__.22",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-9",
+  "function": "ext4_release_dquot",
+  "from": "__func__.17",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-1",
+  "function": "ext4_ext_shift_extents",
+  "from": "__func__.10",
+  "to": "__func__.11",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-3",
+  "function": "ext4_swap_extents",
+  "from": "__func__.4",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-5",
+  "function": "ext4_fallocate",
+  "from": "__func__.12",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-7",
+  "function": "ext4_fallocate",
+  "from": "__func__.8",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-9",
+  "function": "ext4_fallocate",
+  "from": "__func__.9",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-1",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-3",
+  "function": "ext4_expand_extra_isize",
+  "from": "__func__.4",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-5",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-7",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-9",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-0",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-2",
+  "function": "ext4_destroy_inline_data_nolock",
+  "from": "__func__.13",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-4",
+  "function": "ext4_create_inline_data",
+  "from": "__func__.15",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-6",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-38701 sibling-8",
+  "function": "ext4_try_to_write_inline_data",
+  "from": "__func__.14",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-0",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-2",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.12",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-4",
+  "function": "ext4_da_write_inline_data_begin",
+  "from": "__func__.10",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-6",
+  "function": "ext4_try_to_write_inline_data",
+  "from": "__func__.17",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2025-68264 sibling-8",
+  "function": "ext4_try_add_inline_entry",
+  "from": "__func__.9",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-0",
+  "function": "ext4_mark_iloc_dirty",
+  "from": "__func__.6",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-2",
+  "function": "ext4_journalled_write_end",
+  "from": "__func__.17",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-4",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-6",
+  "function": "ext4_write_begin",
+  "from": "__func__.24",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-31450 sibling-8",
+  "function": "ext4_map_query_blocks.constprop.0",
+  "from": "__func__.27",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-0",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-2",
+  "function": "ext4_expand_extra_isize",
+  "from": "__func__.4",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-4",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-6",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.1/CVE-2026-93268 sibling-8",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-38643 sibling-0",
+  "function": "regulatory_propagate_dfs_state",
+  "from": "__already_done.27",
+  "to": "__already_done.1",
+  "indistinguishable": true,
+  "v17": "CONSISTENT",
+  "v18": "CONSISTENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-38643 sibling-2",
+  "function": "regulatory_propagate_dfs_state",
+  "from": "__already_done.1",
+  "to": "__already_done.27",
+  "indistinguishable": true,
+  "v17": "CONSISTENT",
+  "v18": "CONSISTENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-0",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-2",
+  "function": "ext4_da_write_inline_data_begin",
+  "from": "__func__.10",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-4",
+  "function": "ext4_delete_inline_entry",
+  "from": "__func__.3",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-6",
+  "function": "ext4_inline_data_truncate",
+  "from": "__func__.1",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2025-68261 sibling-8",
+  "function": "ext4_destroy_inline_data_nolock",
+  "from": "__func__.12",
+  "to": "__func__.8",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-0",
+  "function": "__ext4_iget",
+  "from": "__func__.10",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-2",
+  "function": "ext4_setattr",
+  "from": "__func__.7",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-4",
+  "function": "ext4_iomap_begin",
+  "from": "__func__.21",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-6",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-31450 sibling-8",
+  "function": "ext4_write_begin",
+  "from": "__func__.19",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-0",
+  "function": "ext4_mb_release_inode_pa",
+  "from": "__func__.15",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-2",
+  "function": "ext4_mb_discard_group_preallocations",
+  "from": "__func__.7",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-4",
+  "function": "ext4_mb_mark_context",
+  "from": "__func__.18",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-6",
+  "function": "ext4_mb_free_metadata",
+  "from": "__func__.2",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-43068 sibling-8",
+  "function": "ext4_group_add_blocks",
+  "from": "__func__.1",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-0",
+  "function": "ext4_xattr_inode_lookup_create",
+  "from": "__func__.14",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-2",
+  "function": "ext4_xattr_block_set",
+  "from": "__func__.10",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-4",
+  "function": "ext4_xattr_release_block",
+  "from": "__func__.7",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-6",
+  "function": "ext4_xattr_inode_lookup_create",
+  "from": "__func__.14",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.12/CVE-2026-46046 sibling-8",
+  "function": "ext4_xattr_ibody_find",
+  "from": "__func__.20",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-0",
+  "function": "ext4_ext_map_blocks",
+  "from": "__func__.17",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-2",
+  "function": "ext4_ext_remove_space",
+  "from": "__func__.26",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-4",
+  "function": "ext4_ext_replay_shrink_inode",
+  "from": "__func__.1",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-6",
+  "function": "ext4_ext_insert_extent",
+  "from": "__func__.33",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-49883 sibling-8",
+  "function": "ext4_ext_insert_extent",
+  "from": "__func__.31",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-0",
+  "function": "ext4_quota_on",
+  "from": "__func__.19",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-2",
+  "function": "ext4_nfs_get_inode",
+  "from": "__func__.14",
+  "to": "__func__.25",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-4",
+  "function": "ext4_quota_write",
+  "from": "__func__.13",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-6",
+  "function": "ext4_clear_journal_err",
+  "from": "__func__.22",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2024-50191 sibling-8",
+  "function": "ext4_release_dquot",
+  "from": "__func__.17",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-0",
+  "function": "ext4_clu_mapped",
+  "from": "__func__.3",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-2",
+  "function": "ext4_fallocate",
+  "from": "__func__.9",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-4",
+  "function": "ext4_fallocate",
+  "from": "__func__.12",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-6",
+  "function": "ext4_fallocate",
+  "from": "__func__.8",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-45948 sibling-8",
+  "function": "ext4_fallocate",
+  "from": "__func__.12",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-0",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-2",
+  "function": "ext4_expand_extra_isize",
+  "from": "__func__.4",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-4",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-6",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-kp",
+  "id": "6.6/CVE-2026-93268 sibling-8",
+  "function": "ext4_page_mkwrite",
+  "from": "__func__.0",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-1",
+  "function": "empty_inline_dir",
+  "from": "__func__.2",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-3",
+  "function": "empty_inline_dir",
+  "from": "__func__.2",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-5",
+  "function": "ext4_inlinedir_to_tree",
+  "from": "__func__.5",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-7",
+  "function": "ext4_update_inline_data",
+  "from": "__func__.16",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-38701 sibling-9",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.12",
+  "to": "__func__.15",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-1",
+  "function": "ext4_try_to_write_inline_data",
+  "from": "__func__.14",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-3",
+  "function": "empty_inline_dir",
+  "from": "__func__.2",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-5",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.12",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-7",
+  "function": "ext4_delete_inline_entry",
+  "from": "__func__.3",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2025-68264 sibling-9",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.12",
+  "to": "__func__.13",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-1",
+  "function": "ext4_update_disksize_before_punch",
+  "from": "__func__.15",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-3",
+  "function": "ext4_journalled_write_end",
+  "from": "__func__.17",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-5",
+  "function": "__ext4_block_zero_page_range",
+  "from": "__func__.16",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-7",
+  "function": "ext4_setattr",
+  "from": "__func__.7",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-31450 sibling-9",
+  "function": "ext4_truncate",
+  "from": "__func__.13",
+  "to": "__func__.18",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-1",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-3",
+  "function": "ext4_expand_extra_isize",
+  "from": "__func__.4",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-5",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-7",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.1/CVE-2026-93268 sibling-9",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-38643 sibling-1",
+  "function": "regulatory_propagate_dfs_state",
+  "from": "__already_done.27",
+  "to": "__already_done.1",
+  "indistinguishable": true,
+  "v17": "CONSISTENT",
+  "v18": "CONSISTENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-38643 sibling-3",
+  "function": "regulatory_propagate_dfs_state",
+  "from": "__already_done.1",
+  "to": "__already_done.27",
+  "indistinguishable": true,
+  "v17": "CONSISTENT",
+  "v18": "CONSISTENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-1",
+  "function": "ext4_convert_inline_data",
+  "from": "__func__.0",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-3",
+  "function": "ext4_inlinedir_to_tree",
+  "from": "__func__.5",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-5",
+  "function": "ext4_write_inline_data_end",
+  "from": "__func__.11",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-7",
+  "function": "ext4_try_add_inline_entry",
+  "from": "__func__.9",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2025-68261 sibling-9",
+  "function": "ext4_delete_inline_entry",
+  "from": "__func__.3",
+  "to": "__func__.12",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-1",
+  "function": "ext4_punch_hole",
+  "from": "__func__.14",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-3",
+  "function": "ext4_journalled_write_end",
+  "from": "__func__.17",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-5",
+  "function": "ext4_evict_inode",
+  "from": "__func__.33",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-7",
+  "function": "write_end_fn",
+  "from": "__func__.26",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-31450 sibling-9",
+  "function": "do_journal_get_write_access",
+  "from": "__func__.27",
+  "to": "__func__.30",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-1",
+  "function": "ext4_free_blocks",
+  "from": "__func__.4",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-3",
+  "function": "ext4_mb_discard_group_preallocations",
+  "from": "__func__.7",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-5",
+  "function": "ext4_group_add_blocks",
+  "from": "__func__.1",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-7",
+  "function": "ext4_mb_mark_pa_deleted",
+  "from": "__func__.16",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-43068 sibling-9",
+  "function": "ext4_mb_complex_scan_group",
+  "from": "__func__.11",
+  "to": "__func__.16",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-1",
+  "function": "ext4_xattr_block_set",
+  "from": "__func__.10",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-3",
+  "function": "ext4_xattr_inode_dec_ref_all",
+  "from": "__func__.6",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-5",
+  "function": "ext4_xattr_inode_lookup_create",
+  "from": "__func__.14",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-7",
+  "function": "ext4_xattr_block_set",
+  "from": "__func__.10",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.12/CVE-2026-46046 sibling-9",
+  "function": "ext4_xattr_inode_lookup_create",
+  "from": "__func__.15",
+  "to": "__func__.5",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-1",
+  "function": "ext4_ext_insert_extent",
+  "from": "__func__.32",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-3",
+  "function": "ext4_swap_extents",
+  "from": "__func__.4",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-5",
+  "function": "ext4_ext_remove_space",
+  "from": "__func__.26",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-7",
+  "function": "ext4_ext_map_blocks",
+  "from": "__func__.14",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-49883 sibling-9",
+  "function": "ext4_ext_insert_extent",
+  "from": "__func__.33",
+  "to": "__func__.7",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-1",
+  "function": "ext4_fill_super",
+  "from": "__func__.20",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-3",
+  "function": "ext4_enable_quotas",
+  "from": "__func__.26",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-5",
+  "function": "ext4_write_dquot",
+  "from": "__func__.15",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-7",
+  "function": "ext4_clear_journal_err",
+  "from": "__func__.22",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2024-50191 sibling-9",
+  "function": "ext4_release_dquot",
+  "from": "__func__.17",
+  "to": "__func__.14",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-1",
+  "function": "ext4_ext_shift_extents",
+  "from": "__func__.10",
+  "to": "__func__.11",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-3",
+  "function": "ext4_swap_extents",
+  "from": "__func__.4",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-5",
+  "function": "ext4_fallocate",
+  "from": "__func__.12",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-7",
+  "function": "ext4_fallocate",
+  "from": "__func__.8",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-45948 sibling-9",
+  "function": "ext4_fallocate",
+  "from": "__func__.9",
+  "to": "__func__.10",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-1",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-3",
+  "function": "ext4_expand_extra_isize",
+  "from": "__func__.4",
+  "to": "__func__.2",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-5",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-7",
+  "function": "ext4_change_inode_journal_flag",
+  "from": "__func__.1",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ },
+ {
+  "set": "sibling-ind",
+  "id": "6.6/CVE-2026-93268 sibling-9",
+  "function": "ext4_dirty_inode",
+  "from": "__func__.2",
+  "to": "__func__.4",
+  "indistinguishable": false,
+  "v17": "CONSISTENT",
+  "v18": "DIVERGENT"
+ }
+]

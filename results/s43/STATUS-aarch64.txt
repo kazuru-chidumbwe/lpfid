@@ -1,0 +1,62 @@
+[2026-10-21T08:36:25Z] start aarch64: 30 packages; oracle 7686843c93f5cb58, operators d3068950781d9a17
+[2026-10-21T08:36:52Z] [1] kernel-livepatch-6.1.130-139.222 gcc pin: 'none'
+[2026-10-21T08:38:45Z] [1] kernel-livepatch-6.1.130-139.222 scored: kernel-livepatch-6.1.130-139.222 modules 4 consistent 4
+[2026-10-21T08:39:12Z] [2] kernel-livepatch-6.1.141-155.222 gcc pin: 'none'
+[2026-10-21T08:40:39Z] [2] kernel-livepatch-6.1.141-155.222 scored: kernel-livepatch-6.1.141-155.222 modules 2 consistent 2
+[2026-10-21T08:41:06Z] [3] kernel-livepatch-6.1.141-165.249 gcc pin: 'none'
+[2026-10-21T08:42:59Z] [3] kernel-livepatch-6.1.141-165.249 scored: kernel-livepatch-6.1.141-165.249 modules 3 consistent 3
+[2026-10-21T08:43:26Z] [4] kernel-livepatch-6.1.158-178.288 gcc pin: 'none'
+[2026-10-21T08:44:52Z] [4] kernel-livepatch-6.1.158-178.288 scored: kernel-livepatch-6.1.158-178.288 modules 1 consistent 1
+[2026-10-21T08:45:19Z] [5] kernel-livepatch-6.1.159-181.297 gcc pin: 'none'
+[2026-10-21T08:45:46Z] [5] kernel-livepatch-6.1.159-181.297 REFBUILD_FAIL
+[2026-10-21T08:46:13Z] [6] kernel-livepatch-6.1.168-203.330 gcc pin: 'none'
+[2026-10-21T08:48:34Z] [6] kernel-livepatch-6.1.168-203.330 scored: kernel-livepatch-6.1.168-203.330 modules 7 consistent 7
+[2026-10-21T08:49:02Z] [7] kernel-livepatch-6.1.176-220.358 gcc pin: 'none'
+[2026-10-21T08:51:18Z] [7] kernel-livepatch-6.1.176-220.358 scored: kernel-livepatch-6.1.176-220.358 modules 9 consistent 9
+[2026-10-21T08:51:44Z] [8] kernel-livepatch-6.1.41-63.109 gcc pin: 'none'
+[2026-10-21T08:52:11Z] [8] kernel-livepatch-6.1.41-63.109 REFBUILD_FAIL
+[2026-10-21T08:52:38Z] [9] kernel-livepatch-6.1.61-85.141 gcc pin: 'current:11.4.1-2.amzn2023.0.2'
+[2026-10-21T08:54:18Z] [9] kernel-livepatch-6.1.61-85.141 scored: kernel-livepatch-6.1.61-85.141 modules 1 consistent 1
+[2026-10-21T08:54:45Z] [10] kernel-livepatch-6.1.79-99.167 gcc pin: 'none'
+[2026-10-21T08:55:11Z] [10] kernel-livepatch-6.1.79-99.167 REFBUILD_FAIL
+[2026-10-21T08:55:38Z] [11] kernel-livepatch-6.12.103-129.197 gcc pin: 'none'
+[2026-10-21T08:56:57Z] [11] kernel-livepatch-6.12.103-129.197 scored: kernel-livepatch-6.12.103-129.197 modules 1 consistent 1
+[2026-10-21T08:57:23Z] [12] kernel-livepatch-6.12.30-34.92 gcc pin: 'none'
+[2026-10-21T08:59:03Z] [12] kernel-livepatch-6.12.30-34.92 scored: kernel-livepatch-6.12.30-34.92 modules 4 consistent 4
+[2026-10-21T08:59:30Z] [13] kernel-livepatch-6.12.53-69.119 gcc pin: 'none'
+[2026-10-21T09:00:51Z] [13] kernel-livepatch-6.12.53-69.119 scored: kernel-livepatch-6.12.53-69.119 modules 1 consistent 1
+[2026-10-21T09:01:19Z] [14] kernel-livepatch-6.12.55-74.119 gcc pin: 'none'
+[2026-10-21T09:01:45Z] [14] kernel-livepatch-6.12.55-74.119 REFBUILD_FAIL
+[2026-10-21T09:02:13Z] [15] kernel-livepatch-6.12.58-82.121 gcc pin: 'none'
+[2026-10-21T09:03:44Z] [15] kernel-livepatch-6.12.58-82.121 scored: kernel-livepatch-6.12.58-82.121 modules 3 consistent 3
+[2026-10-21T09:04:11Z] [16] kernel-livepatch-6.12.66-88.122 gcc pin: 'none'
+[2026-10-21T09:04:38Z] [16] kernel-livepatch-6.12.66-88.122 REFBUILD_FAIL
+[2026-10-21T09:05:05Z] [17] kernel-livepatch-6.12.80-105.147 gcc pin: 'none'
+[2026-10-21T09:07:25Z] [17] kernel-livepatch-6.12.80-105.147 scored: kernel-livepatch-6.12.80-105.147 modules 8 consistent 8
+[2026-10-21T09:07:52Z] [18] kernel-livepatch-6.12.83-115.161 gcc pin: 'none'
+[2026-10-21T09:09:50Z] [18] kernel-livepatch-6.12.83-115.161 scored: kernel-livepatch-6.12.83-115.161 modules 8 consistent 8
+[2026-10-21T09:10:17Z] [19] kernel-livepatch-6.12.90-120.164 gcc pin: 'none'
+[2026-10-21T09:12:11Z] [19] kernel-livepatch-6.12.90-120.164 scored: kernel-livepatch-6.12.90-120.164 modules 6 consistent 6
+[2026-10-21T09:12:38Z] [20] kernel-livepatch-6.12.95-124.187 gcc pin: 'none'
+[2026-10-21T09:14:24Z] [20] kernel-livepatch-6.12.95-124.187 scored: kernel-livepatch-6.12.95-124.187 modules 6 consistent 6
+[2026-10-21T09:14:51Z] [21] kernel-livepatch-6.18.15-14.217 gcc pin: 'none'
+[2026-10-21T09:17:12Z] [21] kernel-livepatch-6.18.15-14.217 scored: kernel-livepatch-6.18.15-14.217 modules 6 consistent 6
+[2026-10-21T09:17:39Z] [22] kernel-livepatch-6.18.16-18.222 gcc pin: 'none'
+[2026-10-21T09:20:15Z] [22] kernel-livepatch-6.18.16-18.222 scored: kernel-livepatch-6.18.16-18.222 modules 8 consistent 8
+[2026-10-21T09:20:42Z] [23] kernel-livepatch-6.18.25-55.108 gcc pin: 'none'
+[2026-10-21T09:23:04Z] [23] kernel-livepatch-6.18.25-55.108 scored: kernel-livepatch-6.18.25-55.108 modules 9 consistent 9
+[2026-10-21T09:23:32Z] [24] kernel-livepatch-6.18.25-57.109 gcc pin: 'none'
+[2026-10-21T09:25:42Z] [24] kernel-livepatch-6.18.25-57.109 scored: kernel-livepatch-6.18.25-57.109 modules 8 consistent 8
+[2026-10-21T09:26:09Z] [25] kernel-livepatch-6.18.30-61.116 gcc pin: 'none'
+[2026-10-21T09:28:14Z] [25] kernel-livepatch-6.18.30-61.116 scored: kernel-livepatch-6.18.30-61.116 modules 7 consistent 7
+[2026-10-21T09:28:41Z] [26] kernel-livepatch-6.18.38-73.137 gcc pin: 'none'
+[2026-10-21T09:30:43Z] [26] kernel-livepatch-6.18.38-73.137 scored: kernel-livepatch-6.18.38-73.137 modules 8 consistent 8
+[2026-10-21T09:31:11Z] [27] kernel-livepatch-6.18.41-94.142 gcc pin: 'none'
+[2026-10-21T09:33:13Z] [27] kernel-livepatch-6.18.41-94.142 scored: kernel-livepatch-6.18.41-94.142 modules 6 consistent 6
+[2026-10-21T09:33:40Z] [28] kernel-livepatch-6.18.44-99.149 gcc pin: 'none'
+[2026-10-21T09:35:27Z] [28] kernel-livepatch-6.18.44-99.149 scored: kernel-livepatch-6.18.44-99.149 modules 3 consistent 3
+[2026-10-21T09:35:54Z] [29] kernel-livepatch-6.18.48-109.150 gcc pin: 'none'
+[2026-10-21T09:37:29Z] [29] kernel-livepatch-6.18.48-109.150 scored: kernel-livepatch-6.18.48-109.150 modules 1 consistent 1
+[2026-10-21T09:37:56Z] [30] kernel-livepatch-6.18.51-120.162 gcc pin: 'none'
+[2026-10-21T09:39:29Z] [30] kernel-livepatch-6.18.51-120.162 scored: kernel-livepatch-6.18.51-120.162 modules 1 consistent 1
+[2026-10-21T09:39:29Z] S43 aarch64 DONE
