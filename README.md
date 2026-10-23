@@ -24,10 +24,10 @@ The oracle prints a JSON report and exits 0 when the module is consistent with t
 Seke Kazuru. LPFid: test oracles for the fidelity of Linux livepatch modules.
 https://github.com/kazuru-chidumbwe/lpfid
 Tag: v1.1.0
-https://doi.org/10.5281/zenodo.23408955
+https://doi.org/10.5281/zenodo.23588997
 ```
 
-The concept DOI resolves to the latest version. `CITATION.cff` carries the same metadata.
+The concept DOI https://doi.org/10.5281/zenodo.23408955 resolves to the latest version. `CITATION.cff` carries the same metadata.
 
 ## The checks
 
