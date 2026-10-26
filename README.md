@@ -16,7 +16,7 @@ python3 oracle/blind-reloc-oracle-v2.1.py MODULE.ko REF.o [REF.o ...] \
     --vmlinux PIN/vmlinux --modules-dir PIN
 ```
 
-The oracle prints a JSON report and exits 0 when the module is consistent with the reference objects and 1 when it diverges. It reads x86-64 and AArch64 objects. Python 3.11 or later. `oracle/blind-reloc-oracle-v2.1.py` is the census oracle and `oracle/blind-reloc-oracle-v2.0.py` the held-out oracle. Earlier versions stay in `oracle/` for the scores that used them.
+The oracle prints a JSON report and exits 0 when the module is consistent with the reference objects and 1 when it diverges. It reads x86-64 and AArch64 objects. Python 3.11 or later. `oracle/blind-reloc-oracle-v2.1.py` is the census oracle and `oracle/blind-reloc-oracle-v2.0.py` the held-out oracle. Oracle versions are file names, not release tags: release v1.1.0 added the held-out oracle v2.0, and release v1.2.0 the census oracle v2.1. Earlier versions stay in `oracle/` for the scores that used them.
 
 ## How to cite
 
