@@ -13,6 +13,9 @@ version: "1.2.0"
 date-released: "2026-10-26"
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.23657515
+    description: Zenodo version of record for release v1.2.0
+  - type: doi
     value: 10.5281/zenodo.23408955
     description: Zenodo concept DOI (resolves to the latest version)
 abstract: >-
@@ -28,4 +31,4 @@ keywords:
   - test oracle
   - mutation analysis
   - Linux kernel
-url: "https://doi.org/10.5281/zenodo.23408955"
+url: "https://doi.org/10.5281/zenodo.23657515"

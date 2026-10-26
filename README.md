@@ -24,9 +24,10 @@ The oracle prints a JSON report and exits 0 when the module is consistent with t
 Seke Kazuru. LPFid: fidelity checks for Linux livepatch modules.
 https://github.com/kazuru-chidumbwe/lpfid
 Tag: v1.2.0
+DOI: https://doi.org/10.5281/zenodo.23657515
 ```
 
-The concept DOI https://doi.org/10.5281/zenodo.23408955 resolves to the latest version. `CITATION.cff` carries the same metadata.
+This release is https://doi.org/10.5281/zenodo.23657515. The concept DOI https://doi.org/10.5281/zenodo.23408955 resolves to the latest version. `CITATION.cff` carries the same metadata.
 
 ## The checks
 
