@@ -1,0 +1,55 @@
+== kernel-livepatch-6.1.49-69.116 ko 7 ref 7
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.avic_mode,0-0x5
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_msr_interception_bitmap,1-0x4
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_shadow_msr_intercept,1-0x4
+   ko 0 ref 1  type 2  avic_mode-0x5
+   ko 0 ref 1  type 2  sec:.text.set_msr_interception_bitmap-0x4
+   ko 0 ref 1  type 2  sec:.text.set_shadow_msr_intercept-0x4
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x170
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x8
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x170
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x8 [=direct_access_msrs]
+== kernel-livepatch-6.1.49-70.116 ko 7 ref 7
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.avic_mode,0-0x5
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_msr_interception_bitmap,1-0x4
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_shadow_msr_intercept,1-0x4
+   ko 0 ref 1  type 2  avic_mode-0x5
+   ko 0 ref 1  type 2  sec:.text.set_msr_interception_bitmap-0x4
+   ko 0 ref 1  type 2  sec:.text.set_shadow_msr_intercept-0x4
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x170
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x8
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x170
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x8 [=direct_access_msrs]
+== kernel-livepatch-6.1.52-71.125 ko 7 ref 7
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.avic_mode,0-0x5
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_msr_interception_bitmap,1-0x4
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_shadow_msr_intercept,1-0x4
+   ko 0 ref 1  type 2  avic_mode-0x5
+   ko 0 ref 1  type 2  sec:.text.set_msr_interception_bitmap-0x4
+   ko 0 ref 1  type 2  sec:.text.set_shadow_msr_intercept-0x4
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x170
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x8
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x170
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x8 [=direct_access_msrs]
+== kernel-livepatch-6.1.55-75.123 ko 7 ref 7
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.avic_mode,0-0x5
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_msr_interception_bitmap,1-0x4
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_shadow_msr_intercept,1-0x4
+   ko 0 ref 1  type 2  avic_mode-0x5
+   ko 0 ref 1  type 2  sec:.text.set_msr_interception_bitmap-0x4
+   ko 0 ref 1  type 2  sec:.text.set_shadow_msr_intercept-0x4
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x170
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x8
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x170
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x8 [=direct_access_msrs]
+== kernel-livepatch-6.1.59-84.139 ko 7 ref 7
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.avic_mode,0-0x5
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_msr_interception_bitmap,1-0x4
+   ko 1 ref 0  type 2  .klp.sym.kvm_amd.set_shadow_msr_intercept,1-0x4
+   ko 0 ref 1  type 2  avic_mode-0x5
+   ko 0 ref 1  type 2  sec:.text.set_msr_interception_bitmap-0x4
+   ko 0 ref 1  type 2  sec:.text.set_shadow_msr_intercept-0x4
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x170
+   ko 1 ref 0  type 11  .klp.sym.kvm_amd.direct_access_msrs,1+0x8
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x170
+   ko 0 ref 1  type 11  sec:.rodata.direct_access_msrs+0x8 [=direct_access_msrs]

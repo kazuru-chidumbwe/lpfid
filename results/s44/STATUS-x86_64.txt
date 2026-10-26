@@ -1,0 +1,77 @@
+[2026-10-24T09:22:46Z] start x86_64: 75 packages; oracle 6d63c19d5cf2b084, operators f90337f3390210de
+[2026-10-24T09:23:49Z] kernel-livepatch-6.1.102-108.177 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T09:23:49Z] kernel-livepatch-6.1.109-118.189 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T09:23:56Z] kernel-livepatch-6.1.111-120.187 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T09:25:09Z] kernel-livepatch-6.1.112-122.189 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T09:25:09Z] kernel-livepatch-6.1.12-17.42 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T09:26:45Z] kernel-livepatch-6.1.129-138.220 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T09:51:32Z] kernel-livepatch-6.1.12-19.43 scored: kernel-livepatch-6.1.12-19.43 modules 1 consistent 1
+[2026-10-24T09:58:29Z] kernel-livepatch-6.1.132-147.221 scored: kernel-livepatch-6.1.132-147.221 modules 2 consistent 2
+[2026-10-24T10:06:36Z] kernel-livepatch-6.1.124-134.200 scored: kernel-livepatch-6.1.124-134.200 modules 4 consistent 4
+[2026-10-24T10:18:17Z] kernel-livepatch-6.1.134-150.224 scored: kernel-livepatch-6.1.134-150.224 modules 3 consistent 3
+[2026-10-24T10:31:09Z] kernel-livepatch-6.1.140-154.222 scored: kernel-livepatch-6.1.140-154.222 modules 4 consistent 4
+[2026-10-24T10:56:00Z] kernel-livepatch-6.1.153-175.280 scored: kernel-livepatch-6.1.153-175.280 modules 1 consistent 1
+[2026-10-24T11:01:10Z] kernel-livepatch-6.1.147-172.266 scored: kernel-livepatch-6.1.147-172.266 modules 4 consistent 4
+[2026-10-24T11:02:09Z] kernel-livepatch-6.1.150-174.273 scored: kernel-livepatch-6.1.150-174.273 modules 2 consistent 2
+[2026-10-24T11:04:20Z] kernel-livepatch-6.1.159-182.297 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T11:13:09Z] kernel-livepatch-6.1.155-176.282 scored: kernel-livepatch-6.1.155-176.282 modules 1 consistent 1
+[2026-10-24T11:24:12Z] kernel-livepatch-6.1.158-180.294 scored: kernel-livepatch-6.1.158-180.294 modules 1 consistent 1
+[2026-10-24T11:44:08Z] kernel-livepatch-6.1.163-186.299 scored: kernel-livepatch-6.1.163-186.299 modules 4 consistent 4
+[2026-10-24T11:59:46Z] kernel-livepatch-6.1.166-197.305 scored: kernel-livepatch-6.1.166-197.305 modules 6 consistent 6
+[2026-10-24T12:05:46Z] kernel-livepatch-6.1.168-202.320 scored: kernel-livepatch-6.1.168-202.320 modules 6 consistent 6
+[2026-10-24T12:30:51Z] kernel-livepatch-6.1.170-208.319 scored: kernel-livepatch-6.1.170-208.319 modules 7 consistent 7
+[2026-10-24T12:46:25Z] kernel-livepatch-6.1.170-210.320 scored: kernel-livepatch-6.1.170-210.320 modules 7 consistent 7
+[2026-10-24T12:50:41Z] kernel-livepatch-6.1.170-213.321 scored: kernel-livepatch-6.1.170-213.321 modules 6 consistent 6
+[2026-10-24T13:08:36Z] kernel-livepatch-6.1.172-216.329 scored: kernel-livepatch-6.1.172-216.329 modules 5 consistent 5
+[2026-10-24T13:20:59Z] kernel-livepatch-6.1.172-216.339 scored: kernel-livepatch-6.1.172-216.339 modules 4 consistent 4
+[2026-10-24T13:43:05Z] kernel-livepatch-6.1.175-219.359 scored: kernel-livepatch-6.1.175-219.359 modules 9 consistent 9
+[2026-10-24T13:52:09Z] kernel-livepatch-6.1.176-220.360 scored: kernel-livepatch-6.1.176-220.360 modules 8 consistent 8
+[2026-10-24T14:07:32Z] kernel-livepatch-6.1.176-221.360 scored: kernel-livepatch-6.1.176-221.360 modules 8 consistent 8
+[2026-10-24T14:11:38Z] kernel-livepatch-6.1.182-227.378 REFBUILD_FAIL: NO_VMLINUX
+[2026-10-24T14:27:01Z] kernel-livepatch-6.1.176-221.367 scored: kernel-livepatch-6.1.176-221.367 modules 8 consistent 8
+[2026-10-24T14:27:52Z] kernel-livepatch-6.1.177-224.371 scored: kernel-livepatch-6.1.177-224.371 modules 6 consistent 6
+[2026-10-24T14:46:24Z] kernel-livepatch-6.1.182-227.379 scored: kernel-livepatch-6.1.182-227.379 modules 5 consistent 5
+[2026-10-24T14:47:55Z] kernel-livepatch-6.1.188-233.386 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T14:57:40Z] kernel-livepatch-6.1.188-233.385 scored: kernel-livepatch-6.1.188-233.385 modules 1 consistent 1
+[2026-10-24T15:04:51Z] kernel-livepatch-6.1.186-228.374 scored: kernel-livepatch-6.1.186-228.374 modules 3 consistent 3
+[2026-10-24T15:14:10Z] kernel-livepatch-6.1.21-1.45 scored: kernel-livepatch-6.1.21-1.45 modules 3 consistent 3
+[2026-10-24T15:22:24Z] kernel-livepatch-6.1.23-36.46 scored: kernel-livepatch-6.1.23-36.46 modules 3 consistent 3
+[2026-10-24T15:37:46Z] kernel-livepatch-6.1.25-37.47 scored: kernel-livepatch-6.1.25-37.47 modules 5 consistent 5
+[2026-10-24T15:45:45Z] kernel-livepatch-6.1.27-43.48 scored: kernel-livepatch-6.1.27-43.48 modules 5 consistent 5
+[2026-10-24T15:51:31Z] kernel-livepatch-6.1.29-47.49 scored: kernel-livepatch-6.1.29-47.49 modules 4 consistent 4
+[2026-10-24T16:09:18Z] kernel-livepatch-6.1.29-50.88 scored: kernel-livepatch-6.1.29-50.88 modules 5 consistent 5
+[2026-10-24T16:15:06Z] kernel-livepatch-6.1.34-58.102 scored: kernel-livepatch-6.1.34-58.102 modules 2 consistent 2
+[2026-10-24T16:17:18Z] kernel-livepatch-6.1.41-63.114 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T16:18:21Z] kernel-livepatch-6.1.34-59.116 scored: kernel-livepatch-6.1.34-59.116 modules 2 consistent 2
+[2026-10-24T16:18:41Z] kernel-livepatch-6.1.41-64.118 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T16:27:06Z] kernel-livepatch-6.1.38-59.109 scored: kernel-livepatch-6.1.38-59.109 modules 1 consistent 1
+[2026-10-24T17:02:51Z] kernel-livepatch-6.1.49-70.116 scored: kernel-livepatch-6.1.49-70.116 modules 7 consistent 6
+[2026-10-24T17:03:43Z] kernel-livepatch-6.1.49-69.116 scored: kernel-livepatch-6.1.49-69.116 modules 7 consistent 6
+[2026-10-24T17:05:57Z] kernel-livepatch-6.1.52-71.125 scored: kernel-livepatch-6.1.52-71.125 modules 7 consistent 6
+[2026-10-24T17:07:52Z] kernel-livepatch-6.1.66-91.160 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T17:10:58Z] kernel-livepatch-6.1.66-93.164 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T17:35:03Z] kernel-livepatch-6.1.59-84.139 scored: kernel-livepatch-6.1.59-84.139 modules 3 consistent 2
+[2026-10-24T17:35:05Z] kernel-livepatch-6.1.72-96.166 scored: kernel-livepatch-6.1.72-96.166 modules 2 consistent 2
+[2026-10-24T17:35:20Z] kernel-livepatch-6.1.55-75.123 scored: kernel-livepatch-6.1.55-75.123 modules 3 consistent 2
+[2026-10-24T17:36:29Z] kernel-livepatch-6.1.77-99.164 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T17:36:30Z] kernel-livepatch-6.1.79-99.164 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T17:37:54Z] kernel-livepatch-6.1.84-99.169 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T17:37:57Z] kernel-livepatch-6.1.87-99.174 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T17:39:25Z] kernel-livepatch-6.1.90-99.173 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T17:39:25Z] kernel-livepatch-6.1.91-99.172 REFBUILD_FAIL: MISSING_SOURCES
+[2026-10-24T17:54:05Z] kernel-livepatch-6.1.75-99.163 scored: kernel-livepatch-6.1.75-99.163 modules 2 consistent 2
+[2026-10-24T18:09:52Z] kernel-livepatch-6.1.92-99.174 scored: kernel-livepatch-6.1.92-99.174 modules 2 consistent 2
+[2026-10-24T18:10:15Z] kernel-livepatch-6.1.96-102.177 scored: kernel-livepatch-6.1.96-102.177 modules 3 consistent 3
+[2026-10-24T18:14:39Z] kernel-livepatch-6.1.97-104.177 scored: kernel-livepatch-6.1.97-104.177 modules 2 consistent 2
+[2026-10-24T18:52:44Z] kernel-livepatch-6.12.46-66.121 scored: kernel-livepatch-6.12.46-66.121 modules 1 consistent 1
+[2026-10-24T19:07:29Z] kernel-livepatch-6.12.110-135.201 scored: kernel-livepatch-6.12.110-135.201 modules 1 consistent 1
+[2026-10-24T19:26:07Z] kernel-livepatch-6.12.37-61.105 scored: kernel-livepatch-6.12.37-61.105 modules 2 consistent 2
+[2026-10-24T19:40:50Z] kernel-livepatch-6.12.73-95.123 scored: kernel-livepatch-6.12.73-95.123 modules 4 consistent 4
+[2026-10-24T20:12:13Z] kernel-livepatch-6.12.77-99.140 scored: kernel-livepatch-6.12.77-99.140 modules 6 consistent 6
+[2026-10-24T20:27:37Z] kernel-livepatch-6.12.79-101.147 scored: kernel-livepatch-6.12.79-101.147 modules 6 consistent 6
+[2026-10-24T20:51:58Z] kernel-livepatch-6.12.80-106.156 scored: kernel-livepatch-6.12.80-106.156 modules 7 consistent 7
+[2026-10-24T21:06:45Z] kernel-livepatch-6.12.88-119.157 scored: kernel-livepatch-6.12.88-119.157 modules 5 consistent 5
+[2026-10-24T21:22:53Z] kernel-livepatch-6.12.88-119.160 scored: kernel-livepatch-6.12.88-119.160 modules 4 consistent 4
+[2026-10-24T21:33:48Z] kernel-livepatch-6.12.92-122.166 scored: kernel-livepatch-6.12.92-122.166 modules 4 consistent 4
+[2026-10-24T21:57:02Z] kernel-livepatch-6.12.94-123.180 scored: kernel-livepatch-6.12.94-123.180 modules 8 consistent 8
+[2026-10-24T21:57:02Z] S44 x86_64 DONE

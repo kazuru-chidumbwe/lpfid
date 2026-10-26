@@ -1,0 +1,27 @@
+== out-a3/kernel-4.19.90-2312.1.0.0255.oe2003sp4-ACC-1-7.x86_64 1 ko, 9 refs
+CONSISTENT 10 []
+== out-a3/kernel-5.10.0-136.12.0.86.oe2203sp1-ACC-1-17.x86_64 1 ko, 17 refs
+DIVERGENT 24 ['ima_collect_measurement']
+== out-a3/kernel-5.10.0-153.12.0.92.oe2203sp2-ACC-1-9.x86_64 1 ko, 9 refs
+CONSISTENT 12 []
+== out-a3/kernel-5.10.0-182.0.0.95.oe2203sp3-ACC-1-12.x86_64 1 ko, 16 refs
+DIVERGENT 26 ['_request_firmware']
+== out-a3/kernel-5.10.0-216.0.0.115.oe2203sp4-ACC-1-6.x86_64 1 ko, 6 refs
+DIVERGENT 16 ['_request_firmware']
+== out/kernel-6.6.0-28.0.0.34.oe2403-ACC-1-6.x86_64 1 ko, 7 refs
+CONSISTENT 22 []
+== out/kernel-6.6.0-28.0.0.34.oe2403-ACC-1-7.x86_64 1 ko, 8 refs
+CONSISTENT 24 []
+== out/kernel-6.6.0-72.0.0.76.oe2403sp1-ACC-1-4.x86_64 1 ko, 5 refs
+CONSISTENT 10 []
+
+# Classification, 25 Oct 2026 (body_check_v16, release-compiler references of S40 A3; 6.6 from out/)
+# Subjects: the seven x86-64 packages of Section 6.10 (24.03 = ACC-1-6 per s40_units.txt; ACC-1-7 is the opened-before-scoring unit; both CONSISTENT).
+# CONSISTENT: 20.03-SP4, 22.03-SP2, 24.03, 24.03-SP1.
+# 22.03-SP1 ima_collect_measurement: module has one extra `jmp .+2` (eb 00) at 0x23e, after the noreturn call to
+#   __stack_chk_fail, before `mov $__func__,%rdi; call fortify_panic`. A jump to the next instruction; every other
+#   instruction equal. Code generation, not a fault.
+# 22.03-SP3 and SP4 _request_firmware: same instructions; `mov (%rsp),%r9` scheduled after `test %al,%al; jne` in the
+#   module and before it in the reference (jne displacement 0x145 vs 0x141). Code generation, not a fault; the same
+#   class as the S40 `ip6_finish_output2` spill under the update compiler.
+# Binding verdicts of these functions are CONSISTENT (S40).

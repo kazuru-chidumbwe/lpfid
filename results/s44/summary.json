@@ -1,0 +1,3342 @@
+{
+ "protocol": "internal/S44-PREREG-2026-10-24.md",
+ "archs": {
+  "x86_64": {
+   "packages": {
+    "REFBUILD_FAIL": 19,
+    "scored": 56
+   },
+   "not_scored": [
+    {
+     "pkg": "kernel-livepatch-6.1.102-108.177",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.109-118.189",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.111-120.187",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.112-122.189",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.12-17.42",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.129-138.220",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.159-182.297",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.182-227.378",
+     "status": "REFBUILD_FAIL",
+     "reason": "NO_VMLINUX"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.188-233.386",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.41-63.114",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.41-64.118",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.66-91.160",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.66-93.164",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.77-99.164",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.79-99.164",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.84-99.169",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.87-99.174",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.90-99.173",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.91-99.172",
+     "status": "REFBUILD_FAIL",
+     "reason": "MISSING_SOURCES"
+    }
+   ],
+   "strata": {
+    "H-new": {
+     "modules": 32,
+     "packages": 12,
+     "fixes": 13,
+     "fix_keys": [
+      "CVE-2023-2156",
+      "CVE-2023-26545",
+      "CVE-2023-3090",
+      "CVE-2023-42752",
+      "CVE-2023-45871",
+      "CVE-2023-4623",
+      "CVE-2023-4921",
+      "CVE-2023-5197",
+      "CVE-2024-1086",
+      "CVE-2024-23849",
+      "CVE-2024-56631",
+      "CVE-2025-21631",
+      "CVE-2025-21647"
+     ],
+     "fa_fixes": [
+      0,
+      13,
+      [
+       0.0,
+       0.2281
+      ]
+     ],
+     "fa_modules": [
+      0,
+      32,
+      [
+       0.0,
+       0.1072
+      ],
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0
+      ]
+     ],
+     "fa_functions": [
+      0,
+      91,
+      [
+       0.0,
+       0.0405
+      ]
+     ],
+     "alarms": [],
+     "mdup_modules": [],
+     "function_new_modules": 32,
+     "detection": {
+      "addend": [
+       272,
+       272,
+       [
+        0.9861,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "clonerb-klp": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "dropcall": [
+       304,
+       304,
+       [
+        0.9875,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "redirect1": [
+       308,
+       308,
+       [
+        0.9877,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "rodsec": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "sibling": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "swap": [
+       306,
+       306,
+       [
+        0.9876,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "sympos": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ]
+     },
+     "sites": {
+      "addend": [
+       30,
+       32
+      ],
+      "clonerb-klp": [
+       0,
+       32
+      ],
+      "dropcall": [
+       32,
+       32
+      ],
+      "redirect1": [
+       32,
+       32
+      ],
+      "rodsec": [
+       0,
+       32
+      ],
+      "sibling": [
+       4,
+       32
+      ],
+      "swap": [
+       32,
+       32
+      ],
+      "sympos": [
+       0,
+       32
+      ]
+     },
+     "excluded": {
+      "addend": {},
+      "clonerb-klp": {},
+      "dropcall": {},
+      "redirect1": {},
+      "rodsec": {},
+      "sibling": {
+       "sibling-indistinguishable": 8
+      },
+      "swap": {},
+      "sympos": {}
+     },
+     "v20_v21_differ": [],
+     "misses": []
+    },
+    "H-seen": {
+     "modules": 194,
+     "packages": 53,
+     "fixes": 39,
+     "fix_keys": [
+      "CVE-2022-48425",
+      "CVE-2023-2124",
+      "CVE-2023-32233",
+      "CVE-2023-35788",
+      "CVE-2023-3609",
+      "CVE-2023-3776",
+      "CVE-2023-5090",
+      "CVE-2023-5717",
+      "CVE-2023-6111",
+      "CVE-2024-41087",
+      "CVE-2024-41091",
+      "CVE-2024-50246",
+      "CVE-2025-21927",
+      "CVE-2025-37785",
+      "CVE-2025-38000",
+      "CVE-2025-38003",
+      "CVE-2025-38248",
+      "CVE-2025-38386",
+      "CVE-2025-39677",
+      "CVE-2025-39691",
+      "CVE-2025-39730",
+      "CVE-2025-39955",
+      "CVE-2025-40173",
+      "CVE-2025-40254",
+      "CVE-2026-64600",
+      "CVE-2026-74580",
+      "CVE-2026-80521",
+      "cifs-spnego",
+      "copyfail-fraggap",
+      "copyfail-v2",
+      "diagspill",
+      "dirtyah6",
+      "fraggap",
+      "fragnesia",
+      "gro-frag",
+      "ovswrap",
+      "pintheft",
+      "pppoeject",
+      "tunderflow"
+     ],
+     "fa_fixes": [
+      1,
+      39,
+      [
+       0.0045,
+       0.1318
+      ]
+     ],
+     "fa_modules": [
+      5,
+      194,
+      [
+       0.0111,
+       0.0589
+      ],
+      [
+       0.005,
+       0.0514
+      ],
+      [
+       0.0,
+       0.0862
+      ]
+     ],
+     "fa_functions": [
+      5,
+      570,
+      [
+       0.0038,
+       0.0204
+      ]
+     ],
+     "alarms": [
+      {
+       "pkg": "kernel-livepatch-6.1.49-70.116",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.49-69.116",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.52-71.125",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.59-84.139",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.55-75.123",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      }
+     ],
+     "mdup_modules": [],
+     "function_new_modules": 25,
+     "detection": {
+      "addend": [
+       1361,
+       1361,
+       [
+        0.9972,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "clonerb-klp": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "dropcall": [
+       1657,
+       1657,
+       [
+        0.9977,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "redirect1": [
+       1737,
+       1737,
+       [
+        0.9978,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "rodsec": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "sibling": [
+       19,
+       19,
+       [
+        0.8318,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "swap": [
+       1650,
+       1650,
+       [
+        0.9977,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "sympos": [
+       13,
+       13,
+       [
+        0.7719,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ]
+     },
+     "sites": {
+      "addend": [
+       185,
+       194
+      ],
+      "clonerb-klp": [
+       0,
+       194
+      ],
+      "dropcall": [
+       194,
+       194
+      ],
+      "redirect1": [
+       194,
+       194
+      ],
+      "rodsec": [
+       0,
+       194
+      ],
+      "sibling": [
+       18,
+       194
+      ],
+      "swap": [
+       194,
+       194
+      ],
+      "sympos": [
+       6,
+       194
+      ]
+     },
+     "excluded": {
+      "addend": {},
+      "clonerb-klp": {},
+      "dropcall": {},
+      "redirect1": {},
+      "rodsec": {},
+      "sibling": {
+       "sibling-indistinguishable": 42
+      },
+      "swap": {
+       "duplicate": 10,
+       "noop": 1
+      },
+      "sympos": {}
+     },
+     "v20_v21_differ": [],
+     "misses": []
+    },
+    "D": {
+     "modules": 6,
+     "packages": 6,
+     "fixes": 1,
+     "fix_keys": [
+      "CVE-2026-31431"
+     ],
+     "fa_fixes": [
+      0,
+      1,
+      [
+       0.0,
+       0.7935
+      ]
+     ],
+     "fa_modules": [
+      0,
+      6,
+      [
+       0.0,
+       0.3903
+      ],
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0
+      ]
+     ],
+     "fa_functions": [
+      0,
+      51,
+      [
+       0.0,
+       0.07
+      ]
+     ],
+     "alarms": [],
+     "mdup_modules": [
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.163-186.299/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.163-186.299/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.166-197.305/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.166-197.305/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.168-202.320/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.168-202.320/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.73-95.123/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.73-95.123/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.77-99.140/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.77-99.140/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.79-101.147/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.79-101.147/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      }
+     ],
+     "function_new_modules": 0,
+     "detection": {
+      "addend": [
+       60,
+       60,
+       [
+        0.9398,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "clonerb-klp": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "dropcall": [
+       60,
+       60,
+       [
+        0.9398,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "redirect1": [
+       60,
+       60,
+       [
+        0.9398,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "rodsec": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "sibling": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "swap": [
+       60,
+       60,
+       [
+        0.9398,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "sympos": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ]
+     },
+     "sites": {
+      "addend": [
+       6,
+       6
+      ],
+      "clonerb-klp": [
+       0,
+       6
+      ],
+      "dropcall": [
+       6,
+       6
+      ],
+      "redirect1": [
+       6,
+       6
+      ],
+      "rodsec": [
+       0,
+       6
+      ],
+      "sibling": [
+       0,
+       6
+      ],
+      "swap": [
+       6,
+       6
+      ],
+      "sympos": [
+       0,
+       6
+      ]
+     },
+     "excluded": {
+      "addend": {},
+      "clonerb-klp": {},
+      "dropcall": {},
+      "redirect1": {},
+      "rodsec": {},
+      "sibling": {},
+      "swap": {},
+      "sympos": {}
+     },
+     "v20_v21_differ": [
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 55,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 57,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 54,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 55,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 54,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 55,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 57,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 64,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 65,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 63,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 64,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 65,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 62,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 63,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 64,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 26,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 24,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 31,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 37,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 43,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 47,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 43,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 27,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 38,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 40,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 38,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 40,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      }
+     ],
+     "misses": []
+    },
+    "all": {
+     "modules": 232,
+     "packages": 56,
+     "fixes": 53,
+     "fix_keys": [
+      "CVE-2022-48425",
+      "CVE-2023-2124",
+      "CVE-2023-2156",
+      "CVE-2023-26545",
+      "CVE-2023-3090",
+      "CVE-2023-32233",
+      "CVE-2023-35788",
+      "CVE-2023-3609",
+      "CVE-2023-3776",
+      "CVE-2023-42752",
+      "CVE-2023-45871",
+      "CVE-2023-4623",
+      "CVE-2023-4921",
+      "CVE-2023-5090",
+      "CVE-2023-5197",
+      "CVE-2023-5717",
+      "CVE-2023-6111",
+      "CVE-2024-1086",
+      "CVE-2024-23849",
+      "CVE-2024-41087",
+      "CVE-2024-41091",
+      "CVE-2024-50246",
+      "CVE-2024-56631",
+      "CVE-2025-21631",
+      "CVE-2025-21647",
+      "CVE-2025-21927",
+      "CVE-2025-37785",
+      "CVE-2025-38000",
+      "CVE-2025-38003",
+      "CVE-2025-38248",
+      "CVE-2025-38386",
+      "CVE-2025-39677",
+      "CVE-2025-39691",
+      "CVE-2025-39730",
+      "CVE-2025-39955",
+      "CVE-2025-40173",
+      "CVE-2025-40254",
+      "CVE-2026-31431",
+      "CVE-2026-64600",
+      "CVE-2026-74580",
+      "CVE-2026-80521",
+      "cifs-spnego",
+      "copyfail-fraggap",
+      "copyfail-v2",
+      "diagspill",
+      "dirtyah6",
+      "fraggap",
+      "fragnesia",
+      "gro-frag",
+      "ovswrap",
+      "pintheft",
+      "pppoeject",
+      "tunderflow"
+     ],
+     "fa_fixes": [
+      1,
+      53,
+      [
+       0.0033,
+       0.0994
+      ]
+     ],
+     "fa_modules": [
+      5,
+      232,
+      [
+       0.0092,
+       0.0494
+      ],
+      [
+       0.0046,
+       0.0408
+      ],
+      [
+       0.0,
+       0.0721
+      ]
+     ],
+     "fa_functions": [
+      5,
+      712,
+      [
+       0.003,
+       0.0163
+      ]
+     ],
+     "alarms": [
+      {
+       "pkg": "kernel-livepatch-6.1.49-70.116",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.49-69.116",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.52-71.125",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.59-84.139",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.55-75.123",
+       "ko": "livepatch-CVE-2023-5090",
+       "v21": "DIVERGENT",
+       "div": [
+        "svm_set_x2apic_msr_interception"
+       ],
+       "sympos": "CONSISTENT"
+      }
+     ],
+     "mdup_modules": [
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.163-186.299/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.163-186.299/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.166-197.305/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.166-197.305/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.168-202.320/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.1.168-202.320/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.73-95.123/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.73-95.123/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.77-99.140/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.77-99.140/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.79-101.147/ref/CVE-2026-31431/authencesn.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/test/s44/x86/kernel-livepatch-6.12.79-101.147/ref/CVE-2026-31431/algif_aead.o"
+         ]
+        }
+       ]
+      }
+     ],
+     "function_new_modules": 57,
+     "detection": {
+      "addend": [
+       1693,
+       1693,
+       [
+        0.9977,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "clonerb-klp": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "dropcall": [
+       2021,
+       2021,
+       [
+        0.9981,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "redirect1": [
+       2105,
+       2105,
+       [
+        0.9982,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "rodsec": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "sibling": [
+       19,
+       19,
+       [
+        0.8318,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "swap": [
+       2016,
+       2016,
+       [
+        0.9981,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "sympos": [
+       13,
+       13,
+       [
+        0.7719,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ]
+     },
+     "sites": {
+      "addend": [
+       221,
+       232
+      ],
+      "clonerb-klp": [
+       0,
+       232
+      ],
+      "dropcall": [
+       232,
+       232
+      ],
+      "redirect1": [
+       232,
+       232
+      ],
+      "rodsec": [
+       0,
+       232
+      ],
+      "sibling": [
+       22,
+       232
+      ],
+      "swap": [
+       232,
+       232
+      ],
+      "sympos": [
+       6,
+       232
+      ]
+     },
+     "excluded": {
+      "addend": {},
+      "clonerb-klp": {},
+      "dropcall": {},
+      "redirect1": {},
+      "rodsec": {},
+      "sibling": {
+       "sibling-indistinguishable": 50
+      },
+      "swap": {
+       "duplicate": 10,
+       "noop": 1
+      },
+      "sympos": {}
+     },
+     "v20_v21_differ": [
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 55,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 57,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 54,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 55,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 54,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 55,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 57,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 64,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 65,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 63,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 64,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 65,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 62,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 63,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "addend",
+       "site": 64,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 26,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 24,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 31,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 37,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 43,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 47,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 43,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 27,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 38,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 40,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 38,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 40,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      }
+     ],
+     "misses": []
+    }
+   }
+  },
+  "aarch64": {
+   "packages": {
+    "REFBUILD_FAIL": 24,
+    "scored": 51
+   },
+   "not_scored": [
+    {
+     "pkg": "kernel-livepatch-6.1.102-108.177",
+     "status": "REFBUILD_FAIL",
+     "reason": "[13:34:17] S39b kernel-livepatch-6.1.102-108.177 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.109-118.189",
+     "status": "REFBUILD_FAIL",
+     "reason": "[13:35:13] S39b kernel-livepatch-6.1.109-118.189 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.111-120.187",
+     "status": "REFBUILD_FAIL",
+     "reason": "[13:36:08] S39b kernel-livepatch-6.1.111-120.187 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.112-122.189",
+     "status": "REFBUILD_FAIL",
+     "reason": "[13:37:04] S39b kernel-livepatch-6.1.112-122.189 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.12-17.42",
+     "status": "REFBUILD_FAIL",
+     "reason": "[13:38:00] S39b kernel-livepatch-6.1.12-17.42 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.12-19.43",
+     "status": "REFBUILD_FAIL",
+     "reason": "[13:38:54] S39b kernel-livepatch-6.1.12-19.43 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.129-138.220",
+     "status": "REFBUILD_FAIL",
+     "reason": "[13:42:18] S39b kernel-livepatch-6.1.129-138.220 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.159-182.297",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:00:52] S39b kernel-livepatch-6.1.159-182.297 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.188-233.386",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:44:05] S39b kernel-livepatch-6.1.188-233.386 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.21-1.45",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:44:59] S39b kernel-livepatch-6.1.21-1.45 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.23-36.46",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:45:55] S39b kernel-livepatch-6.1.23-36.46 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.25-37.47",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:46:52] S39b kernel-livepatch-6.1.25-37.47 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.27-43.48",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:47:47] S39b kernel-livepatch-6.1.27-43.48 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.29-47.49",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:48:43] S39b kernel-livepatch-6.1.29-47.49 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.41-63.114",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:58:10] S39b kernel-livepatch-6.1.41-63.114 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.41-64.118",
+     "status": "REFBUILD_FAIL",
+     "reason": "[14:59:07] S39b kernel-livepatch-6.1.41-64.118 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.66-91.160",
+     "status": "REFBUILD_FAIL",
+     "reason": "[15:15:02] S39b kernel-livepatch-6.1.66-91.160 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.66-93.164",
+     "status": "REFBUILD_FAIL",
+     "reason": "[15:15:58] S39b kernel-livepatch-6.1.66-93.164 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.77-99.164",
+     "status": "REFBUILD_FAIL",
+     "reason": "[15:21:17] S39b kernel-livepatch-6.1.77-99.164 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.79-99.164",
+     "status": "REFBUILD_FAIL",
+     "reason": "[15:22:13] S39b kernel-livepatch-6.1.79-99.164 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.84-99.169",
+     "status": "REFBUILD_FAIL",
+     "reason": "[15:23:10] S39b kernel-livepatch-6.1.84-99.169 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.87-99.174",
+     "status": "REFBUILD_FAIL",
+     "reason": "[15:24:06] S39b kernel-livepatch-6.1.87-99.174 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.90-99.173",
+     "status": "REFBUILD_FAIL",
+     "reason": "[15:25:02] S39b kernel-livepatch-6.1.90-99.173 no-ko"
+    },
+    {
+     "pkg": "kernel-livepatch-6.1.91-99.172",
+     "status": "REFBUILD_FAIL",
+     "reason": "[15:25:57] S39b kernel-livepatch-6.1.91-99.172 no-ko"
+    }
+   ],
+   "strata": {
+    "H-new": {
+     "modules": 26,
+     "packages": 8,
+     "fixes": 13,
+     "fix_keys": [
+      "CVE-2023-2156",
+      "CVE-2023-3090",
+      "CVE-2023-42752",
+      "CVE-2023-45871",
+      "CVE-2023-4623",
+      "CVE-2023-4921",
+      "CVE-2023-5197",
+      "CVE-2024-1086",
+      "CVE-2024-23849",
+      "CVE-2024-36899",
+      "CVE-2024-56631",
+      "CVE-2025-21631",
+      "CVE-2025-21647"
+     ],
+     "fa_fixes": [
+      0,
+      13,
+      [
+       0.0,
+       0.2281
+      ]
+     ],
+     "fa_modules": [
+      0,
+      26,
+      [
+       0.0,
+       0.1287
+      ],
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0
+      ]
+     ],
+     "fa_functions": [
+      0,
+      119,
+      [
+       0.0,
+       0.0313
+      ]
+     ],
+     "alarms": [],
+     "mdup_modules": [],
+     "function_new_modules": 26,
+     "detection": {
+      "addend": [
+       123,
+       123,
+       [
+        0.9697,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "dropcall": [
+       224,
+       224,
+       [
+        0.9831,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "redirect1": [
+       224,
+       224,
+       [
+        0.9831,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "rodsec": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "sibling": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "swap": [
+       208,
+       208,
+       [
+        0.9819,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ]
+     },
+     "sites": {
+      "addend": [
+       22,
+       26
+      ],
+      "dropcall": [
+       26,
+       26
+      ],
+      "redirect1": [
+       26,
+       26
+      ],
+      "rodsec": [
+       0,
+       26
+      ],
+      "sibling": [
+       1,
+       26
+      ],
+      "swap": [
+       26,
+       26
+      ]
+     },
+     "excluded": {
+      "addend": {},
+      "dropcall": {},
+      "redirect1": {},
+      "rodsec": {},
+      "sibling": {
+       "sibling-indistinguishable": 3
+      },
+      "swap": {}
+     },
+     "v20_v21_differ": [],
+     "misses": []
+    },
+    "H-seen": {
+     "modules": 186,
+     "packages": 49,
+     "fixes": 37,
+     "fix_keys": [
+      "CVE-2023-35788",
+      "CVE-2023-3609",
+      "CVE-2023-3776",
+      "CVE-2023-5717",
+      "CVE-2023-6111",
+      "CVE-2024-41087",
+      "CVE-2024-41091",
+      "CVE-2024-50246",
+      "CVE-2025-21927",
+      "CVE-2025-37785",
+      "CVE-2025-38000",
+      "CVE-2025-38003",
+      "CVE-2025-38248",
+      "CVE-2025-38386",
+      "CVE-2025-39677",
+      "CVE-2025-39691",
+      "CVE-2025-39730",
+      "CVE-2025-39955",
+      "CVE-2025-40173",
+      "CVE-2025-40254",
+      "CVE-2026-46316",
+      "CVE-2026-46317",
+      "CVE-2026-64600",
+      "CVE-2026-74580",
+      "CVE-2026-80521",
+      "cifs-spnego",
+      "copyfail-fraggap",
+      "copyfail-v2",
+      "diagspill",
+      "dirtyah6",
+      "fraggap",
+      "fragnesia",
+      "gro-frag",
+      "ovswrap",
+      "pintheft",
+      "pppoeject",
+      "tunderflow"
+     ],
+     "fa_fixes": [
+      0,
+      37,
+      [
+       0.0,
+       0.0941
+      ]
+     ],
+     "fa_modules": [
+      0,
+      186,
+      [
+       0.0,
+       0.0202
+      ],
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0
+      ]
+     ],
+     "fa_functions": [
+      0,
+      445,
+      [
+       0.0,
+       0.0086
+      ]
+     ],
+     "alarms": [],
+     "mdup_modules": [],
+     "function_new_modules": 17,
+     "detection": {
+      "addend": [
+       829,
+       829,
+       [
+        0.9954,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "dropcall": [
+       1605,
+       1605,
+       [
+        0.9976,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "redirect1": [
+       1605,
+       1605,
+       [
+        0.9976,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "rodsec": [
+       10,
+       10,
+       [
+        0.7225,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "sibling": [
+       20,
+       20,
+       [
+        0.8389,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "swap": [
+       1515,
+       1515,
+       [
+        0.9975,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ]
+     },
+     "sites": {
+      "addend": [
+       120,
+       186
+      ],
+      "dropcall": [
+       185,
+       186
+      ],
+      "redirect1": [
+       185,
+       186
+      ],
+      "rodsec": [
+       5,
+       186
+      ],
+      "sibling": [
+       10,
+       186
+      ],
+      "swap": [
+       174,
+       186
+      ]
+     },
+     "excluded": {
+      "addend": {},
+      "dropcall": {},
+      "redirect1": {},
+      "rodsec": {},
+      "sibling": {
+       "sibling-indistinguishable": 20
+      },
+      "swap": {
+       "duplicate": 2,
+       "noop": 16
+      }
+     },
+     "v20_v21_differ": [],
+     "misses": []
+    },
+    "D": {
+     "modules": 6,
+     "packages": 6,
+     "fixes": 1,
+     "fix_keys": [
+      "CVE-2026-31431"
+     ],
+     "fa_fixes": [
+      0,
+      1,
+      [
+       0.0,
+       0.7935
+      ]
+     ],
+     "fa_modules": [
+      0,
+      6,
+      [
+       0.0,
+       0.3903
+      ],
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0
+      ]
+     ],
+     "fa_functions": [
+      0,
+      36,
+      [
+       0.0,
+       0.0964
+      ]
+     ],
+     "alarms": [],
+     "mdup_modules": [
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.163-186.299/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.163-186.299/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.166-197.305/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.166-197.305/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.168-202.320/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.168-202.320/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.73-95.123/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.73-95.123/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.77-99.140/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.77-99.140/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.79-101.147/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.79-101.147/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      }
+     ],
+     "function_new_modules": 0,
+     "detection": {
+      "addend": [
+       18,
+       18,
+       [
+        0.8241,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "dropcall": [
+       60,
+       60,
+       [
+        0.9398,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "redirect1": [
+       60,
+       60,
+       [
+        0.9398,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "rodsec": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "sibling": [
+       0,
+       0,
+       null,
+       null,
+       null
+      ],
+      "swap": [
+       60,
+       60,
+       [
+        0.9398,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ]
+     },
+     "sites": {
+      "addend": [
+       6,
+       6
+      ],
+      "dropcall": [
+       6,
+       6
+      ],
+      "redirect1": [
+       6,
+       6
+      ],
+      "rodsec": [
+       0,
+       6
+      ],
+      "sibling": [
+       0,
+       6
+      ],
+      "swap": [
+       6,
+       6
+      ]
+     },
+     "excluded": {
+      "addend": {},
+      "dropcall": {},
+      "redirect1": {},
+      "rodsec": {},
+      "sibling": {},
+      "swap": {}
+     },
+     "v20_v21_differ": [
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 34,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 35,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 36,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 35,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 33,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 31,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 24,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 25,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 18,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 17,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 24,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 24,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      }
+     ],
+     "misses": []
+    },
+    "all": {
+     "modules": 218,
+     "packages": 51,
+     "fixes": 51,
+     "fix_keys": [
+      "CVE-2023-2156",
+      "CVE-2023-3090",
+      "CVE-2023-35788",
+      "CVE-2023-3609",
+      "CVE-2023-3776",
+      "CVE-2023-42752",
+      "CVE-2023-45871",
+      "CVE-2023-4623",
+      "CVE-2023-4921",
+      "CVE-2023-5197",
+      "CVE-2023-5717",
+      "CVE-2023-6111",
+      "CVE-2024-1086",
+      "CVE-2024-23849",
+      "CVE-2024-36899",
+      "CVE-2024-41087",
+      "CVE-2024-41091",
+      "CVE-2024-50246",
+      "CVE-2024-56631",
+      "CVE-2025-21631",
+      "CVE-2025-21647",
+      "CVE-2025-21927",
+      "CVE-2025-37785",
+      "CVE-2025-38000",
+      "CVE-2025-38003",
+      "CVE-2025-38248",
+      "CVE-2025-38386",
+      "CVE-2025-39677",
+      "CVE-2025-39691",
+      "CVE-2025-39730",
+      "CVE-2025-39955",
+      "CVE-2025-40173",
+      "CVE-2025-40254",
+      "CVE-2026-31431",
+      "CVE-2026-46316",
+      "CVE-2026-46317",
+      "CVE-2026-64600",
+      "CVE-2026-74580",
+      "CVE-2026-80521",
+      "cifs-spnego",
+      "copyfail-fraggap",
+      "copyfail-v2",
+      "diagspill",
+      "dirtyah6",
+      "fraggap",
+      "fragnesia",
+      "gro-frag",
+      "ovswrap",
+      "pintheft",
+      "pppoeject",
+      "tunderflow"
+     ],
+     "fa_fixes": [
+      0,
+      51,
+      [
+       0.0,
+       0.07
+      ]
+     ],
+     "fa_modules": [
+      0,
+      218,
+      [
+       0.0,
+       0.0173
+      ],
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0
+      ]
+     ],
+     "fa_functions": [
+      0,
+      600,
+      [
+       0.0,
+       0.0064
+      ]
+     ],
+     "alarms": [],
+     "mdup_modules": [
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.163-186.299/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.163-186.299/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.166-197.305/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.166-197.305/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.168-202.320/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.1.168-202.320/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.73-95.123/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.73-95.123/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.77-99.140/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.77-99.140/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "pairings": [
+        {
+         "function": "memcpy_sglist",
+         "file": "authencesn.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.79-101.147/ref/CVE-2026-31431/crypto/authencesn.c.o"
+         ]
+        },
+        {
+         "function": "memcpy_sglist@algif_aead.c",
+         "file": "algif_aead.c",
+         "candidates_in_file": [
+          "/home/ubuntu/s39/out44/kernel-livepatch-6.12.79-101.147/ref/CVE-2026-31431/crypto/algif_aead.c.o"
+         ]
+        }
+       ]
+      }
+     ],
+     "function_new_modules": 43,
+     "detection": {
+      "addend": [
+       970,
+       970,
+       [
+        0.9961,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "dropcall": [
+       1889,
+       1889,
+       [
+        0.998,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "redirect1": [
+       1889,
+       1889,
+       [
+        0.998,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "rodsec": [
+       10,
+       10,
+       [
+        0.7225,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "sibling": [
+       20,
+       20,
+       [
+        0.8389,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ],
+      "swap": [
+       1783,
+       1783,
+       [
+        0.9979,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ],
+       [
+        1.0,
+        1.0
+       ]
+      ]
+     },
+     "sites": {
+      "addend": [
+       148,
+       218
+      ],
+      "dropcall": [
+       217,
+       218
+      ],
+      "redirect1": [
+       217,
+       218
+      ],
+      "rodsec": [
+       5,
+       218
+      ],
+      "sibling": [
+       11,
+       218
+      ],
+      "swap": [
+       206,
+       218
+      ]
+     },
+     "excluded": {
+      "addend": {},
+      "dropcall": {},
+      "redirect1": {},
+      "rodsec": {},
+      "sibling": {
+       "sibling-indistinguishable": 23
+      },
+      "swap": {
+       "duplicate": 2,
+       "noop": 16
+      }
+     },
+     "v20_v21_differ": [
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 34,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 35,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 36,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.168-202.320",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 35,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 33,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.77-99.140",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "dropcall",
+       "site": 31,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 24,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "redirect1",
+       "site": 25,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.163-186.299",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 18,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.1.166-197.305",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 17,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.73-95.123",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 24,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      },
+      {
+       "pkg": "kernel-livepatch-6.12.79-101.147",
+       "ko": "livepatch-CVE-2026-31431",
+       "op": "swap",
+       "site": 24,
+       "v20": "CONSISTENT",
+       "v21": "DIVERGENT",
+       "div": [
+        "memcpy_sglist@algif_aead.c"
+       ]
+      }
+     ],
+     "misses": []
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "phase": "freeze",
+ "fixtures_seen": 51,
+ "frame_off": {
+  "CONSISTENT": 51
+ },
+ "frame_on": {
+  "CONSISTENT": 51
+ },
+ "fixture_refs_found": 51,
+ "note": "",
+ "frozen_rule": "IMM-FRAME_ON",
+ "frozen_at": "2026-10-14T19:24:23Z"
+}

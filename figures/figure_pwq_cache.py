@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Figure 1 of the LPFid manuscript: the wrong pwq_cache binding of CVE-2026-43074 (Section 7.2).
+"""Figure 2 of the LPFid manuscript: the wrong pwq_cache binding of CVE-2026-43074 (Section 7.3).
 
 All facts come from lab/s21/CASE-43074-2026-10-08.md: the two local pwq_cache objects of the 6.6.47 pin
 (kallsyms position, file, symbol-table index), the binding each kpatch-build release wrote, and the

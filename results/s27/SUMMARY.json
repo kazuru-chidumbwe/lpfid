@@ -1,0 +1,71 @@
+{
+ "generated": "2026-10-14T13:56:30Z",
+ "constant_mutants": 1111,
+ "scored": 1111,
+ "no_reference": 0,
+ "equivalents_excluded": 0,
+ "detection_off": {
+  "n": 1111,
+  "detected": 1111,
+  "pct_ci": [
+   100.0,
+   99.66,
+   100.0
+  ]
+ },
+ "detection_on": {
+  "n": 1111,
+  "detected": 1024,
+  "pct_ci": [
+   92.17,
+   90.44,
+   93.61
+  ]
+ },
+ "fa_same_off": {
+  "subjects": 122,
+  "alarms": 0,
+  "pct_ci": [
+   0.0,
+   0.0,
+   3.05
+  ]
+ },
+ "fa_same_on": {
+  "subjects": 122,
+  "alarms": 0,
+  "pct_ci": [
+   0.0,
+   0.0,
+   3.05
+  ]
+ },
+ "fa_cross_off": {
+  "subjects": 33,
+  "alarms": 12,
+  "pct_ci": [
+   36.36,
+   22.19,
+   53.38
+  ]
+ },
+ "fa_cross_on": {
+  "subjects": 33,
+  "alarms": 11,
+  "pct_ci": [
+   33.33,
+   19.75,
+   50.39
+  ]
+ },
+ "frozen_rule": "IMM-FRAME_ON",
+ "freeze": {
+  "fixtures_seen": 3,
+  "frame_off": {
+   "NO_COMMON_FUNCTIONS": 3
+  },
+  "frame_on": {
+   "NO_COMMON_FUNCTIONS": 3
+  }
+ }
+}

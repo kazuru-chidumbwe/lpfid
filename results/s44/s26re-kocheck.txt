@@ -1,0 +1,59 @@
+DIFF kernel-livepatch-6.1.112-124.190 livepatch-CVE-2024-49855-0001.ko: .note.gnu.build-id .klp.rela.nbd..text.unlikely.nbd_xmit_timeout .klp.rela.nbd..text.nbd_xmit_timeout .klp.rela.nbd..text.nbd_handle_cmd symbols
+DIFF kernel-livepatch-6.1.112-124.190 livepatch-CVE-2024-49960-0001.ko: .note.gnu.build-id .klp.rela.ext4..text.__ext4_fill_super symbols
+DIFF kernel-livepatch-6.1.115-126.197 livepatch-CVE-2024-49960-0001.ko: .note.gnu.build-id .klp.rela.ext4..text.__ext4_fill_super symbols
+DIFF kernel-livepatch-6.1.127-135.201 livepatch-CVE-2025-21703.ko: .note.gnu.build-id .klp.rela.sch_netem..text.netem_dequeue symbols
+DIFF kernel-livepatch-6.1.128-136.201 livepatch-CVE-2025-21703.ko: .note.gnu.build-id .klp.rela.sch_netem..text.netem_dequeue symbols
+DIFF kernel-livepatch-6.1.131-143.221 livepatch-CVE-2025-21927.ko: .note.gnu.build-id .klp.rela.nvme_tcp..text.unlikely.nvme_tcp_recv_pdu .klp.rela.nvme_tcp..text.nvme_tcp_recv_pdu symbols
+DIFF kernel-livepatch-6.1.164-196.303 livepatch-copyfail-v2-6-1.ko: .note.gnu.build-id .rodata.str1.1 .orc_unwind .kpatch.strings .kpatch.funcs __bug_table .klp.rela.vmlinux..text.ip_append_page .klp.rela.vmlinux..static_call_sites .klp.rela.esp4..text.esp_input .klp.rela.esp6..text.esp6_input disasm symbols
+DIFF kernel-livepatch-6.1.164-196.303 livepatch-CVE-2026-31431.ko: .note.gnu.build-id .orc_unwind .kpatch.strings .kpatch.funcs .klp.rela.authencesn..text.crypto_authenc_esn_decrypt .klp.rela.algif_aead..text._aead_recvmsg.constprop.0.isra.0 disasm symbols
+DIFF kernel-livepatch-6.1.19-30.43 livepatch-CVE-2023-28466.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.1.19-30.43 livepatch-CVE-2023-32233.ko: .note.gnu.build-id .rodata.str1.1 .kpatch.strings .klp.rela.nf_tables..text.nf_tables_deactivate_set disasm symbols
+DIFF kernel-livepatch-6.12.29-33.102 livepatch-CVE-2025-38037.ko: .note.gnu.build-id .klp.rela.vxlan..text.vxlan_cleanup .klp.rela.vxlan..text.vxlan_find_mac .klp.rela.vxlan..text.neigh_reduce .klp.rela.vxlan..text.vxlan_fdb_offloaded_set .klp.rela.vxlan..text.vxlan_snoop .klp.rela.vxlan..text.__vxlan_fdb_delete .klp.rela.vxlan..text.vxlan_switchdev_event .klp.rela.vxlan..text.vxlan_xmit symbols
+DIFF kernel-livepatch-6.12.35-55.103 livepatch-CVE-2025-39677.ko: .note.gnu.build-id .orc_unwind .kpatch.strings .kpatch.funcs .klp.rela.sch_codel..text.codel_change .klp.rela.sch_fq_codel..text.fq_codel_change .klp.rela.sch_fq..text.fq_change .klp.rela.sch_hhf..text.hhf_change .klp.rela.sch_pie..text.pie_change disasm symbols
+DIFF kernel-livepatch-6.12.40-64.114 livepatch-CVE-2025-39677.ko: .note.gnu.build-id .orc_unwind .kpatch.strings .kpatch.funcs .klp.rela.sch_codel..text.codel_change .klp.rela.sch_fq_codel..text.fq_codel_change .klp.rela.sch_fq..text.fq_change .klp.rela.sch_hhf..text.hhf_change .klp.rela.sch_pie..text.pie_change disasm symbols
+DIFF kernel-livepatch-6.12.68-92.122 livepatch-copyfail-v2-6-12.ko: .note.gnu.build-id .rodata.str1.1 .rodata.str1.8 .orc_unwind .kpatch.strings .kpatch.funcs .rodata.esp_init_authenc.constprop.0.str1.1 .rodata.esp_remove_trailer.str1.8 __bug_table .klp.rela.vmlinux..text.__ip6_append_data .klp.rela.esp6..text.esp6_input .klp.rela.vmlinux..text.__ip_append_data .klp.rela.esp4..text.esp_input disasm symbols
+DIFF kernel-livepatch-6.12.68-92.122 livepatch-CVE-2026-31431.ko: .note.gnu.build-id .orc_unwind .kpatch.strings .kpatch.funcs .klp.rela.authencesn..text.crypto_authenc_esn_decrypt .klp.rela.algif_aead..text._aead_recvmsg.constprop.0.isra.0 disasm symbols
+DIFF kernel-livepatch-6.12.83-111.159 livepatch-copyfail-fraggap.ko: .note.gnu.build-id .rodata.str1.1 .rodata.str1.8 .orc_unwind .kpatch.strings .kpatch.funcs .rodata.esp_init_authenc.constprop.0.str1.1 .rodata.esp_remove_trailer.str1.8 __bug_table .klp.rela.vmlinux..text.__ip6_append_data .klp.rela.esp6..text.esp6_input .klp.rela.vmlinux..text.__ip_append_data .klp.rela.esp4..text.esp_input disasm symbols
+DIFF kernel-livepatch-6.12.92-122.168 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.12.92-122.168 livepatch-DirtyAH6.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.12.92-122.168 livepatch-PPPoEject.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.12.92-122.168 livepatch-TUNderflow.ko: .note.gnu.build-id .klp.rela.tun..text.tun_get_user symbols
+DIFF kernel-livepatch-6.12.94-123.174 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.12.94-123.174 livepatch-DirtyAH6.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.12.94-123.174 livepatch-PPPoEject.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.12.94-123.174 livepatch-TUNderflow.ko: .note.gnu.build-id .klp.rela.tun..text.tun_get_user symbols
+DIFF kernel-livepatch-6.12.94-123.190 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.12.94-123.190 livepatch-DirtyAH6.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.12.94-123.190 livepatch-PPPoEject.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.12.94-123.190 livepatch-TUNderflow.ko: .note.gnu.build-id .klp.rela.tun..text.tun_get_user symbols
+DIFF kernel-livepatch-6.12.94-123.192 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.12.94-123.192 livepatch-DirtyAH6.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.12.94-123.192 livepatch-PPPoEject.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.12.94-123.192 livepatch-TUNderflow.ko: .note.gnu.build-id .klp.rela.tun..text.tun_get_user symbols
+DIFF kernel-livepatch-6.1.56-82.125 livepatch-CVE-2023-5090.ko: .note.gnu.build-id .klp.rela.kvm_amd..text.svm_set_x2apic_msr_interception symbols
+DIFF kernel-livepatch-6.1.56-82.125 livepatch-CVE-2023-6111.ko: .note.gnu.build-id .klp.rela.nf_tables..text.nft_trans_gc_catchall_async .klp.rela.nf_tables..text.nft_trans_gc_catchall_sync symbols
+DIFF kernel-livepatch-6.18.20-20.229 livepatch-copyfail-v2-6-18.ko: .note.gnu.build-id .rodata.str1.1 .rodata.str1.8 .orc_unwind .kpatch.strings .kpatch.funcs .rodata.esp_init_authenc.constprop.0.str1.1 .rodata.esp_remove_trailer.str1.8 __bug_table .klp.rela.vmlinux..text.__ip6_append_data .klp.rela.esp6..text.esp6_input .klp.rela.vmlinux..text.__ip_append_data .klp.rela.esp4..text.esp_input disasm symbols
+DIFF kernel-livepatch-6.18.20-20.229 livepatch-CVE-2026-31431.ko: .note.gnu.build-id .orc_unwind .kpatch.strings .kpatch.funcs __versions .klp.rela.authencesn..text.crypto_authenc_esn_decrypt .klp.rela.algif_skcipher..text._skcipher_recvmsg.constprop.0.isra.0 .klp.rela.af_alg..text.af_alg_sendmsg .klp.rela.algif_aead..text._aead_recvmsg.constprop.0.isra.0 disasm symbols
+SAME kernel-livepatch-6.18.25-52.107 livepatch-copyfail-fraggap.ko
+DIFF kernel-livepatch-6.18.30-61.119 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.18.33-63.124 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.18.35-68.127 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.18.35-68.129 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.18.35-68.129 livepatch-DirtyAH6.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.18.35-68.129 livepatch-PPPoEject.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.18.35-68.129 livepatch-TUNderflow.ko: .note.gnu.build-id .klp.rela.tun..text.tun_get_user symbols
+DIFF kernel-livepatch-6.18.36-69.138 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.18.36-69.138 livepatch-DirtyAH6.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.18.36-69.138 livepatch-PPPoEject.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.18.36-69.138 livepatch-TUNderflow.ko: .note.gnu.build-id .klp.rela.tun..text.tun_get_user symbols
+DIFF kernel-livepatch-6.18.39-79.141 livepatch-CVE-2026-74580.ko: .note.gnu.build-id .klp.rela.vhost..text.vhost_vring_set_num_addr.isra.0 symbols
+DIFF kernel-livepatch-6.18.39-79.141 livepatch-DirtyAH6.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.18.39-79.141 livepatch-PPPoEject.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.18.39-79.141 livepatch-TUNderflow.ko: .note.gnu.build-id .klp.rela.tun..text.tun_get_user symbols
+DIFF kernel-livepatch-6.18.48-107.148 livepatch-DirtyAH6.ko: .note.gnu.build-id symbols
+DIFF kernel-livepatch-6.18.48-107.148 livepatch-TUNderflow.ko: .note.gnu.build-id .klp.rela.tun..text.tun_get_user symbols
+DIFF kernel-livepatch-6.18.8-9.213 livepatch-copyfail-v2-6-18.ko: .note.gnu.build-id .rodata.str1.1 .rodata.str1.8 .orc_unwind .kpatch.strings .kpatch.funcs .rodata.esp_init_authenc.constprop.0.str1.1 .rodata.esp_remove_trailer.str1.8 __bug_table .klp.rela.vmlinux..text.__ip6_append_data .klp.rela.esp6..text.esp6_input .klp.rela.vmlinux..text.__ip_append_data .klp.rela.esp4..text.esp_input disasm symbols
+DIFF kernel-livepatch-6.18.8-9.213 livepatch-CVE-2026-31431.ko: .note.gnu.build-id .orc_unwind .kpatch.strings .kpatch.funcs __versions .klp.rela.authencesn..text.crypto_authenc_esn_decrypt .klp.rela.af_alg..text.af_alg_sendmsg .klp.rela.algif_skcipher..text._skcipher_recvmsg.constprop.0.isra.0 .klp.rela.algif_aead..text._aead_recvmsg.constprop.0.isra.0 disasm symbols
+DIFF kernel-livepatch-6.1.94-99.176 livepatch-CVE-2024-41087-0001.ko: .note.gnu.build-id .klp.rela.libata..text.ata_host_alloc symbols
+DIFF kernel-livepatch-6.1.94-99.176 livepatch-CVE-2024-41091-CVE-2024-41090-0002.ko: .note.gnu.build-id .klp.rela.tun..text.tun_xdp_one symbols
+modules same 1 diff 57 (non-debug sections, symbols, disassembly)

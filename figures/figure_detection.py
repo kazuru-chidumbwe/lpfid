@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Figure 2 of the LPFid manuscript: detection rate per operator for each check, with Wilson 95%
+"""Figure 3 of the LPFid manuscript: detection rate per operator for each check, with Wilson 95%
 intervals (a), and what the module loader and livepatch core did with the redirect mutants (b).
 
 Reads only committed result files; rerun whenever a check's results are added (the CHECKS list below

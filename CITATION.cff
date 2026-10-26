@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software or data, please cite them using these metadata."
-title: "LPFid: test oracles for the fidelity of Linux livepatch modules"
+title: "LPFid: fidelity checks for Linux livepatch modules"
 type: software
 authors:
   - family-names: Kazuru
@@ -9,25 +9,23 @@ authors:
     email: kazuruuni@gmail.com
 license: MIT
 repository-code: "https://github.com/kazuru-chidumbwe/lpfid"
-version: "1.1.0"
-date-released: "2026-10-23"
+version: "1.2.0"
+date-released: "2026-10-26"
 identifiers:
-  - type: doi
-    value: 10.5281/zenodo.23588997
-    description: Zenodo version of record for release v1.1.0
   - type: doi
     value: 10.5281/zenodo.23408955
     description: Zenodo concept DOI (resolves to the latest version)
 abstract: >-
   Blind reference-differential binding oracle for Linux livepatch modules.
-  Version v2.0 is the held-out oracle. Earlier frozen versions through v1.8
-  are kept for the scores that used them. The archive also holds the fault
+  Version v2.1 is the census oracle and v2.0 the held-out oracle. Earlier
+  frozen versions are kept for the scores that used them. The archive also holds the immediate check, the fault
   operators, the selection and build scripts for a corpus of 150 CVE fixes on
   stable kernels, the loader, presence-test and generator-comparison runners,
-  and every run record behind the reported results, including the held-out trial.
+  and every run record behind the reported results, including the held-out draw and the census of Amazon Linux 2023
+  livepatch packages.
 keywords:
   - livepatch
   - test oracle
   - mutation analysis
   - Linux kernel
-url: "https://doi.org/10.5281/zenodo.23588997"
+url: "https://doi.org/10.5281/zenodo.23408955"

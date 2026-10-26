@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """PRE(B): struct-aware revert-eligibility scan for Linux livepatch .ko artifacts (eligibility check v2.1, S42).
 
-v2.1 = v2 plus three changes (S42, after review):
+v2.1 = v2 plus three changes (S42):
   E1 a static klp_object whose klp_object or klp_callbacks layout is missing is UNDETERMINED for CALLBACKS.
   E2 the run-time REPLACE scan covers every function that calls klp_enable_patch as well as the init names; a
      register byte store at offsetof(struct klp_patch, replace) there is UNDETERMINED.
